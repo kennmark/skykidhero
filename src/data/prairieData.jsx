@@ -805,6 +805,10 @@ export const prairie = [
             visit_date: 'Sep 28, 2023',
             visitNo: 97,
           },
+          {
+            visit_date: 'Jul 30, 2026',
+            visitNo: 171,
+          },
         ],
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + 'H9QcHm8kfBg',

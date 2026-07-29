@@ -36,8 +36,8 @@ const LatestTSVisit = () => {
           setCheckedSpirits((prevState) => ({ ...prevState, [name]: checked }))
       }
     
-    const tsId = season_spirits.find((element)=> element = travellingSpiritId)
-    console.log(travellingSpiritId);
+    const singleTsSpirit = season_spirits[travellingSpiritId]
+    // console.log(season_spirits[travellingSpiritId]);
   return (
     <div className="border-t border-blue-gray-50">
       <div className="py-6">
@@ -73,20 +73,15 @@ const LatestTSVisit = () => {
                 <Alert color='amber' className='flex items-center justify-center'>A Traveling Spirits has returned in Sky. Starting <span className='font-bold'>{travelingSpiritDate}</span>.</Alert>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
-                {
-                  season_spirits.slice(travellingSpiritId,2).map((spirit) => {
-                    return (
-                      <SpiritCardContainer
-                        {...spirit}
-                        icon_route={icon_route}
-                        key={spirit.spirit_id}
-                        season={name}
-                        checkedSpirits={checkedSpirits}
-                        handleCheckboxChange={handleCheckboxChange}
-                      />
-                    )
-                  })
-                }
+                  
+                <SpiritCardContainer
+                  {...singleTsSpirit}
+                  icon_route={icon_route}
+                  key={id}
+                  season={name}
+                  checkedSpirits={checkedSpirits}
+                  handleCheckboxChange={handleCheckboxChange}
+                />
               </div>
             </>
           }
