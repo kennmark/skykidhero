@@ -1,3 +1,11 @@
+# Dependencies
+**/node_modules/
+
+# Production builds
+**/dist/
+**/.vite/
+**/coverage/
+
 # Logs
 logs
 *.log
@@ -28,3 +36,12 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
+
+# Backend-generated uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/news/
+backend/uploads/news/*
+!backend/uploads/news/.gitkeep
+*.backup
+*.bak
