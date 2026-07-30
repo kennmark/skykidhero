@@ -8,6 +8,7 @@
     "start": "node src/server.js",
     "prisma:generate": "prisma generate",
     "prisma:deploy": "prisma migrate deploy",
+    "seed:admin": "node prisma/seed-admin.js",
     "postinstall": "prisma generate"
   },
   "version": "1.0.0",

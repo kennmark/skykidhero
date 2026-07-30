@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+
+.env
+.env.*
+!.env.example
+
+npm-debug.log*
+*.log
+
+uploads/news/*
+!uploads/news/.gitkeep
+
+.git/
+.gitignore
+README.md
