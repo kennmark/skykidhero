@@ -4,7 +4,7 @@ import {
   useParams,
 } from "react-router-dom";
 
-import NewsForm from "../../components/news/NewsForm.jsx";
+import NewsForm from "../../components/news/newsForm.jsx";
 
 import {
   getNewsById,

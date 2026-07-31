@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import NewsForm from "../../components/news/NewsForm.jsx";
+import NewsForm from "../../components/news/newsForm.jsx";
 import { createNews } from "../../services/adminNews.service";
 import AdminLayout from "../../components/layout/AdminLayout.jsx";
 
