@@ -1,4 +1,4 @@
-import client from "../api/client";
+import client from "../api/client.js";
 
 export async function login(credentials) {
   const response = await client.post(
@@ -6,5 +6,14 @@ export async function login(credentials) {
     credentials
   );
 
-  return response.data;
+  const authData = response.data?.data;
+
+  if (!authData?.token || !authData?.user) {
+    throw new Error(
+      response.data?.message ||
+      "The server returned an invalid login response."
+    );
+  }
+
+  return authData;
 }

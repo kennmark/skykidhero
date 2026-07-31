@@ -1,34 +1,61 @@
 import {
   createContext,
   useContext,
-  useEffect,
   useState,
 } from "react";
 
-const AuthContext = createContext();
+const AuthContext = createContext(null);
 
-export function AuthProvider({ children }) {
+function getStoredUser() {
+  const storedUser =
+    localStorage.getItem("user");
+
+  if (!storedUser) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(storedUser);
+  } catch {
+    localStorage.removeItem("user");
+    return null;
+  }
+}
+
+export function AuthProvider({
+  children,
+}) {
   const [token, setToken] = useState(
-    localStorage.getItem("token")
+    () => localStorage.getItem("token")
   );
 
   const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("user"))
+    getStoredUser
   );
 
-  function login(data) {
+  function login(authData) {
+    if (
+      !authData ||
+      !authData.token ||
+      !authData.user
+    ) {
+      throw new Error(
+        "Authentication data is incomplete."
+      );
+    }
+
     localStorage.setItem(
       "token",
-      data.token
+      authData.token
     );
 
     localStorage.setItem(
       "user",
-      JSON.stringify(data.user)
+      JSON.stringify(authData.user)
     );
 
-    setToken(data.token);
-    setUser(data.user);
+    setToken(authData.token);
+    setUser(authData.user);
   }
 
   function logout() {
@@ -46,7 +73,8 @@ export function AuthProvider({ children }) {
         user,
         login,
         logout,
-        isAuthenticated: !!token,
+        isAuthenticated:
+          Boolean(token && user),
       }}
     >
       {children}
@@ -55,5 +83,14 @@ export function AuthProvider({ children }) {
 }
 
 export function useAuth() {
-  return useContext(AuthContext);
+  const context =
+    useContext(AuthContext);
+
+  if (!context) {
+    throw new Error(
+      "useAuth must be used inside AuthProvider."
+    );
+  }
+
+  return context;
 }

@@ -44,7 +44,9 @@ export default function LoginPage() {
     const password = form.password;
 
     if (!username || !password) {
-      setError("Please enter your username and password.");
+      setError(
+        "Please enter your username and password."
+      );
       return;
     }
 
@@ -58,27 +60,33 @@ export default function LoginPage() {
       });
 
       /*
-       * Supports either response format:
-       *
-       * response.data = {
-       *   token,
-       *   user
-       * }
-       *
-       * or:
-       *
-       * response.data = {
-       *   success,
-       *   message,
-       *   data: {
-       *     token,
-       *     user
-       *   }
-       * }
-       */
+      * Supports:
+      *
+      * 1. Full Axios response:
+      *    response.data.data = { token, user }
+      *
+      * 2. Unwrapped API response:
+      *    response.data = { token, user }
+      *
+      * 3. Already normalized response:
+      *    response = { token, user }
+      */
+
+      const payload =
+        response?.data ?? response;
+
       const authData =
-        response.data?.data ??
-        response.data;
+        payload?.data ?? payload;
+
+      if (
+        !authData?.token ||
+        !authData?.user
+      ) {
+        throw new Error(
+          payload?.message ||
+            "The server returned an invalid login response."
+        );
+      }
 
       login(authData);
 
