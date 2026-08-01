@@ -5,6 +5,7 @@ export const NEWS_LIST_PROJECTION = {
   summary: true,
   image: true,
   imagePublicId: true,
+  externalUrl: true,
   featured: true,
   publishedAt: true,
 

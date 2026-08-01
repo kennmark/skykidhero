@@ -9,6 +9,7 @@ import {
 
 import { login as loginRequest } from "../../services/auth.service";
 import { useAuth } from "../../context/AuthContext";
+import CmsLogo from "../../components/brand/CmsLogo.jsx";
 
 const INITIAL_FORM = {
   username: "",
@@ -120,19 +121,9 @@ export default function LoginPage() {
       <section className="relative z-10 w-full max-w-md">
         <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
           <header className="mb-8 text-center">
-            <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-indigo-500 shadow-lg shadow-sky-500/20">
-              <span className="text-2xl font-bold text-white">
-                S
-              </span>
+            <div className="mb-8 flex justify-center">
+              <CmsLogo />
             </div>
-
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-400">
-              SkykidHero
-            </p>
-
-            <h1 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              CMS Administration
-            </h1>
 
             <p className="mt-2 text-sm leading-6 text-slate-400">
               Sign in to manage your website content.

@@ -5,6 +5,7 @@ import {
   ArrowUpTrayIcon,
   ChartBarIcon,
 } from "@heroicons/react/24/outline";
+import CmsLogo from "../brand/CmsLogo.jsx";
 
 const links = [
   {
@@ -33,12 +34,8 @@ export default function Sidebar() {
   return (
     <aside className="flex h-auto w-64 flex-col border-r bg-white">
 
-      <div className="border-b p-6">
-
-        <h1 className="text-xl font-bold text-sky-700">
-          SkyKidHero CMS
-        </h1>
-
+      <div className="border-b border-gray-200 px-5 py-5">
+        <CmsLogo compact />
       </div>
 
       <nav className="flex-1 p-3">
