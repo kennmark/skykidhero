@@ -4,6 +4,7 @@ export const NEWS_LIST_PROJECTION = {
   slug: true,
   summary: true,
   image: true,
+  imagePublicId: true,
   featured: true,
   publishedAt: true,
 
@@ -22,6 +23,7 @@ export const NEWS_DETAIL_PROJECTION = {
   summary: true,
   body: true,
   image: true,
+  imagePublicId: true,
   externalUrl: true,
   featured: true,
   published: true,
@@ -45,6 +47,7 @@ export const NEWS_ADMIN_PROJECTION = {
   summary: true,
   body: true,
   image: true,
+  imagePublicId: true,
   externalUrl: true,
   featured: true,
   published: true,

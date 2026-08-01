@@ -23,6 +23,7 @@ const EMPTY_VALUES = {
   summary: "",
   body: "",
   image: "",
+  imagePublicId: "",
   externalUrl: "",
   featured: false,
   published: false,
@@ -154,6 +155,16 @@ export default function NewsForm({
         }
       );
 
+      setValue(
+        "imagePublicId",
+        uploadedImage.publicId ||
+        uploadedImage.public_id || "",
+        {
+          shouldDirty: true,
+          shouldValidate: true,
+        }
+      );
+
       setSelectedFile(null);
     } catch (error) {
       setUploadError(
@@ -175,6 +186,15 @@ export default function NewsForm({
         shouldValidate: true,
       }
     );
+
+    setValue(
+      "imagePublicId",
+      "",
+      {
+        shouldDirty: true,
+        shouldValidate: true,
+      }
+    )
 
     setSelectedFile(null);
     setUploadError("");
@@ -322,6 +342,12 @@ export default function NewsForm({
           type="hidden"
           {...register("image")}
         />
+
+        <input
+          type="hidden"
+          {...register("imagePublicId")}
+        />
+        
        {previewUrl ? (
           <div className="overflow-hidden rounded-lg border border-gray-200">
             <div className="flex items-center justify-between border-b border-gray-200 bg-gray-50 px-4 py-3">

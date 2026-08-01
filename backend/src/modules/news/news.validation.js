@@ -2,7 +2,7 @@ import { z } from "zod";
 import { optionalBoolean, optionalString, optionalUrl, requiredString } from './../../shared/validators/fields.js';
 
 export const createNewsSchema = z.object({
-  title: requiredString("Tite", 5),
+  title: requiredString("Title", 5),
   summary: optionalString(),
   body: requiredString("Body")
   .pipe(
@@ -11,7 +11,8 @@ export const createNewsSchema = z.object({
       "Body must be at least 20 characters."
     )
   ),
-  image: optionalString(),
+  image: z.string().trim().optional().nullable(),
+  imagePublicId: z.string().trim().optional().nullable(),
   externalUrl: optionalUrl("External URL"),
   featured: optionalBoolean(),
   published: optionalBoolean(),

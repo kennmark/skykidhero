@@ -14,6 +14,10 @@ import {
   NEWS_ADMIN_PROJECTION,
 } from "./news.projection.js";
 
+import {
+  deleteNewsImageFromCloudinary,
+} from "../../services/cloudinary.service.js";
+
 export async function createNewsService(data, userId) {
   const slug = genereateSlug(data.title)
 
@@ -32,6 +36,7 @@ export async function createNewsService(data, userId) {
     summary: data.summary,
     body: data.body,
     image: data.image,
+    imagePublicId: data.imagePublicId || null,
     externalUrl: data.externalUrl,
     featured: data.featured ?? false,
     published: data.published ?? false,
@@ -58,11 +63,9 @@ export async function getAllNewsService(
         queryOptions.sorting
       ),
 
-      pagination:
-        queryOptions.pagination,
+      pagination: queryOptions.pagination,
 
-      select:
-        NEWS_LIST_PROJECTION,
+      select: NEWS_LIST_PROJECTION,
     });
 
   return {
@@ -98,7 +101,10 @@ export async function updateNewsService(
   data
 ) {
 
-  const news = await findNewsById(id);
+  const news = await findNewsById(
+    id,
+    NEWS_ADMIN_PROJECTION
+  )
 
   if (!news) {
     throw new AppError(
@@ -110,6 +116,140 @@ export async function updateNewsService(
   const updateData = {
     ...data,
   };
+
+   const hasImage =
+    Object.prototype.hasOwnProperty.call(
+      data,
+      "image"
+    );
+
+  const hasImagePublicId =
+    Object.prototype.hasOwnProperty.call(
+      data,
+      "imagePublicId"
+    );
+
+  /*
+   * Convert empty image values into null
+   * so Prisma clears the database columns.
+   */
+  if (hasImage) {
+    updateData.image =
+      typeof data.image === "string"
+        ? data.image.trim() || null
+        : data.image ?? null;
+  }
+
+  if (hasImagePublicId) {
+    updateData.imagePublicId =
+      typeof data.imagePublicId ===
+      "string"
+        ? data.imagePublicId.trim() ||
+          null
+        : data.imagePublicId ?? null;
+  }
+
+  /*
+   * If the image URL was explicitly
+   * removed, clear its public ID too.
+   */
+  if (
+    hasImage &&
+    updateData.image === null &&
+    !hasImagePublicId
+  ) {
+    updateData.imagePublicId = null;
+  }
+
+  const nextPublicId =
+    Object.prototype.hasOwnProperty.call(
+      updateData,
+      "imagePublicId"
+    )
+      ? updateData.imagePublicId
+      : news.imagePublicId;
+
+  const oldPublicId =
+    news.imagePublicId;
+
+  const shouldDeleteOldImage =
+    Boolean(
+      oldPublicId &&
+        oldPublicId !== nextPublicId
+    );
+
+  /*
+   * Update Neon first. Only delete the
+   * old Cloudinary image after the
+   * database update succeeds.
+   */
+  const updatedNews =
+    await updateNews(
+      id,
+      updateData
+    );
+
+  if (shouldDeleteOldImage) {
+    try {
+      const deletionResult =
+        await deleteNewsImageFromCloudinary(
+          oldPublicId
+        );
+
+      if (
+        deletionResult &&
+        !["ok", "not found"].includes(
+          deletionResult.result
+        )
+      ) {
+        console.warn(
+          "Unexpected Cloudinary deletion result:",
+          deletionResult.result
+        );
+      }
+    } catch (error) {
+      /*
+       * Do not fail the News update,
+       * because Neon was already updated.
+       */
+      console.error(
+        `Unable to delete old Cloudinary image ${oldPublicId}:`,
+        error.message
+      );
+    }
+  }
+
+  if (
+    data.title &&
+    data.title !== news.title
+  ) {
+    const slug = genereateSlug(
+      data.title
+    );
+
+    const duplicate =
+      await findNewsBySlug(slug);
+
+    if (
+      duplicate &&
+      duplicate.id !== news.id
+    ) {
+      throw new AppError(
+        "A news article with this title already exists.",
+        409
+      );
+    }
+
+    updateData.slug = slug;
+  }
+
+  if (
+    data.published &&
+    !news.published
+  ) {
+    updateData.publishedAt =
+      new Date();
+  }
 
   if (
     data.title &&

@@ -22,8 +22,11 @@ function normalizePayload(values) {
     body: values.body.trim(),
 
     image:
-      values.image?.trim() || undefined,
+      values.image?.trim() || null,
 
+    imagePublicId:
+      values.imagePublicId?.trim() || null,
+    
     externalUrl:
       values.externalUrl?.trim() || undefined,
 

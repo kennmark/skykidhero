@@ -21,6 +21,12 @@ export const newsSchema = z.object({
     .trim()
     .optional(),
 
+  imagePublicId: z
+    .string()
+    .trim()
+    .optional()
+    .nullable(),
+  
   externalUrl: z
     .union([
       z.literal(""),

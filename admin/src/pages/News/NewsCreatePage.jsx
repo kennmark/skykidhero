@@ -16,6 +16,9 @@ function normalizePayload(values) {
 
     image:
       values.image?.trim() || undefined,
+      
+    imagePublicId:
+      values.imagePublicId?.trim() || undefined,
 
     externalUrl:
       values.externalUrl?.trim() || undefined,
