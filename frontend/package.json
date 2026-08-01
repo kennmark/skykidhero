@@ -21,6 +21,7 @@
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.1",
     "@tailwindcss/postcss": "^4.2.2",
+    "axios": "^1.19.0",
     "framer-motion": "^12.42.2",
     "iconoir-react": "^7.11.1",
     "lodash": "^4.17.21",
