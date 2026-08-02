@@ -4,6 +4,7 @@ import {
   Typography,
 } from '@material-tailwind/react'
 import { Link } from 'react-router-dom'
+import HeroSkyEvents from './HeroSkyEvents'
 
 import AnnouncementCarousel from './AnnouncementCarousel'
 
@@ -91,34 +92,56 @@ function WingedLightSummary({
         aria-label={`Maximum Winged Lights: ${TOTAL_WL_COUNT}`}
         className="
           pointer-events-auto
-          flex min-w-0 items-center gap-2
+          flex
+          h-full
+          w-full
+          min-w-0
+          items-center
+          gap-2.5
           rounded-2xl
-          border border-white/15
-          bg-[#102a37]/80
-          p-2
-          text-left text-white
+          border border-white/10
+          bg-[#102a37]/90
+          p-2.5
+          text-left
+          text-white
+          shadow-xl shadow-black/20
+          backdrop-blur-md
+          transition duration-300
+
+          hover:border-[#fe7f2d]/40
+          hover:bg-[#183746]/90
+
+          focus:outline-none
+          focus-visible:ring-2
+          focus-visible:ring-[#fe7f2d]
+
+          sm:gap-3
+          sm:p-3
         "
       >
         <span
           className="
-            relative grid h-9 w-9 shrink-0
+            relative
+            grid
+            h-10
+            w-10
+            shrink-0
             place-items-center
             rounded-xl
             bg-[#fe7f2d]
             text-[#233d4d]
+
             sm:h-11
             sm:w-11
           "
         >
-          {/* <span className="absolute inset-0 animate-ping rounded-xl bg-[#fe7f2d]/30" /> */}
-
           <svg
-             xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.75}
             stroke="currentColor"
-            className="relative h-5 w-5 sm:h-6 sm:w-6"
+            className="h-5 w-5 sm:h-6 sm:w-6"
             aria-hidden="true"
           >
             <path
@@ -129,20 +152,16 @@ function WingedLightSummary({
           </svg>
         </span>
 
-        <span className="min-w-0">
-          <span className="block text-[9px] font-bold uppercase tracking-[0.12em] text-white/50 sm:text-[10px]">
-            <span className="sm:hidden">Max Wings</span>
-
-            <span className="hidden sm:inline">
-              Max Winged Lights
-            </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-[9px] font-black uppercase tracking-[0.14em] text-white/45">
+            Max Winged Lights
           </span>
 
           <span className="mt-0.5 block text-xl font-black leading-none text-[#fe7f2d] sm:text-2xl">
             {TOTAL_WL_COUNT}
           </span>
 
-          <span className="mt-1 hidden text-xs text-white/60 sm:block">
+          <span className="mt-1 block text-[10px] text-white/45 sm:text-xs">
             Tap or hover for details
           </span>
         </span>
@@ -418,73 +437,29 @@ function HomeHero() {
           <div
             className="
               mt-4
-              grid grid-cols-2 gap-2
-              border-t border-white/15
+              grid
+              grid-cols-1
+              items-stretch
+              gap-3
+              border-t
+              border-white/15
               pt-3
+
               sm:mt-7
+              sm:grid-cols-2
               sm:gap-4
               sm:pt-4
             "
           >
-            <div
-              className="
-                flex min-w-0 items-center gap-2
-                rounded-2xl
-                border border-white/10
-                bg-[#102a37]/80
-                p-2
-                text-white
-                backdrop-blur-md
-                sm:gap-3
-                sm:p-3
-              "
-            >
-              <span
-                className="
-                  grid h-9 w-9 shrink-0
-                  place-items-center
-                  rounded-xl
-                  bg-white/10
-                  text-[#fe7f2d]
-                  sm:h-11
-                  sm:w-11
-                "
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.75}
-                  stroke="currentColor"
-                  className="h-5 w-5 sm:h-6 sm:w-6"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6.75 3v2.25M17.25 3v2.25M3.75 9.75h16.5M5.25 5.25h13.5a1.5 1.5 0 011.5 1.5v12a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-12a1.5 1.5 0 011.5-1.5z"
-                  />
-                </svg>
-              </span>
-
-              <span className="min-w-0">
-                <span className="block text-[9px] font-bold uppercase tracking-[0.14em] text-white/50 sm:text-[10px]">
-                  Today
-                </span>
-
-                 <span className="mt-0.5 block truncate text-xs font-bold text-white sm:hidden">
-                  {formattedMobileDate}
-                </span>
-
-                <span className="mt-0.5 hidden text-sm font-bold text-white sm:block sm:text-base">
-                  {formattedToday}
-                </span>
-              </span>
+            <div className="min-w-0 h-full">
+              <HeroSkyEvents />
             </div>
 
-            <WingedLightSummary
-              dateFormat={dateFormat}
-            />
+            <div className="min-w-0 h-full">
+              <WingedLightSummary
+                dateFormat={dateFormat}
+              />
+            </div>
           </div>
         </figcaption>
       </figure>
