@@ -17,7 +17,6 @@ import {
 import { Countdown } from './components/Countdown'
 import Testimonials from './components/Testimonials'
 import LatestTSVisit from './components/LatestTSVisit'
-import WingedLightIntro from './components/WingedLightIntro'
 import MapShrineIntro from './components/MapShrineIntro'
 import AnnouncementCarousel from './components/AnnouncementCarousel'
 import useScreenSize from '../hooks/useScreenSize'
@@ -41,7 +40,7 @@ import TestFile from './components/TestFile'
 import VeteranFeatured from './components/VeteranFeatured'
 import ShardPrediction from '../components/ShardPrediction'
 import HomeHero from './components/HomeHero'
-// import { LazyLoadImage } from 'react-lazy-load-image-component'
+import WingedLightSection from './components/WingedLightSection'
 
 const HomeSpace = () => {
   const screenSize = useScreenSize()
@@ -107,20 +106,7 @@ const HomeSpace = () => {
       </div> */}
 
       {/* Winged Lights */}
-      <div className="md:w-full bg-[#233d4d] text-[#fe7f2d] my-5 md:my-20 pt-10 rounded-3xl border-b-2 border-[#fe7f2d]">
-        <WingedLightIntro />
-        <Link to={`/winged-lights`}>
-          <Button
-            size="lg"
-            color="gray"
-            className="theme-button my-20"
-            ripple={true}
-            fullWidth={false}
-          >
-            View Locations
-          </Button>
-        </Link>
-      </div>
+      <WingedLightSection />
       {/* Winged Lights */}
 
       {/* Map Shrines */}
