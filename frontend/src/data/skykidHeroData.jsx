@@ -11,6 +11,7 @@ import christian from '../assets/images/veterans/IGN-Christian.png'
 import yuuki from '../assets/images/veterans/IGN-Yuuki.png'
 import rog from '../assets/images/veterans/IGN-ROG.png'
 import rhi from '../assets/images/veterans/IGN-Rhi.png'
+import lime from '../assets/images/veterans/IGN-Lime.png'
 
 import { SEASON1, SEASON2, SEASON3, SEASON4, SEASON5, SEASON6, SEASON7, SEASON8, SEASON9, SEASON10, SEASON11, SEASON12, SEASON13, SEASON14, SEASON15, SEASON16, SEASON17, SEASON18, SEASON19, SEASON20, SEASON21, SEASON22, SEASON23, SEASON24, SEASON25, SEASON26, SEASON27, SEASON28, SEASON29, SEASON30 } from '../exports/seasonIcons'
 import { omit } from 'lodash'
@@ -142,6 +143,37 @@ export const SkykidHero = [
   },
   {
     id: 5,
+    ign: `Lime`,
+    title: `Veteran/Pro`,
+    level: 1,
+    avatar_img: lime,
+    no_of_moth_helped: 0,
+    current_no_of_winged_lights: 252,
+    season_started: "Season of Enchantment",
+    seasonIconUrl: SEASON5,
+    season_bg: 'linear-gradient(#292f36, #4ecdc4)',
+    socials: {
+      facebook: {fburl:``},
+      instagram: {igurl:`https://www.instagram.com/limeinsky`},
+      tiktok: {tturl:`https://www.tiktok.com/@limeiceisnice`},
+    },
+    mastery: {
+      seasoned_player: {value:10, description: "Has played Sky: Children of the Light for a long time and has a deep understanding of the game mechanics.", color: "blue"},
+      spirit_hobbyist: {value:10, description: "Knows every location of regular and seasonal spirits.", color: "red"},
+      wl_collector: {value:10, description: "Winged Light is above level 150.", color: "green"},
+      genuine_honest_player: {value:10, description: "Maintains integrity and honesty in all interactions.", color: "amber"},
+      rule_abider: {value:10, description: "Follows the rules and guidelines of the game.", color: "indigo"},
+      eden_master: {value:5, description: "Master of the Eye Eden.", color: "purple"},
+      sky_navigator: {value:10, description: "Skilled at navigating the skies.", color: "pink"},
+      windpath_diver: {value:5, description: "Expert in exploring wind paths.", color: "teal"},
+      winglight_hunter: {value:10, description: "Knows all location of Winged Lights.", color: "cyan"},
+      map_shrine_locator: {value:10, description: "Skilled at finding shrines on the map.", color: "deep-purple"},
+      onerous_reliver: {value:10, description: "Able to relive difficult spirits.", color: "lime"},
+    },
+    masteryPoints: 90
+  },
+  {
+    id: 6,
     ign: `Chi`,
     title: `Veteran/Pro`,
     level: 1,
@@ -172,7 +204,7 @@ export const SkykidHero = [
     masteryPoints: 80
   },
   {
-    id: 6,
+    id: 7,
     ign: `Hiro`,
     title: `Veteran/Pro`,
     level: 1,
@@ -202,8 +234,8 @@ export const SkykidHero = [
     },
     masteryPoints: 90
   },
-   {
-    id: 7,
+  {
+    id: 8,
     ign: `Christian`,
     title: `Veteran/Pro`,
     level: 1,
@@ -234,7 +266,7 @@ export const SkykidHero = [
     masteryPoints: 95
   },
   {
-    id: 8,
+    id: 9,
     ign: `Yuuki`,
     title: `Veteran/Pro`,
     level: 1,
@@ -265,7 +297,7 @@ export const SkykidHero = [
     masteryPoints: 90
   },
   {
-    id: 9,
+    id: 10,
     ign: `Klaus`,
     title: `Veteran/Pro`,
     level: 1,
@@ -296,7 +328,7 @@ export const SkykidHero = [
     masteryPoints: 100
   },
   {
-    id: 10,
+    id: 11,
     ign: `Ella`,
     title: `Veteran/Pro`,
     level: 1,
@@ -326,8 +358,8 @@ export const SkykidHero = [
     },
     masteryPoints: 90
   },
-    {
-    id: 11,
+  {
+    id: 12,
     ign: `Alopix`,
     title: `Veteran/Pro`,
     level: 1,
@@ -358,7 +390,7 @@ export const SkykidHero = [
     masteryPoints: 95
   },
   {
-    id: 12,
+    id: 13,
     ign: `Rhi`,
     title: `Veteran/Pro`,
     level: 1,
@@ -389,7 +421,7 @@ export const SkykidHero = [
     masteryPoints: 100
   },
   {
-    id: 13,
+    id: 14,
     ign: `An`,
     title: `Veteran/Pro`,
     level: 1,
