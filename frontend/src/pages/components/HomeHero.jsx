@@ -90,37 +90,35 @@ function WingedLightSummary({
         type="button"
         aria-label={`Maximum Winged Lights: ${TOTAL_WL_COUNT}`}
         className="
-          group flex w-full items-center gap-3
+          pointer-events-auto
+          flex min-w-0 items-center gap-2
           rounded-2xl
           border border-white/15
-          bg-[#102a37]/75
-          p-3 text-left text-white
-          shadow-lg backdrop-blur-md
-          transition duration-300
-          hover:border-[#fe7f2d]/50
-          hover:bg-[#233d4d]/90
-          focus:outline-none
-          focus-visible:ring-2
-          focus-visible:ring-[#fe7f2d]
-          sm:w-auto sm:min-w-56
+          bg-[#102a37]/80
+          p-2
+          text-left text-white
         "
       >
         <span
           className="
-            relative grid h-11 w-11 shrink-0
-            place-items-center rounded-xl
-            bg-[#fe7f2d] text-[#233d4d]
+            relative grid h-9 w-9 shrink-0
+            place-items-center
+            rounded-xl
+            bg-[#fe7f2d]
+            text-[#233d4d]
+            sm:h-11
+            sm:w-11
           "
         >
-          <span className="absolute inset-0 animate-ping rounded-xl bg-[#fe7f2d]/30" />
+          {/* <span className="absolute inset-0 animate-ping rounded-xl bg-[#fe7f2d]/30" /> */}
 
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.75}
             stroke="currentColor"
-            className="relative h-6 w-6"
+            className="relative h-5 w-5 sm:h-6 sm:w-6"
             aria-hidden="true"
           >
             <path
@@ -132,15 +130,19 @@ function WingedLightSummary({
         </span>
 
         <span className="min-w-0">
-          <span className="block text-[10px] font-bold uppercase tracking-[0.16em] text-white/55">
-            Max Winged Lights
+          <span className="block text-[9px] font-bold uppercase tracking-[0.12em] text-white/50 sm:text-[10px]">
+            <span className="sm:hidden">Max Wings</span>
+
+            <span className="hidden sm:inline">
+              Max Winged Lights
+            </span>
           </span>
 
-          <span className="mt-0.5 block text-2xl font-black leading-none text-[#fe7f2d]">
+          <span className="mt-0.5 block text-xl font-black leading-none text-[#fe7f2d] sm:text-2xl">
             {TOTAL_WL_COUNT}
           </span>
 
-          <span className="mt-1 block text-xs text-white/60">
+          <span className="mt-1 hidden text-xs text-white/60 sm:block">
             Tap or hover for details
           </span>
         </span>
@@ -186,38 +188,53 @@ function HomeHero() {
     >
       <figure
         className="
-          relative isolate
-          min-h-[calc(100svh-5.5rem)]
-          w-full overflow-hidden
-          rounded-2xl
-          border border-[#fe7f2d]/20
-          bg-[#102a37]
-          shadow-[0_20px_60px_rgba(0,0,0,0.4)]
-          sm:h-[calc(100svh-8.5rem)]
-          sm:min-h-[640px]
-          sm:rounded-[2rem]
+           relative isolate
+            w-full overflow-hidden
+            rounded-2xl
+            border border-[#fe7f2d]/20
+            bg-[#071820]
+            shadow-[0_20px_60px_rgba(0,0,0,0.4)]
+
+            sm:h-[calc(100svh-8.5rem)]
+            sm:min-h-[600px]
+            sm:max-h-[880px]
+            sm:rounded-[2rem]
         "
       >
         <div
           className="
-            absolute inset-0
+            relative z-0
+            h-[clamp(11rem,52vw,15rem)]
+            w-full overflow-hidden
 
-            [&_.swiper]:h-full
-            [&_.swiper]:w-full
-            [&_.swiper-slide]:h-full
+            sm:absolute
+            sm:inset-0
+            sm:h-full
 
-            [&_img]:h-full
-            [&_img]:w-full
+            [&_.swiper]:!h-full
+            [&_.swiper]:!w-full
+            [&_.swiper-wrapper]:!h-full
+            [&_.swiper-slide]:!h-full
+
+            [&_.carousel-image]:!m-0
+            [&_.carousel-image]:!h-full
+            [&_.carousel-image]:!w-full
+
+            [&_img]:!h-full
+            [&_img]:!w-full
             [&_img]:object-cover
             [&_img]:object-center
 
-            [&_.swiper-button-prev]:hidden
-            [&_.swiper-button-next]:hidden
-            [&_.swiper-pagination]:hidden
+            max-sm:[&_.swiper-button-prev]:!hidden
+            max-sm:[&_.swiper-button-next]:!hidden
+            max-sm:[&_.swiper-pagination]:!hidden
 
-            sm:[&_.swiper-button-prev]:flex
-            sm:[&_.swiper-button-next]:flex
-            sm:[&_.swiper-pagination]:block
+            sm:[&_.swiper-button-prev]:!z-30
+            sm:[&_.swiper-button-next]:!z-30
+            sm:[&_.swiper-button-prev]:!pointer-events-auto
+            sm:[&_.swiper-button-next]:!pointer-events-auto
+            sm:[&_.swiper-pagination]:!z-30
+            sm:[&_.swiper-pagination]:!pointer-events-auto
           "
         >
           <AnnouncementCarousel />
@@ -226,14 +243,14 @@ function HomeHero() {
         <div
           aria-hidden="true"
           className="
-            pointer-events-none
-            absolute inset-0
-            bg-gradient-to-t
-            from-[#01080c]
-            via-[#071820]/80
-            to-[#102a37]/20
-            sm:via-[#102a37]/55
-            sm:to-transparent
+          pointer-events-none
+          absolute inset-x-0 top-0 z-[1]
+          h-[clamp(11rem,52vw,15rem)]
+          bg-gradient-to-t
+          from-[#071820]
+          via-transparent
+          to-black/10
+          sm:hidden
           "
         />
 
@@ -241,24 +258,32 @@ function HomeHero() {
           aria-hidden="true"
           className="
             pointer-events-none
-            absolute inset-0
-            bg-gradient-to-r
-            from-[#01080c]/40
-            via-transparent
+            absolute inset-0 z-[1]
+            hidden
+            bg-gradient-to-t
+            from-[#01080c]/90
+            via-[#071820]/35
             to-transparent
-            sm:from-[#01080c]/75
+            sm:block
           "
         />
 
         <figcaption
           className="
+            pointer-events-none
             relative z-10
-            flex min-h-[calc(100svh-5.5rem)]
-            flex-col justify-end
-            p-3
-            sm:h-full
-            sm:min-h-0
+            flex flex-col
+            bg-gradient-to-b
+            from-[#071820]
+            to-[#01080c]
+            px-3 pb-3 pt-4
+
+            sm:absolute
+            sm:inset-0
+            sm:justify-end
+            sm:bg-none
             sm:p-7
+
             lg:p-10
             xl:p-12
           "
@@ -298,6 +323,7 @@ function HomeHero() {
                 tracking-tight
                 text-white
                 drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)]
+
                 sm:text-3xl
                 md:text-4xl
                 lg:text-5xl
@@ -313,8 +339,8 @@ function HomeHero() {
                 text-xs
                 font-normal
                 leading-5
-                text-white/80
-                drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]
+                text-white/75
+
                 sm:mt-4
                 sm:text-sm
                 sm:leading-6
@@ -335,24 +361,14 @@ function HomeHero() {
               <a
                 href="#maps"
                 className="
+                  pointer-events-auto
                   inline-flex min-h-11
-                  items-center justify-center gap-1.5
+                  items-center justify-center
                   rounded-full
                   bg-[#fe7f2d]
-                  px-3 py-2.5
+                  px-4 py-2.5
                   text-xs font-black
                   text-[#233d4d]
-                  shadow-lg shadow-black/20
-                  transition duration-300
-                  hover:bg-[#ff934d]
-                  focus:outline-none
-                  focus-visible:ring-4
-                  focus-visible:ring-[#fe7f2d]/30
-                  sm:min-h-12
-                  sm:gap-2
-                  sm:px-6
-                  sm:py-3
-                  sm:text-sm
                 "
               >
                 Explore Maps
@@ -377,25 +393,15 @@ function HomeHero() {
               <Link
                 to="/winged-lights"
                 className="
+                  pointer-events-auto
                   inline-flex min-h-11
                   items-center justify-center
                   rounded-full
                   border border-white/20
                   bg-[#102a37]/75
-                  px-3 py-2.5
+                  px-4 py-2.5
                   text-xs font-black
                   text-white
-                  backdrop-blur-md
-                  transition duration-300
-                  hover:border-[#fe7f2d]/50
-                  hover:bg-[#233d4d]/90
-                  focus:outline-none
-                  focus-visible:ring-4
-                  focus-visible:ring-white/20
-                  sm:min-h-12
-                  sm:px-6
-                  sm:py-3
-                  sm:text-sm
                 "
               >
                 <span className="sm:hidden">
