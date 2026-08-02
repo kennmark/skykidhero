@@ -110,19 +110,7 @@ const HomeSpace = () => {
       {/* Winged Lights */}
 
       {/* Map Shrines */}
-      <div className="my-5 md:my-20 w-96 md:w-full">
-        <MapShrineIntro />
-        <Link to={`/map-shrines`}>
-          <Button
-            size="lg"
-            className="theme-button my-20"
-            ripple={true}
-            fullWidth={false}
-          >
-            View Locations
-          </Button>
-        </Link>
-      </div>
+      <MapShrineIntro />
       {/* Map Shrines */}
 
       {/* Dye Locations */}
