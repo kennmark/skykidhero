@@ -103,3 +103,11 @@ export const travelingSpiritHintImage = tsHintImage //Hint Image Traveling Spiri
 export const travelingSpiritDate = 'July 30 - August 3, 2026' //Ongoing Traveling Spirit
 export const travellingSpiritSeasonId = 3
 export const travellingSpiritId = 1
+export const travelingSpiritStartDate =
+  '2026-06-30'
+
+export const travelingSpiritEndDate =
+  '2026-08-03'
+
+// export const travelingSpiritDate =
+//   'August 6–10, 2026'
