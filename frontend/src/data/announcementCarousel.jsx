@@ -26,6 +26,6 @@ export const announcementCarousel = [
     id: 4,
     img_url: carousel7,
     alt: 'Upcoming Season 30 - Season of Dear Van Gogh',
-    url: 'https://skykidguide.onrender.com/seasons/2026/season-30/dear-van-gogh',
+    url: 'https://skykidhero.onrender.com/seasons/2026/season-30/dear-van-gogh',
   },
 ]

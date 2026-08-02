@@ -12,13 +12,13 @@ export const newsData = [
     newsBody: `Added Difficulty Bar on Spirit's info. Hover/Tap yung Spirit
             Reliving Difficulty Bar para malaman kung paano marelive ang isang
             spirit.`,
-    newsLink: 'https://skykidguide.onrender.com/',
+    newsLink: 'https://skykidhero.onrender.com/',
   },
   {
     id: 3,
     newsTitle: `SkyPH Infographics Team - Coming Soon!`,
     newsBody: `Ang SkyPH ay magbubuo ng grupo para sa Infographics Team! Abangan!`,
-    newsLink: 'https://skykidguide.onrender.com/',
+    newsLink: 'https://skykidhero.onrender.com/',
   },
   {
     id: 4,
