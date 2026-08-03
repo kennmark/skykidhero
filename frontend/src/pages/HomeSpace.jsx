@@ -118,9 +118,7 @@ const HomeSpace = () => {
       {/* Dye Locations */}
 
       {/* Veterans */}
-      <Typography variant="h1" className="text-[#fe7f2d]">
         <VeteranFeatured />
-      </Typography>
       {/* Veterans */}
 
       <div className="my-5 md:my-20 w-96 md:w-full text-[#fe7f2d]">
