@@ -514,7 +514,7 @@ const MapShrineIntro = () => {
                     focus-visible:ring-[#fe7f2d]/30
                   "
                 >
-                  View Map Shrine locations
+                  Map Shrine locations
 
                   <ArrowRightIcon
                     aria-hidden="true"

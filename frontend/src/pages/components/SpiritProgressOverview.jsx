@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   CheckBadgeIcon,
+  GiftIcon,
   MapPinIcon,
   SparklesIcon,
   TrashIcon,
@@ -93,7 +94,10 @@ function SpiritProgressItem({
       : spirit.kind ===
           'seasonal'
         ? 'Seasonal Spirit'
-        : 'Saved Spirit',
+        : spirit.kind ===
+            'collectible'
+          ? 'Aviary Collectible'
+          : 'Saved Spirit',
     spirit.season,
     spirit.realm,
   ]
@@ -199,9 +203,11 @@ export default function SpiritProgressOverview() {
     totalChecked,
     regularChecked,
     seasonalChecked,
+    collectibleChecked,
     totalSpirits,
     totalRegularSpirits,
     totalSeasonalSpirits,
+    totalCollectibleSpirits,
     completionPercentage,
     resetSpiritProgress,
   } = useSpiritProgress()
@@ -213,7 +219,7 @@ export default function SpiritProgressOverview() {
 
     const confirmed =
       window.confirm(
-        'Reset all relived Spirit progress? This will uncheck every Regular and Seasonal Spirit saved on this browser. Other website settings will not be removed.'
+        'Reset all Spirit progress? This will uncheck every Regular Spirit, Seasonal Spirit, and Aviary Village collectible saved on this browser. Other website settings will not be removed.'
       )
 
     if (!confirmed) {
@@ -320,8 +326,8 @@ export default function SpiritProgressOverview() {
               relived is collected here,
               including checks made from
               realm pages, season pages,
-              and the Traveling Spirit
-              section.
+              the Traveling Spirit section,
+              and Aviary Village collectibles.
             </p>
 
             <div
@@ -334,7 +340,7 @@ export default function SpiritProgressOverview() {
             >
               <ProgressStat
                 Icon={CheckBadgeIcon}
-                label="Spirits relived"
+                label="Spirit entries"
                 value={totalChecked}
                 total={totalSpirits}
               />
@@ -344,7 +350,21 @@ export default function SpiritProgressOverview() {
                 label="Overall completion"
                 value={`${completionPercentage}%`}
               />
+            </div>
 
+            <div
+              className="
+                mt-2.5
+                grid
+                gap-2.5
+
+                sm:grid-cols-3
+
+                lg:grid-cols-1
+
+                xl:grid-cols-3
+              "
+            >
               <ProgressStat
                 Icon={MapPinIcon}
                 label="Regular spirits"
@@ -360,6 +380,17 @@ export default function SpiritProgressOverview() {
                 value={seasonalChecked}
                 total={
                   totalSeasonalSpirits
+                }
+              />
+
+              <ProgressStat
+                Icon={GiftIcon}
+                label="Aviary collectibles"
+                value={
+                  collectibleChecked
+                }
+                total={
+                  totalCollectibleSpirits
                 }
               />
             </div>
@@ -623,9 +654,9 @@ export default function SpiritProgressOverview() {
                       text-white/35
                     "
                   >
-                    Check a spirit from any
-                    map or season page and
-                    it will appear here
+                    Check a spirit or an
+                    Aviary Village collectible
+                    and it will appear here
                     automatically.
                   </p>
                 </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import {
   ArrowRightIcon,
+  CheckBadgeIcon,
   GlobeAltIcon,
   MapPinIcon,
   ShieldCheckIcon,
@@ -10,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 import { WINGED_LIGHT } from '../../exports/defaultImages'
+import useWingedLightProgress from '../../hooks/useWingedLightProgress'
 
 import {
   WL_COUNT_DATE_UPDATED,
@@ -84,7 +86,154 @@ const PLATFORM_TOTALS = [
   },
 ]
 
+
+function TrackedProgressCard({
+  Icon,
+  label,
+  value,
+  maximum,
+  percentage,
+  detail,
+  accent = false,
+}) {
+  return (
+    <article
+      className={`
+        min-w-0
+        rounded-xl
+        border
+        p-2.5
+
+        ${
+          accent
+            ? 'border-[#fe7f2d]/30 bg-[#fe7f2d]/10'
+            : 'border-white/10 bg-white/[0.035]'
+        }
+      `}
+    >
+      <div
+        className="
+          flex
+          items-center
+          justify-between
+          gap-2
+        "
+      >
+        <span
+          className="
+            grid
+            h-7
+            w-7
+            shrink-0
+            place-items-center
+            rounded-lg
+            bg-[#fe7f2d]/12
+            text-[#fe7f2d]
+          "
+        >
+          <Icon
+            aria-hidden="true"
+            className="h-4 w-4"
+          />
+        </span>
+
+        <strong
+          className={`
+            whitespace-nowrap
+            text-sm
+            font-black
+            tabular-nums
+
+            ${
+              accent
+                ? 'text-[#ff9b57]'
+                : 'text-white'
+            }
+          `}
+        >
+          {value}
+          <span className="text-white/25">
+            /{maximum}
+          </span>
+        </strong>
+      </div>
+
+      <span
+        className="
+          mt-2
+          block
+          truncate
+          text-[9px]
+          font-black
+          uppercase
+          tracking-[0.08em]
+          text-white/40
+        "
+        title={label}
+      >
+        {label}
+      </span>
+
+      {detail && (
+        <span
+          className="
+            mt-1
+            block
+            truncate
+            text-[9px]
+            text-white/25
+          "
+          title={detail}
+        >
+          {detail}
+        </span>
+      )}
+
+      <div
+        className="
+          mt-2
+          h-1.5
+          overflow-hidden
+          rounded-full
+          bg-white/10
+        "
+      >
+        <div
+          className="
+            h-full
+            rounded-full
+            bg-[#fe7f2d]
+            transition-[width]
+            duration-500
+          "
+          style={{
+            width: `${percentage}%`,
+          }}
+        />
+      </div>
+    </article>
+  )
+}
+
 function WingedLightSection() {
+  const {
+    mapCollected,
+    mapMaximum,
+    specialCollected,
+    specialMaximum,
+    orbitWingedLights,
+    orbitMaximum,
+    totalCollectedWingedLights,
+    totalCollectibleWingedLights,
+    totalWingedLightPercentage,
+    regularWingBuffs,
+    regularWingBuffMaximum,
+    regularWingBuffPercentage,
+    seasonalWingBuffs,
+    seasonalWingBuffMaximum,
+    seasonalWingBuffPercentage,
+  } = useWingedLightProgress()
+
   return (
     <section
       id="winged-lights"
@@ -339,63 +488,123 @@ function WingedLightSection() {
               </div>
             </div>
 
+
             <div
-              className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link
-                to="/winged-lights"
+              className="
+                mt-4
+                rounded-2xl
+                border
+                border-[#fe7f2d]/20
+                bg-[#071820]/40
+                p-3
+              "
+            >
+              <div
                 className="
-                  group
-                  inline-flex
-                  min-h-11
-                  items-center
-                  justify-center
+                  flex
+                  flex-col
                   gap-2
-                  rounded-full
-                  bg-[#fe7f2d]
-                  px-5
-                  py-2.5
-                  text-sm
-                  font-black
-                  text-[#233d4d]
-                  shadow-lg
-                  shadow-black/20
-                  transition
-                  duration-300
 
-                  hover:-translate-y-0.5
-                  hover:bg-[#ff934d]
-
-                  focus:outline-none
-                  focus-visible:ring-4
-                  focus-visible:ring-[#fe7f2d]/30
+                  sm:flex-row
+                  sm:items-center
+                  sm:justify-between
                 "
               >
-                View Winged Light locations
+                <div>
+                  <p
+                    className="
+                      flex
+                      items-center
+                      gap-1.5
+                      text-[9px]
+                      font-black
+                      uppercase
+                      tracking-[0.13em]
+                      text-[#ff9b57]
+                    "
+                  >
+                    <CheckBadgeIcon
+                      aria-hidden="true"
+                      className="h-3.5 w-3.5"
+                    />
 
-                <ArrowRightIcon
-                  aria-hidden="true"
+                    Your tracked progress
+                  </p>
+
+                  <p
+                    className="
+                      mt-1
+                      text-[10px]
+                      text-white/35
+                    "
+                  >
+                    Saved locally on this browser.
+                  </p>
+                </div>
+
+                <span
                   className="
-                    h-4
-                    w-4
-                    transition-transform
-                    duration-300
-                    group-hover:translate-x-1
+                    w-fit
+                    rounded-full
+                    border
+                    border-white/10
+                    bg-white/[0.035]
+                    px-2.5
+                    py-1
+                    text-[9px]
+                    font-bold
+                    text-white/40
                   "
-                />
-              </Link>
+                >
+                  Updates from guide checkboxes
+                </span>
+              </div>
 
-              <span
+              <div
                 className="
-                  text-center
-                  text-xs
-                  text-white/40
+                  mt-3
+                  grid
+                  gap-2
 
-                  sm:text-left
+                  sm:grid-cols-3
                 "
               >
-                Counts updated on {WL_COUNT_DATE_UPDATED}
-              </span>
+                <TrackedProgressCard
+                  Icon={MapPinIcon}
+                  label="Collected Winged Lights"
+                  value={
+                    totalCollectedWingedLights
+                  }
+                  maximum={
+                    totalCollectibleWingedLights
+                  }
+                  percentage={
+                    totalWingedLightPercentage
+                  }
+                  detail={
+                    `${mapCollected}/${mapMaximum} maps · ${specialCollected}/${specialMaximum} Shattering Void · ${orbitWingedLights}/${orbitMaximum} Orbit`
+                  }
+                />
+
+                <TrackedProgressCard
+                  Icon={ShieldCheckIcon}
+                  label="Regular Spirit Buffs"
+                  value={regularWingBuffs}
+                  maximum={regularWingBuffMaximum}
+                  percentage={regularWingBuffPercentage}
+                />
+
+                <TrackedProgressCard
+                  Icon={SparklesIcon}
+                  label="Seasonal / Traveling Buffs"
+                  value={seasonalWingBuffs}
+                  maximum={seasonalWingBuffMaximum}
+                  percentage={seasonalWingBuffPercentage}
+                  accent
+                />
+              </div>
             </div>
+
           </div>
 
           {/* Image and platform totals */}
@@ -498,6 +707,80 @@ function WingedLightSection() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div
+              className="
+                mt-4
+                flex
+                flex-col
+                gap-3
+
+                sm:flex-row
+                sm:items-center
+                sm:justify-end
+              "
+            >
+              <Link
+                to="/winged-lights"
+                className="
+                  group
+                  order-1
+                  inline-flex
+                  min-h-11
+                  items-center
+                  justify-center
+                  gap-2
+                  rounded-full
+                  bg-[#fe7f2d]
+                  px-5
+                  py-2.5
+                  text-sm
+                  font-black
+                  text-[#233d4d]
+                  shadow-lg
+                  shadow-black/20
+                  transition
+                  duration-300
+
+                  hover:-translate-y-0.5
+                  hover:bg-[#ff934d]
+
+                  focus:outline-none
+                  focus-visible:ring-4
+                  focus-visible:ring-[#fe7f2d]/30
+
+                  sm:order-2
+                  sm:w-fit
+                "
+              >
+                 Winged Light locations
+
+                <ArrowRightIcon
+                  aria-hidden="true"
+                  className="
+                    h-4
+                    w-4
+                    transition-transform
+                    duration-300
+                    group-hover:translate-x-1
+                  "
+                />
+              </Link>
+
+              <span
+                className="
+                  order-2
+                  text-center
+                  text-xs
+                  text-white/40
+
+                  sm:order-1
+                  sm:text-right
+                "
+              >
+                Counts updated on {WL_COUNT_DATE_UPDATED}
+              </span>
             </div>
           </div>
         </div>

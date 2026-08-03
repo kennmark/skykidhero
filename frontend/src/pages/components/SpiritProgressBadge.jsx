@@ -5,6 +5,7 @@ import {
 } from '@heroicons/react/24/solid'
 
 import useSpiritProgress from '../../hooks/useSpiritProgress'
+import useWingedLightProgress from '../../hooks/useWingedLightProgress'
 
 function ProgressChip({
   Icon,
@@ -12,11 +13,12 @@ function ProgressChip({
   label,
   checked,
   total,
-  seasonal = false,
+  action = 'relived',
+  accent = false,
 }) {
   return (
     <span
-      title={`${label}: ${checked} of ${total} relived`}
+      title={`${label}: ${checked} of ${total} ${action}`}
       className={`
         inline-flex
         min-w-0
@@ -28,7 +30,7 @@ function ProgressChip({
         py-1
 
         ${
-          seasonal
+          accent
             ? 'border-[#fe7f2d]/25 bg-[#fe7f2d]/10'
             : 'border-white/10 bg-white/[0.055]'
         }
@@ -45,7 +47,7 @@ function ProgressChip({
           sm:w-3.5
 
           ${
-            seasonal
+            accent
               ? 'text-[#ff9b57]'
               : 'text-[#fe7f2d]'
           }
@@ -105,18 +107,27 @@ function ProgressChip({
 
 export default function SpiritProgressBadge() {
   const {
+    totalChecked,
+    totalSpirits,
     regularChecked,
     seasonalChecked,
+    collectibleChecked,
     totalRegularSpirits,
     totalSeasonalSpirits,
+    totalCollectibleSpirits,
   } = useSpiritProgress()
+
+  const {
+    totalAcquiredWingedLights,
+    totalMaximumWingedLights,
+  } = useWingedLightProgress()
 
   return (
     <div
       role="status"
       aria-live="polite"
       aria-label={
-        `Spirit progress: ${regularChecked} of ${totalRegularSpirits} regular spirits and ${seasonalChecked} of ${totalSeasonalSpirits} seasonal spirits relived`
+        `Progress: ${totalChecked} of ${totalSpirits} Spirit entries checked (${regularChecked} of ${totalRegularSpirits} Regular Spirits, ${seasonalChecked} of ${totalSeasonalSpirits} Seasonal Spirits, and ${collectibleChecked} of ${totalCollectibleSpirits} Aviary Village collectibles); ${totalAcquiredWingedLights} of ${totalMaximumWingedLights} total Winged Lights acquired`
       }
       className="
         flex
@@ -154,24 +165,29 @@ export default function SpiritProgressBadge() {
           className="h-3 w-3"
         />
 
-        Relived
+        Progress
       </span>
 
       <ProgressChip
         Icon={CheckBadgeIcon}
-        shortLabel="R"
-        label="Regular"
-        checked={regularChecked}
-        total={totalRegularSpirits}
+        shortLabel="SP"
+        label="Spirits"
+        checked={totalChecked}
+        total={totalSpirits}
       />
 
       <ProgressChip
         Icon={SparklesIcon}
-        shortLabel="S"
-        label="Seasonal"
-        checked={seasonalChecked}
-        total={totalSeasonalSpirits}
-        seasonal
+        shortLabel="WL"
+        label="Winged Lights"
+        checked={
+          totalAcquiredWingedLights
+        }
+        total={
+          totalMaximumWingedLights
+        }
+        action="acquired"
+        accent
       />
     </div>
   )

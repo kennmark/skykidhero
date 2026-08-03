@@ -65,15 +65,16 @@ export const SPIRIT_CATALOG = [
     "key": "artistic-memory",
     "id": "aviary21",
     "name": "Artistic Memory",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Dear Van Gogh",
     "seasonId": 30,
     "year": 2026,
     "route": "/seasons/s30-dear-van-gogh",
     "aliases": [
       "aviary21"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "ascetic-monk",
@@ -269,57 +270,61 @@ export const SPIRIT_CATALOG = [
     "key": "carnival-athletic-dancer",
     "id": "aviary18",
     "name": "Carnival Athletic Dancer",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Carnival",
     "seasonId": 29,
     "year": 2026,
     "route": "/seasons/s29-carnival",
     "aliases": [
       "aviary18"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "carnival-juggler",
     "id": "aviary19",
     "name": "Carnival Juggler",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Carnival",
     "seasonId": 29,
     "year": 2026,
     "route": "/seasons/s29-carnival",
     "aliases": [
       "aviary19"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "carnival-puzzle-director",
     "id": "aviary20",
     "name": "Carnival Puzzle Director",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Carnival",
     "seasonId": 29,
     "year": 2026,
     "route": "/seasons/s29-carnival",
     "aliases": [
       "aviary20"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "carnival-stunt-actor",
     "id": "aviary20",
     "name": "Carnival Stunt Actor",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Carnival",
     "seasonId": 29,
     "year": 2026,
     "route": "/seasons/s29-carnival",
     "aliases": [
       "aviary20"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "ceasing-commodore",
@@ -601,29 +606,31 @@ export const SPIRIT_CATALOG = [
     "key": "dutch-memory",
     "id": "aviary19",
     "name": "Dutch Memory",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Dear Van Gogh",
     "seasonId": 30,
     "year": 2026,
     "route": "/seasons/s30-dear-van-gogh",
     "aliases": [
       "aviary19"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "echo-of-an-abandoned-refuge",
     "id": "revival-3",
     "name": "Echo of an Abandoned Refuge",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Revival",
     "seasonId": 19,
     "year": 2023,
     "route": "/seasons/s19-revival",
     "aliases": [
       "revival-3"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "exhausted-dock-worker",
@@ -924,15 +931,16 @@ export const SPIRIT_CATALOG = [
     "key": "joyful-memory",
     "id": "aviary22",
     "name": "Joyful Memory",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Dear Van Gogh",
     "seasonId": 30,
     "year": 2026,
     "route": "/seasons/s30-dear-van-gogh",
     "aliases": [
       "aviary22"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "laidback-pioneer",
@@ -1197,15 +1205,16 @@ export const SPIRIT_CATALOG = [
     "key": "memory-of-a-lost-village",
     "id": "revival-2",
     "name": "Memory of a Lost Village",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Revival",
     "seasonId": 19,
     "year": 2023,
     "route": "/seasons/s19-revival",
     "aliases": [
       "revival-2"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "memory-whisperer",
@@ -1330,57 +1339,61 @@ export const SPIRIT_CATALOG = [
     "key": "nesting-atrium",
     "id": "nesting-1",
     "name": "Nesting Atrium",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Nesting",
     "seasonId": 21,
     "year": 2024,
     "route": "/seasons/s21-nesting",
     "aliases": [
       "nesting-1"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "nesting-loft",
     "id": "nesting-2",
     "name": "Nesting Loft",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Nesting",
     "seasonId": 21,
     "year": 2024,
     "route": "/seasons/s21-nesting",
     "aliases": [
       "nesting-2"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "nesting-nook",
     "id": "nesting-4",
     "name": "Nesting Nook",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Nesting",
     "seasonId": 21,
     "year": 2024,
     "route": "/seasons/s21-nesting",
     "aliases": [
       "nesting-4"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "nesting-solarium",
     "id": "nesting-3",
     "name": "Nesting Solarium",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Nesting",
     "seasonId": 21,
     "year": 2024,
     "route": "/seasons/s21-nesting",
     "aliases": [
       "nesting-3"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "nightbird-whisperer",
@@ -1695,43 +1708,46 @@ export const SPIRIT_CATALOG = [
     "key": "radiance-greeting-shaman",
     "id": "radiance-2",
     "name": "Radiance Greeting Shaman",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Radiance",
     "seasonId": 24,
     "year": 2025,
     "route": "/seasons/s24-radiance",
     "aliases": [
       "radiance-2"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "radiance-leaping-dancer",
     "id": "radiance-3",
     "name": "Radiance Leaping Dancer",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Radiance",
     "seasonId": 24,
     "year": 2025,
     "route": "/seasons/s24-radiance",
     "aliases": [
       "radiance-3"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "radiance-provoking-performer",
     "id": "radiance-1",
     "name": "Radiance Provoking Performer",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Radiance",
     "seasonId": 24,
     "year": 2025,
     "route": "/seasons/s24-radiance",
     "aliases": [
       "radiance-1"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "rallying-thrillseeker",
@@ -1781,15 +1797,16 @@ export const SPIRIT_CATALOG = [
     "key": "remnant-of-a-forgotten-haven",
     "id": "revival-4",
     "name": "Remnant of a Forgotten Haven",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Revival",
     "seasonId": 19,
     "year": 2023,
     "route": "/seasons/s19-revival",
     "aliases": [
       "revival-4"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "resourceful-recluse",
@@ -1853,15 +1870,16 @@ export const SPIRIT_CATALOG = [
     "key": "rustic-memory",
     "id": "aviary20",
     "name": "Rustic Memory",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Dear Van Gogh",
     "seasonId": 30,
     "year": 2026,
     "route": "/seasons/s30-dear-van-gogh",
     "aliases": [
       "aviary20"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "saluting-captain",
@@ -2249,71 +2267,76 @@ export const SPIRIT_CATALOG = [
     "key": "the-cellist-s-beginning",
     "id": "duets-2",
     "name": "The Cellist's Beginning",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Duets",
     "seasonId": 22,
     "year": 2024,
     "route": "/seasons/s22-duet",
     "aliases": [
       "duets-2"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "the-cellist-s-flourishing",
     "id": "duets-5",
     "name": "The Cellist's Flourishing",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Duets",
     "seasonId": 22,
     "year": 2024,
     "route": "/seasons/s22-duet",
     "aliases": [
       "duets-5"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "the-musicians-legacy",
     "id": "duets-3",
     "name": "The Musicians' Legacy",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Duets",
     "seasonId": 22,
     "year": 2024,
     "route": "/seasons/s22-duet",
     "aliases": [
       "duets-3"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "the-pianist-s-beginning",
     "id": "duets-1",
     "name": "The Pianist's Beginning",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Duets",
     "seasonId": 22,
     "year": 2024,
     "route": "/seasons/s22-duet",
     "aliases": [
       "duets-1"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "the-pianist-s-flourishing",
     "id": "duets-4",
     "name": "The Pianist's Flourishing",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Duets",
     "seasonId": 22,
     "year": 2024,
     "route": "/seasons/s22-duet",
     "aliases": [
       "duets-4"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "thoughtful-director",
@@ -2453,15 +2476,16 @@ export const SPIRIT_CATALOG = [
     "key": "vestige-of-a-deserted-oasis",
     "id": "revival-1",
     "name": "Vestige of a Deserted Oasis",
-    "kind": "seasonal",
-    "realm": null,
+    "kind": "collectible",
+    "realm": "Aviary Village",
     "season": "Revival",
     "seasonId": 19,
     "year": 2023,
     "route": "/seasons/s19-revival",
     "aliases": [
       "revival-1"
-    ]
+    ],
+    "collection": "Aviary Village Collectibles"
   },
   {
     "key": "warrior-of-love",
@@ -2572,4 +2596,10 @@ export const TOTAL_REGULAR_SPIRIT_COUNT =
 export const TOTAL_SEASONAL_SPIRIT_COUNT =
   SPIRIT_CATALOG.filter(
     (spirit) => spirit.kind === 'seasonal'
+  ).length
+
+export const TOTAL_COLLECTIBLE_SPIRIT_COUNT =
+  SPIRIT_CATALOG.filter(
+    (spirit) =>
+      spirit.kind === 'collectible'
   ).length

@@ -86,6 +86,7 @@ const PageWasteland = () => {
                     {body.winged_lights?.map((wingedLight, index) => {
                       return (
                         <CardContainer
+                          wingedLight={wingedLight}
                           label={wingedLight.wl_label}
                           location={wingedLight.wl_location}
                           url={wingedLight.wl_url}

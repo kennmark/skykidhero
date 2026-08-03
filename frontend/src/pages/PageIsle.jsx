@@ -86,6 +86,7 @@ const PageIsle = () => {
                     {body.winged_lights?.map((wingedLight) => {
                       return (
                         <CardContainer
+                          wingedLight={wingedLight}
                           label={wingedLight.wl_label}
                           location={wingedLight.wl_location}
                           url={wingedLight.wl_url}

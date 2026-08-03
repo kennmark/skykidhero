@@ -1541,7 +1541,12 @@ export const prairie = [
             ascended_candles: 2,
           },
         ],
-        number_of_visits: [],
+        number_of_visits: [
+          {
+            visit_date: 'Oct 23, 2025',
+            visitNo: 151,
+          },
+        ],
         icon_route: SEASON18,
         spirit_guide_video_url: youtube_embed + 'KsXwZnr5dQU',
         spirit_direction: [

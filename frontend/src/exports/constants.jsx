@@ -49,7 +49,7 @@ export const EDEN_NUM_WL = 10
 export const EDEN_NUM_MAP_SHRINES = 4
 
 export const AVIARY_NUM_REG_SPIRIT = 0
-export const AVIARY_NUM_SEASON_SPIRIT = 20
+export const AVIARY_NUM_SEASON_SPIRIT = 24
 export const AVIARY_NUM_WL = 2
 export const AVIARY_NUM_MAP_SHRINES = 2
 
@@ -68,7 +68,7 @@ export const WL_COUNT =
   EDEN_NUM_WL +
   AVIARY_NUM_WL
 
-export const WB_REGULAR_SPIRITS = 49
+export const WB_REGULAR_SPIRITS = 12 + ISLE_NUM_REG_SPIRIT + PRAIRIE_NUM_REG_SPIRIT + FOREST_NUM_REG_SPIRIT + VALLEY_NUM_REG_SPIRIT + WASTELAND_NUM_REG_SPIRIT + VAULT_NUM_REG_SPIRIT
 //!!!UPDATE THIS Wing Buff Count every new TS that hasnt arrived yet!!!
 export const WB_TRAVELING_SPIRITS = 92 // updated June 19, 2026 Group TS From Season of Revival
 

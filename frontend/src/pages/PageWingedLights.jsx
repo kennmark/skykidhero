@@ -33,6 +33,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 import { SideBarContainer } from './components/SidebarContainer'
+import WingedLightCheckbox from './components/WingedLightCheckbox'
 import { WINGED_LIGHT } from '../exports/defaultImages'
 
 import { isleOfDawn } from '../data/isleOfDawnData'
@@ -477,7 +478,12 @@ function WingedLightCard({
     })
 
   return (
-    <article className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#102a37]/80 shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:border-[#fe7f2d]/35 hover:shadow-xl hover:shadow-black/20">
+    <article className="group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#102a37]/80 shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:border-[#fe7f2d]/35 hover:shadow-xl hover:shadow-black/20">
+      <WingedLightCheckbox
+        wingedLight={wingedLight}
+        realmName={realmName}
+        className="absolute right-3 top-3 z-30"
+      />
       <button
         type="button"
         onClick={openGuide}

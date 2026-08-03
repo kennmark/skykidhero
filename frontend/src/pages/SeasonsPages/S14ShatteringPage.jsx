@@ -142,10 +142,23 @@ const S14ShatteringPage = () => {
                   winged_lights?.map((wingedLight) => {
                     return (
                       <CardContainer
-                        label={wingedLight.wl_label}
-                        location={wingedLight.wl_location}
-                        url={wingedLight.wl_url}
-                        key={wingedLight.wl_label}
+                        label={
+                          wingedLight.wl_label
+                        }
+                        location={
+                          wingedLight.wl_location
+                        }
+                        url={
+                          wingedLight.wl_url
+                        }
+                        wingedLight={
+                          wingedLight
+                        }
+                        realmName="Shattering Void"
+                        key={
+                          wingedLight.id ||
+                          wingedLight.wl_label
+                        }
                       />
                     )
                   })}

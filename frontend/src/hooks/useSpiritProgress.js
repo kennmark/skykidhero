@@ -12,6 +12,7 @@ import {
 } from '../utils/spiritProgress'
 
 import {
+  TOTAL_COLLECTIBLE_SPIRIT_COUNT,
   TOTAL_REGULAR_SPIRIT_COUNT,
   TOTAL_SEASONAL_SPIRIT_COUNT,
   TOTAL_SPIRIT_COUNT,
@@ -91,10 +92,18 @@ export default function useSpiritProgress() {
           'seasonal'
       ).length
 
+    const collectibleChecked =
+      checkedSpirits.filter(
+        (spirit) =>
+          spirit.kind ===
+          'collectible'
+      ).length
+
     const unknownChecked =
       checkedSpirits.length -
       regularChecked -
-      seasonalChecked
+      seasonalChecked -
+      collectibleChecked
 
     const completionPercentage =
       TOTAL_SPIRIT_COUNT > 0
@@ -116,6 +125,7 @@ export default function useSpiritProgress() {
         checkedSpirits.length,
       regularChecked,
       seasonalChecked,
+      collectibleChecked,
       unknownChecked,
       totalSpirits:
         TOTAL_SPIRIT_COUNT,
@@ -123,6 +133,8 @@ export default function useSpiritProgress() {
         TOTAL_REGULAR_SPIRIT_COUNT,
       totalSeasonalSpirits:
         TOTAL_SEASONAL_SPIRIT_COUNT,
+      totalCollectibleSpirits:
+        TOTAL_COLLECTIBLE_SPIRIT_COUNT,
       completionPercentage,
       resetSpiritProgress,
       setSpiritChecked,

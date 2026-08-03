@@ -52,6 +52,39 @@ const SpiritCardContainer = ({
   const iconUrl = icon_route ?? ''
   const seasonLabel = season ?? ''
   const videoUrl = spirit_guide_video_url ?? ''
+
+  /**
+   * Season-page data copies the Spirit details but many entries
+   * omit `spirit_type` and `season_id`.
+   *
+   * Every Season page already passes `season={name}`, so use that
+   * context as a safe Seasonal Spirit fallback.
+   */
+  const explicitSpiritType =
+    String(spirit_type ?? '')
+      .trim()
+      .toLowerCase()
+
+  const normalizedSeasonId =
+    String(season_id ?? '')
+      .trim()
+      .toLowerCase()
+
+  const resolvedSpiritType =
+    explicitSpiritType === 'regular' ||
+    explicitSpiritType === 'seasonal'
+      ? explicitSpiritType
+      : normalizedSeasonId ===
+          'season-0'
+        ? 'regular'
+        : seasonLabel ||
+            (
+              normalizedSeasonId &&
+              normalizedSeasonId !==
+                'season-0'
+            )
+          ? 'seasonal'
+          : null
   const constellationIconUrl = constellation_icon_route ?? ''
   const spiritDirection = spirit_direction ?? ''
   const spiritCategory = spirit_category ?? ''
@@ -73,7 +106,7 @@ const SpiritCardContainer = ({
           image:
             spirit_img_url,
           type:
-            spirit_type,
+            resolvedSpiritType,
           seasonId:
             season_id,
           season:
@@ -103,7 +136,13 @@ const SpiritCardContainer = ({
     }`
 
   return (
-    <Card className="theme-card-bg lg:w-72 w-80 justify-between mb-5">
+    <Card
+      data-spirit-type={
+        resolvedSpiritType ||
+        'unknown'
+      }
+      className="theme-card-bg lg:w-72 w-80 justify-between mb-5"
+    >
       <CardHeader
         shadow={false}
         color="transparent"
@@ -233,6 +272,11 @@ const SpiritCardContainer = ({
           handleOpen={handleSpiritImageOpen}
           open={openSpiritImageModal}
           label={spirit_name}
+          spiritId={spirit_id}
+          spiritType={
+            resolvedSpiritType
+          }
+          seasonId={season_id}
           spiritImg={spirit_image}
           spiritCollectibles={spirit_collectibles}
           seasonLabel={seasonLabel}

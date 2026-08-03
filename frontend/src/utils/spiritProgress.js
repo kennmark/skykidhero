@@ -109,16 +109,20 @@ function normalizeRecord(
       catalogSpirit?.aliases ||
       [],
     kind:
-      record?.kind ||
       catalogSpirit?.kind ||
+      record?.kind ||
       'unknown',
     realm:
-      record?.realm ||
       catalogSpirit?.realm ||
+      record?.realm ||
+      null,
+    collection:
+      catalogSpirit?.collection ||
+      record?.collection ||
       null,
     season:
-      record?.season ||
       catalogSpirit?.season ||
+      record?.season ||
       null,
     seasonId:
       record?.seasonId ??
@@ -237,6 +241,9 @@ function createLegacyRecord(
         'unknown',
       realm:
         catalogSpirit?.realm ||
+        null,
+      collection:
+        catalogSpirit?.collection ||
         null,
       season:
         catalogSpirit?.season ||
@@ -491,19 +498,24 @@ export function setSpiritChecked(
           existing?.aliases ||
           [],
         kind:
+          catalogSpirit?.kind ||
           spirit?.kind ||
           spirit?.type ||
-          catalogSpirit?.kind ||
           existing?.kind ||
           'unknown',
         realm:
-          spirit?.realm ||
           catalogSpirit?.realm ||
+          spirit?.realm ||
           existing?.realm ||
           null,
+        collection:
+          catalogSpirit?.collection ||
+          spirit?.collection ||
+          existing?.collection ||
+          null,
         season:
-          spirit?.season ||
           catalogSpirit?.season ||
+          spirit?.season ||
           existing?.season ||
           null,
         seasonId:
