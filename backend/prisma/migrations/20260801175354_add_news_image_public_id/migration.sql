@@ -1,2 +1,4 @@
-ALTER TABLE "News"
-ADD COLUMN "imagePublicId" TEXT;
+-- Intentional no-op migration.
+-- "News"."imagePublicId" was already created by an earlier migration.
+
+SELECT 1;

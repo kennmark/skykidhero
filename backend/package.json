@@ -9,6 +9,7 @@
     "prisma:generate": "prisma generate",
     "prisma:deploy": "prisma migrate deploy",
     "seed:admin": "node prisma/seed-admin.js",
+    "prisma:seed:maps": "node prisma/seed-maps.js",
     "postinstall": "prisma generate"
   },
   "version": "1.0.0",
