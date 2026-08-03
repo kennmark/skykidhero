@@ -5,17 +5,21 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const Layout = () => {
-  const location = useLocation();
+  const location = useLocation()
 
-    useEffect(() => {
-  requestAnimationFrame(() => {
-    window.scrollTo(window.scrollX, window.scrollY);
-  });
-}, [location.pathname]);
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      window.scrollTo(
+        window.scrollX,
+        window.scrollY
+      )
+    })
+  }, [location.pathname])
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <ParallaxBG />
       <Header />
+
       <div className="container mx-auto flex-1">
         <Outlet />
       </div>

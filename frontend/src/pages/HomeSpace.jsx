@@ -14,11 +14,9 @@ import {
   STEAM_MAX_WL,
 } from '../exports/constants'
 
-import { Countdown } from './components/Countdown'
 import Testimonials from './components/Testimonials'
 import LatestTSVisit from './components/LatestTSVisit'
 import MapShrineIntro from './components/MapShrineIntro'
-import AnnouncementCarousel from './components/AnnouncementCarousel'
 import useScreenSize from '../hooks/useScreenSize'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import {
@@ -41,6 +39,7 @@ import VeteranFeatured from './components/VeteranFeatured'
 import HomeHero from './components/HomeHero'
 import WingedLightSection from './components/WingedLightSection'
 import ShardEvent from './components/ShardEvent'
+import SpiritProgressOverview from './components/SpiritProgressOverview'
 
 const HomeSpace = () => {
   const screenSize = useScreenSize()
@@ -51,7 +50,11 @@ const HomeSpace = () => {
     <div className="">
       <AnnouncementModal />
       <HomeHero />
-      {/* <Countdown /> */}
+
+      {/* Spirit progress */}
+      <SpiritProgressOverview />
+      {/* Spirit progress */}
+
       <div className="flex flex-wrap justify-center my-5 md:my-20">
         <SkyClock />
       </div>

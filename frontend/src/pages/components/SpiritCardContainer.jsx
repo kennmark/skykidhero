@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {
   Card,
   CardHeader,
@@ -16,9 +16,10 @@ import SpiritDifficultyLevelProgressBar from './SpiritDifficultyLevelProgressBar
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { TextGuideModal } from './TextGuideModal'
 import SpiritImageDetails from './SpiritImageDetails'
-import { useLocalStorage } from '../../hooks/useLocalStorage'
+import { setSpiritChecked } from '../../utils/spiritProgress'
 
 const SpiritCardContainer = ({
+  spirit_id,
   spirit_img_url,
   spirit_name,
   spirit_image,
@@ -26,6 +27,8 @@ const SpiritCardContainer = ({
   spirit_guide_video_url,
   spirit_category,
   spirit_relive_type,
+  spirit_type,
+  season_id,
   season,
   icon_route,
   constellation_icon_route,
@@ -54,6 +57,51 @@ const SpiritCardContainer = ({
   const spiritCategory = spirit_category ?? ''
   const spiritReliveType = spirit_relive_type ?? ''
 
+  const isSpiritChecked =
+    Boolean(
+      checkedSpirits?.[
+        spirit_name
+      ]
+    )
+
+  const handleTrackedCheckboxChange =
+    (event) => {
+      setSpiritChecked(
+        {
+          spiritId: spirit_id,
+          name: spirit_name,
+          image:
+            spirit_img_url,
+          type:
+            spirit_type,
+          seasonId:
+            season_id,
+          season:
+            seasonLabel,
+          category:
+            spiritCategory,
+          reliveType:
+            spiritReliveType,
+        },
+        event.target.checked
+      )
+
+      handleCheckboxChange?.(
+        event
+      )
+    }
+
+  const checkboxId =
+    `spirit-check-${
+      spirit_id ||
+      String(spirit_name)
+        .toLowerCase()
+        .replace(
+          /[^a-z0-9]+/g,
+          '-'
+        )
+    }`
+
   return (
     <Card className="theme-card-bg lg:w-72 w-80 justify-between mb-5">
       <CardHeader
@@ -81,23 +129,23 @@ const SpiritCardContainer = ({
         />
         <span
           className={`${
-            checkedSpirits[spirit_name]
+            isSpiritChecked
               ? 'checkbox-collected'
               : 'checkbox-uncollected'
           }`}
         >
           <Tooltip
             content={
-              checkedSpirits[spirit_name] ? 'Spirit Relived' : 'Not Yet Relived'
+              isSpiritChecked ? 'Spirit Relived' : 'Not Yet Relived'
             }
           >
             <Checkbox
               className="color: #233d4d"
-              id={`ripple-on ${spirit_name}`}
+              id={checkboxId}
               type="checkbox"
               name={spirit_name}
-              checked={checkedSpirits[spirit_name] || false}
-              onChange={handleCheckboxChange}
+              checked={isSpiritChecked}
+              onChange={handleTrackedCheckboxChange}
               ripple={true}
             />
           </Tooltip>
