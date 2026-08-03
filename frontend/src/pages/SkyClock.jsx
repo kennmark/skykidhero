@@ -1,8 +1,11 @@
+import { useMemo } from 'react'
+
 import {
   ClockIcon,
   FireIcon,
   GlobeAltIcon,
   MusicalNoteIcon,
+  MapPinIcon,
   SparklesIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline'
@@ -11,6 +14,9 @@ import useSkyEvents from '../hooks/useSkyEvents'
 import {
   formatCountdown,
 } from '../utils/skyEvents'
+import {
+  getShardPrediction,
+} from '../utils/shardEvents'
 
 const EVENT_ICONS = {
   fire: FireIcon,
@@ -213,6 +219,291 @@ function ScheduleRow({
   )
 }
 
+
+function ShardScheduleRow({
+  prediction,
+}) {
+  const {
+    hasShard,
+    isActive,
+    statusId,
+    typeLabel,
+    isRed,
+    realm,
+    location,
+    reward,
+    activeWindow,
+    nextWindow,
+    nextShardDay,
+    nextShardDateTimeLabel,
+    countdownSeconds,
+  } = prediction
+
+  const ShardIcon =
+    isRed
+      ? FireIcon
+      : SparklesIcon
+
+  const displayedWindow =
+    activeWindow || nextWindow
+
+  const badgeLabel =
+    isActive
+      ? 'Live'
+      : statusId === 'upcoming'
+        ? 'Incoming'
+        : statusId === 'between'
+          ? 'Next'
+          : statusId === 'ended'
+            ? 'Ended'
+            : 'No shard'
+
+  const countdownCaption =
+    isActive
+      ? 'remaining'
+      : statusId === 'no-shard' ||
+          statusId === 'ended'
+        ? 'next shard'
+        : 'starts in'
+
+  const primaryDetail =
+    hasShard
+      ? `${typeLabel} · ${realm.shortName}`
+      : nextShardDay
+        ? `Next · ${nextShardDay.typeLabel}`
+        : 'No eruption today'
+
+  const scheduleDetail =
+    hasShard && displayedWindow
+      ? `${
+          isActive ? 'Now' : 'Next'
+        } · ${
+          displayedWindow.localStartLabel
+        } – ${
+          displayedWindow.localEndLabel
+        }`
+      : hasShard
+        ? 'All windows ended'
+        : nextShardDay
+          ? nextShardDateTimeLabel
+          : 'No upcoming shard found'
+
+  const locationDetail =
+    hasShard
+      ? `${location} · ${reward.shortLabel}`
+      : nextShardDay
+        ? `${nextShardDay.realm.shortName} · ${nextShardDay.location}`
+        : 'Check again later'
+
+  return (
+    <li
+      className={`
+        relative
+        flex
+        min-w-0
+        items-center
+        gap-3
+        overflow-hidden
+        rounded-2xl
+        border
+        px-3
+        py-3
+        transition
+
+        ${
+          isActive
+            ? 'border-[#fe7f2d]/55 bg-[#fe7f2d]/12'
+            : hasShard
+              ? 'border-[#fe7f2d]/25 bg-[#fe7f2d]/5'
+              : 'border-white/10 bg-white/[0.035]'
+        }
+      `}
+    >
+      <span
+        aria-hidden="true"
+        className={`
+          absolute
+          inset-y-0
+          left-0
+          w-1
+
+          ${
+            isRed
+              ? 'bg-red-400/80'
+              : 'bg-[#fe7f2d]/70'
+          }
+        `}
+      />
+
+      <span
+        className={`
+          grid
+          h-10
+          w-10
+          shrink-0
+          place-items-center
+          rounded-xl
+
+          ${
+            isActive
+              ? 'bg-[#fe7f2d] text-[#233d4d]'
+              : 'bg-white/10 text-[#fe7f2d]'
+          }
+        `}
+      >
+        <ShardIcon
+          aria-hidden="true"
+          className="h-5 w-5"
+        />
+      </span>
+
+      <span className="min-w-0 flex-1">
+        <span
+          className="
+            flex
+            min-w-0
+            items-center
+            gap-2
+          "
+        >
+          <span
+            className="
+              truncate
+              text-sm
+              font-black
+              text-white
+            "
+          >
+            Shard Eruption
+          </span>
+
+          <span
+            className={`
+              inline-flex
+              shrink-0
+              items-center
+              gap-1
+              rounded-full
+              px-2
+              py-0.5
+              text-[9px]
+              font-black
+              uppercase
+              tracking-wider
+
+              ${
+                isActive
+                  ? 'bg-[#fe7f2d] text-[#233d4d]'
+                  : 'border border-[#fe7f2d]/20 bg-[#fe7f2d]/10 text-[#ff9b57]'
+              }
+            `}
+          >
+            {isActive && (
+              <span
+                className="
+                  h-1.5
+                  w-1.5
+                  animate-pulse
+                  rounded-full
+                  bg-[#233d4d]
+                "
+              />
+            )}
+
+            {badgeLabel}
+          </span>
+        </span>
+
+        <span
+          className="
+            mt-0.5
+            block
+            truncate
+            text-xs
+            font-bold
+            text-white/60
+          "
+        >
+          {primaryDetail}
+        </span>
+
+        <span
+          className="
+            mt-0.5
+            block
+            truncate
+            text-[10px]
+            text-white/35
+          "
+        >
+          {scheduleDetail}
+        </span>
+
+        <span
+          className="
+            mt-0.5
+            flex
+            min-w-0
+            items-center
+            gap-1
+            text-[10px]
+            text-white/30
+          "
+        >
+          <MapPinIcon
+            aria-hidden="true"
+            className="
+              h-3
+              w-3
+              shrink-0
+              text-[#fe7f2d]
+            "
+          />
+
+          <span className="truncate">
+            {locationDetail}
+          </span>
+        </span>
+      </span>
+
+      {countdownSeconds > 0 && (
+        <span className="shrink-0 text-right">
+          <strong
+            className="
+              block
+              text-xs
+              font-black
+              text-[#ff9b57]
+
+              sm:text-sm
+            "
+          >
+            {formatCountdown(
+              countdownSeconds,
+              {
+                includeHours: true,
+              }
+            )}
+          </strong>
+
+          <span
+            className="
+              block
+              text-[8px]
+              font-black
+              uppercase
+              tracking-wider
+              text-white/30
+            "
+          >
+            {countdownCaption}
+          </span>
+        </span>
+      )}
+    </li>
+  )
+}
+
 export default function SkyClock() {
   const {
     now,
@@ -229,6 +520,18 @@ export default function SkyClock() {
     pacificLabel,
     isDaylightSavingTime,
   } = useSkyEvents()
+
+  const shardPrediction = useMemo(
+    () =>
+      getShardPrediction(
+        now,
+        visitorTimeZone
+      ),
+    [
+      now,
+      visitorTimeZone,
+    ]
+  )
 
   return (
     <section
@@ -490,7 +793,7 @@ export default function SkyClock() {
                   text-[#ff9b57]
                 "
               >
-                Event schedule
+                Events and shard schedule
               </p>
 
               <p
@@ -539,6 +842,10 @@ export default function SkyClock() {
                 />
               )
             )}
+
+            <ShardScheduleRow
+              prediction={shardPrediction}
+            />
           </ul>
 
           <div

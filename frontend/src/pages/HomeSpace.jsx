@@ -38,9 +38,9 @@ import DyeLocations from './components/DyeLocations'
 import TravellingSpirits from './components/TravellingSpirits'
 import TestFile from './components/TestFile'
 import VeteranFeatured from './components/VeteranFeatured'
-import ShardPrediction from '../components/ShardPrediction'
 import HomeHero from './components/HomeHero'
 import WingedLightSection from './components/WingedLightSection'
+import ShardEvent from './components/ShardEvent'
 
 const HomeSpace = () => {
   const screenSize = useScreenSize()
@@ -101,9 +101,9 @@ const HomeSpace = () => {
       </div>
       {/* Traveling Spirits */}
       
-      {/* <div className="my-6 w-96 md:w-full flex justify-center">
-        <ShardPrediction />
-      </div> */}
+      {/* Shard Event */}
+      <ShardEvent />
+      {/* Shard Event */}
 
       {/* Winged Lights */}
       <WingedLightSection />
