@@ -15,9 +15,11 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import { allSeasons } from '../../data/seasons'
 import * as skyConstants from '../../exports/constants'
+import useSkyEvents from '../../hooks/useSkyEvents'
 import {
-  PHILIPPINES_TIME_ZONE,
-  getSkyTimeInfo,
+  SKY_TIME_ZONE,
+  formatDateTimeInZone,
+  zonedDateTimeToDate,
 } from '../../utils/skyEvents'
 
 import SpiritCardContainer from './SpiritCardContainer'
@@ -52,35 +54,6 @@ const MONTH_INDEX = {
   november: 10,
   december: 11,
 }
-
-const MANILA_TIME_FORMATTER =
-  new Intl.DateTimeFormat('en-PH', {
-    timeZone: PHILIPPINES_TIME_ZONE,
-    hour: 'numeric',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: true,
-  })
-
-const MANILA_DATE_FORMATTER =
-  new Intl.DateTimeFormat('en-PH', {
-    timeZone: PHILIPPINES_TIME_ZONE,
-    weekday: 'short',
-    month: 'short',
-    day: '2-digit',
-    year: 'numeric',
-  })
-
-const VISIT_DATE_FORMATTER =
-  new Intl.DateTimeFormat('en-PH', {
-    timeZone: PHILIPPINES_TIME_ZONE,
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-    hour: 'numeric',
-    minute: '2-digit',
-    hour12: true,
-  })
 
 function parseIsoDate(value) {
   if (typeof value !== 'string') {
@@ -209,39 +182,26 @@ function parseDisplayDateRange(value) {
 }
 
 /**
- * Converts a Philippine calendar date into the exact Sky reset
- * timestamp for that date. Philippine time is UTC+8, while the
- * reset hour comes from America/Los_Angeles through skyEvents.js.
+ * Converts the configured Sky calendar date into one absolute
+ * reset timestamp. Sky reset is always midnight in
+ * America/Los_Angeles; the visitor only sees a local conversion
+ * of that same instant.
  */
 function createResetTimestamp(dateParts) {
   if (!dateParts) {
     return null
   }
 
-  const daylightProbe = new Date(
-    Date.UTC(
-      dateParts.year,
-      dateParts.month,
-      dateParts.day,
-      4,
-      0,
-      0
-    )
-  )
-
-  const {
-    resetHourPht,
-  } = getSkyTimeInfo(daylightProbe)
-
-  return new Date(
-    Date.UTC(
-      dateParts.year,
-      dateParts.month,
-      dateParts.day,
-      resetHourPht - 8,
-      0,
-      0
-    )
+  return zonedDateTimeToDate(
+    {
+      year: dateParts.year,
+      month: dateParts.month + 1,
+      day: dateParts.day,
+      hour: 0,
+      minute: 0,
+      second: 0,
+    },
+    SKY_TIME_ZONE
   )
 }
 
@@ -429,7 +389,12 @@ function VisitCountdown({
   status,
   startAt,
   endAt,
-  resetLabel,
+  localTimeLabel,
+  localDateLabel,
+  visitorTimeZone,
+  visitorTimeZoneLabel,
+  nextResetTimeLabel,
+  nextResetDateLabel,
   pacificLabel,
 }) {
   const target =
@@ -485,7 +450,7 @@ function VisitCountdown({
               sm:text-xs
             "
           >
-            Philippine countdown
+            Your local countdown
           </p>
 
           <h3
@@ -571,6 +536,7 @@ function VisitCountdown({
         "
       >
         <div
+          title={visitorTimeZone}
           className="
             rounded-xl
             border
@@ -592,7 +558,7 @@ function VisitCountdown({
               sm:text-[9px]
             "
           >
-            Current PHT
+            Current local time
           </span>
 
           <time
@@ -607,15 +573,13 @@ function VisitCountdown({
               sm:text-sm
             "
           >
-            {MANILA_TIME_FORMATTER.format(
-              now
-            )}
+            {localTimeLabel}
           </time>
 
           <span className="mt-0.5 block text-[9px] text-white/35 sm:text-[10px]">
-            {MANILA_DATE_FORMATTER.format(
-              now
-            )}
+            {localDateLabel}
+            {' · '}
+            {visitorTimeZoneLabel}
           </span>
         </div>
 
@@ -641,7 +605,7 @@ function VisitCountdown({
               sm:text-[9px]
             "
           >
-            Sky reset
+            Next Sky reset
           </span>
 
           <span
@@ -655,12 +619,13 @@ function VisitCountdown({
               sm:text-sm
             "
           >
-            {resetLabel} PHT
+            {nextResetTimeLabel}
           </span>
 
           <span className="mt-0.5 block text-[9px] text-white/35 sm:text-[10px]">
-            Automatically follows{' '}
-            {pacificLabel}
+            {nextResetDateLabel}
+            {' · '}
+            midnight {pacificLabel}
           </span>
         </div>
       </div>
@@ -740,9 +705,16 @@ function VisitInfographic({
 }
 
 const LatestTSVisit = () => {
-  const [now, setNow] = useState(
-    () => new Date()
-  )
+  const {
+    now,
+    localTimeLabel,
+    localDateLabel,
+    visitorTimeZone,
+    visitorTimeZoneLabel,
+    nextResetTimeLabel,
+    nextResetDateLabel,
+    pacificLabel,
+  } = useSkyEvents()
 
   const [checkedSpirits, setCheckedSpirits] =
     useState(() => {
@@ -765,17 +737,6 @@ const LatestTSVisit = () => {
         return {}
       }
     })
-
-  useEffect(() => {
-    const timer =
-      window.setInterval(() => {
-        setNow(new Date())
-      }, 1000)
-
-    return () => {
-      window.clearInterval(timer)
-    }
-  }, [])
 
   useEffect(() => {
     try {
@@ -821,11 +782,6 @@ const LatestTSVisit = () => {
     ...schedule,
   })
 
-  const {
-    resetLabel,
-    pacificLabel,
-  } = getSkyTimeInfo(now)
-
   const statusStyles =
     getStatusStyles(status)
 
@@ -854,10 +810,18 @@ const LatestTSVisit = () => {
   const scheduleRangeLabel =
     schedule.startAt &&
     schedule.endAt
-      ? `${VISIT_DATE_FORMATTER.format(
-          schedule.startAt
-        )} – ${VISIT_DATE_FORMATTER.format(
-          schedule.endAt
+      ? `${formatDateTimeInZone(
+          schedule.startAt,
+          visitorTimeZone,
+          {
+            includeWeekday: true,
+          }
+        )} – ${formatDateTimeInZone(
+          schedule.endAt,
+          visitorTimeZone,
+          {
+            includeWeekday: true,
+          }
         )}`
       : travelingSpiritDate ||
         'Schedule not configured'
@@ -1054,7 +1018,7 @@ const LatestTSVisit = () => {
                     sm:text-[10px]
                   "
                 >
-                  Exact Philippine schedule
+                  Exact schedule in your timezone
                 </p>
 
                 <p
@@ -1070,6 +1034,23 @@ const LatestTSVisit = () => {
                 >
                   {scheduleRangeLabel}
                 </p>
+
+                <p
+                  className="
+                    mt-1
+                    text-[10px]
+                    leading-5
+                    text-white/35
+
+                    sm:text-xs
+                  "
+                  title={visitorTimeZone}
+                >
+                  Converted automatically to{' '}
+                  {visitorTimeZoneLabel}. Sky’s
+                  source schedule remains
+                  midnight Pacific time.
+                </p>
               </div>
             </div>
           </div>
@@ -1080,7 +1061,12 @@ const LatestTSVisit = () => {
           status={status}
           startAt={schedule.startAt}
           endAt={schedule.endAt}
-          resetLabel={resetLabel}
+          localTimeLabel={localTimeLabel}
+          localDateLabel={localDateLabel}
+          visitorTimeZone={visitorTimeZone}
+          visitorTimeZoneLabel={visitorTimeZoneLabel}
+          nextResetTimeLabel={nextResetTimeLabel}
+          nextResetDateLabel={nextResetDateLabel}
           pacificLabel={pacificLabel}
         />
       </div>
@@ -1395,10 +1381,11 @@ const LatestTSVisit = () => {
                   sm:text-base
                 "
               >
-                The countdown automatically
-                targets the Philippine Sky
-                reset and adjusts when Pacific
-                daylight-saving time changes.
+                The countdown uses Sky’s
+                Pacific reset as the source of
+                truth, then displays the exact
+                start and end time in your
+                browser timezone.
               </p>
             </div>
 
