@@ -114,9 +114,7 @@ const HomeSpace = () => {
       {/* Map Shrines */}
 
       {/* Dye Locations */}
-      <div className="my-5 md:my-20 py-10 md:w-full bg-[#233d4d] text-[#fe7f2d] rounded-3xl border-b-2 border-[#fe7f2d]">
         <DyeLocations />
-      </div>
       {/* Dye Locations */}
 
       {/* Veterans */}
