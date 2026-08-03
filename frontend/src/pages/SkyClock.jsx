@@ -18,6 +18,8 @@ import {
   getShardPrediction,
 } from '../utils/shardEvents'
 
+import SkyEventNotificationCenter from './components/SkyEventNotificationCenter'
+
 const EVENT_ICONS = {
   fire: FireIcon,
   grandma: UserGroupIcon,
@@ -758,6 +760,16 @@ export default function SkyClock() {
               )}
             </span>
           </div>
+
+          <SkyEventNotificationCenter
+            now={now}
+            eventSchedule={
+              eventSchedule
+            }
+            shardPrediction={
+              shardPrediction
+            }
+          />
         </div>
       </header>
 
