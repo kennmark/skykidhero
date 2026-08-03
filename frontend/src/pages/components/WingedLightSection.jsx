@@ -96,7 +96,7 @@ function WingedLightSection() {
         sm:px-4
 
         lg:flex
-        lg:h-[calc(100svh-4rem)]
+        lg:min-h-[calc(100svh-4rem)]
         lg:items-center
         lg:py-6
       "
@@ -121,8 +121,7 @@ function WingedLightSection() {
           sm:rounded-[2rem]
 
           lg:my-0
-          lg:h-full
-          lg:min-h-0
+          lg:min-h-[calc(100svh-7rem)]
         "
       >
         {/* Decorative background */}
@@ -161,13 +160,13 @@ function WingedLightSection() {
 
             sm:p-6
 
-            lg:min-h-0
-            lg:flex-1
-            lg:grid-cols-[minmax(0,1.05fr)_minmax(20rem,0.95fr)]
-            lg:items-center
-            lg:gap-6
+            lg:grid-cols-[minmax(0,1.08fr)_minmax(17rem,0.92fr)]
+            lg:items-start
+            lg:gap-5
             lg:p-5
 
+            xl:grid-cols-[minmax(0,1.05fr)_minmax(20rem,0.95fr)]
+            xl:items-center
             xl:gap-8
             xl:p-6
           "
@@ -214,9 +213,10 @@ function WingedLightSection() {
                 text-white
 
                 sm:text-4xl
-                lg:text-[2.5rem]
+                lg:text-[2.2rem]
                 lg:leading-[1.08]
-                xl:text-5xl
+                xl:text-[2.75rem]
+                2xl:text-5xl
               "
             >
               Collect light. Strengthen your cape. Fly higher.
@@ -233,8 +233,11 @@ function WingedLightSection() {
                   sm:text-base
                   sm:leading-7
 
-                  lg:text-[0.95rem]
+                  lg:text-sm
                   lg:leading-6
+
+                  xl:text-base
+                  xl:leading-7
               "
             >
               Winged Lights increase your Wing Power and Wing
@@ -277,14 +280,23 @@ function WingedLightSection() {
                   border-white/10
                   bg-white/[0.04]
                   p-4
+
+                  lg:p-3
                 "
               >
                 <ShieldCheckIcon
                   aria-hidden="true"
-                  className="h-6 w-6 text-[#fe7f2d]"
+                  className="
+                    h-6
+                    w-6
+                    text-[#fe7f2d]
+
+                    lg:h-5
+                    lg:w-5
+                  "
                 />
 
-                <p className="mt-3 text-2xl font-black text-white">
+                <p className="mt-3 text-2xl font-black text-white lg:mt-2 lg:text-xl">
                   {WB_REGULAR_SPIRITS +
                     WB_TRAVELING_SPIRITS}
                 </p>
@@ -301,14 +313,23 @@ function WingedLightSection() {
                   border-[#fe7f2d]/25
                   bg-[#fe7f2d]/10
                   p-4
+
+                  lg:p-3
                 "
               >
                 <SparklesIcon
                   aria-hidden="true"
-                  className="h-6 w-6 text-[#fe7f2d]"
+                  className="
+                    h-6
+                    w-6
+                    text-[#fe7f2d]
+
+                    lg:h-5
+                    lg:w-5
+                  "
                 />
 
-                <p className="mt-3 text-2xl font-black text-[#ff9b57]">
+                <p className="mt-3 text-2xl font-black text-[#ff9b57] lg:mt-2 lg:text-xl">
                   {TOTAL_WL_COUNT}
                 </p>
 
@@ -419,8 +440,9 @@ function WingedLightSection() {
                   object-contain
 
                   sm:h-56
-                  lg:h-[clamp(11rem,24vh,15rem)]
-                  xl:h-[clamp(13rem,26vh,17rem)]
+                  lg:h-44
+                  xl:h-[clamp(12rem,24vh,15rem)]
+                  2xl:h-[clamp(13rem,26vh,17rem)]
                 "
               />
 
@@ -517,7 +539,19 @@ function WingedLightSection() {
                 Winged Light breakdown
               </p>
 
-              <p className="mt-1 text-sm text-white/45 sm:text-base">
+              <p
+                className="
+                  mt-1
+                  text-sm
+                  text-white/45
+
+                  sm:text-base
+
+                  lg:hidden
+
+                  xl:block
+                "
+              >
                 Sources that contribute to your maximum Wing
                 Level.
               </p>
@@ -580,6 +614,9 @@ function WingedLightSection() {
                   hover:bg-white/[0.06]
 
                   lg:block
+                  lg:p-2.5
+
+                  xl:p-3
                 "
               >
                 <span
@@ -594,6 +631,9 @@ function WingedLightSection() {
                     text-base
                     font-black
                     text-[#ff9b57]
+
+                    lg:h-9
+                    lg:w-9
 
                     xl:h-11
                     xl:w-11
@@ -612,7 +652,9 @@ function WingedLightSection() {
                       text-white
 
                       lg:mt-2
-                      lg:text-sm
+                      lg:text-[11px]
+
+                      xl:text-sm
                     "
                     title={source.label}
                   >
@@ -626,14 +668,20 @@ function WingedLightSection() {
                   </span>
 
                   <span
-                    className=" mt-1
+                    className="
+                      mt-1
                       block
                       text-[10px]
                       leading-4
                       text-white/40
 
+                      lg:hidden
+
+                      xl:block
                       xl:text-xs
-                      xl:leading-5">
+                      xl:leading-5
+                    "
+                  >
                     {source.description}
                   </span>
                 </span>
