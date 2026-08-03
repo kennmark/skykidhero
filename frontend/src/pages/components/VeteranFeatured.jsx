@@ -331,10 +331,15 @@ const VeteranFeatured = () => {
                   className="
                     h-full
                     w-full
-                    object-cover
+                    translate-x-[4%]
+                    object-contain
                     object-center
                     transition
                     duration-500
+
+                    sm:translate-x-[3%]
+
+                    lg:translate-x-[5%]
                   "
                 />
 
