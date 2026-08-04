@@ -5,6 +5,7 @@ import {
   VALLEY_NUM_REG_SPIRIT,
   VAULT_NUM_REG_SPIRIT,
   WASTELAND_NUM_REG_SPIRIT,
+  WB_TRAVELING_SPIRITS,
 } from '../exports/constants'
 
 export const WINGED_LIGHT_PROGRESS_STORAGE_KEY =
@@ -61,6 +62,12 @@ export const REGULAR_TIER_TWO_WING_BUFF_COUNT =
 export const REGULAR_WING_BUFF_MAXIMUM =
   REGULAR_SPIRIT_BASE_WING_BUFF_COUNT +
   REGULAR_TIER_TWO_WING_BUFF_COUNT
+
+function getWingBuffMaximum(type) {
+  return type === 'regular'
+    ? REGULAR_WING_BUFF_MAXIMUM
+    : WB_TRAVELING_SPIRITS
+}
 
 const REGULAR_TIER_TWO_KEYS =
   new Set(
@@ -823,56 +830,150 @@ export function setWingBuffSlotChecked(
     return current
   }
 
-  const nextRecords = {
+  const maximum =
+    getWingBuffMaximum(type)
+
+  const currentRecords = {
     ...current.wingBuffs[type],
   }
+
+  const assignedCount =
+    Object.keys(
+      currentRecords
+    ).length
+
+  const storedLegacyCount =
+    normalizeCount(
+      current
+        .legacyWingBuffCounts?.[
+          type
+        ]
+    )
+
+  /*
+   * Legacy Wing Buffs represent buffs that
+   * have not yet been assigned to a specific
+   * Spirit checkbox.
+   *
+   * This also repairs older saved progress
+   * where assigned + legacy exceeded the
+   * maximum and became stuck at 49/49.
+   */
+  const normalizedLegacyCount =
+    Math.min(
+      storedLegacyCount,
+      Math.max(
+        0,
+        maximum - assignedCount
+      )
+    )
+
+  const alreadyChecked =
+    Boolean(
+      currentRecords[key]
+    )
+
+  let nextLegacyCount =
+    normalizedLegacyCount
 
   const now =
     new Date().toISOString()
 
-  if (!checked) {
-    delete nextRecords[key]
-  } else {
-    const previous =
-      nextRecords[key]
+  if (checked && !alreadyChecked) {
+    const currentTotal =
+      assignedCount +
+      normalizedLegacyCount
 
-    nextRecords[key] = {
+    /*
+     * At the maximum, an existing legacy
+     * count can be converted into a named
+     * Spirit checkbox without increasing
+     * the total.
+     */
+    if (currentTotal >= maximum) {
+      if (
+        normalizedLegacyCount <= 0
+      ) {
+        return current
+      }
+
+      nextLegacyCount =
+        normalizedLegacyCount - 1
+    }
+
+    currentRecords[key] = {
       key,
+
       spiritKey:
         getWingBuffSpiritKey(
           spirit
         ),
+
       spiritId:
         spirit?.spiritId ||
         spirit?.spirit_id ||
         null,
+
       spiritName:
         resolveSpiritName(
           spirit
         ),
+
       spiritType: type,
+
       seasonId:
         spirit?.seasonId ||
         spirit?.season_id ||
         null,
+
       season:
         spirit?.season ||
         null,
+
       slotId,
       slotLabel,
+
       checkedAt:
-        previous?.checkedAt ||
+        currentRecords[key]
+          ?.checkedAt ||
         now,
+
       updatedAt: now,
+    }
+  } else if (
+    !checked &&
+    alreadyChecked
+  ) {
+    delete currentRecords[key]
+  } else {
+    /*
+     * There was no checkbox change, but an
+     * older overflowing legacy value may
+     * still need normalization.
+     */
+    if (
+      storedLegacyCount ===
+      normalizedLegacyCount
+    ) {
+      return current
     }
   }
 
   return persistWingedLightProgress({
     ...current,
+
     updatedAt: now,
+
     wingBuffs: {
       ...current.wingBuffs,
-      [type]: nextRecords,
+      [type]: currentRecords,
+    },
+
+    legacyWingBuffCounts: {
+      ...current
+        .legacyWingBuffCounts,
+
+      [type]: nextLegacyCount,
     },
   })
 }
@@ -892,24 +993,48 @@ export function setWingBuffCount(
   const current =
     readWingedLightProgress()
 
-  const max = Math.max(
-    0,
-    normalizeCount(maximum)
-  )
+  const max =
+    Math.max(
+      0,
+      normalizeCount(maximum)
+    )
 
-  const nextValue = Math.min(
-    max,
-    normalizeCount(value)
-  )
+  /*
+   * The value supplied by the UI is the
+   * desired overall total, not the legacy
+   * portion alone.
+   */
+  const desiredTotal =
+    Math.min(
+      max,
+      normalizeCount(value)
+    )
+
+  const assignedCount =
+    Object.keys(
+      current.wingBuffs?.[
+        type
+      ] || {}
+    ).length
+
+  const nextLegacyCount =
+    Math.max(
+      0,
+      desiredTotal -
+        assignedCount
+    )
 
   return persistWingedLightProgress({
     ...current,
+
     updatedAt:
       new Date().toISOString(),
+
     legacyWingBuffCounts: {
       ...current
         .legacyWingBuffCounts,
-      [type]: nextValue,
+
+      [type]: nextLegacyCount,
     },
   })
 }

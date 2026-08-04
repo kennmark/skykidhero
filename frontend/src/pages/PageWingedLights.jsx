@@ -30,6 +30,7 @@ import {
   SunIcon,
   TrophyIcon,
   XMarkIcon,
+  TrashIcon,
 } from '@heroicons/react/24/outline'
 
 import { SideBarContainer } from './components/SidebarContainer'
@@ -45,6 +46,7 @@ import { vault } from '../data/vaultData'
 import { eden } from '../data/edenData'
 import { aviaryData } from '../data/aviarydata'
 import { seasons2022 } from '../data/seasons'
+import useWingedLightProgress from '../hooks/useWingedLightProgress'
 
 import {
   AVIARY_NUM_WL,
@@ -730,6 +732,42 @@ function RealmAccordion({
 }
 
 export default function PageWingedLights() {
+  const {
+    mapCollected,
+    specialCollected,
+    regularWingBuffs,
+    seasonalWingBuffs,
+    resetWingedLightProgress,
+  } = useWingedLightProgress()
+
+  const hasResettableProgress =
+    mapCollected > 0 ||
+    specialCollected > 0 ||
+    regularWingBuffs > 0 ||
+    seasonalWingBuffs > 0
+
+  function handleResetWingedLightProgress() {
+    if (!hasResettableProgress) {
+      return
+    }
+
+    const confirmed = window.confirm(
+      [
+        'Reset all Winged Light progress?',
+        '',
+        'All collected Winged Lights and purchased Wing Buffs tracked on this browser will be cleared.',
+        '',
+        'Spirit Relived progress will not be affected.',
+      ].join('\n')
+    )
+
+    if (!confirmed) {
+      return
+    }
+
+    resetWingedLightProgress()
+  }
+
   const [openRealm, setOpenRealm] = useState('isle')
   const [search, setSearch] = useState('')
   const [selectedGuide, setSelectedGuide] =
@@ -878,7 +916,54 @@ export default function PageWingedLights() {
                       className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                     />
                   </a>
+                  <button
+                    type="button"
+                    onClick={handleResetWingedLightProgress}
+                    disabled={!hasResettableProgress}
+                    title={
+                      hasResettableProgress
+                        ? 'Reset all Winged Light progress'
+                        : 'No Winged Light progress to reset'
+                    }
+                    className="
+                      inline-flex
+                      min-h-11
+                      items-center
+                      justify-center
+                      gap-2
+                      rounded-full
+                      border
+                      border-red-400/30
+                      bg-red-400/10
+                      px-5
+                      py-2.5
+                      text-sm
+                      font-black
+                      text-red-200
+                      transition
+                      duration-300
 
+                      hover:-translate-y-0.5
+                      hover:border-red-400/55
+                      hover:bg-red-400/15
+                      hover:text-white
+
+                      focus:outline-none
+                      focus-visible:ring-4
+                      focus-visible:ring-red-400/20
+
+                      disabled:translate-y-0
+                      disabled:cursor-not-allowed
+                      disabled:opacity-30
+                    "
+                  >
+                    <TrashIcon
+                      aria-hidden="true"
+                      className="h-4 w-4"
+                    />
+
+                    Reset progress
+                  </button>
                   <span className="text-xs text-white/40 sm:text-sm">
                     Updated {WL_COUNT_DATE_UPDATED}
                   </span>

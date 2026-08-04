@@ -8,6 +8,7 @@ import {
   MapPinIcon,
   ShieldCheckIcon,
   SparklesIcon,
+  TrashIcon,
 } from '@heroicons/react/24/outline'
 
 import { WINGED_LIGHT } from '../../exports/defaultImages'
@@ -219,20 +220,61 @@ function WingedLightSection() {
   const {
     mapCollected,
     mapMaximum,
+
     specialCollected,
     specialMaximum,
+
     orbitWingedLights,
     orbitMaximum,
+
     totalCollectedWingedLights,
     totalCollectibleWingedLights,
     totalWingedLightPercentage,
+
     regularWingBuffs,
+    regularSpiritBaseWingBuffMaximum,
+    regularTierTwoWingBuffMaximum,
     regularWingBuffMaximum,
     regularWingBuffPercentage,
+
     seasonalWingBuffs,
     seasonalWingBuffMaximum,
     seasonalWingBuffPercentage,
+
+    resetWingedLightProgress,
   } = useWingedLightProgress()
+
+  const hasResettableProgress =
+  mapCollected > 0 ||
+  specialCollected > 0 ||
+  regularWingBuffs > 0 ||
+  seasonalWingBuffs > 0
+
+function handleResetWingedLightProgress() {
+  if (!hasResettableProgress) {
+    return
+  }
+
+  const confirmed = window.confirm(
+    [
+      'Reset all Winged Light progress?',
+      '',
+      'This will clear:',
+      '• Collected map Winged Lights',
+      '• Shattering Void Winged Lights',
+      '• Regular Spirit Wing Buffs',
+      '• Seasonal and Traveling Spirit Wing Buffs',
+      '',
+      'Spirit Relived progress will not be affected.',
+    ].join('\n')
+  )
+
+  if (!confirmed) {
+    return
+  }
+
+  resetWingedLightProgress()
+}
 
   return (
     <section
@@ -558,6 +600,53 @@ function WingedLightSection() {
                 >
                   Updates from guide checkboxes
                 </span>
+                <button
+                  type="button"
+                  onClick={handleResetWingedLightProgress}
+                  disabled={!hasResettableProgress}
+                  title={
+                    hasResettableProgress
+                      ? 'Reset all Winged Light progress'
+                      : 'No Winged Light progress to reset'
+                  }
+                  className="
+                    inline-flex
+                    min-h-8
+                    items-center
+                    justify-center
+                    gap-1.5
+                    rounded-full
+                    border
+                    border-red-400/30
+                    bg-red-400/10
+                    px-3
+                    py-1.5
+                    text-[9px]
+                    font-black
+                    uppercase
+                    tracking-wider
+                    text-red-200
+                    transition
+
+                    hover:border-red-400/50
+                    hover:bg-red-400/15
+                    hover:text-white
+
+                    focus:outline-none
+                    focus-visible:ring-2
+                    focus-visible:ring-red-300/60
+
+                    disabled:cursor-not-allowed
+                    disabled:opacity-30
+                  "
+                >
+                  <TrashIcon
+                    aria-hidden="true"
+                    className="h-3.5 w-3.5"
+                  />
+
+                  Reset
+                </button>
               </div>
 
               <div
