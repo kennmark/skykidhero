@@ -190,11 +190,11 @@ export const valley = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          May{' '}
+          There are{' '}
           <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
             {VALLEY_NUM_REG_SPIRIT}
           </span>{' '}
-          regular spirits you will see here.
+          regular spirits that you can find here.
         </Typography>
       </>
     ),
@@ -248,8 +248,8 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'ukkYW0UiuKE',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Sa bandang kanan ng lagusan, lumipad ka pataas at makikita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Fly upward beside the passage on the right, where you will find this spirit.`,
         ],
       },
       // BACKFLIPPING_CHAMPION
@@ -301,10 +301,10 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'GUqYcLjeYA8',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Sa bandang kaliwa ay may lagusan patungong citadel, pumasok ka.`,
-          `Lumipad ka hanggang sa makarating ka sa entrance ng Citadel.`,
-          `Sa iyong kaliwa ay may maliit na tower, nasa loob nito ang spirit.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage on the left that leads to the Citadel.`,
+          `Fly forward until you reach the Citadel entrance.`,
+          `There is a small tower on your left. The spirit is inside it.`,
         ],
       },
       // HANDSTANDING_THRILLSEEKER
@@ -356,10 +356,10 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'AwpBBSZcfeE',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Sa bandang kaliwa ay may lagusan patungong citadel, pumasok ka.`,
-          `Lumipad ka hanggang sa makarating ka sa entrance ng Citadel.`,
-          `Lumipad ka patungo sa main Citadel towers, sa mga daanan ng towers makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage on the left that leads to the Citadel.`,
+          `Fly forward until you reach the Citadel entrance.`,
+          `Fly toward the main Citadel towers. You will find this spirit along the tower walkways.`,
         ],
       },
       // MANTA_WHISPERER
@@ -399,10 +399,10 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'Tq3HWYajMzY',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Sa bandang kaliwa ay may lagusan patungong citadel, pumasok ka.`,
-          `Lumipad ka hanggang sa makarating ka sa entrance ng Citadel.`,
-          `Lumipad ka patungo sa main Citadel towers, lumipad gawing kanan at sa likod ng hagdanan ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage on the left that leads to the Citadel.`,
+          `Fly forward until you reach the Citadel entrance.`,
+          `Fly toward the main Citadel towers, then head right. This spirit is behind the staircase.`,
         ],
       },
       // PROUD_VICTOR
@@ -460,9 +460,9 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'HgL7qC1uJvs',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Pumasok ka sa Skating Race sa iyong harapan na lagusan.`,
-          `Pagdating sa Coliseum, sa kaliwang banda sa tuktok ng mga upuan malapit sa statwa, makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage directly ahead to begin the Skating Race.`,
+          `When you reach the Coliseum, go to the upper-left seating area near the statue to find this spirit.`,
         ],
       },
       // BOWING_MEDALIST
@@ -514,9 +514,9 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'wwpu2V_6nKI',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Pumasok ka sa Skating Race sa iyong harapan na lagusan.`,
-          `Pagdating sa Coliseum, sa kanang banda sa tuktok ng mga upuan malapit sa statwa, makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage directly ahead to begin the Skating Race.`,
+          `When you reach the Coliseum, go to the upper-right seating area near the statue to find this spirit.`,
         ],
       },
       // CHEERFUL_SPECTATOR
@@ -568,9 +568,9 @@ export const valley = [
         constellation_icon_route: MAP4,
         spirit_guide_video_url: youtube_embed + 'kkRnJ8a5p3U',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Pumasok ka sa Skating Race sa iyong harapan na lagusan.`,
-          `Pagdating sa Coliseum, sa kanang banda sa tuktok ng mga upuan malapit sa statwa, makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage directly ahead to begin the Skating Race.`,
+          `When you reach the Coliseum, go to the upper-right seating area near the statue to find this spirit.`,
         ],
       },
     ],
@@ -581,12 +581,12 @@ export const valley = [
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Nandito ang mga spirits na dumaan noong nakaraang Seasonal Events na
-        makikita mo tuwing papasok ka sa Valley of Triumph. May{' '}
+        These spirits appeared during previous Seasonal Events and can be found
+        whenever you enter the Valley of Triumph. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {VALLEY_NUM_SEASON_SPIRIT}
         </span>{' '}
-        season spirits na pwede mong makita at makuha dito.
+        seasonal spirits that you can find and relive here.
       </Typography>
     ),
     spirits: [
@@ -652,8 +652,8 @@ export const valley = [
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'qM46Yfsl4Oc',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Sa kanang banda pababa, ay may 2-Player door, nasa loob nito ang spirit.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `On the lower-right side is a two-player door. The spirit is inside.`,
         ],
       },
       // TWIRLING_CHAMPION
@@ -720,8 +720,8 @@ export const valley = [
         ],
         spirit_guide_video_url: youtube_embed + 'gJMN_Wuq2lM',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Sa kaliwang banda ay makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `You will find this spirit on the left side of the Ice Rink.`,
         ],
       },
       // SPARKLE_PARENT
@@ -792,9 +792,9 @@ export const valley = [
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + '1U65HqbrWeM',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Pumasok ka sa Skating Race sa iyong harapan na lagusan.`,
-          `Pagdating sa Coliseum, Pasok sa templo at sa kaliwang banda ay may lagusan kung nasaan ang spirit.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the passage directly ahead to begin the Skating Race.`,
+          `When you reach the Coliseum, enter the temple. A passage on the left leads to this spirit.`,
         ],
       },
       // TROUPE_JUGGLER
@@ -867,8 +867,8 @@ export const valley = [
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'Fa5csPKdgCo',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, slide pababa hanggang sa makarating ka sa plaza ng Ice Rink.`,
-          `Pumasok ka sa tunnel na nasa kaliwang banda ng Ice Rink, sa looban makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
+          `Enter the tunnel on the left side of the Ice Rink. You will find this spirit inside.`,
         ],
       },
       // DANCING_PERFORMER
@@ -933,8 +933,8 @@ export const valley = [
         icon_route: SEASON8,
         spirit_guide_video_url: youtube_embed + 'CUcyXXvawO8',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, sa mga kabahayan sa kaliwang banda ay makita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate downhill. You will find this spirit among the houses on the left.`,
         ],
       },
       // PEEKING_POSTMAN
@@ -999,8 +999,8 @@ export const valley = [
         icon_route: SEASON8,
         spirit_guide_video_url: youtube_embed + 'uCfBPcR9X4k',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, papuntang plaza ng Village of Dreams, at sa likod na bahay ng Quest Giver, ay nakatago ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate down to the Village of Dreams plaza. This spirit is hidden behind the Quest Giver's house.`,
         ],
       },
       // SPINNING_MENTOR
@@ -1067,8 +1067,8 @@ export const valley = [
         icon_route: SEASON8,
         spirit_guide_video_url: youtube_embed + 'QOFfrU-J-Yw',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, papuntang plaza ng Village of Dreams, at sa unahan lng ng Quest Giver, bandang kanan, nasa gilid ng bahay ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate down to the Village of Dreams plaza. Just ahead of the Quest Giver, on the right, this spirit is beside a house.`,
         ],
       },
       // BEARHUG_HERMIT
@@ -1131,8 +1131,8 @@ export const valley = [
         icon_route: SEASON8,
         spirit_guide_video_url: youtube_embed + 's_0_jm6c8SY',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, papuntang plaza ng Village of Dreams, at sa kabahayan sa kaliwang banda, nasa likod nito ang spirit.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate down to the Village of Dreams plaza. This spirit is behind one of the houses on the left.`,
         ],
       },
       // FRANTIC_STAGEHEAD
@@ -1191,9 +1191,9 @@ export const valley = [
         icon_route: SEASON13,
         spirit_guide_video_url: youtube_embed + 'iRsevRYePBI',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, sa iyong kanan ang Village Theater, pumasok ka.`,
-          `Sa gitna ng pang 3rd at 4th na bahay sa iyong kaliwa ay makikita mo ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate downhill and enter the Village Theater on your right.`,
+          `You will find this spirit between the third and fourth houses on your left.`,
         ],
       },
       // FORGETFUL_STORYTELLER
@@ -1258,9 +1258,9 @@ export const valley = [
         icon_route: SEASON13,
         spirit_guide_video_url: youtube_embed + '6fCttoMbOB0',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, sa iyong kanan ang Village Theater, pumasok ka.`,
-          `Sa iyong kanan makikita mo agad ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate downhill and enter the Village Theater on your right.`,
+          `You will immediately see this spirit on your right.`,
         ],
       },
       // MELLOW_MUSICIAN
@@ -1325,9 +1325,9 @@ export const valley = [
         icon_route: SEASON13,
         spirit_guide_video_url: youtube_embed + '-K0-u2qIJsM',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, sa iyong kanan ang Village Theater, pumasok ka.`,
-          `Sa iyong kaliwa, sa 1st at 2nd na bahay, ay nasa gitna mo makikita ang spirit na ito.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate downhill and enter the Village Theater on your right.`,
+          `You will find this spirit between the first and second houses on your left.`,
         ],
       },
       // MODEST_DANCER
@@ -1386,9 +1386,9 @@ export const valley = [
         icon_route: SEASON13,
         spirit_guide_video_url: youtube_embed + 'g3MSGbE9XZA',
         spirit_direction: [
-          `Pasok ka Pang-Apat na Mapa - Valley of Triumph, sa iyong kanan may may lagusan, pumasok ka.`,
-          `Mag-skate pababa, sa iyong kanan ang Village Theater, pumasok ka.`,
-          `Sa iyong kaliwa, sa 5th at 6th na bahay, ay nasa likod nito ang spirit.`,
+          `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
+          `Skate downhill and enter the Village Theater on your right.`,
+          `This spirit is behind the fifth and sixth houses on your left.`,
         ],
       },
       // RUNNING_WAYFARER
@@ -1447,9 +1447,9 @@ export const valley = [
         icon_route: SEASON15,
         spirit_guide_video_url: youtube_embed + '0nc59JDjgoA',
         spirit_direction: [
-          `Pasok ka sa Ikalimang Mapa - Valley of Triumph, Dumako ka sa Colisuem.`,
-          `At hanapin si Aurora spirit sa bandang kanan na may tent. Gawin ang Unang quest.`,
-          `Ang Quest ay nasa Unang Mapa - Isle of Dawn, Entrance.`,
+          `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
+          `Find the AURORA Spirit beside the tent on the right and begin the first quest.`,
+          `The quest takes place at the entrance of the first realm, Isle of Dawn.`,
         ],
       },
       // MINDFUL_MINER
@@ -1518,9 +1518,9 @@ export const valley = [
         icon_route: SEASON15,
         spirit_guide_video_url: youtube_embed + '09XhkJcsL90',
         spirit_direction: [
-          `Pasok ka sa Ikalimang Mapa - Valley of Triumph, Dumako ka sa Colisuem.`,
-          `At hanapin si Aurora spirit sa bandang kanan na may tent. Gawin ang Pangalawang quest.`,
-          `Ang Quest ay nasa Pangatlong Mapa - Hidden Forest, Underground Cave.`,
+          `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
+          `Find the AURORA Spirit beside the tent on the right and begin the second quest.`,
+          `The quest takes place in the Underground Cavern of the third realm, Hidden Forest.`,
         ],
       },
       // WARRIOR_OF_LOVE
@@ -1583,10 +1583,9 @@ export const valley = [
         icon_route: SEASON15,
         spirit_guide_video_url: youtube_embed + 'Lb3DAYkWxoM',
         spirit_direction: [
-          `Pasok ka sa Ikalimang Mapa - Valley of Triumph, Dumako ka sa Colisuem.`,
-          `At hanapin si Aurora spirit sa bandang kanan na may tent. Gawin ang pangatlong quest.`,
-
-          `Ang Quest ay nasa Pang-apat na Mapa - Valley of Triumph, Citadle.`,
+          `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
+          `Find the AURORA Spirit beside the tent on the right and begin the third quest.`,
+          `The quest takes place in the Citadel of the fourth realm, Valley of Triumph.`,
         ],
       },
       // SEED_OF_HOPE
@@ -1645,9 +1644,9 @@ export const valley = [
         icon_route: SEASON15,
         spirit_guide_video_url: youtube_embed + 'xLymA7CvM04',
         spirit_direction: [
-          `Pasok ka sa Ikalimang Mapa - Valley of Triumph, Dumako ka sa Colisuem.`,
-          `At hanapin si Aurora spirit sa bandang kanan na may tent. Gawin ang pang-apat na quest.`,
-          `Ang Quest ay nasa Ikalimang Mapa - Golden Wasteland, Battlefield.`,
+          `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
+          `Find the AURORA Spirit beside the tent on the right and begin the fourth quest.`,
+          `The quest takes place in the Battlefield of the fifth realm, Golden Wasteland.`,
         ],
       },
     ],
@@ -1659,12 +1658,12 @@ export const valley = [
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Sa mapang ito mo rin makikita ang mga Winged Lights kung tawagin. Ito ay
-        nagpapataas ng lebel para ikaw ay makalipad ng mas mataas. May{' '}
+        You can also find Winged Lights throughout this realm. Collecting them
+        increases your Wing Level, allowing you to fly higher. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {VALLEY_NUM_WL}
         </span>{' '}
-        na winged lights ang pwede mong makuha dito.
+        Winged Lights that you can collect here.
       </Typography>
     ),
     winged_lights: [
@@ -1675,8 +1674,7 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa at sa igawi ang skykid pakaliwa upang madaanan
-          ang winged light. Tandaan hindi ito kailangan pindutin pero dapat sentro ang pagkadaan dito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill. Steer your Sky kid to the left so that you pass through the Winged Light. You do not need to tap it, but you must pass through its center.`,
         ],
       },
       {
@@ -1686,9 +1684,8 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `May lagusan papasok sa ilalim ng Ice Rink at makikita ang winged light malapit sa sirang
-          bangka.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage beneath the Ice Rink. The Winged Light is near the broken boat.`,
         ],
       },
       {
@@ -1698,8 +1695,8 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Sa elevated platform ng Ice Rink sa gitna makikita ang winged light na ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `This Winged Light is on the elevated platform at the center of the Ice Rink.`,
         ],
       },
       {
@@ -1709,9 +1706,8 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa kaliwang lagusan, papuntang Citadle. Pinakamataas na tore, nasa kaliwang tore ang winged light.
-          (Nakaharap ka sa Flying Race)`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel. The Winged Light is on the left of the two highest towers when you are facing the Flying Race entrance.`,
         ],
       },
       {
@@ -1721,9 +1717,8 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa kaliwang lagusan, papuntang Citadle, sa kaliwang tore (Nakatalikod sa entrance
-            ng Flying Race) nasa pinaka ibaba ito. Daanan mo lang at makuha mo agad ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel. Go to the lower section of the left tower while facing away from the Flying Race entrance. Pass through the Winged Light to collect it.`,
         ],
       },
       {
@@ -1733,10 +1728,9 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          ` Pumasok sa kaliwang lagusan, papuntang Citadle, gawin ang Flying Race.
-          TANDAAN: Siguraduhin na madaanan mo sa gitna ang winged light dahil di ka na makalipad pabalik, pagkalagpas mo.`,
-          `Nasa kanang parte ng race ito, Daanan mo lang at makukuha mo agad ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel and begin the Flying Race. Make sure to pass through the center of the Winged Light because you cannot fly back after passing it.`,
+          `It is on the right side of the race. Pass through it to collect it.`,
         ],
       },
       {
@@ -1746,11 +1740,10 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa kaliwang lagusan, papuntang Citadle, gawin ang Flying Race.
-          TANDAAN: Siguraduhin na madaanan mo sa gitna ang winged light dahil di ka na makalipad pabalik, pagkalagpas mo.`,
-          `Sa gitna ng mga nakalutang na bato, ay makita mo ang sirang tore.`,
-          `Igawi mo sa kanan ang skykid mo at daanan mo lang, makukuha mo agad ang winged light na ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel and begin the Flying Race. Make sure to pass through the center of the Winged Light because you cannot fly back after passing it.`,
+          `Look for the ruined tower among the floating rocks.`,
+          `Steer your Sky kid to the right and pass through the Winged Light to collect it.`,
         ],
       },
       {
@@ -1760,9 +1753,9 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa gitnang lagusan, at gawin ang Skating Race.`,
-          `Nasa bato ang spirit na ito, daanan mo lang at makukuha mo agad ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the middle passage and begin the Skating Race.`,
+          `The Winged Light is on a rock. Pass through it to collect it.`,
         ],
       },
       {
@@ -1772,9 +1765,9 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa gitna o kaliwang lagusan, at gawin mo ang isa sa mga race.`,
-          `Sa dulo ng dalawang race bago pumasok sa Coliseum ay makikita ang winged light na ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter either the middle or left passage and complete one of the races.`,
+          `This Winged Light is at the end of both races, just before entering the Coliseum.`,
         ],
       },
       {
@@ -1784,10 +1777,9 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa gitna o kaliwang lagusan, at gawin mo ang isa sa mga race.`,
-          `Pagdating sa Colliseum, sa kaliwang balikat (kapag nakatalikod ka sa templo) 
-          ng kaliwang statue (kapag nakaharap ka sa templo) na malaki ay nandoon ang spirit na ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter either the middle or left passage and complete one of the races.`,
+          `When you reach the Coliseum, the Winged Light is on the left shoulder of the large left statue when facing the temple, or on your left when facing away from the temple.`,
         ],
       },
       {
@@ -1797,10 +1789,10 @@ export const valley = [
         wl_season_group: 'wl-valley-0',
         wl_url: VT_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa gitna o kaliwang lagusan, at gawin mo ang isa sa mga race.`,
-          `Pagdating sa Colliseum, Pumasok ka sa templo, at gawing kaliwa, may lagusan sa pinaka-itass ng pader.`,
-          `Sundan lang ang lagusan at makita mo ang winged light na ito.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter either the middle or left passage and complete one of the races.`,
+          `When you reach the Coliseum, enter the temple and turn left. There is a passage near the top of the wall.`,
+          `Follow the passage to find this Winged Light.`,
         ],
       },
       {
@@ -1810,10 +1802,8 @@ export const valley = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagkapasok, mag skate pababa at sa mga bukid na nasa kaliwa, isa dito ay 
-          may butas kung nasaan ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `Skate downhill. One of the hills on the left has an opening containing the Winged Light.`,
         ],
       },
       {
@@ -1823,10 +1813,8 @@ export const valley = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagkapasok, mag skate pababa at sa mga bukid na nasa kanan, isa dito ay 
-          may butas kung nasaan ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `Skate downhill. One of the hills on the right has an opening containing the Winged Light.`,
         ],
       },
       {
@@ -1836,10 +1824,9 @@ export const valley = [
         wl_season_group: 'wl-valley-13',
         wl_url: VT_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, sa iyong kanan ay may lagusan papuntang Village Theater, pumasok ka.`,
-          `Pumasok ka sa Theater Hall at sa likod ng stage ay may gitara sa labas ng lagusan, pumasok ka at sa dulo nag winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `When you reach the plaza, enter the passage on your right toward the Village Theater.`,
+          `Enter the Theater Hall. Behind the stage is a guitar beside a passage; enter that passage and follow it to the Winged Light at the end.`,
         ],
       },
       {
@@ -1849,10 +1836,9 @@ export const valley = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `At sa tuktok ng tore na nasa gitna makita mo ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `The Winged Light is at the top of the tower in the center.`,
         ],
       },
       {
@@ -1862,10 +1848,9 @@ export const valley = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `Sumakay ka sa Ferry Boat papuntang Hermitt's Valley, at sa likod mo ay may kweba sa bandang kanan ng bundok.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `Ride the ferry boat to Hermit's Valley. Behind you, on the right side of the mountain, is a cave containing the Winged Light.`,
         ],
       },
       {
@@ -1875,10 +1860,9 @@ export const valley = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `Sumakay ka sa Ferry Boat papuntang Hermitt's Valley, at sa likod ng bundok makita ang winged light dito.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `Ride the ferry boat to Hermit's Valley. You will find this Winged Light behind the mountain.`,
         ],
       },
     ],
@@ -1890,12 +1874,12 @@ export const valley = [
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Ang Map Shrines ay nagsisilbing gabay upang magtukoy kung ilan at saan
-        pa ang kailangan mong kunin na winged lights sa loob ng mapa. May{' '}
+        Map Shrines help you determine how many Winged Lights you still need to
+        collect and where they are located within the realm. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {VALLEY_NUM_MAP_SHRINES}
         </span>{' '}
-        na Map Shrines ang pwede mong mabuksan sa loob ng Isle of Dawn.
+        Map Shrines that you can activate throughout the Valley of Triumph.
       </Typography>
     ),
     map_shrines: [
@@ -1905,8 +1889,8 @@ export const valley = [
         shrine_label: 'Map Shrine 1',
         shrine_url: VT_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may sirang Gazebo (bahay) structure`,
-          `sa likod nito makita ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. There is a ruined gazebo structure on your right.`,
+          `The Map Shrine is behind it.`,
         ],
       },
       {
@@ -1915,8 +1899,8 @@ export const valley = [
         shrine_label: 'Map Shrine 2',
         shrine_url: VT_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Sa elevated platform na nasa gitna makita ang map shrine.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `The Map Shrine is on the elevated platform in the center.`,
         ],
       },
       {
@@ -1925,10 +1909,9 @@ export const valley = [
         shrine_label: 'Map Shrine 3',
         shrine_url: VT_MS3 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa kaliwang lagusan, papuntang Citadle.`,
-          `Pagkadating sa Citadle, Sa bandang kanan sa loob ng Gazebo (bahay) structure,
-          Makita mo ang map shrine.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel.`,
+          `When you reach the Citadel, the Map Shrine is inside the gazebo structure on the right.`,
         ],
       },
       {
@@ -1937,10 +1920,9 @@ export const valley = [
         shrine_label: 'Map Shrine 4',
         shrine_url: VT_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa kaliwang lagusan, papuntang Citadle.`,
-          `Pagkadating sa Citadle, Sa bandang likuran ng pinakamataas na poste(KANAN na POSTE kung nakaharap
-            sa Flying Race Entrance), Makita mo ang map shrine.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel.`,
+          `When you reach the Citadel, the Map Shrine is behind the tallest pillar—the pillar on the right when facing the Flying Race entrance.`,
         ],
       },
       {
@@ -1949,10 +1931,10 @@ export const valley = [
         shrine_label: 'Map Shrine 5',
         shrine_url: VT_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Pumasok sa kaliwang lagusan, papuntang Citadle.`,
-          `Pagkadating sa Citadle, magtungo sa Flying Race Temple at pumasok.`,
-          `Pagkapasok sa loob, nasa kanan na parte ng temple ang map shrine.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the passage on the left toward the Citadel.`,
+          `Proceed to the Flying Race temple and enter it.`,
+          `The Map Shrine is on the right side of the temple interior.`,
         ],
       },
       {
@@ -1961,9 +1943,9 @@ export const valley = [
         shrine_label: 'Map Shrine 6',
         shrine_url: VT_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa hanggang makarating sa Ice Rink.`,
-          `Magtungo sa gitnang lagusan, papuntang Skating Race.`,
-          `Pagkadating sa Skating Race Temple ay nasa kanan ang map shrine.`,
+          `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+          `Enter the middle passage toward the Skating Race.`,
+          `When you reach the Skating Race temple, the Map Shrine is on the right.`,
         ],
       },
       {
@@ -1972,9 +1954,8 @@ export const valley = [
         shrine_label: 'Map Shrine 7',
         shrine_url: VT_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at bago makarating sa plaza sa gitna, sa gawing kaliwa malapit sa bahay, makita
-          ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. Before reaching the central plaza, look on the left near a house to find the Map Shrine.`,
         ],
       },
       {
@@ -1983,10 +1964,9 @@ export const valley = [
         shrine_label: 'Map Shrine 8',
         shrine_url: VT_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at bago makarating sa plaza sa gitna, sa gawing kanan ay may lagusan papuntang
-          Village Theater, pumasok ka.`,
-          `Pagkarating sa Village Theeater, sa kaliwang banda makita ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. Before reaching the central plaza, enter the passage on the right toward the Village Theater.`,
+          `When you reach the Village Theater, the Map Shrine is on the left.`,
         ],
       },
       {
@@ -1995,8 +1975,8 @@ export const valley = [
         shrine_label: 'Map Shrine 9',
         shrine_url: VT_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, sa unahan ng statue, naka elevated ang map shrine malapit sa exit ng Performance Hall.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. The Map Shrine is on an elevated platform in front of the statue, near the Performance Hall exit.`,
         ],
       },
       {
@@ -2005,10 +1985,10 @@ export const valley = [
         shrine_label: 'Map Shrine 10',
         shrine_url: VT_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at magtungo sa Port sa unahan lng ng plaza, sa kaliwang banda.`,
-          `Pagkasakay ng lumulutang na bangka, gawin din ito sa susunod na terminal patungo sa Hermitt's Valley`,
-          `Pagkarating ay lumipad patungo sa Cave na nasa bandang kanan, at sa tuktok ng Cave na ito ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill and proceed to the port just ahead of the plaza on the left.`,
+          `Ride the floating boat, then take the next boat from the following terminal to Hermit's Valley.`,
+          `When you arrive, fly toward the cave on the right. The Map Shrine is on top of the cave.`,
         ],
       },
       {
@@ -2017,8 +1997,8 @@ export const valley = [
         shrine_label: 'Map Shrine 11',
         shrine_url: VT_MS11 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, magskate pababa patungong Ice Rink at gawin ang isang Race.`,
-          `Pagkarating sa Coliseum, nasa bandang likod sa itaas ng mga upuan ang map shrine.`,
+          `Enter Map 4, Valley of Triumph, skate downhill to the Ice Rink, and complete either race.`,
+          `When you reach the Coliseum, the Map Shrine is behind the upper seating area.`,
         ],
       },
     ],

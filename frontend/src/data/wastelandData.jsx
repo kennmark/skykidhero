@@ -196,11 +196,11 @@ export const wasteland = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          May{' '}
+          There are{' '}
           <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
             {WASTELAND_NUM_REG_SPIRIT}
           </span>{' '}
-          regular spirits na makikita mo dito.
+          regular spirits that you can find here.
         </Typography>
       </>
     ),
@@ -254,8 +254,8 @@ export const wasteland = [
         constellation_icon_route: MAP5,
         spirit_guide_video_url: youtube_embed + 'cfMQdMkXk_Q',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad sa gawing kanan at sa likod ng malaking poste ay ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right. This spirit is behind the large pillar.`,
         ],
       },
       // FRIGHTENED_REFUGEE
@@ -307,8 +307,8 @@ export const wasteland = [
         constellation_icon_route: MAP5,
         spirit_guide_video_url: youtube_embed + '3Y12fLtiFCk',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad sa patungo sa sirang templo, at makita mo ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly toward the Broken Temple. You will find this spirit there.`,
         ],
       },
       // COURAGEOUS_SOLDIER
@@ -366,9 +366,9 @@ export const wasteland = [
         constellation_icon_route: MAP5,
         spirit_guide_video_url: youtube_embed + '_IlgT8cc7Fg',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Nasa daanan lang ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `This spirit is located along the path.`,
         ],
       },
       // STEALTHY_SURVIVOR
@@ -426,10 +426,10 @@ export const wasteland = [
         constellation_icon_route: MAP5,
         spirit_guide_video_url: youtube_embed + 'NhbsBbiaIC4',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `lumipad ka patungo sa Boneyard kung saan may 3 krill.`,
-          `Sa pinakadulong kweba, nasa gawing kaliwa sa ibaba ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `Continue toward the Boneyard, where there are three Krills.`,
+          `Inside the farthest cave, this spirit is in the lower-left area.`,
         ],
       },
       // SALUTING_CAPTAIN
@@ -481,10 +481,10 @@ export const wasteland = [
         constellation_icon_route: MAP5,
         spirit_guide_video_url: youtube_embed + '8tA8ptXXgLM',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Tawirin ang isang krill na lugar, pagkalagpas ay may lagusan sa bandang kanan.`,
-          `Sa frontside ng Shipwreck, sa bandang ibaba makikita ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `Cross the one-Krill area. After passing it, enter the tunnel on the right.`,
+          `At the front of the Shipwreck, you will find this spirit in the lower area.`,
         ],
       },
       // LOOKOUT_SCOUT
@@ -536,10 +536,10 @@ export const wasteland = [
         constellation_icon_route: MAP5,
         spirit_guide_video_url: youtube_embed + 'FTbNx4P0ygw',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Tawirin ang isang krill na lugar, pagkalagpas ay may lagusan sa bandang kanan.`,
-          `Sa frontside ng Shipwreck, sa bandang ibaba makikita ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `Cross the one-Krill area. After passing it, enter the tunnel on the right.`,
+          `At the front of the Shipwreck, you will find this spirit in the lower area.`,
         ],
       },
     ],
@@ -550,12 +550,12 @@ export const wasteland = [
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Nandito ang mga spirits na dumaan noong nakaraang Seasonal Events na
-        makikita mo tuwing papasok ka sa Golden Wasteland. May{' '}
+        These are spirits from past Seasonal Events that you can find whenever
+        you enter Golden Wasteland. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {WASTELAND_NUM_SEASON_SPIRIT}
         </span>{' '}
-        season spirits na pwede mong makita at makuha dito.
+        seasonal spirits that you can find and relive here.
       </Typography>
     ),
     spirits: [
@@ -617,9 +617,9 @@ export const wasteland = [
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'ln51yEQiNh4',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Sa 1-Krill Area, pagkalagpas sa sirang tore sa kaliwa, ay makita mo ang spirit nasa silong sa unahan.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `In the one-Krill area, pass the broken tower on the left. The spirit is sheltered ahead.`,
         ],
       },
       // PLEAFUL_PARENT
@@ -690,9 +690,9 @@ export const wasteland = [
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + '6UUH2_kgesM',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Pagkalagpas sa 1-Krill Area, mag-skate pababa at lumipad gawing kanan, sa bonefire makita ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `After passing the one-Krill area, skate downward and fly to the right. The spirit is near the bonfire.`,
         ],
       },
       // RESPECTFUL_PIANIST
@@ -755,10 +755,10 @@ export const wasteland = [
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'dSfferJMUHM',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Tawirin ang 1-krill area at pagdating sa boneyard, lumipad sa dakong kanan.`,
-          `Malapit sa may hagdanan, a isang bato makikita ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `Cross the one-Krill area. When you reach the Boneyard, fly to the right.`,
+          `Near the stairs, you will find this spirit beside a rock.`,
         ],
       },
       // CRAB_WHISPERER
@@ -831,10 +831,10 @@ export const wasteland = [
         icon_route: SEASON2,
         spirit_guide_video_url: youtube_embed + 'okCFgF0LnXw',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad papasok ng sa malaking templo sa harap.`,
-          `Tawirin ang isang krill na lugar, pagkalagpas ay may lagusan sa bandang kanan.`,
-          `Pagkalabas, sa bandang ibaba na tunnel, sa loob nito ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly into the large temple ahead.`,
+          `Cross the one-Krill area. After passing it, enter the tunnel on the right.`,
+          `After exiting, enter the lower tunnel. The spirit is inside.`,
         ],
       },
       // SNOOZING_CARPENTER
@@ -892,9 +892,9 @@ export const wasteland = [
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + 'zDzJ3kNvpag',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad gawing kanan papuntang Docking Area at sumakay sa bangka.`,
-          `Pagdating sa Forgotten Ark, nasa gilid ng barko ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right toward the Docking Area and board the boat.`,
+          `When you reach the Forgotten Ark, this spirit is beside the ship.`,
         ],
       },
       // NODDING_MURALIST
@@ -956,9 +956,9 @@ export const wasteland = [
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + 'ATyUO04_4FY',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad gawing kanan papuntang Docking Area at sumakay sa bangka.`,
-          `Pagdating sa Forgotten Ark, nasa kabilang gilid ng barko ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right toward the Docking Area and board the boat.`,
+          `When you reach the Forgotten Ark, this spirit is on the opposite side of the ship.`,
         ],
       },
       // CRAB_WALKER
@@ -1020,9 +1020,9 @@ export const wasteland = [
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + 'HuUE9oikCRg',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad gawing kanan papuntang Docking Area at sumakay sa bangka.`,
-          `Pagdating sa Forgotten Ark, lumipad patungo sa kanan na tunnel at pumasok ka.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right toward the Docking Area and board the boat.`,
+          `When you reach the Forgotten Ark, fly toward the tunnel on the right and enter it.`,
         ],
       },
       // PLAYFIGHTING_HERBALIST
@@ -1091,9 +1091,9 @@ export const wasteland = [
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + '7n4j6kDeiX8',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad gawing kanan papuntang Docking Area at sumakay sa bangka.`,
-          `Pagdating sa Forgotten Ark, sa pangalawang barko makita dito ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right toward the Docking Area and board the boat.`,
+          `When you reach the Forgotten Ark, you will find this spirit near the second ship.`,
         ],
       },
       // SCARECROW_FARMER
@@ -1150,9 +1150,9 @@ export const wasteland = [
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + 'kGlva_YxYFI',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad gawing kanan papuntang Docking Area at sumakay sa bangka.`,
-          `Pagdating sa Forgotten Ark, sa dakong likod may malaking kapatagan makikita ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right toward the Docking Area and board the boat.`,
+          `When you reach the Forgotten Ark, go toward the large open field at the back to find this spirit.`,
         ],
       },
       // INDIFFERENT_ALCHEMIST
@@ -1219,9 +1219,9 @@ export const wasteland = [
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + 'ZOGLAfZtSeM',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad pababa.`,
-          `Pagkalapag, lumipad gawing kanan papuntang Docking Area at sumakay sa bangka.`,
-          `Pagdating sa Forgotten Ark, sa dakong likod sa tuktok ng bukid makikita ang spirit na ito.`,
+          `Enter the fifth map, Golden Wasteland, and fly downward.`,
+          `After landing, fly to the right toward the Docking Area and board the boat.`,
+          `When you reach the Forgotten Ark, go toward the back and fly to the top of the hill to find this spirit.`,
         ],
       },
       // CEASING_COMMODORE
@@ -1280,8 +1280,8 @@ export const wasteland = [
         icon_route: SEASON12,
         spirit_guide_video_url: youtube_embed + 'Qe5W_ZgGQKo',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          `Pagkadating sa Treasure Reef, lumipad paakyat sa likod ng bukid na nasa harapan makita ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          `When you reach the Treasure Reef, fly upward behind the hill ahead to find this spirit.`,
         ],
       },
       // ANXIOUS_ANGLER
@@ -1350,8 +1350,8 @@ export const wasteland = [
         icon_route: SEASON12,
         spirit_guide_video_url: youtube_embed + '1NBUcSWFlu8',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          `Pagkadating sa Treasure Reef, lumipad pakaliwa, at sa mga maliliit na isla makikita ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          `When you reach the Treasure Reef, fly to the left. You will find this spirit among the small islands.`,
         ],
       },
       // BUMBLING_BOATSWAIN
@@ -1414,8 +1414,8 @@ export const wasteland = [
         icon_route: SEASON12,
         spirit_guide_video_url: youtube_embed + 'xFnYj4msYuo',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          `Pagkadating sa Treasure Reef, lumipad pataas at dumako sa barko na nasa dock, at malapit dito ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          `When you reach the Treasure Reef, fly upward toward the ship at the dock. The spirit is nearby.`,
         ],
       },
       // CACKLING_CANNONEER
@@ -1474,8 +1474,8 @@ export const wasteland = [
         icon_route: SEASON12,
         spirit_guide_video_url: youtube_embed + 'https://youtu.be/1yxTCyNbg4o',
         spirit_direction: [
-          `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          `Pagkadating sa Treasure Reef, lumipad pataas at dumako sa dulong isla at sa likod nito makita ang spirit.`,
+          `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          `When you reach the Treasure Reef, fly upward toward the farthest island. The spirit is behind it.`,
         ],
       },
       // TENDER_TOYMAKER
@@ -1534,8 +1534,8 @@ export const wasteland = [
         icon_route: SEASON26,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          // `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          // `Pagkadating sa Treasure Reef, lumipad pataas at dumako sa dulong isla at sa likod nito makita ang spirit.`,
+          // `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          // `When you reach the Treasure Reef, fly upward toward the farthest island. The spirit is behind it.`,
         ],
       },
       // STERN_SHEPHERD
@@ -1594,8 +1594,8 @@ export const wasteland = [
         icon_route: SEASON26,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          // `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          // `Pagkadating sa Treasure Reef, lumipad pataas at dumako sa dulong isla at sa likod nito makita ang spirit.`,
+          // `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          // `When you reach the Treasure Reef, fly upward toward the farthest island. The spirit is behind it.`,
         ],
       },
       // RESOURCEFUL_RECLUSE
@@ -1654,8 +1654,8 @@ export const wasteland = [
         icon_route: SEASON26,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          // `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          // `Pagkadating sa Treasure Reef, lumipad pataas at dumako sa dulong isla at sa likod nito makita ang spirit.`,
+          // `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          // `When you reach the Treasure Reef, fly upward toward the farthest island. The spirit is behind it.`,
         ],
       },
       // SCARED_SENTRY
@@ -1732,8 +1732,8 @@ export const wasteland = [
         icon_route: SEASON26,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          // `Pasok ka sa Ika-Limang Mapa - Golden Wasteland, Lumipad gawing kanan, at sa bangka sumakay.`,
-          // `Pagkadating sa Treasure Reef, lumipad pataas at dumako sa dulong isla at sa likod nito makita ang spirit.`,
+          // `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
+          // `When you reach the Treasure Reef, fly upward toward the farthest island. The spirit is behind it.`,
         ],
       },
     ],
@@ -1744,12 +1744,12 @@ export const wasteland = [
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Sa mapang ito mo rin makikita ang mga Winged Lights kung tawagin. Ito ay
-        nagpapataas ng lebel para ikaw ay makalipad ng mas mataas. May{' '}
+        You can also find Winged Lights on this map. Collecting them increases
+        your Wing Level, allowing you to fly higher. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {WASTELAND_NUM_WL}
         </span>{' '}
-        na winged lights ang pwede mong makuha dito
+        Winged Lights that you can collect here.
       </Typography>
     ),
     winged_lights: [
@@ -1759,8 +1759,8 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag may mataas na poste, lumipad patungo sa ibabaw nito, at makita mo ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, find the tall pillar and fly to its top to reach the Winged Light.`,
         ],
       },
       {
@@ -1769,8 +1769,8 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, sa unahan makita mo agad itong winged light`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, you will immediately see the Winged Light ahead.`,
         ],
       },
       {
@@ -1779,9 +1779,9 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, makita mo ang winged light sa tuktok ng sirang tore sa kanan.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, the Winged Light is on top of the broken tower on the right.`,
         ],
       },
       {
@@ -1790,10 +1790,9 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area,lumipad patungo sa kabilang lagusan, at nasa loob ng poste
-        sa kanang banda ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side. The Winged Light is inside the pillar on the right.`,
         ],
       },
       {
@@ -1802,10 +1801,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad gawing kanan at nasa malawak na patag na bato ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly to the right. The Winged Light is on the large, flat rock.`,
         ],
       },
       {
@@ -1814,10 +1813,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad Patungo sa mga malalaking bato sa dulo, at makita mo ang winged light sa gild ng bato`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly toward the large rocks. The Winged Light is on the side of one of the rocks.`,
         ],
       },
       {
@@ -1826,11 +1825,11 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad Patungo sa mga malalaking bato sa dulo, sa kaliwang parte nito ay may tunnel`,
-          `sa loob ng tunnel ang winged light na ito.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly toward the large rocks. There is a tunnel on their left side.`,
+          `The Winged Light is inside the tunnel.`,
         ],
       },
       {
@@ -1839,10 +1838,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad gawing kanan patungo sa hagdanan sa dulo.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly to the right toward the stairs.`,
         ],
       },
       {
@@ -1851,12 +1850,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at
-        lumipad gawing kanan at may makita kang lagusan na tunnel`,
-          `Paglabas sa Shipwreck,
-        lumipad pakanan at nasa mataas na butas ng pader ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side, then fly right and enter the tunnel.`,
+          `After entering the Shipwreck area, fly to the right. The Winged Light is inside a high opening in the wall.`,
         ],
       },
       {
@@ -1865,12 +1862,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at
-        lumipad gawing kanan at may makita kang lagusan na tunnel`,
-          `Paglabas sa Shipwreck,
-        lumipad patungo sa loob ng Shipwreck at sa dulo sa mga banga ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side, then fly right and enter the tunnel.`,
+          `After entering the Shipwreck area, fly inside the Shipwreck. The Winged Light is among the jars at the far end.`,
         ],
       },
       {
@@ -1879,12 +1874,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at
-        lumipad gawing kanan at may makita kang lagusan na tunnel`,
-          `Paglabas sa Shipwreck,
-        lumipad patungo pakaliwa at sa unahan ng mga tunnel na hagdanan makita ito.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side, then fly right and enter the tunnel.`,
+          `After entering the Shipwreck area, fly to the left. You will find the Winged Light ahead near the stair-like tunnels.`,
         ],
       },
       {
@@ -1893,11 +1886,11 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad gawing kanan patungo sa hagdanan sa dulo`,
-          `Pagkalabas ay makita sa kanang bahagi sa itaas ng sirang templo.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly to the right toward the stairs.`,
+          `After exiting, the Winged Light is in the upper-right section of the ruined temple.`,
         ],
       },
       {
@@ -1906,11 +1899,11 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad gawing kanan patungo sa hagdanan sa dulo`,
-          `Lumipad patungo sa sirang templo at sa dulo bago sa gate, sa likod ng poste sa kaliwa ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly to the right toward the stairs.`,
+          `Fly toward the ruined temple. Before the gate at the far end, the Winged Light is behind the pillar on the left.`,
         ],
       },
       {
@@ -1919,11 +1912,11 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          ` Pagkalapag, lumipad patungo sa broken temple at pumasok sa lagusan.`,
-          `Pagdating sa 1-Krill Area, lumipad patungo sa kabilang lagusan at tumuloy mag skate pababa.`,
-          `Sa dulo ay lumipad gawing kanan patungo sa hagdanan sa dulo`,
-          `Lumipad patungo sa sirang templo at sa dulo sindihan ang lock ng gate, at pumasok ka, sa loob ang winged light`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly toward the Broken Temple and enter the passage.`,
+          `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+          `At the end, fly to the right toward the stairs.`,
+          `Fly toward the ruined temple, light the gate lock at the far end, and enter. The Winged Light is inside.`,
         ],
       },
       {
@@ -1932,9 +1925,9 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, lumipad gawing kanan patungo sa bangka, at umupo ka.`,
-          `Pagdating sa Forgotten Ark, lumipad hanggang makita ang Ark at sa unahan ang winged light na ito.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly to the right toward the boat and sit down.`,
+          `When you reach the Forgotten Ark, fly until you see the Ark. The Winged Light is at its front tip.`,
         ],
       },
       {
@@ -1943,10 +1936,9 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, lumipad gawing kanan patungo sa bangka, at umupo ka.`,
-          `Lumipad patungo sa dakong dulo na kapatagan at may lagusan na maliit sa bandang kaliwa,
-        at pumasok ka at sa loob nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly to the right toward the boat and sit down.`,
+          `Fly toward the open field at the far end. Enter the small passage on the left; the Winged Light is inside.`,
         ],
       },
       {
@@ -1955,9 +1947,9 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland >> Lumipad gawing kanan, at umupo sa bangka.`,
-          `Pagdating sa Treasure Reef, lumipad pataas`,
-          `May mataas na tore sa gawing kanan at sa tuktok nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+          `When you reach the Treasure Reef, fly upward.`,
+          `There is a tall tower on the right. The Winged Light is at its top.`,
         ],
       },
       {
@@ -1966,11 +1958,10 @@ export const wasteland = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland >> Lumipad gawing kanan, at umupo sa bangka.`,
-          `Pagdating sa Treasure Reef, lumipad pataas`,
-          `Sa tapat ng mataas na tore sa gawing kanan, ay pumasok sa batong may butas na nasa dagat
-          at lumangoy pailalim hanggang sa makarating ka sa ibaba`,
-          ` Buksan ang pintuan sa gawing kaliwa, at nasa loob nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+          `When you reach the Treasure Reef, fly upward.`,
+          `Across from the tall tower on the right, enter the rock opening in the sea and swim downward until you reach the bottom.`,
+          `Open the door on the left. The Winged Light is inside.`,
         ],
       },
     ],
@@ -1981,12 +1972,12 @@ export const wasteland = [
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Ang Map Shrines ay nagsisilbing gabay upang magtukoy kung ilan at saan
-        pa ang kailangan mong kunin na winged lights sa loob ng mapa. May{' '}
+        Map Shrines serve as guides that show how many Winged Lights you still
+        need to collect and where they are located within the map. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {WASTELAND_NUM_MAP_SHRINES}
         </span>{' '}
-        na Map Shrines ang pwede mong mabuksan sa loob ng Daylight Prairie.
+        Map Shrines that you can unlock within Daylight Prairie.
       </Typography>
     ),
     map_shrines: [
@@ -1995,8 +1986,8 @@ export const wasteland = [
         shrine_label: 'Map Shrine 1',
         shrine_url: GW_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan.`,
-          `Bago ka pa makarating sa dulo, nasa bandang kaliwa ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland and continue toward the end of the passage.`,
+          `Before reaching the end, you will find the Map Shrine on the left.`,
         ],
       },
       {
@@ -2004,9 +1995,8 @@ export const wasteland = [
         shrine_label: 'Map Shrine 2',
         shrine_url: GW_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka ng tuwid at makita mo sa harapan ang sirang templo
-          sa unahan, at sa gilid lang nito ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly straight ahead. You will see the ruined temple in front of you, and the Map Shrine is beside it.`,
         ],
       },
       {
@@ -2014,11 +2004,10 @@ export const wasteland = [
         shrine_label: 'Map Shrine 3',
         shrine_url: GW_MS3 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka ng tuwid patungo sa sirang templo at pagkalagpas
-          mo dito, ay pumasok ka sa lagusan malapit sa hagdanan.`,
-          `Pagkapasok, ay lumipad ka patungo sa Boneyard kung saan may 3 krills dito.`,
-          `Lumipad patungo sa malaking dark plants, at sa kanan nito ay may tunnel kung nasaan ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly straight toward the ruined temple. Once you pass it, enter the passage near the stairs.`,
+          `Fly toward the Boneyard, where there are three Krills.`,
+          `Fly toward the large Dark Plants. The Map Shrine is inside the tunnel on their right.`,
         ],
       },
       {
@@ -2026,11 +2015,10 @@ export const wasteland = [
         shrine_label: 'Map Shrine 4',
         shrine_url: GW_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka ng tuwid patungo sa sirang templo at pagkalagpas
-          mo dito, ay pumasok ka sa lagusan malapit sa hagdanan.`,
-          `Tawirin ang 1-Krill Area, at pagkalagpas mo ay sa dakong kanan may lagusan na tunnel, pumasok ka`,
-          `Pagkalabas sa Shipwreck, lumipad patungo sa kanan at makikita mo ang map shrine sa isang maliit na isla.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly straight toward the ruined temple. Once you pass it, enter the passage near the stairs.`,
+          `Cross the one-Krill area. After passing it, enter the tunnel on the right.`,
+          `After exiting into the Shipwreck area, fly to the right. The Map Shrine is on a small island.`,
         ],
       },
       {
@@ -2038,12 +2026,11 @@ export const wasteland = [
         shrine_label: 'Map Shrine 5',
         shrine_url: GW_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka ng tuwid patungo sa sirang templo at pagkalagpas
-          mo dito, ay pumasok ka sa lagusan malapit sa hagdanan.`,
-          `Tawirin ang 1-Krill Area, at magtunog sa Boneyard na may 3-Krill sa area,`,
-          `At lumipad patungo sa malawak na hagdanan sa bandang kanan sa dulo`,
-          `Pagkalabas mo ay lumipad patungo sa entrance ng sirang templo, at sa bandang kaliwan makikita ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly straight toward the ruined temple. Once you pass it, enter the passage near the stairs.`,
+          `Cross the one-Krill area and continue toward the Boneyard, where there are three Krills.`,
+          `Fly toward the wide staircase at the far-right end.`,
+          `After exiting, fly toward the entrance of the ruined temple. The Map Shrine is on the left.`,
         ],
       },
       {
@@ -2051,13 +2038,11 @@ export const wasteland = [
         shrine_label: 'Map Shrine 6',
         shrine_url: GW_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka ng tuwid patungo sa sirang templo at pagkalagpas
-          mo dito, ay pumasok ka sa lagusan malapit sa hagdanan.`,
-          `Tawirin ang 1-Krill Area, at magtunog sa Boneyard na may 3-Krill sa area,`,
-          `At lumipad patungo sa malawak na hagdanan sa bandang kanan sa dulo`,
-          `Pagkalabas mo ay lumipad patungo sa templot at pumasok ka, sa likod ng shrine 
-          makikita ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly straight toward the ruined temple. Once you pass it, enter the passage near the stairs.`,
+          `Cross the one-Krill area and continue toward the Boneyard, where there are three Krills.`,
+          `Fly toward the wide staircase at the far-right end.`,
+          `After exiting, fly toward the temple and enter it. The Map Shrine is behind the shrine.`,
         ],
       },
       {
@@ -2065,9 +2050,8 @@ export const wasteland = [
         shrine_label: 'Map Shrine 7',
         shrine_url: GW_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, lumipad pakaliwa at sumakay sa bangka.`,
-          `Pagkarating sa Treasure Reef, ay lumipad patungo sa pinakamataas na tore at makita mo 
-          sa loob nito ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, fly to the left, and board the boat.`,
+          `When you reach the Treasure Reef, fly toward the tallest tower. The Map Shrine is inside it.`,
         ],
       },
       {
@@ -2075,10 +2059,9 @@ export const wasteland = [
         shrine_label: 'Map Shrine 8',
         shrine_url: GW_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka gawing kanan at hanapin ang bangka sa dalampasigan at sumakay dito`,
-          `Pagkarating sa Forgotten Ark, ay lumipad patungo sa malaking barko at nasa loob nito sa gitna
-          ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly to the right, find the boat on the shore, and board it.`,
+          `When you reach the Forgotten Ark, fly toward the large ship. The Map Shrine is inside, near the center.`,
         ],
       },
       {
@@ -2086,9 +2069,9 @@ export const wasteland = [
         shrine_label: 'Map Shrine 9',
         shrine_url: GW_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge, magtungo sa Season Collab Room`,
-          `Hanapin ang Memory Cube at gawin ang emote ng Meditating Monastic malapit dito. `,
-          `Pagkarating sa Last City, sa gawing kanan ay makikita mo ang Map Shrine.`,
+          `Enter Map 6 | Vault of Knowledge and go to the Season Collaboration Room.`,
+          `Find the Memory Cube and use the Meditating Monastic emote near it.`,
+          `When you reach the Last City, you will find the Map Shrine on the right.`,
         ],
       },
     ],

@@ -179,14 +179,14 @@ export const prairie = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          Ito ang pangalawang constellation - Daylight Prairie. May{' '}
+          This is the second constellation—Daylight Prairie. There are{' '}
           <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
             {PRAIRIE_NUM_REG_SPIRIT}
           </span>{' '}
-          regular spirits na makikita mo dito. Andito ang mga spirits ng
-          Applauding Bellmaker, Bird Whisperer, Butterfly Charmer, Ceremonial
-          Worshipper, Exhausted Dock Worker, Laughing Light Catcher, Slumbering
-          Shipwright at Waving Bellmaker.
+          regular spirits you can find here: Applauding Bellmaker, Bird
+          Whisperer, Butterfly Charmer, Ceremonial Worshipper, Exhausted Dock
+          Worker, Laughing Light Catcher, Slumbering Shipwright, and Waving
+          Bellmaker.
         </Typography>
       </>
     ),
@@ -234,10 +234,10 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'c7kGy7s9-jY',
         spirit_direction: [
-          'Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan',
-          'Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita at lumusot sa batong pintuan at lumipad.',
-          'Pagdating sa Village Islands, lumipad ka gawing kaliwa at may makikita kang isla na may malaking pintuan.',
-          'Sindihan ang isang parte ng pintuan at antayin ng may isang manlalaro nag magsindi din sa sa kabila at ito ay magbubukas. Sa loob ang spirit.',
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head toward the temple, pass through the stone doorway, and continue flying.`,
+          `When you reach the Village Islands, fly to the island on the left with the large door.`,
+          `Light one side of the door and wait for another player to light the other side. The door will open, and the spirit is inside.`,
         ],
       },
       //BIRD_WHISPERER
@@ -283,10 +283,10 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'oEq8TjItdaM',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka.`,
-          `Sa Bird's Nest ay may makikitang kang maraming nakalutang na isla.`,
-          `Lumipad ka hanggat makita mo ang nasa dulo na isla at kumikinang na spirit ng Bird Whisperer.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, you will see several floating islands.`,
+          `Keep flying until you reach the island at the far end, where you will find the glowing Bird Whisperer spirit.`,
         ],
       },
       //BUTTERFLY_CHARMER
@@ -344,9 +344,8 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'FL9QRbJfmgw',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, may makikita kang parang hugis globe na bukid at sa lagusan nito ay makikita mo
-        ang spirit na hinahanap mo.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, look for the globe-shaped hill. The spirit is inside the passage beneath it.`,
         ],
       },
       //CEREMONIAL_WORSHIPPER
@@ -386,11 +385,10 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'c0KB1cD5j4Y',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita at lumusot sa batong pintuan at lumipad.`,
-          `Pagdating sa Village Islands, lumipad ka gawing kanan na isla at pumasok ka. Gawin ang butterfly charm emote na nasa mga square na bato sa sahig, at bubukas ang pintuan.`,
-          `Magsindi sa 8-player lock at ito ay aakyat at sindihan lahat ng treasure candles nakapalibot sa shrines at cutscene
-          ng spirit at automatic makukuha mo na ang spirit.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head toward the temple, pass through the stone doorway, and continue flying.`,
+          `When you reach the Village Islands, fly to the island on the right and enter it. Use the Butterfly Charmer emote on the square stones on the floor to open the door.`,
+          `Activate the eight-player platform. When it rises, light all the treasure candles surrounding the shrines. A cutscene will play, and you will automatically receive the spirit.`,
         ],
       },
       //EXHAUSTED_DOCK_WORKER
@@ -436,11 +434,10 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'ae4nHnxXnaY',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, sa gawing kaliwa mo ay may lagusan papasok.`,
-          `Makita mo ang Prairie Caves, lumipad ka hanggang sa makapasok ka at patungo malapit sa 
-          labasan ng kweba ay may makita kang lagusan na maliit sa iyong kaliwa.`,
-          `Pasok ka at makita mo ang spirit na ito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `Continue through Prairie Caves. Near the cave exit, look for a small passage on your left.`,
+          `Enter the passage to find this spirit.`,
         ],
       },
       //LAUGHING_LIGHT_CATCHER
@@ -492,9 +489,9 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + '_sHazypMGKM',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita.`,
-          `sa Village Islands, lumipad ka gawing kanan, at may makita kang isla. Nasa loob ang spirit na ito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head in the direction of the temple.`,
+          `In the Village Islands, fly to the island on the right. This spirit is inside.`,
         ],
       },
       //SLUMBERING_SHIPWRIGHT
@@ -540,11 +537,10 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'Si6JXZmjMV8',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita.`,
-          `sa Village Islands,  lumipad ka patungo sa gitnang isla at hanapin ang pintuan. Tandaan 
-        kailangan mo ng kasamang magbukas ng pintuan.`,
-          `Pagkabukas nito ay makita mo sa loob yung spirit.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head in the direction of the temple.`,
+          `In the Village Islands, fly to the central island and look for the door. You will need another player to help open it.`,
+          `Once the door opens, you will find the spirit inside.`,
         ],
       },
       //WAVING_BELLMAKER
@@ -596,9 +592,9 @@ export const prairie = [
         constellation_icon_route: MAP2,
         spirit_guide_video_url: youtube_embed + 'L33gNWXTxh4',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita.`,
-          `sa Village Islands,  lumipad ka patungo sa gitnang isla at makikita mo agad ang spirit na ito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head in the direction of the temple.`,
+          `In the Village Islands, fly to the central island. You will immediately see this spirit.`,
         ],
       },
     ],
@@ -609,12 +605,12 @@ export const prairie = [
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Nandito ang mga spirits na dumaan noong nakaraang Seasonal Events na
-        makikita mo tuwing papasok ka sa Daylight Prairie. May{' '}
+        These spirits appeared during previous Seasonal Events and can be found
+        whenever you enter Daylight Prairie. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {PRAIRIE_NUM_SEASON_SPIRIT}
         </span>{' '}
-        season spirits na pwede mong makita at makuha dito.
+        seasonal spirits you can find and relive here.
       </Typography>
     ),
     spirits: [
@@ -672,10 +668,9 @@ export const prairie = [
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'HCmwZWxOkFM',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Makita mo ang Prairie Caves, sa entrance ng kweba, pasok ka lang ng onti, at sa gawing kaliwa mo makita
-        ang spirit na ito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `When you reach Prairie Caves, go slightly inside the cave entrance. You will find this spirit on your left.`,
         ],
       },
       //DOUBLE_FIVE_LIGHT_CATCHER
@@ -746,9 +741,9 @@ export const prairie = [
         icon_route: SEASON2,
         spirit_guide_video_url: youtube_embed + 'SoF7OUY9Tho',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka.`,
-          `Pagdating sa Bird's Nest, Lumipad ka gawing kaliwa, at sa likod ng sirang tore, dakong dulo ng isla ay makikita mo itong spirit.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly to the left. You will find this spirit behind the ruined tower near the far end of the island.`,
         ],
       },
       //CONFETTI_COUSIN
@@ -813,9 +808,8 @@ export const prairie = [
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + 'H9QcHm8kfBg',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  may makikita kang parang hugis globe na bukid at sa tuktok nito ay makikita mo
-        ang spirit.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, look for the globe-shaped hill. The spirit is located on top of it.`,
         ],
       },
       //FESTIVAL_SPIN_DANCER
@@ -882,10 +876,9 @@ export const prairie = [
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'DUpjerHhBqA',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest sa iyong kinatatayuan tumalon kalang pababa at pagkalapag mo ay makita mo ang spirit sa
-        ilalim nito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `When you reach Bird's Nest, drop straight down from where you entered. After landing, you will find the spirit underneath.`,
         ],
       },
       //TIMID_BOOKWORM
@@ -946,11 +939,10 @@ export const prairie = [
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + '6UafYcL-qDI',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest  lumipad ka pababa hanggang sa makita mo ang lagusan na ulap.`,
-          `Pagdating mo sa Sanctuary Islands, lumipad ka papunta sa unang nakalutang na isla sa harap mo, makikita ang spirit na ito
-        sa likod ng nakalutang na isla, nakasampa sa gild.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly to the first floating island in front of you. This spirit is on a ledge behind the island.`,
         ],
       },
       //CHILL_SUNBATHER
@@ -1019,11 +1011,10 @@ export const prairie = [
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + '4W6eiKr_21c',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest  lumipad ka pababa hanggang sa makita mo ang lagusan na ulap.`,
-          `Pagdating mo sa Sanctuary Islands, lumipad ka pababa sa pinakamalaking isla, at may makikita ka kaagad na spirit na nasa
-        labas ng maliit na lagusan.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down to the largest island. You will immediately see this spirit outside a small passage.`,
         ],
       },
       //RALLYING_THRILLSEEKER
@@ -1084,11 +1075,10 @@ export const prairie = [
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + 'rGjLAZFGM8o',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest  lumipad ka pababa hanggang sa makita mo ang lagusan na ulap.`,
-          `Pagdating mo sa Sanctuary Islands, lumipad ka pababa sa pinakamalaking isla, makikita mo itong spirit katabi sa nag-iisang 
-        geyser unahan ng waterfalls.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down to the largest island. This spirit is beside the lone geyser in front of the waterfalls.`,
         ],
       },
       //GRATEFUL_SHELL_COLLECTOR
@@ -1151,10 +1141,10 @@ export const prairie = [
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + '3qBtSHuGHtQ',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest  lumipad ka pababa hanggang sa makita mo ang lagusan na ulap.`,
-          `Pagdating mo sa Sanctuary Islands, lumipad ka pababa sa pinakamalaking isla, nasa gilid bunganga ng entrance ng malaking kweba.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down to the largest island. The spirit is beside the entrance to the large cave.`,
         ],
       },
       //HIKING_GROUCH
@@ -1223,10 +1213,10 @@ export const prairie = [
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + 'd_jE1N1qlfM',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest  lumipad ka pababa hanggang sa makita mo ang lagusan na ulap.`,
-          `Pagdating mo sa Sanctuary Islands, lumipad ka pababa sa pinakamalaking isla, nasa elevated na lugar, dakong kanan ng bundok.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down to the largest island. The spirit is on an elevated area on the right side of the mountain.`,
         ],
       },
       //JELLY_WHISPERER
@@ -1289,11 +1279,10 @@ export const prairie = [
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + '93xGI6POTDQ',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest  lumipad ka pababa hanggang sa makita mo ang lagusan na ulap.`,
-          `Pagdating mo sa Sanctuary Islands, lumipad ka pababa sa pinakamalaking isla, at sa likod ng malaking isla may malaking
-        kweba na may mga jellyfish, nasa looban ang spirit dito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down to the largest island. Behind it is a large cave filled with jellyfish, and the spirit is inside.`,
         ],
       },
       //REASSURING_RANGER
@@ -1356,10 +1345,10 @@ export const prairie = [
         icon_route: SEASON18,
         spirit_guide_video_url: youtube_embed + 'jhm4hLDM-88',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Paglabas mo, makita mo ang Prairie Caves, at sa kaliwang bahagi ay may maliit na lagusan, pumasok ka.`,
-          `Umupo ka sa bangka. Pagdating mo ay lakarin mo lng papasok hanggang makita mo ang tanawin. May bato na malaki sa iyong kanan, nasa likod ang spirit na ito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `When you reach Prairie Caves, enter the small passage on the left.`,
+          `Sit in the boat. After arriving, walk forward until the area opens up. You will see a large rock on your right, and this spirit is behind it.`,
         ],
       },
       //JOLLY_GEOLOGIST
@@ -1418,11 +1407,10 @@ export const prairie = [
         icon_route: SEASON18,
         spirit_guide_video_url: youtube_embed + 'tDwp1gBOIv4',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Paglabas mo, makita mo ang Prairie Caves, at sa kaliwang bahagi ay may maliit na lagusan, pumasok ka.`,
-          `Umupo ka sa bangka. Pagdating mo ay lumipad ka sa direksyon ng malaking talon, at bago ka umabot sa talon
-        ay may maliit na lagusan ng kweba. Pasok ka sa gawing kanan.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `When you reach Prairie Caves, enter the small passage on the left.`,
+          `Sit in the boat. After arriving, fly toward the large waterfall. Before reaching it, enter the small cave opening on the right.`,
         ],
       },
       //ASCETIC_MONK
@@ -1481,11 +1469,10 @@ export const prairie = [
         icon_route: SEASON18,
         spirit_guide_video_url: youtube_embed + 'vQ_Jyh_oink',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Paglabas mo, makita mo ang Prairie Caves, at sa kaliwang bahagi ay may maliit na lagusan, pumasok ka.`,
-          `Umupo ka sa bangka. Pagdating mo ay lumipad ka gawing kaliwa, patungo sa mataas na bundok kung saan may nyebe (snow)
-        at sa bandang patag ay makita mo ang spirit na ito.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `When you reach Prairie Caves, enter the small passage on the left.`,
+          `Sit in the boat. After arriving, fly to the left toward the tall, snow-covered mountain. You will find this spirit on a flat area of the mountain.`,
         ],
       },
       //NIGHTBIRD_WHISPERER
@@ -1550,12 +1537,10 @@ export const prairie = [
         icon_route: SEASON18,
         spirit_guide_video_url: youtube_embed + 'KsXwZnr5dQU',
         spirit_direction: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Paglabas mo, makita mo ang Prairie Caves, at sa kaliwang bahagi ay may maliit na lagusan, pumasok ka.`,
-          `Umupo ka sa bangka. Pagdating mo ay lumipad ka gawing kaliwa, patungo 
-        sa mga bundok na lagusan. Pumasok ka hanggang sa maliit na lagusan sa mababa at 
-         may makikita kang pinakamalaking monolith o matarik na bato at sa likod nito ang spirit.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `When you reach Prairie Caves, enter the small passage on the left.`,
+          `Sit in the boat. After arriving, fly left toward the mountain passages. Enter the low, narrow passage and continue until you find the largest monolith or steep rock. The spirit is behind it.`,
         ],
       },
     ],
@@ -1567,12 +1552,12 @@ export const prairie = [
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Sa mapang ito mo rin makikita ang mga Winged Lights kung tawagin. Ito ay
-        nagpapataas ng lebel para ikaw ay makalipad ng mas mataas. May{' '}
+        You can also find Winged Lights on this map. Collecting them increases
+        your Wing Level, allowing you to fly higher. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {PRAIRIE_NUM_WL}
         </span>{' '}
-        na winged lights ang pwede mong makuha dito sa Daylight Prairie.
+        Winged Lights you can collect in Daylight Prairie.
       </Typography>
     ),
     winged_lights: [
@@ -1583,8 +1568,8 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Sa social area space`,
-          `Dumako sa Stone Ark na makikita sa area.`,
+          `Enter Map 2, Daylight Prairie, and remain in the Social Space.`,
+          `Head to the Stone Ark in the area.`,
         ],
       },
       {
@@ -1594,8 +1579,8 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, nasa kaliwang kweba na maliit.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, enter the small cave on the left.`,
         ],
       },
       {
@@ -1605,8 +1590,8 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, nasa tuktok ng maliit na bundok.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, the Winged Light is on top of the small hill.`,
         ],
       },
       {
@@ -1616,9 +1601,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field,  punta sa kaliwang dako at pumasok sa lagusan`,
-          `Lipad patungong Prairie Caves at dakong itaas, gawing kaliwa makita mo ang butas.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, go left and enter the passage.`,
+          `Fly toward Prairie Caves, head upward, and look for an opening on the left.`,
         ],
       },
       {
@@ -1628,10 +1613,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field,  punta sa kaliwang dako at pumasok sa lagusan`,
-          `Lipad patungong Prairie Caves at lipad hanggang gitna, at gawing kanan na pader
-        sa itaas, may lagusan ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, go left and enter the passage.`,
+          `Fly into Prairie Caves and continue toward the center. High on the wall to the right, you will find another passage.`,
         ],
       },
       {
@@ -1641,9 +1625,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad patungong templo`,
-          `Paglabas sa Village Islands, sa unang isla sa harap mo makita agad ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly toward the temple.`,
+          `When you enter the Village Islands, you will immediately see the Winged Light on the first island in front of you.`,
         ],
       },
       {
@@ -1653,9 +1637,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad patungong templo`,
-          `Paglabas sa Village Islands,sa isla sa kaliwa mo ay may pintuan na malaki sa loob nito ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly toward the temple.`,
+          `When you enter the Village Islands, fly to the island on your left. The Winged Light is behind the large door.`,
         ],
       },
       {
@@ -1665,9 +1649,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad patungong templo`,
-          `Paglabas sa Village Islands, sa gitnang Village Temple, ay nasa likod nito ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly toward the temple.`,
+          `When you enter the Village Islands, the Winged Light is behind the central Village Temple.`,
         ],
       },
       {
@@ -1677,9 +1661,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad patungong templo`,
-          `Paglabas sa Village Islands, lumipad patungong templo, sa kaliwang bahaging itaas ng templo makita mo ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly toward the temple.`,
+          `After leaving the Village Islands, continue toward the temple. The Winged Light is on the upper-left side of the temple.`,
         ],
       },
       {
@@ -1689,9 +1673,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad patungong templo`,
-          `Paglabas sa Village Islands, lumipad patungong templo, sa pinakataas naman na parte ng templo ang pangalawang winged light dito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly toward the temple.`,
+          `After leaving the Village Islands, continue toward the temple. The second Winged Light here is at the very top of the temple.`,
         ],
       },
       {
@@ -1701,10 +1685,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad patungong templo`,
-          `Paglabas sa Village Islands, sa kanan na Village Island, kailangan mong makapasok sa pintuan at makaakyat pataas,`,
-          `Sa bundok na makita mo ay may butas sa itaas pumasok ka at makita mo ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly toward the temple.`,
+          `In the Village Islands, go to the island on the right. Enter through the door and climb upward.`,
+          `Look for an opening near the top of the mountain. Enter it to find the Winged Light.`,
         ],
       },
       {
@@ -1714,9 +1698,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, sa kaliwang isla ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `When you reach Bird's Nest, the Winged Light is on the island to the left.`,
         ],
       },
       {
@@ -1726,9 +1710,9 @@ export const prairie = [
         wl_season_group: 'wl-prairie-0',
         wl_url: PR_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, nasa likod na isla, ng nasa gitnang islang may sirang tore.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, the Winged Light is on the island behind the central island with the ruined tower.`,
         ],
       },
       {
@@ -1738,10 +1722,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Lumipad pakaliwa at may maliit na lagusan sa ibaba, pasok ka at sentro ng kweba, lipad  pataas at hanapin ang sa gitnang pader.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, fly left and enter the small passage below. In the center of the cave, fly upward and look along the middle wall.`,
         ],
       },
       {
@@ -1751,11 +1735,11 @@ export const prairie = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Pagdating dumako papasok at lumipad patungo sa malaking sa falls, ay lumangoy pailalim`,
-          `pumasok sa butas at lumangoy at umahon at lumipad papasok sa tabi ng orb makikita ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, continue inward and fly toward the large waterfall. Swim underneath it.`,
+          `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
         ],
       },
       {
@@ -1765,11 +1749,11 @@ export const prairie = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Pagdating dumako papasok at lumipad patungo sa pinakamataas na bundok at sa tuktok nito ang winged light.`,
-          `pumasok sa butas at lumangoy at umahon at lumipad papasok sa tabi ng orb makikita ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, continue inward and fly to the tallest mountain. The Winged Light is at its summit.`,
+          `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
         ],
       },
       {
@@ -1779,10 +1763,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, makita mo ito agad sa malaking islang nakalutang.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, you will immediately see the Winged Light on the large floating island.`,
         ],
       },
       {
@@ -1792,10 +1776,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa tuktok ng malaking isla ay may maliit na lagusan.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, look for the small passage at the top of the largest island.`,
         ],
       },
       {
@@ -1805,10 +1789,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL19 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa dakong kanan, makita ang tatlong maliliit na nakalutang na isla. Nasa kanan na isla.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, look to the right for three small floating islands. The Winged Light is on the rightmost island.`,
         ],
       },
       {
@@ -1818,10 +1802,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL20 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa bandang likuran ay may mga kampana at sa bandang ibaba ay nakapwesto ang winged light na ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At the back of Sanctuary Islands, look for the bells. This Winged Light is positioned below them.`,
         ],
       },
       {
@@ -1831,10 +1815,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL21 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa likod ng malaking isla makikita ang jellyfish cave.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, look behind the largest island for the jellyfish cave.`,
         ],
       },
       {
@@ -1844,10 +1828,10 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL22 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa at makita ang malaking bunganga ng kweba nasa likod ng waterfall ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and look for the large cave entrance behind the waterfall.`,
         ],
       },
       {
@@ -1857,12 +1841,11 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL23 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa
-          at makita ang malaking bunganga ng kweba pumasok at sa kaliwa ay may lagusan`,
-          `Lumipad pataas at ito ay iyong makikita.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the left.`,
+          `Fly upward to find the Winged Light.`,
         ],
       },
       {
@@ -1872,12 +1855,11 @@ export const prairie = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL24 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa
-        at makita ang malaking bunganga ng kweba pumasok at sa kanan ay may lagusan`,
-          `Pumasok ka sa Crabs Area, lumipad pataas at may lagusan papasok, dito ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the right.`,
+          `Enter the crab area, fly upward, and go through the next passage to find the Winged Light.`,
         ],
       },
     ],
@@ -1889,12 +1871,12 @@ export const prairie = [
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Ang Map Shrines ay nagsisilbing gabay upang magtukoy kung ilan at saan
-        pa ang kailangan mong kunin na winged lights sa loob ng mapa. May{' '}
+        Map Shrines help you identify how many Winged Lights you still need to
+        collect and where they are located on the map. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {PRAIRIE_NUM_MAP_SHRINES}
         </span>{' '}
-        na Map Shrines ang pwede mong mabuksan sa loob ng Daylight Prairie.
+        Map Shrines you can activate in Daylight Prairie.
       </Typography>
     ),
     map_shrines: [
@@ -1903,9 +1885,8 @@ export const prairie = [
         shrine_label: 'Map Shrine 1',
         shrine_url: DP_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 2 | Daylight Prairie.`,
-          `Sa Social Space, lumipad sa kaliwang bahagi at makita mo itong
-          Map Shrine.`,
+          `Enter Map 2, Daylight Prairie.`,
+          `In the Social Space, fly to the left side to find this Map Shrine.`,
         ],
       },
       {
@@ -1913,8 +1894,8 @@ export const prairie = [
         shrine_label: 'Map Shrine 2',
         shrine_url: DP_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, makita mo agad ang map shrine.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, you will immediately see the Map Shrine.`,
         ],
       },
       {
@@ -1922,9 +1903,9 @@ export const prairie = [
         shrine_label: 'Map Shrine 3',
         shrine_url: DP_MS3 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Makita mo ang Prairie Caves, sa kaliwang banda bago sa entrance ay maktia mo ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `When you reach Prairie Caves, you will find the Map Shrine on the left side before the cave entrance.`,
         ],
       },
       {
@@ -1932,9 +1913,9 @@ export const prairie = [
         shrine_label: 'Map Shrine 4',
         shrine_url: DP_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita at lumusot sa batong pintuan at lumipad.`,
-          `Pagdating sa Village Islands, lumipad ka gawing kanan na isla at sa elevated na parte ng isla makita ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head toward the temple, pass through the stone doorway, and continue flying.`,
+          `When you reach the Village Islands, fly to the island on the right. The Map Shrine is on an elevated section of the island.`,
         ],
       },
       {
@@ -1942,9 +1923,9 @@ export const prairie = [
         shrine_label: 'Map Shrine 5',
         shrine_url: DP_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita at lumusot sa batong pintuan at lumipad.`,
-          `Pagdating sa Village Islands, lumipad patungong templo at sa gawing kanan ng pond makita ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head toward the temple, pass through the stone doorway, and continue flying.`,
+          `When you reach the Village Islands, fly toward the temple. The Map Shrine is on the right side of the pond.`,
         ],
       },
       {
@@ -1952,10 +1933,10 @@ export const prairie = [
         shrine_label: 'Map Shrine 6',
         shrine_url: DP_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, dumako ka patungo sa direksyon ng templo na iyong makikita at lumusot sa batong pintuan at lumipad.`,
-          `Pagdating sa Village Islands, lumipad ka gawing kanan na isla at pumasok ka. Gawin ang butterfly charm emote na nasa mga square na bato sa sahig, at bubukas ang pintuan.`,
-          `Magsindi sa 8-player lock at ito ay aakyat, pagdating sa itaas ay sa bandang likuran na bundok makita mo ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, head toward the temple, pass through the stone doorway, and continue flying.`,
+          `When you reach the Village Islands, fly to the island on the right and enter it. Use the Butterfly Charmer emote on the square stones on the floor to open the door.`,
+          `Activate the eight-player platform. When it rises, look toward the mountain at the back to find the Map Shrine.`,
         ],
       },
       {
@@ -1963,10 +1944,10 @@ export const prairie = [
         shrine_label: 'Map Shrine 7',
         shrine_url: DP_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Sa gawing kaliwa ng Prairie Caves, ay may butas papasok papuntang Prairie Peaks, pumasok at sumakay sa bangka.`,
-          `Pagdating sa Prairie Peaks, ay pumasok sa looban at pagkalabas ay sa may bato sa bandang kanan, nasa itaas ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `On the left side of Prairie Caves, enter the opening that leads to Prairie Peaks and ride the boat.`,
+          `When you arrive at Prairie Peaks, continue inward. After the area opens up, look on top of the rock to the right for the Map Shrine.`,
         ],
       },
       {
@@ -1974,9 +1955,9 @@ export const prairie = [
         shrine_label: 'Map Shrine 8',
         shrine_url: DP_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag,  sa gawing kanan ay may lagusan patungong Bird's Nest, pumasok ka`,
-          `Pagdating sa Bird's Nest lumipad sa isla sa harapan mo at nandito ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on the right that leads to Bird's Nest.`,
+          `In Bird's Nest, fly to the island directly in front of you to find the Map Shrine.`,
         ],
       },
       {
@@ -1984,11 +1965,10 @@ export const prairie = [
         shrine_label: 'Map Shrine 9',
         shrine_url: DP_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa patungo sa mga Bells, at malapit sa Quest Giver ng Sanctuary
-          ay makita mo ang map shrine.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down toward the bells. The Map Shrine is near the Sanctuary Guide.`,
         ],
       },
     ],

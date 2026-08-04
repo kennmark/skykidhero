@@ -229,11 +229,11 @@ export const vault = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          May{' '}
+          There are{' '}
           <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
             {VAULT_NUM_REG_SPIRIT}
           </span>{' '}
-          regular spirits na makikita mo dito.
+          regular spirits that you can find here.
         </Typography>
       </>
     ),
@@ -287,10 +287,10 @@ export const vault = [
         constellation_icon_route: MAP6,
         spirit_guide_video_url: youtube_embed + 'l4zapmZhb7w',
         spirit_direction: [
-          `Pasok ka sa Ika-Anim na Mapa - Vault of Knowledge, Lumipad patungo sa Elevating Platform.`,
-          `Pagdating sa gitna, sindihan ang mga poste at memory lamps. Umupo sa platform para makaakyat sa 2nd floor`,
-          `Pagdating sa 2nd floor, may 4-player door, buksan ito.`,
-          `Pumasok ka, sa kaliwang poste sa likod nito ang spirit.`,
+          `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
+          `Once you reach the center, light the pillars and memory lamps. Sit on the platform to ascend to the second floor.`,
+          `On the second floor, open the four-player door.`,
+          `Enter the room. The spirit is behind the pillar on the left.`,
         ],
       },
       // POLITE_SCHOLAR
@@ -342,10 +342,10 @@ export const vault = [
         constellation_icon_route: MAP6,
         spirit_guide_video_url: youtube_embed + '2kOiFD5YQ_s',
         spirit_direction: [
-          `Pasok ka sa Ika-Anim na Mapa - Vault of Knowledge, Lumipad patungo sa Elevating Platform.`,
-          `Pagdating sa gitna, sindihan ang mga poste at memory lamps. Umupo sa platform para makaakyat sa 2nd floor`,
-          `Pagdating sa 2nd floor, may 4-player door, buksan ito.`,
-          `Pumasok ka, sa kaliwang poste sa likod nito ang spirit.`,
+          `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
+          `Once you reach the center, light the pillars and memory lamps. Sit on the platform to ascend to the second floor.`,
+          `On the second floor, open the four-player door.`,
+          `Enter the room. The spirit is behind the pillar on the left.`,
         ],
       },
       // MEMORY_WHISPERER
@@ -403,10 +403,10 @@ export const vault = [
         constellation_icon_route: MAP6,
         spirit_guide_video_url: youtube_embed + 'VFEsHNyXmm8',
         spirit_direction: [
-          `Pasok ka sa Ika-Anim na Mapa - Vault of Knowledge, Lumipad patungo sa Elevating Platform. (Tandaan kailangan mong marelive muna ang Manta Whisperer ng Valley of Triumph)`,
-          `Pagdating sa gitna, sindihan ang mga poste at memory lamps, Umakyat ka hanggang makarating ng 4th floor.`,
-          `Pagdating ay may pinakamalaking set ng platforms na nasa kaliwa ng constelation ng Isle of Dawn.`,
-          `Malapit sa ilalim ay may 2 platforms na may 5 kandila, sindihan mo lahat at makuha agad ang spirit.`,
+          `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform. Note: You must first relive the Manta Whisperer in the Valley of Triumph.`,
+          `Once you reach the center, light the pillars and memory lamps. Continue ascending until you reach the fourth floor.`,
+          `On the fourth floor, find the largest set of platforms to the left of the Isle of Dawn constellation.`,
+          `Near the lower area are two platforms with five candles. Light all the candles to obtain the spirit.`,
         ],
       },
       // PRAYING_ACOLYTE
@@ -464,10 +464,9 @@ export const vault = [
         constellation_icon_route: MAP6,
         spirit_guide_video_url: youtube_embed + 'LGFyXjnMtE0',
         spirit_direction: [
-          `Pasok ka sa Ika-Anim na Mapa - Vault of Knowledge, Lumipad patungo sa Elevating Platform.`,
-          `Pagdating sa platform, sa gawing kanan ay 4-player door, mag-antay ng ibang player (siguraduhing mayroon ka ng
-            Levitating Emote)`,
-          `Pagkabukas, ay pumasok ka at nasa sa gitna ng pond ang spirit na ito.`,
+          `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
+          `At the platform, you will find a four-player door on the right. Wait for other players and make sure you have the Levitating Emote.`,
+          `Once the door opens, enter the room. The spirit is in the middle of the pond.`,
         ],
       },
       // MEDITATING_MONASTIC
@@ -519,10 +518,10 @@ export const vault = [
         constellation_icon_route: MAP6,
         spirit_guide_video_url: youtube_embed + '0-1qb2iU_a8',
         spirit_direction: [
-          `Pasok ka sa Ika-Anim na Mapa - Vault of Knowledge, Lumipad patungo sa Elevating Platform.`,
-          `Pagdating sa platform, umakyat hanggang 4th floor.`,
-          `Hanapin ang 2 isla na mataas yung isa at mababa naman ang isa, na naguunay ng spiral na hagdanan,`,
-          `Pagkaakyat, kinakailangan gawin ang Pray expression upang lumabas ang spirit memory nito.`,
+          `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
+          `Use the platform to ascend to the fourth floor.`,
+          `Find the two islands—one higher and one lower—connected by a spiral staircase.`,
+          `After climbing the staircase, use the Pray expression to reveal the spirit's memory.`,
         ],
       },
     ],
@@ -533,12 +532,12 @@ export const vault = [
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Nandito ang mga spirits na dumaan noong nakaraang Seasonal Events na
-        makikita mo tuwing papasok ka sa Vault of Knowledge. May{' '}
+        These spirits appeared during previous Seasonal Events and can be found
+        whenever you enter the Vault of Knowledge. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {VAULT_NUM_SEASON_SPIRIT}
         </span>{' '}
-        season spirits na pwede mong makita at makuha dito.
+        seasonal spirits that you can find and relive here.
       </Typography>
     ),
     spirits: [
@@ -610,9 +609,9 @@ export const vault = [
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'vs3rSSsbULA',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform.`,
-          `May 4-player door sa gawing kanan, gawin ang meditating emote.`,
-          `Pagkabukas ay nasa gawing kanan ng entrance ang spirit na ito.`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `There is a four-player door on the right. Use the Meditating Emote to open it.`,
+          `Once the door opens, the spirit is on the right side of the entrance.`,
         ],
       },
       // GREETING_SHAMAN
@@ -673,9 +672,9 @@ export const vault = [
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'SSeg3jdBfIM',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform.`,
-          `Umakyat hanggang 4th floor,Pagkadating sa 4th Floor, lumipad patungo sa constellation ng Hidden Forest`,
-          `At dumako sa dulo ng mga gumagalaw na platform.`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `Ascend to the fourth floor. Once there, fly toward the Hidden Forest constellation.`,
+          `Continue to the end of the moving platforms.`,
         ],
       },
       // SHUSHING_LIGHTSCHOLAR
@@ -736,10 +735,9 @@ export const vault = [
         icon_route: SEASON2,
         spirit_guide_video_url: youtube_embed + 'YqX3lKP3sCA',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform.`,
-          `Umakyat hanggang 4th floor,Pagkadating sa 4th Floor, lumipad patungo sa 
-          spiral na platform, bandang constellation ng Isle of Dawn`,
-          `At sa unang malaking platform`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `Ascend to the fourth floor. Once there, fly toward the spiral platform near the Isle of Dawn constellation.`,
+          `The spirit is on the first large platform.`,
         ],
       },
       // WISE_GRANDPARENT
@@ -806,8 +804,8 @@ export const vault = [
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + 'brZdwktwP4E',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad sa gawing kanan sa 2-Player Door.`,
-          `Pasok papuntang Archives, at nasa gitna ng platform ang spirit na ito`,
+          `Enter Map 6, the Vault of Knowledge, and fly to the two-player door on the right.`,
+          `Enter the Archives. The spirit is in the middle of the platform.`,
         ],
       },
       // SLOUCHING_SOLDIER
@@ -860,9 +858,9 @@ export const vault = [
         icon_route: SEASON10,
         spirit_guide_video_url: youtube_embed + '4gi3bw88THM',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad gawing kaliwa at pumasok ka sa lagusan,`,
-          `Maglakad palabas ng lagusan, at lumipad gawing kanan patungo sa malaking banga.`,
-          `Pumasok sa bunganga ng banga at nasa bandang kanan ang spirit na ito.`,
+          `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
+          `Walk out of the passage, then fly to the right toward the large jar.`,
+          `Enter through the opening of the jar. The spirit is on the right.`,
         ],
       },
       // GLOATING_NARCISSIST
@@ -915,9 +913,9 @@ export const vault = [
         icon_route: SEASON10,
         spirit_guide_video_url: youtube_embed + 'T6eFDkfCbb4',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad gawing kaliwa at pumasok ka sa lagusan,`,
-          `Maglakad palabas ng lagusan, at lumipad gawing kaliwa patungo sa maliit na coliseum kung saan may fireworks.`,
-          `Nasa gawing kanan ng stage sa likod ng poste makikita ito.`,
+          `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
+          `Walk out of the passage, then fly to the left toward the small coliseum with fireworks.`,
+          `The spirit is behind a pillar on the right side of the stage.`,
         ],
       },
       // STRETCHING_LAMPLIGHTER
@@ -970,8 +968,8 @@ export const vault = [
         icon_route: SEASON10,
         spirit_guide_video_url: youtube_embed + '33IDYonEa5c',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad gawing kaliwa at pumasok ka sa lagusan,`,
-          `Maglakad palabas ng lagusan, at lumipad gawing kaliwa patungo sa mataas na tore, at sa loob nito ang spirit.`,
+          `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
+          `Walk out of the passage, then fly to the left toward the tall tower. The spirit is inside.`,
         ],
       },
       // STAR_COLLECTOR
@@ -1030,9 +1028,9 @@ export const vault = [
         icon_route: SEASON10,
         spirit_guide_video_url: youtube_embed + 'D_eLgCvFtbo',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad gawing kaliwa at pumasok ka sa lagusan,`,
-          `Maglakad palabas ng lagusan, at lumipad gawing kaliwa patungo sa mga kaulapan at may lagusan ito papasok.`,
-          `Paglabas ay makita mo ang isang sirang barko at nasa loob nito ang spirit.`,
+          `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
+          `Walk out of the passage, then fly to the left toward the clouds and enter the passage there.`,
+          `After exiting, you will see a broken ship. The spirit is inside it.`,
         ],
       },
       // BECKONING_RULER
@@ -1089,9 +1087,9 @@ export const vault = [
         icon_route: SEASON10,
         spirit_guide_video_url: youtube_embed + 't6nUg257N5M',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad gawing kaliwa at pumasok ka sa lagusan,`,
-          `Maglakad palabas ng lagusan, at lumipad patungo sa buwan, at lumapag sa unang islang nakalutang.`,
-          `Nasa kaliwang banda ang spirit na ito.`,
+          `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
+          `Walk out of the passage, fly toward the moon, and land on the first floating island.`,
+          `The spirit is on the left side.`,
         ],
       },
       // SNEEZING_GEOGRAPHER
@@ -1144,9 +1142,9 @@ export const vault = [
         icon_route: SEASON10,
         spirit_guide_video_url: youtube_embed + 'JjhpahvgdZo',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad gawing kaliwa at pumasok ka sa lagusan,`,
-          `Maglakad palabas ng lagusan, at lumipad patungo sa buwan, at lumapag sa pangalawang islang nakalutang.`,
-          `makita mo agad ang spirit na ito.`,
+          `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
+          `Walk out of the passage, fly toward the moon, and land on the second floating island.`,
+          `You will immediately see the spirit.`,
         ],
       },
       // BEREFT_VETERAN
@@ -1205,9 +1203,9 @@ export const vault = [
         icon_route: SEASON16,
         spirit_guide_video_url: youtube_embed + 'feXvYTOGEi4',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform,`,
-          `Pagkarating sa gitna, kumaliwa ka at may lagusan pababa kang makikita.`,
-          `Pagkarating mo sa Repository Refugee, makita mo ang spirit sa butas sa kaliwang banda.`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `Once you reach the center, turn left and look for a passage leading downward.`,
+          `Upon reaching the Repository of Refuge, you will find the spirit inside the opening on the left.`,
         ],
       },
       // WOUNDED_SOLDIER
@@ -1266,10 +1264,10 @@ export const vault = [
         icon_route: SEASON16,
         spirit_guide_video_url: youtube_embed + '-Oc-2ftk0OM',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform,`,
-          `Pagkarating sa gitna, kumaliwa ka at may lagusan pababa kang makikita.`,
-          `Pagkarating mo sa Repository Refugee, sa kanang bahagi ng Spirit Guide, may butas sa likod`,
-          `Pumasok ka at makita mo ang spirit na ito sa platform sa labas.`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `Once you reach the center, turn left and look for a passage leading downward.`,
+          `Upon reaching the Repository of Refuge, look behind the Spirit Guide on the right for an opening.`,
+          `Enter the opening. The spirit is on the platform outside.`,
         ],
       },
       // TIPTOEING_TEABREWER
@@ -1328,10 +1326,10 @@ export const vault = [
         icon_route: SEASON16,
         spirit_guide_video_url: youtube_embed + 'mwLn70j2Sjs',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform,`,
-          `Pagkarating sa gitna, kumaliwa ka at may lagusan pababa kang makikita.`,
-          `Pagkarating mo sa Repository Refugee, lumipad pataas hanggang sa may makita kang platform na may tent.`,
-          `Lumapag ka at pumasok sa butas, makita mo ang spirit na ito sa gawing kanan likod ng pader.`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `Once you reach the center, turn left and look for a passage leading downward.`,
+          `Upon reaching the Repository of Refuge, fly upward until you find a platform with a tent.`,
+          `Land and enter the opening. The spirit is on the right, behind the wall.`,
         ],
       },
       // PLEADING_CHILD
@@ -1396,10 +1394,10 @@ export const vault = [
         icon_route: SEASON16,
         spirit_guide_video_url: youtube_embed + 'PcKmzQOjKFU',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo sa elevating platform,`,
-          `Pagkarating sa gitna, kumaliwa ka at may lagusan pababa kang makikita.`,
-          `Pagkarating mo sa Repository Refugee, lumipad ka pataas hanggang sa tuktok.`,
-          `Lumapag ka kahit saan at makita mo dito sa huling floor ang spirit.`,
+          `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
+          `Once you reach the center, turn left and look for a passage leading downward.`,
+          `Upon reaching the Repository of Refuge, fly upward until you reach the top.`,
+          `Land anywhere on the highest floor, where you will find the spirit.`,
         ],
       },
       // HUNTER
@@ -1453,9 +1451,9 @@ export const vault = [
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + '2yjliDfvtdM',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating ay makikita ang Spirit Mural at sa itaas nito makikita ang Hunter Spirit.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, find the Spirit Mural. The Hunter Spirit is located above it.`,
         ],
       },
       // HERB_GATHERER
@@ -1509,9 +1507,9 @@ export const vault = [
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + 'h0uDIdauBNM',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating ay magtungo sa palasyo at bago makatawid sa ilog ay makikita ang spirit na ito.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the palace. You will find the spirit before crossing the river.`,
         ],
       },
       // FEUDAL_LORD
@@ -1565,9 +1563,9 @@ export const vault = [
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + '83LkIYB5HEs',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating ay magtungo sa palasyo at sa bandang kaliwa bago makapasok sa palasyo ay makikita ang spirit na ito.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the palace. The spirit is on the left before you enter the palace.`,
         ],
       },
       // PRINCESS
@@ -1627,9 +1625,9 @@ export const vault = [
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + 'XB_wHSO3nKA',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating ay magtunog sa palasyo at umakyat papuntang tore ng palasyo at makita mo ang spirit.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the palace and climb to the palace tower to find the spirit.`,
         ],
       },
       // Comfort of Kindness
@@ -1683,9 +1681,9 @@ export const vault = [
         icon_route: SEASON23,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa Moomin Mural upang makarating sa MoominValley Glade`,
-          `Pagkdating ay magtunog sa grassy area kung saan ang shop ng mga entities.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
+          `Upon arrival, head to the grassy area where the entity shops are located.`,
         ],
       },
       // Sense of Self
@@ -1733,9 +1731,9 @@ export const vault = [
         icon_route: SEASON23,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa Moomin Mural upang makarating sa MoominValley Glade`,
-          `Pagkdating ay magtunog sa grassy area kung saan ang shop ng mga entities.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
+          `Upon arrival, head to the grassy area where the entity shops are located.`,
         ],
       },
       // Spirit of Adventure
@@ -1789,9 +1787,9 @@ export const vault = [
         icon_route: SEASON23,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa Moomin Mural upang makarating sa MoominValley Glade`,
-          `Pagkdating ay magtunog sa grassy area kung saan ang shop ng mga entities.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
+          `Upon arrival, head to the grassy area where the entity shops are located.`,
         ],
       },
       // Inspiration of Inclusion
@@ -1851,9 +1849,9 @@ export const vault = [
         icon_route: SEASON23,
         spirit_guide_video_url: youtube_embed + '',
         spirit_direction: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa Moomin Mural upang makarating sa MoominValley Glade`,
-          `Pagkdating ay magtunog sa grassy area kung saan ang shop ng mga entities.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
+          `Upon arrival, head to the grassy area where the entity shops are located.`,
         ],
       },
       //Lightmending Champion
@@ -2060,12 +2058,12 @@ export const vault = [
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Sa mapang ito mo rin makikita ang mga Winged Lights kung tawagin. Ito ay
-        nagpapataas ng lebel para ikaw ay makalipad ng mas mataas. May{' '}
+        This map also contains collectibles known as Winged Lights. They increase
+        your Wing Level, allowing you to fly higher. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {VAULT_NUM_WL}
         </span>{' '}
-        na winged lights ang pwede mong makuha dito sa Vault of Knowledge
+        Winged Lights that you can collect here in the Vault of Knowledge.
       </Typography>
     ),
     winged_lights: [
@@ -2075,8 +2073,8 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa sa may hagdanan sa tuktok ng hagdanan makita ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left toward the staircase. The Winged Light is at the top of the stairs.`,
         ],
       },
       {
@@ -2085,9 +2083,9 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform at umakyat pataas hanggang 3rd floor`,
-          `at sa tuktok ng shed house makita mo ang winged light na ito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform and ascend to the third floor.`,
+          `The Winged Light is on the roof of the gazebo.`,
         ],
       },
       {
@@ -2096,10 +2094,10 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform at umakyat pataas hanggang 4th floor`,
-          `Lumipad patungo kung saan makita ang Daylight Prairie Constellation at makita mo ang nakalutang na islet na may spiral stairs`,
-          `Sa loob ang winged light na ito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform and ascend to the fourth floor.`,
+          `Fly toward the Daylight Prairie constellation and look for the floating islet with a spiral staircase.`,
+          `The Winged Light is inside it.`,
         ],
       },
       {
@@ -2108,10 +2106,10 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform at umakyat pataas hanggang 4th floor`,
-          `lumipad patungo kung saan makita ang Isle of Dawn Constellation`,
-          `sa pinakatuktok na islet sa taas makita mo ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform and ascend to the fourth floor.`,
+          `Fly toward the Isle of Dawn constellation.`,
+          `The Winged Light is on the highest floating islet.`,
         ],
       },
       {
@@ -2120,9 +2118,9 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform at umakyat pataas hanggang 5th floor`,
-          `lumipad patungo kung saan makita ang malaking buto at nakapatong lng ang winged light dito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform and ascend to the fifth floor.`,
+          `Fly toward the large bone. The Winged Light is resting on top of it.`,
         ],
       },
       {
@@ -2131,9 +2129,9 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform at  umakyat pataas hanggang Summit`,
-          `Makita mo ang winged light sa paanan ng temple shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform and continue ascending to the Summit.`,
+          `The Winged Light is at the foot of the temple shrine.`,
         ],
       },
       {
@@ -2142,10 +2140,10 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kanan ay may 2-player door, buksan ito. Pagkabukas ay pumasok sa lagusan`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Sa pangatlong pagbaba ay may kwarto sa kaliwa kung saan may mga banga at sa likod nito ay may winged light.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and open the two-player door on the right. Once it opens, enter the passage.`,
+          `Fly upward after entering, then go through the opening on the left.`,
+          `On the third descent, enter the room on the left with several jars. The Winged Light is behind them.`,
         ],
       },
       {
@@ -2154,11 +2152,10 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kanan ay may 2-player door, buksan ito. Pagkabukas ay pumasok sa lagusan`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Sa pangatlong pagbaba dumako patungo sa makitang hagdanan at pumasok sa butas pataas at makita mo
-            ang winged light dito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and open the two-player door on the right. Once it opens, enter the passage.`,
+          `Fly upward after entering, then go through the opening on the left.`,
+          `On the third descent, head toward the staircase and enter the opening above it to find the Winged Light.`,
         ],
       },
       {
@@ -2167,12 +2164,11 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa malaking banga na
-          nasa iyong gawing kanan.`,
-          `Makita mo ang winged light sa tuktok nito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the large jar on your right.`,
+          `The Winged Light is on top of it.`,
         ],
       },
       {
@@ -2181,12 +2177,11 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa mataas na tower 
-          na nasa iyong gawing kaliwa.`,
-          `Nasa tuktok ng tower ang winged light na ito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the tall tower on your left.`,
+          `The Winged Light is on top of the tower.`,
         ],
       },
       {
@@ -2195,12 +2190,11 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa buwan.`,
-          `Sa unang islang nakalutang ay may hugis krus ito na butas sa ilalim at nasa loob
-          nito ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the moon.`,
+          `The first floating island has a cross-shaped opening underneath it. The Winged Light is inside.`,
         ],
       },
       {
@@ -2209,12 +2203,11 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform.`,
-          `Pagdating sa gitna ay may lagusan papasok sa iyong gawing kaliwa.`,
-          `Pagkapasok ay may butas sa iyong kaliwa, pumasok ka ulit, hanggang sa lumabas ka sa repository`,
-          `Lumipad palabas patungong kanan hanggat may makita kang maliit na ilaw
-        sa iyong kanan at sa labas nito ay nakarehas ang winged light`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `At the center, enter the passage on your left.`,
+          `Inside, enter the opening on your left and continue until you exit into the Repository of Refuge.`,
+          `Fly outside toward the right until you see a small light on your right. The Winged Light is outside, behind the bars.`,
         ],
       },
       {
@@ -2223,9 +2216,9 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Magtungo papuntang Hunter Spirit at sa bandang likod pababa ay makikita ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Head toward the Hunter Spirit. The Winged Light is behind and below that location.`,
         ],
       },
       {
@@ -2234,9 +2227,9 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating ay magtungo sa Tore ng palasyo, at sa labas nito sa bandang likuran makikita ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the palace tower. The Winged Light is outside, behind the tower.`,
         ],
       },
       {
@@ -2245,11 +2238,10 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating sa Cresecent Oasis, dumako malapit sa waterfalls at pumasok sa ulap na lagusan (Tandan kailangan
-            mong tapusin ang panghuling quest ng 9 Colored Deer Quest)`,
-          `Sa ilalim ng puno makita ang winged light dito`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `At Crescent Oasis, head toward the waterfalls and enter the cloud passage. Note: You must complete the final Nine-Colored Deer quest first.`,
+          `The Winged Light is beneath the tree.`,
         ],
       },
       {
@@ -2258,8 +2250,8 @@ export const vault = [
         wl_group: 'wl-vault',
         wl_url: VK_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
         ],
       },
     ],
@@ -2270,12 +2262,12 @@ export const vault = [
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Ang Map Shrines ay nagsisilbing gabay upang magtukoy kung ilan at saan
-        pa ang kailangan mong kunin na winged lights sa loob ng mapa. May{' '}
+        Map Shrines serve as guides that show how many Winged Lights you still
+        need to collect and where they are located within the map. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {VAULT_NUM_MAP_SHRINES}
         </span>{' '}
-        na Map Shrines ang pwede mong mabuksan sa loob ng Vault of Knowledge.
+        Map Shrines that you can activate in the Vault of Knowledge.
       </Typography>
     ),
     map_shrines: [
@@ -2284,9 +2276,9 @@ export const vault = [
         shrine_label: 'Map Shrine 1',
         shrine_url: VK_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pakanan at buksan ang 2-player door at pumasok ka.`,
-          `Pagkadating sa Archives, sa dakong itaas makita mo ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the right, open the two-player door, and enter.`,
+          `Upon reaching the Archives, fly upward to find the Map Shrine.`,
         ],
       },
       {
@@ -2294,10 +2286,10 @@ export const vault = [
         shrine_label: 'Map Shrine 2',
         shrine_url: VK_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pakaliwa at pumasok ka sa lagusan patungong Dessert Starlight.`,
-          `Pagkalabas mo ay lumipad sa direksyon ng buwan, at may makita kang garden`,
-          `Sa gawing kanan mo, sa loob ng maze makita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the passage leading to Starlight Desert.`,
+          `After exiting, fly toward the moon until you see a garden.`,
+          `The Map Shrine is inside the maze on your right.`,
         ],
       },
       {
@@ -2305,9 +2297,9 @@ export const vault = [
         shrine_label: 'Map Shrine 3',
         shrine_url: VK_MS3 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Sa dakong likod ng platform ay makita mo ang map shrine dito`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `The Map Shrine is behind the platform.`,
         ],
       },
       {
@@ -2315,11 +2307,10 @@ export const vault = [
         shrine_label: 'Map Shrine 4',
         shrine_url: VK_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Sa gawing kaliwa ay pumasok sa lagusan pababa papuntang Repository of Refuge`,
-          `Pagkadating ay pumasok pa sa looban at sa gawing kaliwa malapit sa entrance makita mo
-          ang map shrine agad.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `Enter the downward passage on the left that leads to the Repository of Refuge.`,
+          `Continue farther inside. The Map Shrine is on the left near the entrance.`,
         ],
       },
       {
@@ -2327,12 +2318,11 @@ export const vault = [
         shrine_label: 'Map Shrine 5',
         shrine_url: VK_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at sa likuran at may makitid na lagusan papasok dito.`,
-          `Pagkarating sa entrance ay may portal na makikita (Tandaan: Kinakailangan mo ng Founder's Cape o
-          kasamang may Founder's Cape upang makapasok)`,
-          `Pagmakapasok ay lumipad pa sa looban at may pintuang lagusan, pumasok ka.`,
-          `Sa labas lng ng pintuan ng Office makita mo ang map shrine..`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and look behind you for a narrow passage.`,
+          `At the entrance, you will find a portal. Note: You need the Founder's Cape, or another player wearing it, to enter.`,
+          `After entering, fly farther inside and go through the doorway.`,
+          `The Map Shrine is just outside the Office door.`,
         ],
       },
       {
@@ -2340,10 +2330,10 @@ export const vault = [
         shrine_label: 'Map Shrine 6',
         shrine_url: VK_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Umakyat hanggang 3rd floor.`,
-          `Malapit sa isang spirit, may nakalutang na bato at makita mo ang map shrine malapit sa kandila.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `Ascend to the third floor.`,
+          `Near one of the spirits, look for a floating rock. The Map Shrine is beside the candle.`,
         ],
       },
       {
@@ -2351,10 +2341,10 @@ export const vault = [
         shrine_label: 'Map Shrine 7',
         shrine_url: VK_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Umakyat hanggang 4rd floor.`,
-          `ang isang isla na malapit sa elevated platform, andito ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `Ascend to the fourth floor.`,
+          `The Map Shrine is on an island near the elevating platform.`,
         ],
       },
       {
@@ -2362,10 +2352,10 @@ export const vault = [
         shrine_label: 'Map Shrine 8',
         shrine_url: VK_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Umakyat hanggang Summit o last floor.`,
-          `Pagkarating ay nasa gawing kanan ng isla ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `Ascend to the Summit, the final floor.`,
+          `Upon arrival, the Map Shrine is on the right side of the island.`,
         ],
       },
       {
@@ -2373,9 +2363,9 @@ export const vault = [
         shrine_label: 'Map Shrine 9',
         shrine_url: VK_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pagkapasok, ay sa kanang banda ng kwarto makikita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `Inside the room, the Map Shrine is on the right.`,
         ],
       },
       {
@@ -2383,10 +2373,10 @@ export const vault = [
         shrine_label: 'Map Shrine 10',
         shrine_url: VK_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa quest giver sa tapat ng lawa (lake), at sa kabila nito makita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the Quest Giver across the lake. The Map Shrine is on the opposite side.`,
         ],
       },
       {
@@ -2394,10 +2384,10 @@ export const vault = [
         shrine_label: 'Map Shrine 11',
         shrine_url: VK_MS11 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa malapit sa tent na green at malapit dito ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the green tent. The Map Shrine is nearby.`,
         ],
       },
       {
@@ -2405,10 +2395,10 @@ export const vault = [
         shrine_label: 'Map Shrine 12',
         shrine_url: VK_MS12 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa malapit sa tent na green at malapit dito ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the green tent. The Map Shrine is nearby.`,
         ],
       },
     ],

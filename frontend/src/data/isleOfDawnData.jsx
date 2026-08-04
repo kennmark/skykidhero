@@ -151,8 +151,8 @@ export const isleOfDawn = [
           <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
             {ISLE_NUM_REG_SPIRIT}
           </span>{' '}
-          regular spirits that is on this map. Spirits that you can find here are
-          Pointing Candlemaker, Rejecting Voyager and Ushering Stargazer.
+          regular spirits on this map. The spirits you can find here are
+          Pointing Candlemaker, Rejecting Voyager, and Ushering Stargazer.
         </Typography>
       </div>
     ),
@@ -205,13 +205,10 @@ export const isleOfDawn = [
         constellation_icon_route: MAP1,
         spirit_guide_video_url: youtube_embed + 'eNHRHE2OLZc',
         spirit_direction: [
-          'Pasok ka Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-
-          'Tumalon ka at igawi mo ang iyong skykid pakaliwa at makikita mo ang maliit na kweba ng Sand Dunes.',
-
-          'Ang Pointing Candlemaker ay nasa labas lng ng pintuan ng kweba.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Jump down and steer your Sky kid to the left, where you will see a small cave in the Sand Dunes.',
+          'The Pointing Candlemaker is just outside the cave entrance.',
         ],
       },
       {
@@ -262,11 +259,10 @@ export const isleOfDawn = [
         constellation_icon_route: MAP1,
         spirit_guide_video_url: youtube_embed + 'EDV18vy6YRE',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka patungo sa isang hagdanan na bato sa iyong harapan.',
-          'Sa ilalim ng dulo ng hagdanan makikita mo ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly toward the stone staircase directly ahead.',
+          'You will find the spirit beneath the far end of the staircase.',
         ],
       },
       {
@@ -317,12 +313,10 @@ export const isleOfDawn = [
         constellation_icon_route: MAP1,
         spirit_guide_video_url: youtube_embed + 'snvZf2bOqlc',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka patungo sa templo.',
-
-          'Pagkalapag sa lupa, igawi mo ang skykid mo sa kaliwang bahagi ng templo ay may maliit na kweba. Pumasok ka at makikita mo ang Rejecting Voyager sa daan.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly toward the temple.',
+          'After landing, head to the left side of the temple, where you will find a small cave. Enter it, and you will find the Rejecting Voyager along the path.',
         ],
       },
     ],
@@ -333,12 +327,12 @@ export const isleOfDawn = [
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Nandito ang mga spirits na dumaan noong nakaraang Seasonal Events na
-        makikita mo tuwing papasok ka sa Isle of Dawn. May{' '}
+        These spirits appeared during previous Seasonal Events and can be found
+        when you enter the Isle of Dawn. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {ISLE_NUM_SEASON_SPIRIT}
         </span>{' '}
-        season spirits na pwede mong makita at makuha dito.
+        seasonal spirits that you can relive and collect here.
       </Typography>
     ),
     spirits: [
@@ -407,10 +401,10 @@ export const isleOfDawn = [
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'OC0M5IYDnck',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan.',
-          'At malapit sa pader kung saan may mga ulap sa buhangin makikita ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right.',
+          'You will find the spirit near the wall where the clouds meet the sand.',
         ],
       },
       //PIGGYBACK_LIGHTSEEKER
@@ -481,10 +475,10 @@ export const isleOfDawn = [
         icon_route: SEASON2,
         spirit_guide_video_url: youtube_embed + '6szBwvCEchU',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kaliwa.',
-          'Pagkalagpas mo sa isang maliit na bukid na buhangin, may kweba kang makikita.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the left.',
+          'After passing a small sand hill, you will see a cave.',
         ],
       },
       //BOOGIE_KID
@@ -549,10 +543,10 @@ export const isleOfDawn = [
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + 'LPVVeJI9kpo',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka patungong templo.',
-          'Sa Kanan may makita kang daanan na ulap, pumasok ka at makita mo sa pintuan ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly toward the temple.',
+          'On the right, you will see a cloud passage. Enter it, and you will find the spirit near the doorway.',
         ],
       },
       //TROUPE_GREETER
@@ -617,10 +611,10 @@ export const isleOfDawn = [
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'ab4I-QSR4sU',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan.',
-          'Makikita mo ang Passage Stone na malaking bato kang makikita at sa bandang likod nito ay ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right.',
+          'You will see the Passage Stone, a large rock. The spirit is behind it.',
         ],
       },
       //PROPHET_OF_WATER
@@ -697,10 +691,10 @@ export const isleOfDawn = [
         icon_route: SEASON7,
         spirit_guide_video_url: youtube_embed + 'TMz1D1PXGYU',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan, may makitang kang ulap na kweba, pumasok ka at pagkapasok mo lilipad ka ulit papasok hanggang sa umabot ka sa pintuan',
-          'Lumapit ka sa Quest Giver na nasa gitna at ituturo sayo ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right. You will see a cloud-covered cave entrance. Enter it and continue flying through the passage until you reach the doorway.',
+          'Approach the Quest Giver in the center, who will point you toward the spirit.',
         ],
       },
       //PROPHET_OF_EARTH
@@ -781,10 +775,10 @@ export const isleOfDawn = [
         icon_route: SEASON7,
         spirit_guide_video_url: youtube_embed + 'zE7Js8dqFfU',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan, May makitang kang ulap na kweba, pumasok ka at pagkapasok mo lilipad ka ulit papasok hanggang sa umabot ka sa pintuan.',
-          'Lumapit ka sa Quest Giver na nasa gitna at ituturo sayo ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right. You will see a cloud-covered cave entrance. Enter it and continue flying through the passage until you reach the doorway.',
+          'Approach the Quest Giver in the center, who will point you toward the spirit.',
         ],
       },
       //PROPHET_OF_AIR
@@ -853,10 +847,10 @@ export const isleOfDawn = [
         icon_route: SEASON7,
         spirit_guide_video_url: youtube_embed + 'uGk2xSqdobk',
         spirit_direction: [
-          'Pasok ka sa Unang Mapa - Isle of Dawn, lumakad ka o lumipad papasok sa unang kweba na makita mo.',
-          'Lakarin mo ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan, May makitang kang ulap na kweba, pumasok ka at pagkapasok mo lilipad ka ulit papasok hanggang sa umabot ka sa pintuan.',
-          ' Lumapit ka sa Quest Giver na nasa gitna at ituturo sayo ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right. You will see a cloud-covered cave entrance. Enter it and continue flying through the passage until you reach the doorway.',
+          'Approach the Quest Giver in the center, who will point you toward the spirit.',
         ],
       },
       //PROPHET_OF_FIRE
@@ -931,10 +925,10 @@ export const isleOfDawn = [
         icon_route: SEASON7,
         spirit_guide_video_url: youtube_embed + 'bEOTU3o7iuM',
         spirit_direction: [
-          'Pagkapasok mo sa Unang Mapa - Isle of Dawn, lumakad ka o Lumipad papasok sa unang kweba na makita mo.',
-          'Pagkapasok mo ay lakarin mo lng ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan may makitang kang ulap na kweba, pumasok ka at pagkapasok mo lilipad ka ulit papasok hanggang sa umabot ka sa pintuan.',
-          'Pagkapasok mo, lumapit ka sa Quest Giver na nasa gitna at ituturo sayo ang spirit.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right. You will see a cloud-covered cave entrance. Enter it and continue flying through the passage until you reach the doorway.',
+          'Approach the Quest Giver in the center, who will point you toward the spirit.',
         ],
       },
       //ODDBALL_OUTCAST
@@ -993,10 +987,10 @@ export const isleOfDawn = [
         icon_route: SEASON17,
         spirit_guide_video_url: youtube_embed + 'jBp8u1A0nmg',
         spirit_direction: [
-          'Pagkapasok mo sa Unang Mapa - Isle of Dawn, lumakad ka o Lumipad papasok sa unang kweba na makita mo.',
-          'Pagkapasok mo ay lakarin mo lng ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan sa likod ng malaking bato umupo ka sa likod ng Passage Stone Shrine. ',
-          'Lumipad ka gawi papuntang kweba ng Cave of Prophecy, at kung saan banda ang spirit na Sassy Drifter, makikita mo ang spirit na ito.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right and sit behind the Passage Stone Shrine, located behind the large rock.',
+          'Fly toward the Cave of Prophecy. Near the area where the Sassy Drifter is located, you will find this spirit.',
         ],
       },
       //TUMBLING_TROUBLEMAKER
@@ -1055,10 +1049,10 @@ export const isleOfDawn = [
         icon_route: SEASON17,
         spirit_guide_video_url: youtube_embed + 'zv1fVtpaWoY',
         spirit_direction: [
-          `Pagkapasok mo sa Unang Mapa - Isle of Dawn, lumakad ka o Lumipad papasok sa unang kweba na makita mo.`,
-          `Pagkapasok mo ay lakarin mo lng ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.`,
-          `Lumipad ka gawing kanan. Sa likod ng malaking bato umupo ka sa likod ng Passage Stone Shrine.`,
-          `Lumipad ka gawi papuntang kweba ng Cave of Prophecy, bago ka makarating sa Oddball Outcast spirit makikita mo na agad ang spirit na ito.`,
+          `Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.`,
+          `Continue through the cave until you reach the end and emerge into the wide-open area.`,
+          `Fly to the right and sit behind the Passage Stone Shrine, located behind the large rock.`,
+          `Fly toward the Cave of Prophecy. You will find this spirit before reaching the Oddball Outcast.`,
         ],
       },
       //MELANCHOLY_MOPE
@@ -1117,10 +1111,10 @@ export const isleOfDawn = [
         icon_route: SEASON17,
         spirit_guide_video_url: youtube_embed + 'rPGqdQf90Ns',
         spirit_direction: [
-          'Pagkapasok mo sa Unang Mapa - Isle of Dawn, lumakad ka o Lumipad papasok sa unang kweba na makita mo.',
-          'Pagkapasok mo ay lakarin mo lng ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad ka gawing kanan sa likod ng malaking bato umupo ka sa likod ng Passage Stone Shrine.',
-          'Lumipad ka gawing papunta sa batong may hagdanan, bago ka makarating sa hagdanan, sa likod ng posteng bato, makikita mo ang spirit na ito.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right and sit behind the Passage Stone Shrine, located behind the large rock.',
+          'Fly toward the stone staircase. Before reaching it, look behind the stone pillar to find this spirit.',
         ],
       },
       //OVERACTIVE_OVERACHIEVER
@@ -1179,10 +1173,10 @@ export const isleOfDawn = [
         icon_route: SEASON17,
         spirit_guide_video_url: youtube_embed + 'vkO4ujp0JNc',
         spirit_direction: [
-          'Pagkapasok mo sa Unang Mapa - Isle of Dawn, lumakad ka o Lumipad papasok sa unang kweba na makita mo.',
-          'Pagkapasok mo ay lakarin mo lng ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad  ka gawing kanan sa likod ng malaking bato umupo ka sa likod ng Passage Stone Shrine.',
-          'Lumipad ka pabalik sa San Dunes kung nasaan iyong spirit na Pointing Candlemaker. Sa taas ng kweba malapit na sa dagat makikita mo ang spirit na ito.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          'Fly to the right and sit behind the Passage Stone Shrine, located behind the large rock.',
+          'Fly back toward the Sand Dunes, where the Pointing Candlemaker is located. You will find this spirit above the cave near the sea.',
         ],
       },
       //Migrating Bellmaker
@@ -1236,10 +1230,10 @@ export const isleOfDawn = [
         number_of_visits: [],
         spirit_guide_video_url: youtube_embed + 'Bc9Yl-qjkh8',
         spirit_direction: [
-          'Pagkapasok mo sa Unang Mapa - Isle of Dawn, lumakad ka o Lumipad papasok sa unang kweba na makita mo.',
-          'Pagkapasok mo ay lakarin mo lng ito hanggang sa umabot ka sa dulo kung saan makikita mo ang malawak na tanawin.',
-          'Lumipad  ka gawing kaliwa hanggang makita mo ang campsite/tent ng Migration Spirit Guide',
-          'Sa labas ng tent makikita mo ang spirit na ito.',
+          'Enter the first realm, Isle of Dawn, then walk or fly into the first cave you see.',
+          'Continue through the cave until you reach the end and emerge into the wide-open area.',
+          `Fly to the left until you find the Migration Spirit Guide's campsite or tent.`,
+          'You will find this spirit outside the tent.',
         ],
       },
     ],
@@ -1251,13 +1245,13 @@ export const isleOfDawn = [
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Sa mapang ito mo rin makikita ang mga Winged Lights kung tawagin. Ito ay
-        nagpapataas ng lebel para ikaw ay makalipad ng mas mataas. May{' '}
+        Winged Lights can also be found throughout this map. Collecting them
+        increases your Wing Level, allowing you to fly higher. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {ISLE_NUM_WL}
         </span>{' '}
-        na winged lights ang pwede mong makuha dito sa Isle of Dawn, kasama na
-        ang 4 na nasa trials ng Season Of Prophecy.
+        Winged Lights available in the Isle of Dawn, including the four found
+        in the Season of Prophecy trials.
       </Typography>
     ),
     winged_lights: [
@@ -1268,8 +1262,8 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-0',
         wl_url: ID_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn,`,
-          `Nasa tuktok ng unang kweba sa bandang kaliwa ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn,`,
+          `The Winged Light is on top of the first cave, on the left side.`,
         ],
       },
       {
@@ -1279,9 +1273,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-0',
         wl_url: ID_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `Pagkalabas mo ng unang kweba, makikita mo agad sa gawing kanan, ang
-          sirang bangka na may winged light sa ibabaw nito.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting the first cave, look to the right. You will immediately see a
+          broken boat with a Winged Light on top.`,
         ],
       },
       {
@@ -1291,9 +1285,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-0',
         wl_url: ID_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan, hanggang sa makita mo ang maliit na kweba `,
-          `Sa loob nito ay may isang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right until you see a small cave.`,
+          `There is a Winged Light inside.`,
         ],
       },
       {
@@ -1303,8 +1297,8 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-0',
         wl_url: ID_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka patungong templo, sa dulo ng hagdanan na bato ay makita mo ang winged light`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly toward the temple. You will find the Winged Light at the far end of the stone staircase.`,
         ],
       },
       {
@@ -1314,9 +1308,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-season-27',
         wl_url: ID_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `Lumipad ka gawing kaliwa at hanapin lamang ang Camp Site ng Migration`,
-          `Sa Likod ng Camp Door Post makikita ang Winged Light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the left and look for the Migration campsite.`,
+          `The Winged Light is behind the campsite's entrance post.`,
         ],
       },
       {
@@ -1326,11 +1320,11 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-0',
         wl_url: ID_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka patungong templo, may lagusan na ulap sa gawing kanan pumasok ka`,
-          `Pagdating sa butterfly cave, kinakailangan mong makaakyat pataas. Pag nakaakyat ka na, may makikita kang lagusan
-        sa gawing kanan.`,
-          `Pagkapasok mo, sa bandang kanan mo naman ulit may butas kung saan naroron ang isang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly toward the temple, then enter the cloud passage on the right.`,
+          `When you reach the Butterfly Cave, climb to the upper area. Once there, you will see a passage
+          on the right.`,
+          `Enter the passage and look for another opening on the right, where you will find a Winged Light.`,
         ],
       },
       {
@@ -1340,9 +1334,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Water Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Water Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -1352,9 +1346,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Earth Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Earth Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -1364,9 +1358,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Air Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Air Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -1376,9 +1370,9 @@ export const isleOfDawn = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Fire Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Fire Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
     ],
@@ -1390,12 +1384,12 @@ export const isleOfDawn = [
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Ang Map Shrines ay nagsisilbing gabay upang magtukoy kung ilan at saan
-        pa ang kailangan mong kunin na winged lights sa loob ng mapa. May{' '}
+        Map Shrines help you determine how many Winged Lights you still need to
+        collect and where they are located on the map. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {ISLE_NUM_MAP_SHRINES}
         </span>{' '}
-        na Map Shrines ang pwede mong mabuksan sa loob ng Isle of Dawn.
+        Map Shrines that you can unlock throughout the Isle of Dawn.
       </Typography>
     ),
     map_shrines: [
@@ -1405,9 +1399,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 1',
         shrine_url: ID_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `Pagkalabas mo ay lumipad patungo sa sirang bangka sa baba.At sa itaas lamang
-          nito ay ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly down toward the broken boat. The Map Shrine is directly
+          above it.`,
         ],
       },
       {
@@ -1416,8 +1410,8 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 2',
         shrine_url: ID_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan nasa tuktok ito ng
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right. The Map Shrine is on top of the
           Passage Stone.`,
         ],
       },
@@ -1427,10 +1421,10 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 3',
         shrine_url: ID_MS3 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad patungong templo.`,
-          `Pumasok ka sa lagusan sa gawing kanan at may 2-player door, umakyat ka pataas at pumasok ka sa gawing kanan na lagusan.`,
-          `At sa dulo ng tunnel ay sa tuktok ng Butterfly Cave makita ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly toward the temple.`,
+          `Enter the passage on the right, go through the two-player door, climb upward, and enter the passage on the right.`,
+          `At the end of the tunnel, you will find the Map Shrine on top of the Butterfly Cave.`,
         ],
       },
       {
@@ -1439,9 +1433,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 4',
         shrine_url: ID_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad patungong templo.`,
-          `Pagkalapag ay nasa daanan lang ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly toward the temple.`,
+          `After landing, you will find the Map Shrine along the path.`,
         ],
       },
       {
@@ -1450,9 +1444,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 5',
         shrine_url: ID_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, tumalon ka pakaliwa sa ibaba lang mismo makikita ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `When you reach the Cave of Prophecy, jump down to the left. The Map Shrine is directly below.`,
         ],
       },
       {
@@ -1461,9 +1455,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 6',
         shrine_url: ID_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Water Trial nasa gawing kanan ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Water Trial. The Map Shrine is on the right.`,
         ],
       },
       {
@@ -1472,9 +1466,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 7',
         shrine_url: ID_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Earth Trial, Pagdumating ka sa aakyat ng hagdaan, sa kanan nito ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Earth Trial. When you reach the staircase leading upward, the Map Shrine is on its right.`,
         ],
       },
       {
@@ -1483,9 +1477,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 8',
         shrine_url: ID_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Air Trial`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Air Trial.`,
         ],
       },
       {
@@ -1494,9 +1488,9 @@ export const isleOfDawn = [
         shrine_label: 'Map Shrine 9',
         shrine_url: ID_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Fire Trial, at bago pumasok sa 3rd floor nasa gawing kanan ng pintuan ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Fire Trial. Before entering the third floor, the Map Shrine is to the right of the doorway.`,
         ],
       },
     ],

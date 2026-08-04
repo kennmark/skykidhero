@@ -808,9 +808,9 @@ export const seasons2020 = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, lumipad gawing kanan patungo sa bangka, at umupo ka.`,
-          `Pagdating sa Forgotten Ark, lumipad hanggang makita ang Ark at sa unahan ang winged light na ito.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly to the right toward the boat and sit down.`,
+          `When you reach the Forgotten Ark, fly until you see the Ark. The Winged Light is at its front tip.`,
         ],
       },
       {
@@ -819,10 +819,9 @@ export const seasons2020 = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, lumipad gawing kanan patungo sa bangka, at umupo ka.`,
-          `Lumipad patungo sa dakong dulo na kapatagan at may lagusan na maliit sa bandang kaliwa,
-        at pumasok ka at sa loob nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly to the right toward the boat and sit down.`,
+          `Fly toward the open field at the far end. Enter the small passage on the left; the Winged Light is inside.`,
         ],
       },
     ],
@@ -832,10 +831,9 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 8',
         shrine_url: GW_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka gawing kanan at hanapin ang bangka sa dalampasigan at sumakay dito`,
-          `Pagkarating sa Forgotten Ark, ay lumipad patungo sa malaking barko at nasa loob nito sa gitna
-          ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly to the right, find the boat on the shore, and board it.`,
+          `When you reach the Forgotten Ark, fly toward the large ship. The Map Shrine is inside, near the center.`,
         ],
       },
     ],
@@ -958,10 +956,10 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, makita mo ito agad sa malaking islang nakalutang.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, you will immediately see the Winged Light on the large floating island.`,
         ],
       },
       {
@@ -971,10 +969,10 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa tuktok ng malaking isla ay may maliit na lagusan.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, look for the small passage at the top of the largest island.`,
         ],
       },
       {
@@ -984,10 +982,10 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL19 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa dakong kanan, makita ang tatlong maliliit na nakalutang na isla. Nasa kanan na isla.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, look to the right for three small floating islands. The Winged Light is on the rightmost island.`,
         ],
       },
       {
@@ -997,10 +995,10 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL20 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa bandang likuran ay may mga kampana at sa bandang ibaba ay nakapwesto ang winged light na ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At the back of Sanctuary Islands, look for the bells. This Winged Light is positioned below them.`,
         ],
       },
       {
@@ -1010,10 +1008,10 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL21 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa likod ng malaking isla makikita ang jellyfish cave.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, look behind the largest island for the jellyfish cave.`,
         ],
       },
       {
@@ -1023,10 +1021,10 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL22 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa at makita ang malaking bunganga ng kweba nasa likod ng waterfall ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and look for the large cave entrance behind the waterfall.`,
         ],
       },
       {
@@ -1036,12 +1034,11 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL23 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa
-          at makita ang malaking bunganga ng kweba pumasok at sa kaliwa ay may lagusan`,
-          `Lumipad pataas at ito ay iyong makikita.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the left.`,
+          `Fly upward to find the Winged Light.`,
         ],
       },
       {
@@ -1051,12 +1048,11 @@ export const seasons2020 = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL24 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa
-        at makita ang malaking bunganga ng kweba pumasok at sa kanan ay may lagusan`,
-          `Pumasok ka sa Crabs Area, lumipad pataas at may lagusan papasok, dito ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the right.`,
+          `Enter the crab area, fly upward, and go through the next passage to find the Winged Light.`,
         ],
       },
     ],
@@ -1066,11 +1062,10 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 9',
         shrine_url: DP_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa patungo sa mga Bells, at malapit sa Quest Giver ng Sanctuary
-          ay makita mo ang map shrine.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down toward the bells. The Map Shrine is near the Sanctuary Guide.`,
         ],
       },
     ],
@@ -1163,9 +1158,9 @@ export const seasons2020 = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Water Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Water Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -1175,9 +1170,9 @@ export const seasons2020 = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Earth Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Earth Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -1187,9 +1182,9 @@ export const seasons2020 = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Air Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Air Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -1199,9 +1194,9 @@ export const seasons2020 = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Fire Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Fire Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
     ],
@@ -1212,9 +1207,9 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 5',
         shrine_url: ID_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, tumalon ka pakaliwa sa ibaba lang mismo makikita ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `When you reach the Cave of Prophecy, jump down to the left. The Map Shrine is directly below.`,
         ],
       },
       {
@@ -1223,9 +1218,9 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 6',
         shrine_url: ID_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Water Trial nasa gawing kanan ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Water Trial. The Map Shrine is on the right.`,
         ],
       },
       {
@@ -1234,9 +1229,9 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 7',
         shrine_url: ID_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Earth Trial, Pagdumating ka sa aakyat ng hagdaan, sa kanan nito ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Earth Trial. When you reach the staircase leading upward, the Map Shrine is on its right.`,
         ],
       },
       {
@@ -1245,9 +1240,9 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 8',
         shrine_url: ID_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Air Trial`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Air Trial.`,
         ],
       },
       {
@@ -1256,9 +1251,9 @@ export const seasons2020 = [
         shrine_label: 'Map Shrine 9',
         shrine_url: ID_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Fire Trial, at bago pumasok sa 3rd floor nasa gawing kanan ng pintuan ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Fire Trial. Before entering the third floor, the Map Shrine is to the right of the doorway.`,
         ],
       },
     ],
@@ -1356,10 +1351,8 @@ export const seasons2021 = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagkapasok, mag skate pababa at sa mga bukid na nasa kaliwa, isa dito ay 
-          may butas kung nasaan ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `Skate downhill. One of the hills on the left has an opening containing the Winged Light.`,
         ],
       },
       {
@@ -1369,10 +1362,8 @@ export const seasons2021 = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagkapasok, mag skate pababa at sa mga bukid na nasa kanan, isa dito ay 
-          may butas kung nasaan ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `Skate downhill. One of the hills on the right has an opening containing the Winged Light.`,
         ],
       },
       {
@@ -1382,10 +1373,9 @@ export const seasons2021 = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `At sa tuktok ng tore na nasa gitna makita mo ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `The Winged Light is at the top of the tower in the center.`,
         ],
       },
       {
@@ -1395,10 +1385,9 @@ export const seasons2021 = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `Sumakay ka sa Ferry Boat papuntang Hermitt's Valley, at sa likod mo ay may kweba sa bandang kanan ng bundok.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `Ride the ferry boat to Hermit's Valley. Behind you, on the right side of the mountain, is a cave containing the Winged Light.`,
         ],
       },
       {
@@ -1408,10 +1397,9 @@ export const seasons2021 = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `Sumakay ka sa Ferry Boat papuntang Hermitt's Valley, at sa likod ng bundok makita ang winged light dito.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `Ride the ferry boat to Hermit's Valley. You will find this Winged Light behind the mountain.`,
         ],
       },
     ],
@@ -1422,9 +1410,8 @@ export const seasons2021 = [
         shrine_label: 'Map Shrine 7',
         shrine_url: VT_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at bago makarating sa plaza sa gitna, sa gawing kaliwa malapit sa bahay, makita
-          ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. Before reaching the central plaza, look on the left near a house to find the Map Shrine.`,
         ],
       },
       {
@@ -1433,8 +1420,8 @@ export const seasons2021 = [
         shrine_label: 'Map Shrine 9',
         shrine_url: VT_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, sa unahan ng statue, naka elevated ang map shrine malapit sa exit ng Performance Hall.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. The Map Shrine is on an elevated platform in front of the statue, near the Performance Hall exit.`,
         ],
       },
       {
@@ -1443,10 +1430,10 @@ export const seasons2021 = [
         shrine_label: 'Map Shrine 10',
         shrine_url: VT_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at magtungo sa Port sa unahan lng ng plaza, sa kaliwang banda.`,
-          `Pagkasakay ng lumulutang na bangka, gawin din ito sa susunod na terminal patungo sa Hermitt's Valley`,
-          `Pagkarating ay lumipad patungo sa Cave na nasa bandang kanan, at sa tuktok ng Cave na ito ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill and proceed to the port just ahead of the plaza on the left.`,
+          `Ride the floating boat, then take the next boat from the following terminal to Hermit's Valley.`,
+          `When you arrive, fly toward the cave on the right. The Map Shrine is on top of the cave.`,
         ],
       },
     ],
@@ -1579,9 +1566,9 @@ export const seasons2021 = [
         wl_season_group: 'wl-forest-9',
         wl_url: HF_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago makarating sa gate ng entrance, ay may lagusan sa kanan, pumasok ka`,
-          `Paglabas mo sa kweba may makita kang duyan sa kanan, at sa itaas ng puno nakatago ang winged light sa puno.`,
+          `Enter Map 3 | Hidden Forest and fly downward through the clouds.`,
+          `Before reaching the entrance gate, enter the passage on the right.`,
+          `After exiting the cave, you will see a hammock on the right. The Winged Light is hidden high in the tree.`,
         ],
       },
       {
@@ -1591,10 +1578,10 @@ export const seasons2021 = [
         wl_season_group: 'wl-forest-9',
         wl_url: HF_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago makarating sa gate ng entrance, ay may lagusan sa kanan, pumasok ka`,
-          `Paglabas mo sa kweba may makita kang malaking treehouse, pumasok ka.`,
-          `Sa loob nito ay may lagusan pababa, makita mo ang spirit na ito.`,
+          `Enter Map 3 | Hidden Forest and fly downward through the clouds.`,
+          `Before reaching the entrance gate, enter the passage on the right.`,
+          `After exiting the cave, you will see a large treehouse. Enter it.`,
+          `Inside is a passage leading downward, where you will find the Winged Light.`,
         ],
       },
     ],
@@ -1605,10 +1592,9 @@ export const seasons2021 = [
         shrine_label: 'Map Shrine 9',
         shrine_url: HF_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `bago pa makarating sa entrance gate, sa kanang banda ay may maliit na lagusa
-          papuntang Treehouse.`,
-          `sa tuktok ng Treehouse makikita ang mapshrine.`,
+          `Enter Map 3 | Hidden Forest and fly downward through the clouds.`,
+          `Before reaching the entrance gate, enter the small passage on the right that leads to the Treehouse.`,
+          `The Map Shrine is at the top of the Treehouse.`,
         ],
       },
     ],
@@ -1734,12 +1720,11 @@ export const seasons2021 = [
         wl_group: 'wl-vault',
         wl_url: VK_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa malaking banga na
-          nasa iyong gawing kanan.`,
-          `Makita mo ang winged light sa tuktok nito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the large jar on your right.`,
+          `The Winged Light is on top of it.`,
         ],
       },
       {
@@ -1748,12 +1733,11 @@ export const seasons2021 = [
         wl_group: 'wl-vault',
         wl_url: VK_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa mataas na tower 
-          na nasa iyong gawing kaliwa.`,
-          `Nasa tuktok ng tower ang winged light na ito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the tall tower on your left.`,
+          `The Winged Light is on top of the tower.`,
         ],
       },
       {
@@ -1762,12 +1746,11 @@ export const seasons2021 = [
         wl_group: 'wl-vault',
         wl_url: VK_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa buwan.`,
-          `Sa unang islang nakalutang ay may hugis krus ito na butas sa ilalim at nasa loob
-          nito ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the moon.`,
+          `The first floating island has a cross-shaped opening underneath it. The Winged Light is inside.`,
         ],
       },
     ],
@@ -1777,10 +1760,10 @@ export const seasons2021 = [
         shrine_label: 'Map Shrine 2',
         shrine_url: VK_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pakaliwa at pumasok ka sa lagusan patungong Dessert Starlight.`,
-          `Pagkalabas mo ay lumipad sa direksyon ng buwan, at may makita kang garden`,
-          `Sa gawing kanan mo, sa loob ng maze makita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the passage leading to Starlight Desert.`,
+          `After exiting, fly toward the moon until you see a garden.`,
+          `The Map Shrine is inside the maze on your right.`,
         ],
       },
     ],
@@ -1883,9 +1866,9 @@ export const seasons2021 = [
         wl_season_group: 'wl-forest-11',
         wl_url: HF_WL19 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad ka gawing kanan at pumasok ka sa lagusan.`,
-          `Paglabas mo sa Wind Path, ay may malaking isla sa gitna, `,
-          `at sa kanang bahagi ng isla lumipad ka pababa at pumasok ka (red circle) at lalabas ka sa lagusan (yellow circle)`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the passage.`,
+          `After entering the Wind Paths, you will see a large island in the center.`,
+          `Fly downward along the island's right side, enter the opening marked by the red circle, and exit through the passage marked by the yellow circle.`,
         ],
       },
     ],
@@ -1896,9 +1879,8 @@ export const seasons2021 = [
         shrine_label: 'Map Shrine 10',
         shrine_url: HF_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad gawing kanan at pumasok sa Wind Paths.`,
-          `Pagdating sa Wind Paths, lumipad patungo sa dulong isla sa ibaba at nasa docking area
-          map shrine.`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the Wind Paths.`,
+          `In the Wind Paths, fly toward the far island below. The Map Shrine is in the docking area.`,
         ],
       },
     ],
@@ -1995,9 +1977,9 @@ export const seasons2022 = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland >> Lumipad gawing kanan, at umupo sa bangka.`,
-          `Pagdating sa Treasure Reef, lumipad pataas`,
-          `May mataas na tore sa gawing kanan at sa tuktok nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+          `When you reach the Treasure Reef, fly upward.`,
+          `There is a tall tower on the right. The Winged Light is at its top.`,
         ],
       },
       {
@@ -2006,11 +1988,10 @@ export const seasons2022 = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland >> Lumipad gawing kanan, at umupo sa bangka.`,
-          `Pagdating sa Treasure Reef, lumipad pataas`,
-          `Sa tapat ng mataas na tore sa gawing kanan, ay pumasok sa batong may butas na nasa dagat
-          at lumangoy pailalim hanggang sa makarating ka sa ibaba`,
-          ` Buksan ang pintuan sa gawing kaliwa, at nasa loob nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+          `When you reach the Treasure Reef, fly upward.`,
+          `Across from the tall tower on the right, enter the rock opening in the sea and swim downward until you reach the bottom.`,
+          `Open the door on the left. The Winged Light is inside.`,
         ],
       },
     ],
@@ -2020,9 +2001,8 @@ export const seasons2022 = [
         shrine_label: 'Map Shrine 7',
         shrine_url: GW_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, lumipad pakaliwa at sumakay sa bangka.`,
-          `Pagkarating sa Treasure Reef, ay lumipad patungo sa pinakamataas na tore at makita mo 
-          sa loob nito ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, fly to the left, and board the boat.`,
+          `When you reach the Treasure Reef, fly toward the tallest tower. The Map Shrine is inside it.`,
         ],
       },
     ],
@@ -2115,10 +2095,9 @@ export const seasons2022 = [
         wl_season_group: 'wl-valley-13',
         wl_url: VT_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, sa iyong kanan ay may lagusan papuntang Village Theater, pumasok ka.`,
-          `Pumasok ka sa Theater Hall at sa likod ng stage ay may gitara sa labas ng lagusan, pumasok ka at sa dulo nag winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `When you reach the plaza, enter the passage on your right toward the Village Theater.`,
+          `Enter the Theater Hall. Behind the stage is a guitar beside a passage; enter that passage and follow it to the Winged Light at the end.`,
         ],
       },
     ],
@@ -2129,10 +2108,9 @@ export const seasons2022 = [
         shrine_label: 'Map Shrine 8',
         shrine_url: VT_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at bago makarating sa plaza sa gitna, sa gawing kanan ay may lagusan papuntang
-          Village Theater, pumasok ka.`,
-          `Pagkarating sa Village Theeater, sa kaliwang banda makita ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. Before reaching the central plaza, enter the passage on the right toward the Village Theater.`,
+          `When you reach the Village Theater, the Map Shrine is on the left.`,
         ],
       },
     ],
@@ -2338,8 +2316,8 @@ export const seasons2022 = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa gitnang Jellyfish na nakalutang at sa tuktok nito makikita ang winged light.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is on top of the floating jellyfish in the center.`,
         ],
       },
       {
@@ -2349,8 +2327,8 @@ export const seasons2022 = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa pinaka-itaas na darkness plant sa gawing kaliwa makikita ang winged light`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is at the top of the Darkness Plant on the left.`,
         ],
       },
       {
@@ -2360,8 +2338,8 @@ export const seasons2022 = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa dulong manta at sa ibabaw nito makikita ang winged light.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is on top of the manta at the far end.`,
         ],
       },
       {
@@ -2371,9 +2349,9 @@ export const seasons2022 = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa harapan lamang ng krill ang winged light.`,
-          `Huwag mag-alala, hindi gumagalaw ang krill dito.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is directly in front of the Krill.`,
+          `Do not worry—the Krill does not move here.`,
         ],
       },
       {
@@ -2383,9 +2361,9 @@ export const seasons2022 = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa gawing kanang mata ng whale (o kapag naka harap ka sa whale ay nasa kaliwa mo.)`,
-          `Sa loob ng mata makikita ang winged light`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `It is inside the whale's right eye. When facing the whale, this will be on your left.`,
+          `The Winged Light is inside the eye.`,
         ],
       },
       {
@@ -2395,10 +2373,9 @@ export const seasons2022 = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa pinakatuktok ng red crystal ang winged light dito`,
-          `Pwede kang mag-recharge ng wing power sa mga maliliit na red rocks na 
-          nakapalibot sa red crsytal.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is at the very top of the red crystal.`,
+          `You can recharge your Wing Power using the small red rocks surrounding the red crystal.`,
         ],
       },
     ],
@@ -2570,12 +2547,11 @@ export const seasons2023 = [
         wl_group: 'wl-vault',
         wl_url: VK_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform.`,
-          `Pagdating sa gitna ay may lagusan papasok sa iyong gawing kaliwa.`,
-          `Pagkapasok ay may butas sa iyong kaliwa, pumasok ka ulit, hanggang sa lumabas ka sa repository`,
-          `Lumipad palabas patungong kanan hanggat may makita kang maliit na ilaw
-        sa iyong kanan at sa labas nito ay nakarehas ang winged light`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `At the center, enter the passage on your left.`,
+          `Inside, enter the opening on your left and continue until you exit into the Repository of Refuge.`,
+          `Fly outside toward the right until you see a small light on your right. The Winged Light is outside, behind the bars.`,
         ],
       },
     ],
@@ -2585,11 +2561,10 @@ export const seasons2023 = [
         shrine_label: 'Map Shrine 4',
         shrine_url: VK_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Sa gawing kaliwa ay pumasok sa lagusan pababa papuntang Repository of Refuge`,
-          `Pagkadating ay pumasok pa sa looban at sa gawing kaliwa malapit sa entrance makita mo
-          ang map shrine agad.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `Enter the downward passage on the left that leads to the Repository of Refuge.`,
+          `Continue farther inside. The Map Shrine is on the left near the entrance.`,
         ],
       },
     ],
@@ -2681,8 +2656,8 @@ export const seasons2023 = [
         shrine_label: 'Map Shrine 2',
         shrine_url: ID_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan nasa tuktok ito ng
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right. The Map Shrine is on top of the
           Passage Stone.`,
         ],
       },
@@ -2777,10 +2752,10 @@ export const seasons2023 = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Lumipad pakaliwa at may maliit na lagusan sa ibaba, pasok ka at sentro ng kweba, lipad  pataas at hanapin ang sa gitnang pader.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, fly left and enter the small passage below. In the center of the cave, fly upward and look along the middle wall.`,
         ],
       },
       {
@@ -2790,11 +2765,11 @@ export const seasons2023 = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Pagdating dumako papasok at lumipad patungo sa malaking sa falls, ay lumangoy pailalim`,
-          `pumasok sa butas at lumangoy at umahon at lumipad papasok sa tabi ng orb makikita ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, continue inward and fly toward the large waterfall. Swim underneath it.`,
+          `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
         ],
       },
       {
@@ -2804,11 +2779,11 @@ export const seasons2023 = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Pagdating dumako papasok at lumipad patungo sa pinakamataas na bundok at sa tuktok nito ang winged light.`,
-          `pumasok sa butas at lumangoy at umahon at lumipad papasok sa tabi ng orb makikita ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, continue inward and fly to the tallest mountain. The Winged Light is at its summit.`,
+          `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
         ],
       },
     ],
@@ -2818,10 +2793,10 @@ export const seasons2023 = [
         shrine_label: 'Map Shrine 7',
         shrine_url: DP_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Sa gawing kaliwa ng Prairie Caves, ay may butas papasok papuntang Prairie Peaks, pumasok at sumakay sa bangka.`,
-          `Pagdating sa Prairie Peaks, ay pumasok sa looban at pagkalabas ay sa may bato sa bandang kanan, nasa itaas ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `On the left side of Prairie Caves, enter the opening that leads to Prairie Peaks and ride the boat.`,
+          `When you arrive at Prairie Peaks, continue inward. After the area opens up, look on top of the rock to the right for the Map Shrine.`,
         ],
       },
     ],
@@ -3017,9 +2992,9 @@ export const seasons2023 = [
         shrine_label: 'Map Shrine 1',
         shrine_url: AV_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Aviary Village, ang nasa gitnang portal sa Old Home.`,
-          `Or kung nasa Aviary Village ka na,`,
-          `Pagkapasok sa portal, dumako sa dulo ng village at malapit sa wardrobe, makikita ang map shrine`,
+          `Enter Aviary Village through the center portal in Old Home.`,
+          `Alternatively, if you are already in Aviary Village,`,
+          `go to the far end of the village. The Map Shrine is near the wardrobe.`,
         ],
       },
     ],
@@ -3111,9 +3086,9 @@ export const seasons2024 = [
         wl_season_group: 'wl-vault-20',
         wl_url: VK_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Magtungo papuntang Hunter Spirit at sa bandang likod pababa ay makikita ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Head toward the Hunter Spirit. The Winged Light is behind and below that location.`,
         ],
       },
       {
@@ -3123,9 +3098,9 @@ export const seasons2024 = [
         wl_season_group: 'wl-vault-20',
         wl_url: VK_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating ay magtunog sa Tore ng palasyo, at sa labas nito sa bandang likuran makikita ang winged light.`,
+          `Enter Map 6 | Vault of Knowledge and fly upward to the passage on the left.`,
+          `Enter it. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Head to the palace tower. The Winged Light is outside, toward the back.`,
         ],
       },
       {
@@ -3134,10 +3109,10 @@ export const seasons2024 = [
         wl_group: 'wl-vault',
         wl_url: VK_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating sa Cresecent Oasis, dumako malapit sa waterfalls at pumasok sa ulap na lagusan`,
-          `Sa ilalim ng puno makita ang winged light dito`,
+          `Enter Map 6 | Vault of Knowledge and fly upward to the passage on the left.`,
+          `Enter it. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `After arriving in Crescent Oasis, go near the waterfalls and enter the cloud passage.`,
+          `The Winged Light is beneath the tree.`,
         ],
       },
     ],
@@ -3147,10 +3122,10 @@ export const seasons2024 = [
         shrine_label: 'Map Shrine 1',
         shrine_url: VK_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa quest giver sa tapat ng lawa (lake), at sa kabila nito makita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the Quest Giver across the lake. The Map Shrine is on the opposite side.`,
         ],
       },
     ],
@@ -3646,8 +3621,8 @@ export const seasons2024 = [
         wl_season_group: 'wl-vault-23',
         wl_url: VK_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
         ],
       },
     ],
@@ -3657,10 +3632,10 @@ export const seasons2024 = [
         shrine_label: 'Map Shrine 11',
         shrine_url: VK_MS11 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa malapit sa tent na green at malapit dito ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the green tent. The Map Shrine is nearby.`,
         ],
       },
     ],
@@ -4328,8 +4303,8 @@ export const seasons2026 = [
         ],
         spirit_guide_video_url: youtube_embed + 'yMhxKqyvj2A',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kanan makikita kaagad ang spirit na ito.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship. You will immediately find this spirit on the right.`,
         ],
       },
       //CARNIVAL_JUGGLER
@@ -4388,8 +4363,8 @@ export const seasons2026 = [
         ],
         spirit_guide_video_url: youtube_embed + 'jSmrfkOviiE',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kaliwa makikita kaagad ang spirit na ito.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship. You will immediately find this spirit on the left.`,
         ],
       },
       //CARNIVAL_PUZZLE_DIRECTOR
@@ -4448,9 +4423,9 @@ export const seasons2026 = [
         ],
         spirit_guide_video_url: youtube_embed + 'z1UA98BC2NQ',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kanan ay may lagusan pababa, pumasok ka,',
-          'Tapos sa looban ay kumaliwa ka at diretso lamang hanggang sa makita mo na ang spirit sa gilid ng hagdanan',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship and enter the passage leading downward on the right.`,
+          `Inside, turn left and continue straight until you find the spirit beside the stairs.`,
         ],
       },
       //CARNIVAL_STUNT_ACTOR
@@ -4515,9 +4490,9 @@ export const seasons2026 = [
         ],
         spirit_guide_video_url: youtube_embed + 'F69Ty9NQUwI',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kanan ay may lagusan pababa, pumasok ka,',
-          'Tapos sa looban ay kumaliwa ka at diretso lamang hanggang sa makita mo na ang spirit sa gilid ng hagdanan',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship and enter the passage leading downward on the right.`,
+          `Inside, turn left and continue straight until you find the spirit beside the stairs.`,
         ],
       },
     ],
@@ -4529,8 +4504,8 @@ export const seasons2026 = [
         wl_season_group: 'wl-aviary-1',
         wl_url: AV_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, Lumipad patungo sa ikalawang barko, at sa Bowsprit nito makikita ang winged light.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, fly to the second ship. The Winged Light is on its bowsprit.`,
         ],
       },
       {
@@ -4540,11 +4515,11 @@ export const seasons2026 = [
         wl_season_group: 'wl-aviary-2',
         wl_url: AV_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, Umakyat sa Barko at pumasok sa lagusan sa gawing kanan at bumaba,',
-          'Pagkababa ay kumaliwa at diretso papasok sa mga lagusan hanggang sa makita ang Puzzle Director',
-          'Sa likod nito ay may mga kwarto, pumasok at sindihan ang lampara sa loob',
-          'Gagalaw ang cabinet at makikita ang sekretong lagusan sa gawing kanan sa isa pang kwarto, dito ang winged light.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship, enter the passage on the right, and descend.`,
+          `At the bottom, turn left and continue through the passages until you reach the Puzzle Director.`,
+          `Behind the Puzzle Director are several rooms. Enter one and light the lamp inside.`,
+          `The cabinet will move, revealing a secret passage on the right that leads to another room. The Winged Light is there.`,
         ],
       },
     ],
@@ -4555,8 +4530,8 @@ export const seasons2026 = [
         shrine_label: 'Map Shrine 1',
         shrine_url: AV_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, umakyat sa barko ng Wandering Carnival at sa likod ng Athletic Dancer makikita ang map shrine.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the Wandering Carnival ship. The Map Shrine is behind the Athletic Dancer.`,
         ],
       },
     ],
@@ -4834,8 +4809,8 @@ export const seasons2026 = [
       //   wl_season_group: 'wl-aviary-1',
       //   wl_url: AV_WL1 ?? WINGED_LIGHT,
       //   wl_location: [
-      //     'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-      //     'Pagkadating, Lumipad patungo sa ikalawang barko, at sa Bowsprit nito makikita ang winged light.',
+      //     `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+      //     `After arriving, fly to the second ship. The Winged Light is on its bowsprit.`,
       //   ],
       // },
       // {
@@ -4845,11 +4820,11 @@ export const seasons2026 = [
       //   wl_season_group: 'wl-aviary-2',
       //   wl_url: AV_WL2 ?? WINGED_LIGHT,
       //   wl_location: [
-      //     'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-      //     'Pagkadating, Umakyat sa Barko at pumasok sa lagusan sa gawing kanan at bumaba,',
-      //     'Pagkababa ay kumaliwa at diretso papasok sa mga lagusan hanggang sa makita ang Puzzle Director',
-      //     'Sa likod nito ay may mga kwarto, pumasok at sindihan ang lampara sa loob',
-      //     'Gagalaw ang cabinet at makikita ang sekretong lagusan sa gawing kanan sa isa pang kwarto, dito ang winged light.',
+      //     `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+      //     `After arriving, board the ship, enter the passage on the right, and descend.`,
+      //     `At the bottom, turn left and continue through the passages until you reach the Puzzle Director.`,
+      //     `Behind the Puzzle Director are several rooms. Enter one and light the lamp inside.`,
+      //     `The cabinet will move, revealing a secret passage on the right that leads to another room. The Winged Light is there.`,
       //   ],
       // },
     ],
@@ -5436,9 +5411,9 @@ export const allSeasons = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, lumipad gawing kanan patungo sa bangka, at umupo ka.`,
-          `Pagdating sa Forgotten Ark, lumipad hanggang makita ang Ark at sa unahan ang winged light na ito.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly to the right toward the boat and sit down.`,
+          `When you reach the Forgotten Ark, fly until you see the Ark. The Winged Light is at its front tip.`,
         ],
       },
       {
@@ -5447,10 +5422,9 @@ export const allSeasons = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland at Lumipad sa mga kaulapan pababa,`,
-          `Pagkalapag, lumipad gawing kanan patungo sa bangka, at umupo ka.`,
-          `Lumipad patungo sa dakong dulo na kapatagan at may lagusan na maliit sa bandang kaliwa,
-        at pumasok ka at sa loob nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+          `After landing, fly to the right toward the boat and sit down.`,
+          `Fly toward the open field at the far end. Enter the small passage on the left; the Winged Light is inside.`,
         ],
       },
     ],
@@ -5460,10 +5434,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 8',
         shrine_url: GW_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, magtungo sa dulo ng lagusan at tumalon.`,
-          `Pagkalapag, ay lumipad ka gawing kanan at hanapin ang bangka sa dalampasigan at sumakay dito`,
-          `Pagkarating sa Forgotten Ark, ay lumipad patungo sa malaking barko at nasa loob nito sa gitna
-          ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, continue to the end of the passage, and jump down.`,
+          `After landing, fly to the right, find the boat on the shore, and board it.`,
+          `When you reach the Forgotten Ark, fly toward the large ship. The Map Shrine is inside, near the center.`,
         ],
       },
     ],
@@ -5587,10 +5560,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, makita mo ito agad sa malaking islang nakalutang.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, you will immediately see the Winged Light on the large floating island.`,
         ],
       },
       {
@@ -5600,10 +5573,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa tuktok ng malaking isla ay may maliit na lagusan.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, look for the small passage at the top of the largest island.`,
         ],
       },
       {
@@ -5613,10 +5586,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL19 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa dakong kanan, makita ang tatlong maliliit na nakalutang na isla. Nasa kanan na isla.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, look to the right for three small floating islands. The Winged Light is on the rightmost island.`,
         ],
       },
       {
@@ -5626,10 +5599,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL20 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa bandang likuran ay may mga kampana at sa bandang ibaba ay nakapwesto ang winged light na ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At the back of Sanctuary Islands, look for the bells. This Winged Light is positioned below them.`,
         ],
       },
       {
@@ -5639,10 +5612,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL21 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, sa likod ng malaking isla makikita ang jellyfish cave.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, look behind the largest island for the jellyfish cave.`,
         ],
       },
       {
@@ -5652,10 +5625,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL22 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa at makita ang malaking bunganga ng kweba nasa likod ng waterfall ito.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and look for the large cave entrance behind the waterfall.`,
         ],
       },
       {
@@ -5665,12 +5638,11 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL23 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa
-          at makita ang malaking bunganga ng kweba pumasok at sa kaliwa ay may lagusan`,
-          `Lumipad pataas at ito ay iyong makikita.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the left.`,
+          `Fly upward to find the Winged Light.`,
         ],
       },
       {
@@ -5680,12 +5652,11 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-6',
         wl_url: PR_WL24 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa
-        at makita ang malaking bunganga ng kweba pumasok at sa kanan ay may lagusan`,
-          `Pumasok ka sa Crabs Area, lumipad pataas at may lagusan papasok, dito ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the right.`,
+          `Enter the crab area, fly upward, and go through the next passage to find the Winged Light.`,
         ],
       },
     ],
@@ -5695,11 +5666,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 9',
         shrine_url: DP_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakanan at pumasok sa lagusan`,
-          `Paglabas sa Bird's Nest, lumipad pababa hanggang sa lagusan na ulap.`,
-          `Paglabas sa Sanctuary Islands, lumipad pababa patungo sa mga Bells, at malapit sa Quest Giver ng Sanctuary
-          ay makita mo ang map shrine.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly right and enter the passage.`,
+          `In Bird's Nest, fly downward until you reach the cloud passage.`,
+          `When you arrive at Sanctuary Islands, fly down toward the bells. The Map Shrine is near the Sanctuary Guide.`,
         ],
       },
     ],
@@ -5793,9 +5763,9 @@ export const allSeasons = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Water Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Water Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -5805,9 +5775,9 @@ export const allSeasons = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Earth Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Earth Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -5817,9 +5787,9 @@ export const allSeasons = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Air Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Air Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
       {
@@ -5829,9 +5799,9 @@ export const allSeasons = [
         wl_season_group: 'wl-isle-season-7',
         wl_url: ID_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          `lumipad ka gawing kanan at may lagusan papasok sa Cave of Prophecy pumasok ka,`,
-          `Pumasok ka sa Fire Trial ng Cave of Prophecy nasa dulo ng trial ang winged light.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `Fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Enter the Fire Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.`,
         ],
       },
     ],
@@ -5842,9 +5812,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 5',
         shrine_url: ID_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, tumalon ka pakaliwa sa ibaba lang mismo makikita ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `When you reach the Cave of Prophecy, jump down to the left. The Map Shrine is directly below.`,
         ],
       },
       {
@@ -5853,9 +5823,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 6',
         shrine_url: ID_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Water Trial nasa gawing kanan ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Water Trial. The Map Shrine is on the right.`,
         ],
       },
       {
@@ -5864,9 +5834,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 7',
         shrine_url: ID_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Earth Trial, Pagdumating ka sa aakyat ng hagdaan, sa kanan nito ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Earth Trial. When you reach the staircase leading upward, the Map Shrine is on its right.`,
         ],
       },
       {
@@ -5875,9 +5845,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 8',
         shrine_url: ID_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Air Trial`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Air Trial.`,
         ],
       },
       {
@@ -5886,9 +5856,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 9',
         shrine_url: ID_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan, may lagusan papasok Cave of Prophecy.`,
-          `Pagdating sa Cave of Prophecy, Gawin ang Fire Trial, at bago pumasok sa 3rd floor nasa gawing kanan ng pintuan ang map shrine.`,
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right and enter the passage leading to the Cave of Prophecy.`,
+          `Complete the Fire Trial. Before entering the third floor, the Map Shrine is to the right of the doorway.`,
         ],
       },
     ],
@@ -5984,10 +5954,8 @@ export const allSeasons = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagkapasok, mag skate pababa at sa mga bukid na nasa kaliwa, isa dito ay 
-          may butas kung nasaan ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `Skate downhill. One of the hills on the left has an opening containing the Winged Light.`,
         ],
       },
       {
@@ -5997,10 +5965,8 @@ export const allSeasons = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagkapasok, mag skate pababa at sa mga bukid na nasa kanan, isa dito ay 
-          may butas kung nasaan ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `Skate downhill. One of the hills on the right has an opening containing the Winged Light.`,
         ],
       },
       {
@@ -6010,10 +5976,9 @@ export const allSeasons = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `At sa tuktok ng tore na nasa gitna makita mo ang winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `The Winged Light is at the top of the tower in the center.`,
         ],
       },
       {
@@ -6023,10 +5988,9 @@ export const allSeasons = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `Sumakay ka sa Ferry Boat papuntang Hermitt's Valley, at sa likod mo ay may kweba sa bandang kanan ng bundok.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `Ride the ferry boat to Hermit's Valley. Behind you, on the right side of the mountain, is a cave containing the Winged Light.`,
         ],
       },
       {
@@ -6036,10 +6000,9 @@ export const allSeasons = [
         wl_season_group: 'wl-valley-8',
         wl_url: VT_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, umakyat ka papunta sa susunod na boat terminal`,
-          `Sumakay ka sa Ferry Boat papuntang Hermitt's Valley, at sa likod ng bundok makita ang winged light dito.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `From the plaza, climb toward the next boat terminal.`,
+          `Ride the ferry boat to Hermit's Valley. You will find this Winged Light behind the mountain.`,
         ],
       },
     ],
@@ -6050,9 +6013,8 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 7',
         shrine_url: VT_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at bago makarating sa plaza sa gitna, sa gawing kaliwa malapit sa bahay, makita
-          ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. Before reaching the central plaza, look on the left near a house to find the Map Shrine.`,
         ],
       },
       {
@@ -6061,8 +6023,8 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 9',
         shrine_url: VT_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, sa unahan ng statue, naka elevated ang map shrine malapit sa exit ng Performance Hall.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. The Map Shrine is on an elevated platform in front of the statue, near the Performance Hall exit.`,
         ],
       },
       {
@@ -6071,10 +6033,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 10',
         shrine_url: VT_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at magtungo sa Port sa unahan lng ng plaza, sa kaliwang banda.`,
-          `Pagkasakay ng lumulutang na bangka, gawin din ito sa susunod na terminal patungo sa Hermitt's Valley`,
-          `Pagkarating ay lumipad patungo sa Cave na nasa bandang kanan, at sa tuktok ng Cave na ito ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill and proceed to the port just ahead of the plaza on the left.`,
+          `Ride the floating boat, then take the next boat from the following terminal to Hermit's Valley.`,
+          `When you arrive, fly toward the cave on the right. The Map Shrine is on top of the cave.`,
         ],
       },
     ],
@@ -6208,9 +6170,9 @@ export const allSeasons = [
         wl_season_group: 'wl-forest-9',
         wl_url: HF_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago makarating sa gate ng entrance, ay may lagusan sa kanan, pumasok ka`,
-          `Paglabas mo sa kweba may makita kang duyan sa kanan, at sa itaas ng puno nakatago ang winged light sa puno.`,
+          `Enter Map 3 | Hidden Forest and fly downward through the clouds.`,
+          `Before reaching the entrance gate, enter the passage on the right.`,
+          `After exiting the cave, you will see a hammock on the right. The Winged Light is hidden high in the tree.`,
         ],
       },
       {
@@ -6220,10 +6182,10 @@ export const allSeasons = [
         wl_season_group: 'wl-forest-9',
         wl_url: HF_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago makarating sa gate ng entrance, ay may lagusan sa kanan, pumasok ka`,
-          `Paglabas mo sa kweba may makita kang malaking treehouse, pumasok ka.`,
-          `Sa loob nito ay may lagusan pababa, makita mo ang spirit na ito.`,
+          `Enter Map 3 | Hidden Forest and fly downward through the clouds.`,
+          `Before reaching the entrance gate, enter the passage on the right.`,
+          `After exiting the cave, you will see a large treehouse. Enter it.`,
+          `Inside is a passage leading downward, where you will find the Winged Light.`,
         ],
       },
     ],
@@ -6234,10 +6196,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 9',
         shrine_url: HF_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `bago pa makarating sa entrance gate, sa kanang banda ay may maliit na lagusa
-          papuntang Treehouse.`,
-          `sa tuktok ng Treehouse makikita ang mapshrine.`,
+          `Enter Map 3 | Hidden Forest and fly downward through the clouds.`,
+          `Before reaching the entrance gate, enter the small passage on the right that leads to the Treehouse.`,
+          `The Map Shrine is at the top of the Treehouse.`,
         ],
       },
     ],
@@ -6364,12 +6325,11 @@ export const allSeasons = [
         wl_group: 'wl-vault',
         wl_url: VK_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa malaking banga na
-          nasa iyong gawing kanan.`,
-          `Makita mo ang winged light sa tuktok nito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the large jar on your right.`,
+          `The Winged Light is on top of it.`,
         ],
       },
       {
@@ -6378,12 +6338,11 @@ export const allSeasons = [
         wl_group: 'wl-vault',
         wl_url: VK_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa mataas na tower 
-          na nasa iyong gawing kaliwa.`,
-          `Nasa tuktok ng tower ang winged light na ito.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the tall tower on your left.`,
+          `The Winged Light is on top of the tower.`,
         ],
       },
       {
@@ -6392,12 +6351,11 @@ export const allSeasons = [
         wl_group: 'wl-vault',
         wl_url: VK_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pataas at sa gawing kaliwa ay may lagusan papasok.`,
-          `Pagkapasok ay lumipad paakyat at pumasok sa kaliwang butas.`,
-          `Pagkarating sa Starlight Dessert, ay lumipad patungo sa buwan.`,
-          `Sa unang islang nakalutang ay may hugis krus ito na butas sa ilalim at nasa loob
-          nito ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly upward and enter the passage on the left.`,
+          `After entering, fly upward and go through the opening on the left.`,
+          `Upon reaching Starlight Desert, fly toward the moon.`,
+          `The first floating island has a cross-shaped opening underneath it. The Winged Light is inside.`,
         ],
       },
     ],
@@ -6407,10 +6365,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 2',
         shrine_url: VK_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad pakaliwa at pumasok ka sa lagusan patungong Dessert Starlight.`,
-          `Pagkalabas mo ay lumipad sa direksyon ng buwan, at may makita kang garden`,
-          `Sa gawing kanan mo, sa loob ng maze makita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the passage leading to Starlight Desert.`,
+          `After exiting, fly toward the moon until you see a garden.`,
+          `The Map Shrine is inside the maze on your right.`,
         ],
       },
     ],
@@ -6514,9 +6472,9 @@ export const allSeasons = [
         wl_season_group: 'wl-forest-11',
         wl_url: HF_WL19 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad ka gawing kanan at pumasok ka sa lagusan.`,
-          `Paglabas mo sa Wind Path, ay may malaking isla sa gitna, `,
-          `at sa kanang bahagi ng isla lumipad ka pababa at pumasok ka (red circle) at lalabas ka sa lagusan (yellow circle)`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the passage.`,
+          `After entering the Wind Paths, you will see a large island in the center.`,
+          `Fly downward along the island's right side, enter the opening marked by the red circle, and exit through the passage marked by the yellow circle.`,
         ],
       },
     ],
@@ -6527,9 +6485,8 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 10',
         shrine_url: HF_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad gawing kanan at pumasok sa Wind Paths.`,
-          `Pagdating sa Wind Paths, lumipad patungo sa dulong isla sa ibaba at nasa docking area
-          map shrine.`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the Wind Paths.`,
+          `In the Wind Paths, fly toward the far island below. The Map Shrine is in the docking area.`,
         ],
       },
     ],
@@ -6624,9 +6581,9 @@ export const allSeasons = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland >> Lumipad gawing kanan, at umupo sa bangka.`,
-          `Pagdating sa Treasure Reef, lumipad pataas`,
-          `May mataas na tore sa gawing kanan at sa tuktok nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+          `When you reach the Treasure Reef, fly upward.`,
+          `There is a tall tower on the right. The Winged Light is at its top.`,
         ],
       },
       {
@@ -6635,11 +6592,10 @@ export const allSeasons = [
         wl_group: 'wl-wasteland',
         wl_url: GW_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Golden Wasteland >> Lumipad gawing kanan, at umupo sa bangka.`,
-          `Pagdating sa Treasure Reef, lumipad pataas`,
-          `Sa tapat ng mataas na tore sa gawing kanan, ay pumasok sa batong may butas na nasa dagat
-          at lumangoy pailalim hanggang sa makarating ka sa ibaba`,
-          ` Buksan ang pintuan sa gawing kaliwa, at nasa loob nito ang winged light.`,
+          `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+          `When you reach the Treasure Reef, fly upward.`,
+          `Across from the tall tower on the right, enter the rock opening in the sea and swim downward until you reach the bottom.`,
+          `Open the door on the left. The Winged Light is inside.`,
         ],
       },
     ],
@@ -6649,9 +6605,8 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 7',
         shrine_url: GW_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 5 | Golden Wasteland, lumipad pakaliwa at sumakay sa bangka.`,
-          `Pagkarating sa Treasure Reef, ay lumipad patungo sa pinakamataas na tore at makita mo 
-          sa loob nito ang map shrine.`,
+          `Enter Map 5 | Golden Wasteland, fly to the left, and board the boat.`,
+          `When you reach the Treasure Reef, fly toward the tallest tower. The Map Shrine is inside it.`,
         ],
       },
     ],
@@ -6745,10 +6700,9 @@ export const allSeasons = [
         wl_season_group: 'wl-valley-13',
         wl_url: VT_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa iyong kanan, ay may lagusan papuntang 
-          Village of Dreams, pumasok ka.`,
-          `Pagdating sa plaza, sa iyong kanan ay may lagusan papuntang Village Theater, pumasok ka.`,
-          `Pumasok ka sa Theater Hall at sa likod ng stage ay may gitara sa labas ng lagusan, pumasok ka at sa dulo nag winged light.`,
+          `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+          `When you reach the plaza, enter the passage on your right toward the Village Theater.`,
+          `Enter the Theater Hall. Behind the stage is a guitar beside a passage; enter that passage and follow it to the Winged Light at the end.`,
         ],
       },
     ],
@@ -6759,10 +6713,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 8',
         shrine_url: VT_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 4 | Valley of Triumph, Sa gawing kanan ay may lagusan papuntang Village of Dreams.`,
-          `Magskate pababa, at bago makarating sa plaza sa gitna, sa gawing kanan ay may lagusan papuntang
-          Village Theater, pumasok ka.`,
-          `Pagkarating sa Village Theeater, sa kaliwang banda makita ang map shrine.`,
+          `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
+          `Skate downhill. Before reaching the central plaza, enter the passage on the right toward the Village Theater.`,
+          `When you reach the Village Theater, the Map Shrine is on the left.`,
         ],
       },
     ],
@@ -6969,8 +6922,8 @@ export const allSeasons = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa gitnang Jellyfish na nakalutang at sa tuktok nito makikita ang winged light.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is on top of the floating jellyfish in the center.`,
         ],
       },
       {
@@ -6980,8 +6933,8 @@ export const allSeasons = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa pinaka-itaas na darkness plant sa gawing kaliwa makikita ang winged light`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is at the top of the Darkness Plant on the left.`,
         ],
       },
       {
@@ -6991,8 +6944,8 @@ export const allSeasons = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa dulong manta at sa ibabaw nito makikita ang winged light.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is on top of the manta at the far end.`,
         ],
       },
       {
@@ -7002,9 +6955,9 @@ export const allSeasons = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa harapan lamang ng krill ang winged light.`,
-          `Huwag mag-alala, hindi gumagalaw ang krill dito.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is directly in front of the Krill.`,
+          `Do not worry—the Krill does not move here.`,
         ],
       },
       {
@@ -7014,9 +6967,9 @@ export const allSeasons = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa gawing kanang mata ng whale (o kapag naka harap ka sa whale ay nasa kaliwa mo.)`,
-          `Sa loob ng mata makikita ang winged light`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `It is inside the whale's right eye. When facing the whale, this will be on your left.`,
+          `The Winged Light is inside the eye.`,
         ],
       },
       {
@@ -7026,10 +6979,9 @@ export const allSeasons = [
         wl_season_group: 'wl-void-14',
         wl_url: VOID_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Gawin ang Red Shard Eruptions upang makapasok sa void space`,
-          `Nasa pinakatuktok ng red crystal ang winged light dito`,
-          `Pwede kang mag-recharge ng wing power sa mga maliliit na red rocks na 
-          nakapalibot sa red crsytal.`,
+          `Complete a Red Shard Eruption to enter the Void space.`,
+          `The Winged Light is at the very top of the red crystal.`,
+          `You can recharge your Wing Power using the small red rocks surrounding the red crystal.`,
         ],
       },
     ],
@@ -7200,12 +7152,11 @@ export const allSeasons = [
         wl_group: 'wl-vault',
         wl_url: VK_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad patungo sa elevating platform.`,
-          `Pagdating sa gitna ay may lagusan papasok sa iyong gawing kaliwa.`,
-          `Pagkapasok ay may butas sa iyong kaliwa, pumasok ka ulit, hanggang sa lumabas ka sa repository`,
-          `Lumipad palabas patungong kanan hanggat may makita kang maliit na ilaw
-        sa iyong kanan at sa labas nito ay nakarehas ang winged light`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `At the center, enter the passage on your left.`,
+          `Inside, enter the opening on your left and continue until you exit into the Repository of Refuge.`,
+          `Fly outside toward the right until you see a small light on your right. The Winged Light is outside, behind the bars.`,
         ],
       },
     ],
@@ -7215,11 +7166,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 4',
         shrine_url: VK_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad sa direksyon ng elevated platfrom.`,
-          `Sa gawing kaliwa ay pumasok sa lagusan pababa papuntang Repository of Refuge`,
-          `Pagkadating ay pumasok pa sa looban at sa gawing kaliwa malapit sa entrance makita mo
-          ang map shrine agad.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly toward the elevating platform.`,
+          `Enter the downward passage on the left that leads to the Repository of Refuge.`,
+          `Continue farther inside. The Map Shrine is on the left near the entrance.`,
         ],
       },
     ],
@@ -7312,8 +7262,8 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 2',
         shrine_url: ID_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Map 1 | Isle of Dawn, ay pumasok ka sa kweba na may lagusan.`,
-          ` Pagkalabas mo ay lumipad gawing kanan nasa tuktok ito ng
+          `Upon entering Map 1 | Isle of Dawn, enter the first cave passage.`,
+          `After exiting, fly to the right. The Map Shrine is on top of the
           Passage Stone.`,
         ],
       },
@@ -7409,10 +7359,10 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Lumipad pakaliwa at may maliit na lagusan sa ibaba, pasok ka at sentro ng kweba, lipad  pataas at hanapin ang sa gitnang pader.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, fly left and enter the small passage below. In the center of the cave, fly upward and look along the middle wall.`,
         ],
       },
       {
@@ -7422,11 +7372,11 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Pagdating dumako papasok at lumipad patungo sa malaking sa falls, ay lumangoy pailalim`,
-          `pumasok sa butas at lumangoy at umahon at lumipad papasok sa tabi ng orb makikita ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, continue inward and fly toward the large waterfall. Swim underneath it.`,
+          `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
         ],
       },
       {
@@ -7436,11 +7386,11 @@ export const allSeasons = [
         wl_season_group: 'wl-prairie-18',
         wl_url: PR_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 2 | Daylight Prairie, Lumipad sa mga kaulapan,`,
-          `Pagkalapag sa Butterfly Field, lumipad pakaliwa at pumasok sa lagusan`,
-          `Paglabas lumipad, patungong kanan, sa maliit na butas, pumasok at umupo sa bangka`,
-          `Pagdating dumako papasok at lumipad patungo sa pinakamataas na bundok at sa tuktok nito ang winged light.`,
-          `pumasok sa butas at lumangoy at umahon at lumipad papasok sa tabi ng orb makikita ang winged light.`,
+          `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+          `After landing in Butterfly Fields, fly left and enter the passage.`,
+          `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+          `After arriving, continue inward and fly to the tallest mountain. The Winged Light is at its summit.`,
+          `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
         ],
       },
     ],
@@ -7450,10 +7400,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 7',
         shrine_url: DP_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pagkapasok mo sa Pangalawang Mapa - Daylight Prairie, Lumipad ka patungo sa kaulapan`,
-          `Pagkalapag, gawing kaliwa mo ay may lagusan papasok.`,
-          `Sa gawing kaliwa ng Prairie Caves, ay may butas papasok papuntang Prairie Peaks, pumasok at sumakay sa bangka.`,
-          `Pagdating sa Prairie Peaks, ay pumasok sa looban at pagkalabas ay sa may bato sa bandang kanan, nasa itaas ang map shrine.`,
+          `Enter the second realm, Daylight Prairie, then fly through the clouds.`,
+          `After landing, enter the passage on your left.`,
+          `On the left side of Prairie Caves, enter the opening that leads to Prairie Peaks and ride the boat.`,
+          `When you arrive at Prairie Peaks, continue inward. After the area opens up, look on top of the rock to the right for the Map Shrine.`,
         ],
       },
     ],
@@ -7638,9 +7588,9 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 1',
         shrine_url: AV_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Aviary Village, ang nasa gitnang portal sa Old Home.`,
-          `Or kung nasa Aviary Village ka na,`,
-          `Pagkapasok sa portal, dumako sa dulo ng village at malapit sa wardrobe, makikita ang map shrine`,
+          `Enter Aviary Village through the center portal in Old Home.`,
+          `Alternatively, if you are already in Aviary Village,`,
+          `go to the far end of the village. The Map Shrine is near the wardrobe.`,
         ],
       },
     ],
@@ -7730,9 +7680,9 @@ export const allSeasons = [
         wl_season_group: 'wl-vault-20',
         wl_url: VK_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Magtungo papuntang Hunter Spirit at sa bandang likod pababa ay makikita ang winged light.`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Head toward the Hunter Spirit. The Winged Light is behind and below that location.`,
         ],
       },
       {
@@ -7742,9 +7692,9 @@ export const allSeasons = [
         wl_season_group: 'wl-vault-20',
         wl_url: VK_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating ay magtunog sa Tore ng palasyo, at sa labas nito sa bandang likuran makikita ang winged light.`,
+          `Enter Map 6 | Vault of Knowledge and fly upward to the passage on the left.`,
+          `Enter it. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Head to the palace tower. The Winged Light is outside, toward the back.`,
         ],
       },
       {
@@ -7753,10 +7703,10 @@ export const allSeasons = [
         wl_group: 'wl-vault',
         wl_url: VK_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkdating sa Cresecent Oasis, dumako malapit sa waterfalls at pumasok sa ulap na lagusan`,
-          `Sa ilalim ng puno makita ang winged light dito`,
+          `Enter Map 6 | Vault of Knowledge and fly upward to the passage on the left.`,
+          `Enter it. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `After arriving in Crescent Oasis, go near the waterfalls and enter the cloud passage.`,
+          `The Winged Light is beneath the tree.`,
         ],
       },
     ],
@@ -7766,10 +7716,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 1',
         shrine_url: VK_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa quest giver sa tapat ng lawa (lake), at sa kabila nito makita ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the Quest Giver across the lake. The Map Shrine is on the opposite side.`,
         ],
       },
     ],
@@ -8263,8 +8213,8 @@ export const allSeasons = [
         wl_season_group: 'wl-vault-23',
         wl_url: VK_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Ika-6 na Mapa | Vault of Knowledge, at lumipad patungo pataas sa kaliwa ay may lagusan,`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
+          `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+          `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
         ],
       },
     ],
@@ -8274,10 +8224,10 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 11',
         shrine_url: VK_MS11 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 6 | Vault of Knowledge`,
-          `Lumipad gawing kaliwa, at pumasok sa portal papuntang Collaboration Room.`,
-          `Pumasok ka at pagkadating sa collaboration room, umupo sa icon ng deer upang makarating sa Crescent Oasis`,
-          `Pagkadating, ay magtungo sa malapit sa tent na green at malapit dito ang map shrine.`,
+          `Enter Map 6, the Vault of Knowledge.`,
+          `Fly to the left and enter the portal leading to the collaboration room.`,
+          `In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+          `Upon arrival, head toward the green tent. The Map Shrine is nearby.`,
         ],
       },
     ],
@@ -8945,8 +8895,8 @@ export const allSeasons = [
         ],
         spirit_guide_video_url: youtube_embed + 'yMhxKqyvj2A',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kanan makikita kaagad ang spirit na ito.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship. You will immediately find this spirit on the right.`,
         ],
       },
       //CARNIVAL_JUGGLER
@@ -9005,8 +8955,8 @@ export const allSeasons = [
         ],
         spirit_guide_video_url: youtube_embed + 'jSmrfkOviiE',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kaliwa makikita kaagad ang spirit na ito.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship. You will immediately find this spirit on the left.`,
         ],
       },
       //CARNIVAL_PUZZLE_DIRECTOR
@@ -9065,9 +9015,9 @@ export const allSeasons = [
         ],
         spirit_guide_video_url: youtube_embed + 'z1UA98BC2NQ',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kanan ay may lagusan pababa, pumasok ka,',
-          'Tapos sa looban ay kumaliwa ka at diretso lamang hanggang sa makita mo na ang spirit sa gilid ng hagdanan',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship and enter the passage leading downward on the right.`,
+          `Inside, turn left and continue straight until you find the spirit beside the stairs.`,
         ],
       },
       //CARNIVAL_STUNT_ACTOR
@@ -9132,9 +9082,9 @@ export const allSeasons = [
         ],
         spirit_guide_video_url: youtube_embed + 'F69Ty9NQUwI',
         spirit_direction: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, ay umakyat sa barko at sa gawing kanan ay may lagusan pababa, pumasok ka,',
-          'Tapos sa looban ay kumaliwa ka at diretso lamang hanggang sa makita mo na ang spirit sa gilid ng hagdanan',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship and enter the passage leading downward on the right.`,
+          `Inside, turn left and continue straight until you find the spirit beside the stairs.`,
         ],
       },
     ],
@@ -9146,8 +9096,8 @@ export const allSeasons = [
         wl_season_group: 'wl-aviary-1',
         wl_url: AV_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, Lumipad patungo sa ikalawang barko, at sa Bowsprit nito makikita ang winged light.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, fly to the second ship. The Winged Light is on its bowsprit.`,
         ],
       },
       {
@@ -9157,11 +9107,11 @@ export const allSeasons = [
         wl_season_group: 'wl-aviary-2',
         wl_url: AV_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, Umakyat sa Barko at pumasok sa lagusan sa gawing kanan at bumaba,',
-          'Pagkababa ay kumaliwa at diretso papasok sa mga lagusan hanggang sa makita ang Puzzle Director',
-          'Sa likod nito ay may mga kwarto, pumasok at sindihan ang lampara sa loob',
-          'Gagalaw ang cabinet at makikita ang sekretong lagusan sa gawing kanan sa isa pang kwarto, dito ang winged light.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the ship, enter the passage on the right, and descend.`,
+          `At the bottom, turn left and continue through the passages until you reach the Puzzle Director.`,
+          `Behind the Puzzle Director are several rooms. Enter one and light the lamp inside.`,
+          `The cabinet will move, revealing a secret passage on the right that leads to another room. The Winged Light is there.`,
         ],
       },
     ],
@@ -9172,8 +9122,8 @@ export const allSeasons = [
         shrine_label: 'Map Shrine 1',
         shrine_url: AV_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-          'Pagkadating, umakyat sa barko ng Wandering Carnival at sa likod ng Athletic Dancer makikita ang map shrine.',
+          `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+          `After arriving, board the Wandering Carnival ship. The Map Shrine is behind the Athletic Dancer.`,
         ],
       },
     ],
@@ -9451,8 +9401,8 @@ export const allSeasons = [
       //   wl_season_group: 'wl-aviary-1',
       //   wl_url: AV_WL1 ?? WINGED_LIGHT,
       //   wl_location: [
-      //     'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-      //     'Pagkadating, Lumipad patungo sa ikalawang barko, at sa Bowsprit nito makikita ang winged light.',
+      //     `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+      //     `After arriving, fly to the second ship. The Winged Light is on its bowsprit.`,
       //   ],
       // },
       // {
@@ -9462,11 +9412,11 @@ export const allSeasons = [
       //   wl_season_group: 'wl-aviary-2',
       //   wl_url: AV_WL2 ?? WINGED_LIGHT,
       //   wl_location: [
-      //     'Sa Aviary Village, dumako sa mga portals, at sa kanan nito ay may bangka papuntang Wandering Carnival Boat',
-      //     'Pagkadating, Umakyat sa Barko at pumasok sa lagusan sa gawing kanan at bumaba,',
-      //     'Pagkababa ay kumaliwa at diretso papasok sa mga lagusan hanggang sa makita ang Puzzle Director',
-      //     'Sa likod nito ay may mga kwarto, pumasok at sindihan ang lampara sa loob',
-      //     'Gagalaw ang cabinet at makikita ang sekretong lagusan sa gawing kanan sa isa pang kwarto, dito ang winged light.',
+      //     `In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.`,
+      //     `After arriving, board the ship, enter the passage on the right, and descend.`,
+      //     `At the bottom, turn left and continue through the passages until you reach the Puzzle Director.`,
+      //     `Behind the Puzzle Director are several rooms. Enter one and light the lamp inside.`,
+      //     `The cabinet will move, revealing a secret passage on the right that leads to another room. The Winged Light is there.`,
       //   ],
       // },
     ],

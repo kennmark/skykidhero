@@ -225,11 +225,11 @@ export const hiddenForest = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          Ito ang pangatlong constellation - Hidden Forest. May{' '}
+          This is the third constellation—Hidden Forest. There are{' '}
           <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
             {FOREST_NUM_REG_SPIRIT}
           </span>{' '}
-          regular spirits na makikita mo dito.
+          regular spirits you can find here.
         </Typography>
       </>
     ),
@@ -283,9 +283,9 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + '8pc34umHQSE',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate',
-          `Sindihan mo ang lumabas na fire icon sa kanang banda ng gate upang magbukas.`,
-          'Pagkabukas, ay nasa kaliwang banda ng kwarto.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate',
+          `Light the fire icon that appears on the right side of the gate to open it.`,
+          'Once the gate opens, the spirit is on the left side of the room.',
         ],
       },
       // BLUSHING_PROSPECTOR
@@ -337,10 +337,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'hYHmaLE69Ts',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa isang waiting shed na bato.',
-          'At sa iyong kaliwa ay may isang waiting shed na isa kung nasaan ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone shelter.',
+          'You will find another stone shelter on your left where this spirit is located.',
         ],
       },
       // HIDENSEEK_PIONEER
@@ -398,10 +398,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'XoCtDrapcZc',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa batong tulay.',
-          'bago sa tulay ay sa iyong kanan ay may dark plants na kailgan sindihan at nasa loob ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge.',
+          'Before reaching the bridge, burn the dark plants on your right. This spirit is inside.',
         ],
       },
       // POUTY_PORTER
@@ -459,10 +459,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'fgQxc-BYips',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa batong tulay.',
-          'At sa iyong kaliwa ay lagusan kung nasaan ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge.',
+          'The tunnel on your left is where this spirit is located.',
         ],
       },
       // DISMAYED_HUNTER
@@ -520,10 +520,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'rLhuEJ2t0BM',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo.',
-          'Paglabas mo sa iyong kanan ay nakasilong sa gilid ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end.',
+          'After exiting the tunnel, you will find this spirit sheltered along the right side.',
         ],
       },
       // APOLOGETIC_LUMBERJACK
@@ -575,10 +575,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'z4LBCfASS6I',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo.',
-          'Paglabas mo sa bandang kaliwa ng mga tunnel, ay makita mo ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end.',
+          'After exiting, look toward the left side of the tunnels to find this spirit.',
         ],
       },
       // WHALE_WHISPERER
@@ -618,10 +618,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'sIGC16Ex-Kk',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon.',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo.',
-          'Paglabas mo lumipad patungo sa mga sirang tulay, sa kaliwa ay may buto ng whale, sindihan lahat ng dark plants at makuha mo ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end.',
+          'After exiting, fly toward the broken bridges. You will see whale bones on the left; burn all the dark plants there to obtain this spirit.',
         ],
       },
       // TEARFUL_MINER
@@ -667,10 +667,10 @@ export const hiddenForest = [
         constellation_icon_route: MAP3,
         spirit_guide_video_url: youtube_embed + 'n-SGJml4iXs',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo.',
-          'Paglabas mo lumipad patungo sa mga sirang tulay, sa kanan ay may cave at nasa loob nito ang spirit.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end.',
+          'After exiting, fly toward the broken bridges. There is a cave on the right with this spirit inside.',
         ],
       },
     ],
@@ -681,12 +681,12 @@ export const hiddenForest = [
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Nandito ang mga spirits na dumaan noong nakaraang Seasonal Events na
-        makikita mo tuwing papasok ka sa Hidden Forest. May{' '}
+        These spirits appeared during past Seasonal Events and can be found
+        when you enter Hidden Forest. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {FOREST_NUM_SEASON_SPIRIT}
         </span>{' '}
-        season spirits na pwede mong makita at makuha dito.
+        seasonal spirits you can find and relive here.
       </Typography>
     ),
     spirits: [
@@ -748,10 +748,10 @@ export const hiddenForest = [
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'ykP_DP2CuBQ',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo bago sa batong tulay.',
-          'At sa iyong kaliwa ay nasa bunganga ng tunnel ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the area before the stone bridge.',
+          'This spirit is at the tunnel entrance on your left.',
         ],
       },
       // LAIDBACK_PIONEER
@@ -818,10 +818,10 @@ export const hiddenForest = [
         ],
         spirit_guide_video_url: youtube_embed + '7LTOXtTzXc0',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo bago sa batong tulay.',
-          'At gawing kanan sa itaas, sa silong ng puno ay makita mo ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the area before the stone bridge.',
+          'Turn right and fly upward. You will find this spirit beneath the tree.',
         ],
       },
       // HAIRTOUSLE_TEEN
@@ -882,10 +882,10 @@ export const hiddenForest = [
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + 'zX_ids0ygV8',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, pumasok ng onti, sa kanan ay may lagusan at pumasok ka, sa Sunny Forest lumipad ka patungo sa sirang tulay.',
-          'At gawing kaliwa, sa ilalim ng puno ay may butas at kailangan mo ng kasama gumawa ng pouty emote, pagkababa ay lumipad hanggang dulo at nasa kanan ang spirit na ito',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, move forward slightly and enter the tunnel on the right. In Sunny Forest, fly toward the broken bridge.',
+          'Turn left and look for a hole beneath the tree. You will need another player to perform the Pouty emote with you. After descending, fly to the end; the spirit is on the right.',
         ],
       },
       // ADMIRING_ACTOR
@@ -946,10 +946,10 @@ export const hiddenForest = [
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'BrqjwxellSM',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo.',
-          'Paglabas mo lumipad patungo sa mga sirang tulay, sa ilalim ng pangalawang waiting shed ay makita ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end.',
+          'After exiting, fly toward the broken bridges. You will find this spirit beneath the second stone shelter.',
         ],
       },
       // BAFFLED_BOTANIST
@@ -1016,9 +1016,9 @@ export const hiddenForest = [
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + 'FjBXDty6SuQ',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad ka pakaliwa sa likod ng mga puno makita mo ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly left behind the trees to find this spirit.',
         ],
       },
       // SCOLDING_SPIRIT
@@ -1081,9 +1081,9 @@ export const hiddenForest = [
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + '2P8DrkECLCM',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad patungo sa susunod na gate at sa kaliwa ay makita mo ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the next gate. You will find this spirit on the left.',
         ],
       },
       // MARCHING_ADVENTURER
@@ -1146,10 +1146,10 @@ export const hiddenForest = [
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + 'j1ciHsJ937o',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad patungo sa susunod na gate at sindihan mo ang lumabas na fire icon.',
-          'Pagkabukas, lumipad patungo sa batong waiting shed sa itaas ng bukid bandang kaliwa, na may kandila sa ilalim, makita ang spirit.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone shelter on the upper-left side of the field. You will find the spirit near the candle underneath it.',
         ],
       },
       // SCAREDY_CADET
@@ -1208,10 +1208,10 @@ export const hiddenForest = [
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + 'o_xH5KOe_nc',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad patungo sa susunod na gate at sindihan mo ang lumabas na fire icon.',
-          'Pagkabukas, lumipad patungo sa batong waiting shed sa itaas ng bukid bandang kanan, malapit sa bonfire makita ang spirit.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone shelter on the upper-right side of the field. You will find the spirit near the bonfire.',
         ],
       },
       // CHUCKLING_SCOUT
@@ -1280,10 +1280,10 @@ export const hiddenForest = [
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + '7H1jciUCheE',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad patungo sa susunod na gate at sindihan mo ang lumabas na fire icon.',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo at lumipad paitaas gawing kanan, sa GILID ng treehouse ang spirit.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end. Fly upward and turn right; the spirit is BESIDE the treehouse.',
         ],
       },
       // DAYDREAM_FORESTER
@@ -1340,10 +1340,10 @@ export const hiddenForest = [
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + 'Z-aufTQT0H0',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka paibaba sa mga kaulapan hanggang sa umabot ka sa gate.',
-          'Pagkabukas, dumako ka sa sunod na gate, at sindihan mo ang lumabas na fire icon',
-          'Pagkabukas, lumipad patungo sa susunod na gate at sindihan mo ang lumabas na fire icon.',
-          'Pagkabukas, lumipad ka patungo sa batong tulay at pumasok sa lagusan sa dulo at lumipad paitaas gawing kanan, sa LIKOD ng treehouse ang spirit.',
+          'Enter Map 3—Hidden Forest—and fly down through the clouds until you reach the gate.',
+          'Once it opens, continue to the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the next gate and light the fire icon that appears.',
+          'Once it opens, fly toward the stone bridge and enter the tunnel at the end. Fly upward and turn right; the spirit is BEHIND the treehouse.',
         ],
       },
       // TINKERING_CHIMESMITH
@@ -1412,8 +1412,8 @@ export const hiddenForest = [
         icon_route: SEASON11,
         spirit_guide_video_url: youtube_embed + '_WIn5vyLPv4',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Lumapag ka sa pinakamalaking isla, at gawing kaliwa sa mga hagdanan ay nandoon ang spirit',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'Land on the largest island and turn left at the stairs to find the spirit.',
         ],
       },
       // LIGHT_WHISPERER
@@ -1482,8 +1482,8 @@ export const hiddenForest = [
         icon_route: SEASON11,
         spirit_guide_video_url: youtube_embed + 'pJjVGRbjL3g',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Lumapag ka sa pinakamalaking isla, at sa likod lang ng isla makita mo ang spirit na ito',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'Land on the largest island. You will find this spirit just behind it.',
         ],
       },
       // LIVELY_NAVIGATOR
@@ -1542,8 +1542,8 @@ export const hiddenForest = [
         icon_route: SEASON11,
         spirit_guide_video_url: youtube_embed + 'xFXP57ZCsvw',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Lumapag ka sa pangalawang isla mula sa kaliwa, na nakapalibot sa main na isla. Andito ang spirit na ito.',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'Land on the second island from the left surrounding the main island. This spirit is located there.',
         ],
       },
       // TALENTED_BUILDER
@@ -1602,8 +1602,8 @@ export const hiddenForest = [
         icon_route: SEASON11,
         spirit_guide_video_url: youtube_embed + 'bzCvgOT3t0g',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Lumapag ka sa unang isla mula sa kanan at makita mo ang spirit dito.',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'Land on the first island from the right to find this spirit.',
         ],
       },
       //DIVINING_WISE_GRANDPARENT
@@ -1861,8 +1861,8 @@ export const hiddenForest = [
         number_of_visits: [],
         spirit_guide_video_url: youtube_embed + 'nTARZnLz3FI',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Sa first island on your right side, makikita mo ang spirit sa tuktok ng island.',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'On the first island to your right, you will find the spirit at the top.',
         ],
       },
       //MIGRATING_BIRD_WHISPERER
@@ -1910,8 +1910,8 @@ export const hiddenForest = [
         number_of_visits: [],
         spirit_guide_video_url: youtube_embed + 'hopjKjGtXHg',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Sa first island on your left side, makikita mo ang spirit sa bungad ng maliit na kweba.',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'On the first island to your left, you will find the spirit at the entrance of a small cave.',
         ],
       },
       //MIGRATING_BUTTERFLY_WHISPERER
@@ -1959,8 +1959,8 @@ export const hiddenForest = [
         number_of_visits: [],
         spirit_guide_video_url: youtube_embed + 'pKsSGxVwOYU',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Sa main island, lumipad ng bahadya papuntang right side ng isla makikita mo itong spirit.',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'On the main island, fly slightly toward the right side to find this spirit.',
         ],
       },
       //MIGRATING_JELLY_WHISPERER
@@ -2008,8 +2008,8 @@ export const hiddenForest = [
         number_of_visits: [],
         spirit_guide_video_url: youtube_embed + 'DPCfM5SyEWc',
         spirit_direction: [
-          'Pasok ka Pangatlong Mapa - Hidden Forest, lumipad ka pakanan at pumasok ka sa lagusan na ulap.',
-          'Sa main island, lumipad ng bahadya papuntang left side ng isla makikita mo itong spirit.',
+          'Enter Map 3—Hidden Forest—then fly to the right and enter the cloud tunnel.',
+          'On the main island, fly slightly toward the left side to find this spirit.',
         ],
       },
     ],
@@ -2021,12 +2021,12 @@ export const hiddenForest = [
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Sa mapang ito mo rin makikita ang mga Winged Lights kung tawagin. Ito ay
-        nagpapataas ng lebel para ikaw ay makalipad ng mas mataas. May{' '}
+        Winged Lights can also be found throughout this realm. Collecting them
+        increases your Wing Level, allowing you to fly higher. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {FOREST_NUM_WL}
         </span>{' '}
-        na winged lights ang pwede mong makuha dito sa Hidden Forest.
+        Winged Lights you can collect in Hidden Forest.
       </Typography>
     ),
     winged_lights: [
@@ -2037,9 +2037,8 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL1 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago ka lumapag ay makita mo sa bandang kanan ang winged light 
-          na ito na nasa sanga ng isang puno.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Before landing, look to the right for this Winged Light on a tree branch.`,
         ],
       },
       {
@@ -2049,8 +2048,8 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL2 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at pagdating sa 3rd Gate ay makita mo ang winged light. `,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first and second gates. You will find the Winged Light when you reach the third gate.`,
         ],
       },
       {
@@ -2060,10 +2059,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL5 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lakad ng kaonti at tingin sa kanang bahagi sa itaas makita mo ang shed house.`,
-          `Lipad ka pataas at makita mo ang winged light dito.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `Walk forward a little, then look up to the right to find a stone gazebo.`,
+          `Fly up to the gazebo to find the Winged Light.`,
         ],
       },
       {
@@ -2073,9 +2072,9 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL3 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Dumaan sa isang batong silungan kung saan may spirit, at makikita mo ang butas sa gild ng pader.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `Pass the stone shelter where a spirit is located, then look for an opening along the side of the wall.`,
         ],
       },
       {
@@ -2085,11 +2084,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL4 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lumipad patungo sa batong tulay sa unahan.`,
-          `Bago pa makarating doon ay lumipad na pataas hanggang sa makarating sa isang Shed House sa iyong kaliwa
-          at makita mo dito ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, fly toward the stone bridge ahead.`,
+          `Before reaching the bridge, fly upward to the stone gazebo on your left. The Winged Light is inside it.`,
         ],
       },
       {
@@ -2099,9 +2097,9 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL6 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, dumako patungo sa tulay at sa dulo ng lagusan ay makita mo ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, head toward the bridge. You will find the Winged Light at the end of the tunnel.`,
         ],
       },
       {
@@ -2111,10 +2109,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL7 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lumakad ng kaonti at sa kanang pader ay may lagusan, pumasok ka.`,
-          `Paglabas sa Sunny Forest, sa dulo ng malalaking puno ay makita mo ang winged light na elevated sa bato.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+          `When you enter Sunny Forest, continue toward the large trees. The Winged Light is on an elevated rock near the far end.`,
         ],
       },
       {
@@ -2124,10 +2122,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL8 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lumakad ng kaonti at sa kanang pader ay may lagusan, pumasok ka.`,
-          `Paglabas sa Sunny Forest, sa mga malalaking puno sa kanan, lumipad ka at sa likod nito ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+          `When you enter Sunny Forest, fly toward the large trees on the right. The Winged Light is behind one of them.`,
         ],
       },
       {
@@ -2137,11 +2135,11 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL9 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lumakad ng kaonti at sa kanang pader ay may lagusan, pumasok ka.`,
-          `Paglabas sa Sunny Forest, dumako sa broken bridge, at sa kaliwa ay may lagusan sa ilalim ng puno, Pumasok ka at gawin ang pouty emote`,
-          `Pagkababa, lumipad patungo sa dulo at lumipad paakyat. Pasok ka sa lagusan at sa bandang ibaba sa kanng bahagi ay may gate kung nasan ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+          `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+          `After descending, fly to the far end and then fly upward. Enter the tunnel and look for a gate in the lower-right area. The Winged Light is there.`,
         ],
       },
       {
@@ -2151,11 +2149,11 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL10 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lumakad ng kaonti at sa kanang pader ay may lagusan, pumasok ka.`,
-          `Paglabas sa Sunny Forest, dumako sa broken bridge, at sa kaliwa ay may lagusan sa ilalim ng puno, Pumasok ka at gawin ang pouty emote`,
-          `Pagkababa, lumipad patungo sa dulo at lumipad paakyat. Pasok ka sa lagusan at sa bandang kaliwa sa unang lagusan, lumipad ka pataas kung nasaan ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+          `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+          `After descending, fly to the far end and then fly upward. Enter the tunnel, take the first passage on the left, and fly upward to find the Winged Light.`,
         ],
       },
       {
@@ -2165,11 +2163,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-3',
         wl_url: HF_WL11 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st Gate hanggang 3rd Gate, at pagdating sa Forest Brook sa kanang pader ay may lagusan, pumasok ka.`,
-          `Paglabas sa Sunny Forest, dumako sa broken bridge, at sa kaliwa ay may lagusan sa ilalim ng puno, Pumasok ka at gawin ang pouty emote`,
-          `Pagkababa, lumipad patungo sa dulo at lumipad paakyat. Pasok ka sa lagusan at sa bandang kaliwa sa pangalawang cave, Deep Honk,
-           lumipad ka pataas kung nasaan ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first three gates. At Forest Brook, enter the tunnel in the wall on your right.`,
+          `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+          `After descending, fly to the far end and then fly upward. Enter the tunnel, go to the second cave on the left, use a Deep Call, and fly upward to find the Winged Light.`,
         ],
       },
       {
@@ -2179,11 +2176,11 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-3',
         wl_url: HF_WL12 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook, lumakad ng kaonti at sa kanang pader ay may lagusan, pumasok ka.`,
-          `Paglabas sa Sunny Forest, dumako sa broken bridge, at sa kaliwa ay may lagusan sa ilalim ng puno, Pumasok ka at gawin ang pouty emote`,
-          `Pagkababa, lumipad patungo sa dulo at lumipad paakyat. Pumunta ka sa exit gate ng Underground Cave at sa kaliwa nito ang winged light.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+          `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+          `After descending, fly to the far end and then fly upward. Go to the Underground Cavern exit gate; the Winged Light is on its left side.`,
         ],
       },
       {
@@ -2193,10 +2190,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-3',
         wl_url: HF_WL14 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook,lumipad patungong lagusan sa dulo.`,
-          `Pagdating sa Boneyard lumipad patungo sa mga tunnel at sa kanan, sa butas ng malaking puno ay makita mo ang winged light dito.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, fly toward the tunnel at the far end.`,
+          `When you reach Boneyard, fly toward the tunnels. On the right, the Winged Light is inside an opening in the large tree.`,
         ],
       },
       {
@@ -2206,10 +2203,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-3',
         wl_url: HF_WL13 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook,lumipad patungong lagusan sa dulo.`,
-          `Pagdating sa Boneyard ay may tower sa kaliwa kung nasaan ang winged light na ito.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, fly toward the tunnel at the far end.`,
+          `When you reach Boneyard, look for the tower on the left. The Winged Light is at the top of it.`,
         ],
       },
       {
@@ -2219,11 +2216,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL15 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook,lumipad patungong lagusan sa dulo.`,
-          ` Pagdating sa Boneyard, sa dulo ng mga
-        broken bridges makita mo ang winged light na ito.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, fly toward the tunnel at the far end.`,
+          `When you reach Boneyard, continue to the end of the broken bridges to find the Winged Light.`,
         ],
       },
       {
@@ -2233,11 +2229,11 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-0',
         wl_url: HF_WL16 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Pumasok sa 1st at 2nd Gate at 3rd Gate, at pagdating sa Forest Brook lumipad pakaliwa.`,
-          `Pagdating sa Forest Brook,lumipad patungong lagusan sa dulo.`,
-          ` Pagdating sa Boneyard, lumipad patungo sa templo.`,
-          `Sa labas ng templo, makita mo ang winged light sa kaliwa.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+          `At Forest Brook, fly toward the tunnel at the far end.`,
+          `When you reach Boneyard, fly toward the temple.`,
+          `Outside the temple, you will find the Winged Light on the left.`,
         ],
       },
       {
@@ -2247,9 +2243,9 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-9',
         wl_url: HF_WL17 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago makarating sa gate ng entrance, ay may lagusan sa kanan, pumasok ka`,
-          `Paglabas mo sa kweba may makita kang duyan sa kanan, at sa itaas ng puno nakatago ang winged light sa puno.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Before reaching the entrance gate, enter the tunnel on the right.`,
+          `After leaving the cave, look for a hammock on the right. The Winged Light is hidden higher up inside the tree.`,
         ],
       },
       {
@@ -2259,10 +2255,10 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-9',
         wl_url: HF_WL18 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad pababa sa mga kaulapan.`,
-          `Bago makarating sa gate ng entrance, ay may lagusan sa kanan, pumasok ka`,
-          `Paglabas mo sa kweba may makita kang malaking treehouse, pumasok ka.`,
-          `Sa loob nito ay may lagusan pababa, makita mo ang spirit na ito.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Before reaching the entrance gate, enter the tunnel on the right.`,
+          `After leaving the cave, you will see a large treehouse. Enter it.`,
+          `Inside the treehouse is a passage leading downward, where you will find this spirit.`,
         ],
       },
       {
@@ -2272,9 +2268,9 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-19',
         wl_url: HF_WL19 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad ka gawing kanan at pumasok ka sa lagusan.`,
-          `Paglabas mo sa Wind Path, ay may malaking isla sa gitna, `,
-          `at sa kanang bahagi ng isla lumipad ka pababa at pumasok ka (red circle) at lalabas ka sa lagusan (yellow circle)`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the tunnel.`,
+          `When you enter the Wind Paths, you will see a large island in the center.`,
+          `Fly down along the right side of the island and enter the tunnel marked by the red circle. You will exit through the tunnel marked by the yellow circle.`,
         ],
       },
       {
@@ -2284,9 +2280,9 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-20',
         wl_url: HF_WL20 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, Dumako patungong Forest Brook-pagkatapos ng 3rd gate`,
-          `Pagdating sa Brook ay dumako sa lagusan sa gawing kanan papuntang Elevated Clearing`,
-          `Pagdating ay magtungo malapit sa tulay, at sa gawing kanan makita ang Sanga papuntang Season Area`,
+          `Enter Map 3 | Hidden Forest and head to Forest Brook after passing through the third gate.`,
+          `At Forest Brook, enter the passage on the right that leads to the Elevated Clearing.`,
+          `Go near the bridge and look to the right for the branch that leads to the Seasonal Area.`,
         ],
       },
       {
@@ -2296,9 +2292,9 @@ export const hiddenForest = [
         wl_season_group: 'wl-forest-21',
         wl_url: HF_WL21 ?? WINGED_LIGHT,
         wl_location: [
-          `Pasok sa Map 3 | Hiddden Forest, lumipad ka gawing kanan at pumasok ka sa lagusan.`,
-          `Paglabas mo sa Wind Path, ay may malaking isla sa gitna, `,
-          `Lumipad gawing kanan ng malaking isla sa gitna at nasa gilid malapit sa tuktok.`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the tunnel.`,
+          `When you enter the Wind Paths, you will see a large island in the center.`,
+          `Fly toward the right side of the central island. The Winged Light is along the edge near the top.`,
         ],
       },
     ],
@@ -2310,12 +2306,12 @@ export const hiddenForest = [
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        Ang Map Shrines ay nagsisilbing gabay upang magtukoy kung ilan at saan
-        pa ang kailangan mong kunin na winged lights sa loob ng mapa. May{' '}
+        Map Shrines serve as guides that help you determine how many Winged
+        Lights you still need to collect and where they are located. There are{' '}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {FOREST_NUM_MAP_SHRINES}
         </span>{' '}
-        na Map Shrines ang pwede mong mabuksan sa loob ng Hidden Forest.
+        Map Shrines you can activate in Hidden Forest.
       </Typography>
     ),
     map_shrines: [
@@ -2325,8 +2321,7 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 1',
         shrine_url: HF_MS1 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, Sa bandang unahan malapit sa Stone Door ng Social Area,
-          sa kaliwang banda makita ang map shrine sa puno.`,
+          `Enter Map 3 | Hidden Forest. Ahead, near the stone door leading to the Social Area, look to the left to find the Map Shrine beside a tree.`,
         ],
       },
       {
@@ -2335,8 +2330,8 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 2',
         shrine_url: HF_MS2 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Bago pumasok sa gate, nasa bandang kanan malapit lng sa gate ang map shrine.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Before entering the gate, look on the right side. The Map Shrine is close to the gate.`,
         ],
       },
       {
@@ -2345,10 +2340,10 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 3',
         shrine_url: HF_MS3 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Pumasok sa 1st, 2nd, at 3rd gates para makapunta sa Forest Brook.`,
-          `Pagkarating sa Forest Brook, lumipad ng diretso patungo sa batong tulay.`,
-          `At sa gawing kanan sa silong ng puno makita ang map shrine`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates to reach Forest Brook.`,
+          `At Forest Brook, fly straight toward the stone bridge.`,
+          `Look to the right beneath the tree to find the Map Shrine.`,
         ],
       },
       {
@@ -2357,11 +2352,10 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 4',
         shrine_url: HF_MS4 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Pumasok sa 1st, 2nd, at 3rd gates para makapunta sa Forest Brook.`,
-          `Pagkarating sa Forest Brook, lumipad gawing kanan at pumasok sa lagusan.`,
-          `Pagkarating sa Sunny Forest, Lumipad gawing kanan at sa elevated na platform
-          sa likod ng puno makikita ang map shrine.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates to reach Forest Brook.`,
+          `At Forest Brook, fly to the right and enter the tunnel.`,
+          `When you reach Sunny Forest, fly to the right. The Map Shrine is on an elevated platform behind a tree.`,
         ],
       },
       {
@@ -2370,13 +2364,11 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 5',
         shrine_url: HF_MS5 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Pumasok sa 1st, 2nd, at 3rd gates para makapunta sa Forest Brook.`,
-          `Pagkarating sa Forest Brook, lumipad gawing kanan at pumasok sa lagusan.`,
-          `Pagkarating sa Sunny Forest, Lumipad patungo sa sirang tulay, sa iyong kaliwa
-          ay may butas ang puno pumasok ka, Sundan lang ang lagusan pababa, at pagdating 
-          sa dulo lumipad pataas at pumasok sa lagusan.`,
-          `Nasa exit door kapag nagrerelive ng Spirit ng Hair Toussle Spirit.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates to reach Forest Brook.`,
+          `At Forest Brook, fly to the right and enter the tunnel.`,
+          `When you reach Sunny Forest, fly toward the broken bridge. Enter the opening in the tree on your left, follow the tunnel downward, then fly upward at the far end and enter the next passage.`,
+          `The Map Shrine is near the exit door used while reliving the Hairtousle Teen spirit.`,
         ],
       },
       {
@@ -2385,11 +2377,10 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 6',
         shrine_url: HF_MS6 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Pumasok sa 1st, 2nd, at 3rd gates para makapunta sa Forest Brook.`,
-          `Pagkarating sa Forest Brook, lumipad patungo sa sirang tulay at dumiretso sa lagusan palabas.`,
-          `Magtungo sa simula ng sirang mga tulay, at sa bandang kanan ay may nakahiwalay na sirang tower 
-         kung nassan ang map shrine.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates to reach Forest Brook.`,
+          `At Forest Brook, fly toward the broken bridge and continue through the exit tunnel.`,
+          `Go to the beginning of the broken bridges. On the right is a separate ruined tower where the Map Shrine is located.`,
         ],
       },
       {
@@ -2398,11 +2389,10 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 7',
         shrine_url: HF_MS7 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Pumasok sa 1st, 2nd, at 3rd gates para makapunta sa Forest Brook.`,
-          `Pagkarating sa Forest Brook, lumipad patungo sa sirang tulay at dumiretso sa lagusan palabas.`,
-          `Lumipad patungo sa templo at pumasok, pagkapasok sa templo ay nasa kanang banda malapit sa 
-          dark plants.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates to reach Forest Brook.`,
+          `At Forest Brook, fly toward the broken bridge and continue through the exit tunnel.`,
+          `Fly to the temple and enter it. The Map Shrine is on the right side, near the Dark Plants.`,
         ],
       },
       {
@@ -2411,11 +2401,10 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 8',
         shrine_url: HF_MS8 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `Pumasok sa 1st, 2nd, at 3rd gates para makapunta sa Forest Brook.`,
-          `Pagkarating sa Forest Brook, lumipad patungo sa sirang tulay at dumiretso sa lagusan palabas.`,
-          `Lumipad patungo sa templo at pumasok, at lumabas patungo sa garden area malapit sa pond, makikita
-          ang map shrine..`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Pass through the first, second, and third gates to reach Forest Brook.`,
+          `At Forest Brook, fly toward the broken bridge and continue through the exit tunnel.`,
+          `Fly to the temple, enter it, and then continue outside to the garden area near the pond. The Map Shrine is located there.`,
         ],
       },
       {
@@ -2424,10 +2413,9 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 9',
         shrine_url: HF_MS9 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad pababa sa mga kaulapan`,
-          `bago pa makarating sa entrance gate, sa kanang banda ay may maliit na lagusa
-          papuntang Treehouse.`,
-          `sa tuktok ng Treehouse makikita ang mapshrine.`,
+          `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+          `Before reaching the entrance gate, enter the small tunnel on the right that leads to the Treehouse.`,
+          `The Map Shrine is located at the top of the Treehouse.`,
         ],
       },
       {
@@ -2436,9 +2424,8 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 10',
         shrine_url: HF_MS10 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hidden Forest, lumipad gawing kanan at pumasok sa Wind Paths.`,
-          `Pagdating sa Wind Paths, lumipad patungo sa dulong isla sa ibaba at nasa docking area
-          map shrine.`,
+          `Enter Map 3 | Hidden Forest, fly to the right, and enter the Wind Paths.`,
+          `At the Wind Paths, fly toward the far island below. The Map Shrine is in the docking area.`,
         ],
       },
       {
@@ -2447,9 +2434,9 @@ export const hiddenForest = [
         shrine_label: 'Map Shrine 11',
         shrine_url: HF_MS11 ?? MAP_SHRINE,
         shrine_location: [
-          `Pasok sa Map 3 | Hiddden Forest, Dumako patungong Forest Brook-pagkatapos ng 3rd gate`,
-          `Pagdating sa Brook ay dumako sa lagusan sa gawing kanan papuntang Elevated Clearing`,
-          `Pagdating ay magtungo malapit sa tulay, at sa gawing kanan makita ang Sanga papuntang Season Area`,
+          `Enter Map 3 | Hidden Forest and head to Forest Brook after passing through the third gate.`,
+          `At Forest Brook, enter the passage on the right that leads to the Elevated Clearing.`,
+          `Go near the bridge and look to the right for the branch that leads to the Seasonal Area.`,
         ],
       },
     ],
