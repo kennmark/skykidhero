@@ -2,27 +2,53 @@ export default function NewsPagination({
   meta,
   onPageChange,
 }) {
-  if (!meta) return null;
+  if (
+    !meta ||
+    meta.totalPages <= 1
+  ) {
+    return null;
+  }
+
+  const hasPreviousPage =
+    meta.hasPreviousPage ??
+    meta.page > 1;
+
+  const hasNextPage =
+    meta.hasNextPage ??
+    meta.page < meta.totalPages;
 
   return (
-    <div className="mt-6 flex items-center justify-between">
+    <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <p className="text-sm text-gray-500">
-        Showing page {meta.page} of {meta.totalPages}
+        Page {meta.page} of{" "}
+        {meta.totalPages}
       </p>
 
-      <div className="space-x-2">
+      <div className="flex gap-2">
         <button
-          disabled={meta.page === 1}
-          onClick={() => onPageChange(meta.page - 1)}
-          className="rounded border px-3 py-2 disabled:opacity-50"
+          type="button"
+          disabled={
+            !hasPreviousPage
+          }
+          onClick={() =>
+            onPageChange(
+              meta.page - 1
+            )
+          }
+          className="cursor-pointer rounded border px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50"
         >
           Previous
         </button>
 
         <button
-          disabled={meta.page >= meta.totalPages}
-          onClick={() => onPageChange(meta.page + 1)}
-          className="rounded border px-3 py-2 disabled:opacity-50"
+          type="button"
+          disabled={!hasNextPage}
+          onClick={() =>
+            onPageChange(
+              meta.page + 1
+            )
+          }
+          className="cursor-pointer rounded border px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50"
         >
           Next
         </button>

@@ -27,6 +27,18 @@ export async function findNewsBySlug(slug, select = NEWS_DETAIL_PROJECTION) {
   })
 }
 
+export async function findAnyNewsBySlug(slug, 
+  select = {
+    id: true,
+    title: true,
+    slug: true,
+  }) {
+  return prisma.news.findUnique({
+    where: { slug },
+    select,
+  })
+}
+
 export async function findAllNews({
   where,
   orderBy,

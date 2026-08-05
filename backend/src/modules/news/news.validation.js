@@ -1,9 +1,45 @@
 import { z } from "zod";
 import { optionalBoolean, optionalString, optionalUrl, requiredString } from './../../shared/validators/fields.js';
 
+const nullableOptionalString = z.preprocess(
+  (value) => {
+    if (value === "") {
+      return null;
+    }
+
+    return value;
+  },
+  z
+    .string()
+    .trim()
+    .nullable()
+    .optional()
+);
+
+const nullableOptionalUrl = (
+  field = "URL"
+) =>
+  z.preprocess(
+    (value) => {
+      if (value === "") {
+        return null;
+      }
+
+      return value;
+    },
+    z
+      .string()
+      .trim()
+      .url(
+        `${field} must be a valid URL.`
+      )
+      .nullable()
+      .optional()
+  );
+  
 export const createNewsSchema = z.object({
   title: requiredString("Title", 5),
-  summary: optionalString(),
+  summary: nullableOptionalString,
   body: requiredString("Body")
   .pipe(
     z.string().min(
@@ -11,9 +47,11 @@ export const createNewsSchema = z.object({
       "Body must be at least 20 characters."
     )
   ),
-  image: z.string().trim().optional().nullable(),
-  imagePublicId: z.string().trim().optional().nullable(),
-  externalUrl: optionalUrl("External URL"),
+  image: nullableOptionalString,
+  imagePublicId: nullableOptionalString,
+  externalUrl: nullableOptionalUrl(
+        "External URL"
+      ),
   featured: optionalBoolean(),
   published: optionalBoolean(),
 })

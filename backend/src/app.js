@@ -1,40 +1,41 @@
 import express from "express";
 import cors from "cors";
-
-import routes from "./routes/index.js"
-import notFound from "./middleware/notFound.middleware.js";
-import errorHandler from "./middleware/error.middleware.js";
-import uploadRoutes from "./modules/uploads/upload.routes.js";
 import path from "path";
+
+import routes from "./routes/index.js";
+import uploadRoutes from "./modules/uploads/upload.routes.js";
+
 import { corsOptions } from "./config/cors.js";
 
-const app = express()
+import notFound from "./middleware/notFound.middleware.js";
+import errorHandler from "./middleware/error.middleware.js";
 
-app.use(cors())
-app.use(express.json())
+const app = express();
 
-//Static Files
-app.use("/uploads", express.static(path.resolve("uploads")))
+app.use(cors(corsOptions));
 
-//API Routes
-app.use("/api/uploads", uploadRoutes)
-app.use("/api", routes)
+app.use(express.json());
+
+app.use(
+  "/uploads",
+  express.static(path.resolve("uploads"))
+);
 
 app.get("/api/health", (req, res) => {
   return res.status(200).json({
     success: true,
     message: "SkyKidHero API is healthy.",
-    environment: process.env.NODE_ENV || "development",
+    environment:
+      process.env.NODE_ENV ||
+      "development",
     timestamp: new Date().toISOString(),
   });
 });
 
-//404 Handler
-app.use(notFound)
+app.use("/api/uploads", uploadRoutes);
+app.use("/api", routes);
 
-//Global Error Hander
-app.use(errorHandler)
-
-
+app.use(notFound);
+app.use(errorHandler);
 
 export default app;

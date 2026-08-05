@@ -17,7 +17,7 @@ function normalizePayload(values) {
     title: values.title.trim(),
 
     summary:
-      values.summary?.trim() || undefined,
+      values.summary?.trim() || null,
 
     body: values.body.trim(),
 
@@ -28,7 +28,7 @@ function normalizePayload(values) {
       values.imagePublicId?.trim() || null,
     
     externalUrl:
-      values.externalUrl?.trim() || undefined,
+      values.externalUrl?.trim() || null,
 
     featured: Boolean(values.featured),
 

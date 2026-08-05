@@ -33,10 +33,4 @@ router.get(
   }
 )
 
-router.get(
-  "/me",
-  authenticate,
-  meController,
-)
-
 export default router

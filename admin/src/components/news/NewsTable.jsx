@@ -32,22 +32,29 @@ export default function NewsTable({
   }
 
   async function confirmDelete() {
-    if (!selectedNews?.id) {
-      return;
-    }
-
-    try {
-      setDeleting(true);
-
-      await onDelete(
-        selectedNews.id
-      );
-
-      setSelectedNews(null);
-    } finally {
-      setDeleting(false);
-    }
+  if (!selectedNews?.id) {
+    return;
   }
+
+  try {
+    setDeleting(true);
+
+    await onDelete(
+      selectedNews.id
+    );
+
+    setSelectedNews(null);
+  } catch {
+    /*
+     * The parent page displays the
+     * request error. Keep the modal
+     * open so the user can retry or
+     * cancel.
+     */
+  } finally {
+    setDeleting(false);
+  }
+}
 
   return (
     <div className="overflow-x-auto rounded-lg border bg-white">
@@ -63,74 +70,92 @@ export default function NewsTable({
           </tr>
         </thead>
 
-        <tbody>
-          {news.map((item) => (
-            <tr key={item.id} className="border-t">
-              <td className="px-4 py-3">
-                 <div className="font-medium">
-                  {item.title}
-                </div>
-
-                <div className="text-sm text-gray-500">
-                  {item.slug}
-              </div>
-              </td>
-
-              <td className="px-4 py-3">
-                <NewsStatusChip news={item} />
-              </td>
-
-              <td className="px-4 py-3">
-                {item.featured ? "⭐" : "-"}
-              </td>
-
-              <td className="px-4 py-3">
-                {item.publishedAt
-                  ? new Date(item.publishedAt).toLocaleDateString()
-                  : "-"}
-              </td>
-              <td className="px-4 py-3">
-                {item.deletedAt ? (
-                  <div className="flex justify-center">
-                    <button
-                      type="button"
-                      onClick={() =>
-                        onRestore(item.id)
-                      }
-                      className="cursor-pointer rounded-md bg-green-100 px-3 py-1.5 text-sm font-medium text-green-700 hover:bg-green-200"
-                    >
-                      Restore
-                    </button>
-                  </div>
-                ) : (
-
-                  <div className="flex justify-center gap-2">
-
-                    <button
-                      onClick={() => onEdit(item.id)}
-                      className="rounded-md bg-amber-100 px-3 py-1.5 text-sm font-medium text-amber-700 hover:bg-amber-200 cursor-pointer"
-                    >
-                      Edit
-                    </button>
-
-                    <button
-                      onClick={() =>
-                          openDeleteModal(
-                            item
-                          )
-                        }
-                      className="rounded-md bg-red-100 px-3 py-1.5 text-sm font-medium text-red-700 hover:bg-red-200 cursor-pointer"
-                    >
-                      Delete
-                    </button>
-
-                  </div>
-
-                )}
-
+       <tbody>
+          {news.length === 0 ? (
+            <tr className="border-t">
+              <td
+                colSpan={5}
+                className="px-4 py-10 text-center text-sm text-gray-500"
+              >
+                No news articles found.
               </td>
             </tr>
-          ))}
+          ) : (
+            news.map((item) => (
+              <tr
+                key={item.id}
+                className="border-t"
+              >
+                <td className="px-4 py-3">
+                  <div className="font-medium">
+                    {item.title}
+                  </div>
+
+                  <div className="text-sm text-gray-500">
+                    {item.slug}
+                  </div>
+                </td>
+
+                <td className="px-4 py-3">
+                  <NewsStatusChip
+                    news={item}
+                  />
+                </td>
+
+                <td className="px-4 py-3">
+                  {item.featured
+                    ? "⭐"
+                    : "-"}
+                </td>
+
+                <td className="px-4 py-3">
+                  {item.publishedAt
+                    ? new Date(
+                        item.publishedAt
+                      ).toLocaleDateString()
+                    : "-"}
+                </td>
+
+                <td className="px-4 py-3">
+                  {item.deletedAt ? (
+                    <div className="flex justify-center">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          onRestore(item.id)
+                        }
+                        className="cursor-pointer rounded-md bg-green-100 px-3 py-1.5 text-sm font-medium text-green-700 hover:bg-green-200"
+                      >
+                        Restore
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="flex justify-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          onEdit(item.id)
+                        }
+                        className="cursor-pointer rounded-md bg-amber-100 px-3 py-1.5 text-sm font-medium text-amber-700 hover:bg-amber-200"
+                      >
+                        Edit
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          openDeleteModal(item)
+                        }
+                        className="cursor-pointer rounded-md bg-red-100 px-3 py-1.5 text-sm font-medium text-red-700 hover:bg-red-200"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  )}
+                </td>
+              </tr>
+            ))
+          )}
         </tbody>
       </table>
 
