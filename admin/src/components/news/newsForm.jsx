@@ -1,10 +1,9 @@
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { newsSchema } from "../../validation/news.schema";
 import {
   useEffect,
-  useMemo,
   useState, 
 } from "react";
 import { Link } from "react-router-dom";
@@ -68,7 +67,7 @@ export default function NewsForm({
     register,
     handleSubmit,
     reset,
-    watch,
+    control,
     setValue,
     formState: {
       errors,
@@ -79,21 +78,20 @@ export default function NewsForm({
     defaultValues: EMPTY_VALUES,
   });
 
-  const imageValue = watch("image");
+  const imageValue =
+  useWatch({
+    control,
+    name: "image",
+  }) ?? "";
 
-  const previewUrl = useMemo(() => {
-    return getImageUrl(imageValue);
-  }, [imageValue]);
+ const previewUrl =
+  getImageUrl(imageValue);
 
   useEffect(() => {
     reset({
       ...EMPTY_VALUES,
       ...initialValues,
     });
-
-    setSelectedFile(null)
-    setUploadError("")
-
   }, [initialValues, reset])
 
   function handleFileChange(event) {

@@ -1,10 +1,6 @@
-import {
-  createContext,
-  useContext,
-  useState,
-} from "react";
+import { useState } from "react";
 
-const AuthContext = createContext(null);
+import AuthContext from "./auth-context.js";
 
 function getStoredUser() {
   const storedUser =
@@ -25,13 +21,13 @@ function getStoredUser() {
 export function AuthProvider({
   children,
 }) {
-  const [token, setToken] = useState(
-    () => localStorage.getItem("token")
-  );
+  const [token, setToken] =
+    useState(() =>
+      localStorage.getItem("token")
+    );
 
-  const [user, setUser] = useState(
-    getStoredUser
-  );
+  const [user, setUser] =
+    useState(getStoredUser);
 
   function login(authData) {
     if (
@@ -80,17 +76,4 @@ export function AuthProvider({
       {children}
     </AuthContext.Provider>
   );
-}
-
-export function useAuth() {
-  const context =
-    useContext(AuthContext);
-
-  if (!context) {
-    throw new Error(
-      "useAuth must be used inside AuthProvider."
-    );
-  }
-
-  return context;
 }

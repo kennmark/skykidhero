@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken"
 
 import {findByUsername, getCurrentUser} from "./auth.repository.js"
 import AppError from './../../shared/utils/AppError.js';
+import env from "../../config/env.js";
 
 export async function login(username, password) {
   const user = await findByUsername(username)
@@ -23,9 +24,10 @@ export async function login(username, password) {
       username: user.username,
       role: user.role,
     },
-    process.env.JWT_SECRET,
+    env.JWT_SECRET,
     {
-      expiresIn: "7d",
+     expiresIn:
+      env.JWT_EXPIRES_IN,
     }
   )
 

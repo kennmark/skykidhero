@@ -1,4 +1,4 @@
-import { useAuth } from "../../context/AuthContext";
+import useAuth from "../../hooks/useAuth.js"
 
 export default function Header() {
   const { user, logout } = useAuth();

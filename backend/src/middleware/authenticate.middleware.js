@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 
 import AppError from "../shared/utils/AppError.js";
 import { findById } from "../modules/auth/auth.repository.js";
+import env from "../config/env.js";
 
 export async function authenticate(req, res, next) {
   try {
@@ -19,7 +20,7 @@ export async function authenticate(req, res, next) {
 
     const decoded = jwt.verify(
       token,
-      process.env.JWT_SECRET
+      env.JWT_SECRET
     );
 
     const user = await findById(decoded.id);

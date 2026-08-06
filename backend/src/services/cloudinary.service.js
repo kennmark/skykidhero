@@ -1,4 +1,5 @@
 import cloudinary from "../config/cloudinary.js";
+import env from "../config/env.js";
 
 export function uploadNewsImageToCloudinary(
   fileBuffer
@@ -17,9 +18,7 @@ export function uploadNewsImageToCloudinary(
             resource_type: "image",
 
             folder:
-              process.env
-                .CLOUDINARY_NEWS_FOLDER ||
-              "skykidhero/news",
+              env.CLOUDINARY_NEWS_FOLDER,
 
             use_filename: true,
             unique_filename: true,

@@ -9,6 +9,7 @@ import { corsOptions } from "./config/cors.js";
 
 import notFound from "./middleware/notFound.middleware.js";
 import errorHandler from "./middleware/error.middleware.js";
+import env from "./config/env.js";
 
 const app = express();
 
@@ -25,9 +26,7 @@ app.get("/api/health", (req, res) => {
   return res.status(200).json({
     success: true,
     message: "SkyKidHero API is healthy.",
-    environment:
-      process.env.NODE_ENV ||
-      "development",
+    environment: env.NODE_ENV,
     timestamp: new Date().toISOString(),
   });
 });

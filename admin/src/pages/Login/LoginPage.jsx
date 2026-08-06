@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { login as loginRequest } from "../../services/auth.service";
-import { useAuth } from "../../context/AuthContext";
+import useAuth from "../../hooks/useAuth.js"
 import CmsLogo from "../../components/brand/CmsLogo.jsx";
 
 const INITIAL_FORM = {

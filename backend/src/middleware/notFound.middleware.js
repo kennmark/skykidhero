@@ -1,8 +1,15 @@
-export default function notFound(req, res) {
+import AppError
+  from "../shared/utils/AppError.js";
 
-    res.status(404).json({
-        success: false,
-        message: "Endpoint not found."
-    });
-
+export default function notFound(
+  req,
+  res,
+  next
+) {
+  return next(
+    new AppError(
+      "Endpoint not found.",
+      404
+    )
+  );
 }

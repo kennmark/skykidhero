@@ -1,9 +1,4 @@
-const configuredOrigins = (
-  process.env.CLIENT_ORIGINS || ""
-)
-  .split(",")
-  .map((origin) => origin.trim())
-  .filter(Boolean);
+import env from "./env.js";
 
 const developmentOrigins = [
   "http://localhost:5173",
@@ -11,15 +6,22 @@ const developmentOrigins = [
 ];
 
 const allowedOrigins = new Set([
-  ...configuredOrigins,
-  ...(process.env.NODE_ENV !== "production"
-    ? developmentOrigins
-    : []),
+  ...env.CLIENT_ORIGINS,
+
+  ...(
+    env.IS_PRODUCTION
+      ? []
+      : developmentOrigins
+  ),
 ]);
 
 export const corsOptions = {
   origin(origin, callback) {
-    // Allow server-to-server tools and requests without an Origin header.
+    /*
+     * Permit tools such as curl,
+     * health checks, and server-to-server
+     * requests without an Origin header.
+     */
     if (!origin) {
       return callback(null, true);
     }
@@ -28,13 +30,13 @@ export const corsOptions = {
       return callback(null, true);
     }
 
-    const corsError = new Error(
+    const error = new Error(
       `Origin ${origin} is not allowed by CORS.`
     );
 
-    corsError.statusCode = 403;
+    error.status = 403;
 
-    return callback(corsError);
+    return callback(error);
   },
 
   credentials: true,
@@ -52,4 +54,6 @@ export const corsOptions = {
     "Content-Type",
     "Authorization",
   ],
+
+  optionsSuccessStatus: 204,
 };
