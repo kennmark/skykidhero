@@ -43,27 +43,16 @@ function WingedLightSummary({
             {WL_COUNT_DATE_UPDATED}.
           </Typography>
 
-          <div className="mt-3 grid grid-cols-3 gap-2 text-center">
+          <div className="mt-3 grid grid-cols-2 gap-2 text-center">
             <div className="rounded-lg bg-white/10 p-2">
               <span className="block text-base font-black text-[#fe7f2d]">
                 {TOTAL_WL_COUNT}
               </span>
 
               <span className="text-[10px] uppercase tracking-wide text-white/60">
-                Mobile
+                Mobile| PS | Nintendo
               </span>
             </div>
-
-            <div className="rounded-lg bg-white/10 p-2">
-              <span className="block text-base font-black text-[#fe7f2d]">
-                {PLAYSTATION_MAX_WL}
-              </span>
-
-              <span className="text-[10px] uppercase tracking-wide text-white/60">
-                PlayStation
-              </span>
-            </div>
-
             <div className="rounded-lg bg-white/10 p-2">
               <span className="block text-base font-black text-[#fe7f2d]">
                 {STEAM_MAX_WL}

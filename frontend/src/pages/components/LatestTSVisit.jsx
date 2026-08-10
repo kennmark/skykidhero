@@ -38,7 +38,7 @@ const {
 } = skyConstants
 
 const DEFAULT_HINT_URL =
-  'https://www.facebook.com/photo.php?fbid=1433003992205632&set=a.606494871523219&type=3&mibextid=wwXIfr'
+  'https://www.facebook.com/share/r/1DMUP95kxi/'
 
 const MONTH_INDEX = {
   january: 0,

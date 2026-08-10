@@ -2,7 +2,7 @@ import rc from '../assets/images/icons/candle.webp'
 import heart from '../assets/images/icons/heart.webp'
 import ac from '../assets/images/icons/AC.webp'
 import sc from '../assets/images/season-candles/30-season-of-dear-van-gogh/DearVanGogh-Candle.webp'
-import tsHintImage from '../assets/images/ts-hints/TS-hint-071626-071926.jpg'
+import tsHintImage from '../assets/images/ts-hints/TS-hint-081326-081726.png'
 
 export const RC = rc
 export const HEART = heart
@@ -92,13 +92,13 @@ export const WL_COUNT_DATE_UPDATED = 'June 19, 2026' // June 19, 2026 TS Group T
 export const MS_COUNT_DATE_UPDATED = 'July 21, 2025' // April 17, 2026 Season of Carnival
 
 export const PLAYSTATION_MAX_WL = 248
-export const STEAM_MAX_WL = 228
+export const STEAM_MAX_WL = 257
 
 export const dtsValue = false //Adjust During Daylight Time Saving Every March and November
 
 export const groupTs = false //Group TS arrived
 export const travelingSpirit = false //Ongoing Traveling Spirit
-export const travelingSpiritHint = false //Hint Traveling Spirit
+export const travelingSpiritHint = true //Hint Traveling Spirit
 export const travelingSpiritHintImage = tsHintImage //Hint Image Traveling Spirit
 export const travelingSpiritDate = 'August 13 - 17, 2026' //Ongoing Traveling Spirit
 export const travellingSpiritSeasonId = 3
