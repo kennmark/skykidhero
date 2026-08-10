@@ -91,7 +91,7 @@ export const TOTAL_MS_COUNT = // June 19, 2026 Group TS From Season of Revival
 export const WL_COUNT_DATE_UPDATED = 'June 19, 2026' // June 19, 2026 TS Group TS From Season of Revival
 export const MS_COUNT_DATE_UPDATED = 'July 21, 2025' // April 17, 2026 Season of Carnival
 
-export const PLAYSTATION_MAX_WL = 248
+export const PLAYSTATION_MAX_WL = 266
 export const STEAM_MAX_WL = 257
 
 export const dtsValue = false //Adjust During Daylight Time Saving Every March and November
