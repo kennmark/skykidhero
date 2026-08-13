@@ -8,6 +8,7 @@ import Layout from './pages/layout/Layout'
 
 import ScrollToTop from './pages/components/ScrollToTop '
 import { Spinner } from '@material-tailwind/react'
+
 const HomeSpace = lazy(() => {
   return new Promise((resolve) => {
     setTimeout(() => resolve(import('./pages/HomeSpace')), 300)
@@ -39,6 +40,13 @@ const PageVeterans = lazy(() => {
     setTimeout(() => resolve(import('./pages/VeteranPage')), 300)
   })
 })
+
+const PageTravellingSpirits =
+  lazy(() =>
+    import(
+      './pages/PageTravellingSpirits'
+    )
+  )
 
 function App() {
   return (
@@ -74,6 +82,7 @@ function App() {
                 <Route path="winged-lights" element={ <PageWingedLights />} />
                 <Route path="map-shrines" element={<PageMapShrines />} />
                 <Route path="veterans" element={<PageVeterans /> } />
+                <Route path="travelling-spirits" element={<PageTravellingSpirits /> } />
               </Route>
             </Routes>
           </ScrollToTop>
