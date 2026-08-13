@@ -38,7 +38,7 @@ const {
 } = skyConstants
 
 const DEFAULT_HINT_URL =
-  'https://www.facebook.com/share/r/1DMUP95kxi/'
+  'https://skykidhero.onrender.com/news'
 
 const MONTH_INDEX = {
   january: 0,
