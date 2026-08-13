@@ -10,6 +10,7 @@ import {
   InformationCircleIcon,
   SparklesIcon,
   UserGroupIcon,
+  ArrowRightIcon,
 } from '@heroicons/react/24/outline'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -23,6 +24,7 @@ import {
 } from '../../utils/skyEvents'
 
 import SpiritCardContainer from './SpiritCardContainer'
+import { Link } from 'react-router-dom'
 
 const {
   travelingSpirit,
@@ -904,10 +906,15 @@ const LatestTSVisit = () => {
           lg:p-5
         "
       >
-        <div className="min-w-0">
+        <div className="
+          mb-3
+          flex
+          flex-wrap
+          items-center
+          justify-between
+          gap-2">
           <div
             className="
-              mb-3
               inline-flex
               items-center
               gap-2
@@ -933,7 +940,6 @@ const LatestTSVisit = () => {
 
             Traveling Spirit schedule
           </div>
-
           <div
             className="
               grid
@@ -1237,6 +1243,46 @@ const LatestTSVisit = () => {
                 Checklist progress is saved
                 locally on this device.
               </span>
+              <Link
+                to="/travelling-spirits"
+                className="
+                  mt-5
+                  inline-flex
+                  items-center
+                  gap-2
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-amber-900
+                  px-3
+                  py-3
+
+                  text-[9px]
+                  font-black
+                  uppercase
+                  tracking-[0.12em]
+                  text-black
+
+                  transition
+
+                  hover:border-[#fe7f2d]/30
+                  hover:bg-[#fe7f2d]/10
+                  hover:text-[#ffc394]
+
+                  focus:outline-none
+                  focus-visible:ring-2
+                  focus-visible:ring-[#fe7f2d]/40
+
+                  sm:text-[10px]
+                "
+              >
+                View TS History
+
+                <ArrowRightIcon
+                  aria-hidden="true"
+                  className="h-3.5 w-3.5"
+                />
+              </Link>
             </div>
 
             {season ? (
