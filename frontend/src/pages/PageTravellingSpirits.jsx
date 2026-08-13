@@ -41,6 +41,7 @@ import {
 
 import SpiritCardContainer
   from './components/SpiritCardContainer'
+import { SideBarContainer } from './components/SidebarContainer'
 
 
 const VISITS_PER_PAGE = 10
@@ -1686,509 +1687,516 @@ export default function PageTravellingSpirits() {
 
 
   return (
-    <main
-      className="
-        mx-auto
-        w-full
-        max-w-6xl
-
-        px-3
-        py-6
-
-        sm:px-5
-        sm:py-8
-
-        lg:px-6
-        lg:py-10
-      "
-    >
-      {/* Header */}
-      <section
-        className="
-          relative
-          mb-5
-          overflow-hidden
-
-          rounded-[1.75rem]
-          border
-          border-white/10
-          bg-[#102a37]/90
-
-          p-5
-          text-white
-
-          shadow-xl
-          shadow-black/10
-
-          sm:mb-7
-          sm:rounded-[2rem]
-          sm:p-7
-        "
-      >
-        <div
-          aria-hidden="true"
-          className="
-            pointer-events-none
-            absolute
-            -right-20
-            -top-20
-
-            h-64
-            w-64
-
-            rounded-full
-            bg-[#fe7f2d]/10
-            blur-3xl
-          "
-        />
-
-        <div
-          className="
-            relative
-            z-10
-          "
-        >
-          <div
-            className="
-              mb-3
-
-              inline-flex
-              items-center
-              gap-2
-
-              rounded-full
-              border
-              border-[#fe7f2d]/25
-              bg-[#fe7f2d]/10
-
-              px-3
-              py-1.5
-
-              text-[10px]
-              font-black
-              uppercase
-              tracking-[0.15em]
-              text-[#ffad72]
-            "
-          >
-            <ClockIcon
-              aria-hidden="true"
-              className="
-                h-4
-                w-4
-              "
-            />
-
-            Visit History
-          </div>
-
-          <h1
-            className="
-              text-2xl
-              font-black
-              tracking-tight
-
-              sm:text-4xl
-            "
-          >
-            Travelling Spirits
-          </h1>
-
-          <p
-            className="
-              mt-2
-              max-w-2xl
-
-              text-sm
-              leading-6
-              text-white/60
-
-              sm:text-base
-            "
-          >
-            Explore previous
-            Travelling Spirit visits,
-            ordered from the latest
-            appearance to the oldest.
-          </p>
-
-          <div
-            className="
-              mt-5
-              flex
-              flex-wrap
-              gap-2
-            "
-          >
-            <div
-              className="
-                inline-flex
-                items-center
-                gap-2
-
-                rounded-xl
-                border
-                border-white/10
-                bg-white/[0.04]
-
-                px-3
-                py-2
-              "
-            >
-              <CalendarDaysIcon
-                aria-hidden="true"
-                className="
-                  h-4
-                  w-4
-                  text-[#fe7f2d]
-                "
-              />
-
-              <span
-                className="
-                  text-xs
-                  text-white/55
-                "
-              >
-                Recorded visits
-              </span>
-
-              <strong
-                className="
-                  text-sm
-                  text-white
-                "
-              >
-                {
-                  travellingSpiritHistory
-                    .length
-                }
-              </strong>
-            </div>
-
-            <div
-              className="
-                inline-flex
-                items-center
-                gap-2
-
-                rounded-xl
-                border
-                border-white/10
-                bg-white/[0.04]
-
-                px-3
-                py-2
-              "
-            >
-              <UserGroupIcon
-                aria-hidden="true"
-                className="
-                  h-4
-                  w-4
-                  text-[#fe7f2d]
-                "
-              />
-
-              <span
-                className="
-                  text-xs
-                  text-white/55
-                "
-              >
-                Spirits visited
-              </span>
-
-              <strong
-                className="
-                  text-sm
-                  text-white
-                "
-              >
-                {uniqueSpirits}
-              </strong>
-            </div>
-          </div>
+    
+      <div  className="flex justify-center">
+        <div>
+          <SideBarContainer />
         </div>
-      </section>
-
-
-      {/* Current Featured TS */}
-      {showFeaturedTS && (
-        <FeaturedTravellingSpirit
-          season={
-            currentSeason
-          }
-          spirits={
-            featuredSpirits
-          }
-          checkedSpirits={
-            checkedSpirits
-          }
-          handleCheckboxChange={
-            handleCheckboxChange
-          }
-        />
-      )}
-
-
-      {/* Search */}
-      <section
+        <main
         className="
-          sticky
-          top-2
-          z-30
+          mx-auto
+          w-full
+          max-w-6xl
 
-          mb-5
+          px-3
+          py-6
 
-          sm:mb-6
+          sm:px-5
+          sm:py-8
+
+          lg:px-6
+          lg:py-10
         "
       >
-        <div
+      {/* Header */}
+        <section
           className="
             relative
+            mb-5
+            overflow-hidden
 
-            rounded-2xl
+            rounded-[1.75rem]
             border
             border-white/10
-            bg-[#071820]/95
+            bg-[#102a37]/90
 
-            p-2
+            p-5
+            text-white
 
             shadow-xl
             shadow-black/10
 
-            backdrop-blur-xl
+            sm:mb-7
+            sm:rounded-[2rem]
+            sm:p-7
           "
         >
-          <MagnifyingGlassIcon
+          <div
             aria-hidden="true"
             className="
               pointer-events-none
-
               absolute
-              left-5
-              top-1/2
+              -right-20
+              -top-20
 
-              h-5
-              w-5
+              h-64
+              w-64
 
-              -translate-y-1/2
-
-              text-white/30
+              rounded-full
+              bg-[#fe7f2d]/10
+              blur-3xl
             "
           />
 
-          <input
-            type="search"
-            value={search}
-            onChange={
-              (event) =>
-                setSearch(
-                  event.target.value
-                )
-            }
-            placeholder="Search spirit, season, visit number or date..."
+          <div
             className="
-              w-full
-
-              rounded-xl
-              border
-              border-transparent
-              bg-white/[0.04]
-
-              py-3
-              pl-11
-              pr-4
-
-              text-sm
-              text-white
-
-              outline-none
-
-              placeholder:text-white/30
-
-              focus:border-[#fe7f2d]/35
-              focus:bg-white/[0.06]
+              relative
+              z-10
             "
+          >
+            <div
+              className="
+                mb-3
+
+                inline-flex
+                items-center
+                gap-2
+
+                rounded-full
+                border
+                border-[#fe7f2d]/25
+                bg-[#fe7f2d]/10
+
+                px-3
+                py-1.5
+
+                text-[10px]
+                font-black
+                uppercase
+                tracking-[0.15em]
+                text-[#ffad72]
+              "
+            >
+              <ClockIcon
+                aria-hidden="true"
+                className="
+                  h-4
+                  w-4
+                "
+              />
+
+              Visit History
+            </div>
+
+            <h1
+              className="
+                text-2xl
+                font-black
+                tracking-tight
+
+                sm:text-4xl
+              "
+            >
+              Travelling Spirits
+            </h1>
+
+            <p
+              className="
+                mt-2
+                max-w-2xl
+
+                text-sm
+                leading-6
+                text-white/60
+
+                sm:text-base
+              "
+            >
+              Explore previous
+              Travelling Spirit visits,
+              ordered from the latest
+              appearance to the oldest.
+            </p>
+
+            <div
+              className="
+                mt-5
+                flex
+                flex-wrap
+                gap-2
+              "
+            >
+              <div
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+
+                  rounded-xl
+                  border
+                  border-white/10
+                  bg-white/[0.04]
+
+                  px-3
+                  py-2
+                "
+              >
+                <CalendarDaysIcon
+                  aria-hidden="true"
+                  className="
+                    h-4
+                    w-4
+                    text-[#fe7f2d]
+                  "
+                />
+
+                <span
+                  className="
+                    text-xs
+                    text-white/55
+                  "
+                >
+                  Recorded visits
+                </span>
+
+                <strong
+                  className="
+                    text-sm
+                    text-white
+                  "
+                >
+                  {
+                    travellingSpiritHistory
+                      .length
+                  }
+                </strong>
+              </div>
+
+              <div
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+
+                  rounded-xl
+                  border
+                  border-white/10
+                  bg-white/[0.04]
+
+                  px-3
+                  py-2
+                "
+              >
+                <UserGroupIcon
+                  aria-hidden="true"
+                  className="
+                    h-4
+                    w-4
+                    text-[#fe7f2d]
+                  "
+                />
+
+                <span
+                  className="
+                    text-xs
+                    text-white/55
+                  "
+                >
+                  Spirits visited
+                </span>
+
+                <strong
+                  className="
+                    text-sm
+                    text-white
+                  "
+                >
+                  {uniqueSpirits}
+                </strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* Current Featured TS */}
+        {showFeaturedTS && (
+          <FeaturedTravellingSpirit
+            season={
+              currentSeason
+            }
+            spirits={
+              featuredSpirits
+            }
+            checkedSpirits={
+              checkedSpirits
+            }
+            handleCheckboxChange={
+              handleCheckboxChange
+            }
           />
-        </div>
-      </section>
+        )}
 
 
-      {/* Results heading */}
-      <div
-        ref={
-          historyTopRef
-        }
-        className="
-          mb-3
-          scroll-mt-28
-
-          flex
-          flex-wrap
-          items-center
-          justify-between
-          gap-3
-        "
-      >
-        <p
+        {/* Search */}
+        <section
           className="
-            text-xs
-            font-bold
-            uppercase
-            tracking-[0.12em]
-            text-white/40
+            sticky
+            top-2
+            z-30
+
+            mb-5
+
+            sm:mb-6
           "
         >
-          {
-            filteredVisits.length
-          }{' '}
-          {filteredVisits.length ===
-          1
-            ? 'visit'
-            : 'visits'}
-        </p>
+          <div
+            className="
+              relative
 
+              rounded-2xl
+              border
+              border-white/10
+              bg-[#071820]/95
+
+              p-2
+
+              shadow-xl
+              shadow-black/10
+
+              backdrop-blur-xl
+            "
+          >
+            <MagnifyingGlassIcon
+              aria-hidden="true"
+              className="
+                pointer-events-none
+
+                absolute
+                left-5
+                top-1/2
+
+                h-5
+                w-5
+
+                -translate-y-1/2
+
+                text-white/30
+              "
+            />
+
+            <input
+              type="search"
+              value={search}
+              onChange={
+                (event) =>
+                  setSearch(
+                    event.target.value
+                  )
+              }
+              placeholder="Search spirit, season, visit number or date..."
+              className="
+                w-full
+
+                rounded-xl
+                border
+                border-transparent
+                bg-white/[0.04]
+
+                py-3
+                pl-11
+                pr-4
+
+                text-sm
+                text-white
+
+                outline-none
+
+                placeholder:text-white/30
+
+                focus:border-[#fe7f2d]/35
+                focus:bg-white/[0.06]
+              "
+            />
+          </div>
+        </section>
+
+
+        {/* Results heading */}
         <div
+          ref={
+            historyTopRef
+          }
           className="
+            mb-3
+            scroll-mt-28
+
             flex
             flex-wrap
             items-center
-            justify-end
+            justify-between
             gap-3
-
-            text-xs
-            text-white/35
           "
         >
-          {filteredVisits.length >
-            0 && (
-            <span>
-              {startIndex + 1}–
-              {Math.min(
-                endIndex,
-                filteredVisits.length
-              )}{' '}
-              of{' '}
-              {
-                filteredVisits.length
-              }
-            </span>
-          )}
-
-          <span>
-            Latest → Oldest
-          </span>
-        </div>
-      </div>
-
-
-      {/* History */}
-      {filteredVisits.length >
-      0 ? (
-        <>
-          <section
-            className="
-              space-y-3
-
-              sm:space-y-4
-            "
-          >
-            {paginatedVisits.map(
-              (
-                visit,
-                index
-              ) => {
-                const globalIndex =
-                  startIndex +
-                  index
-
-                return (
-                  <TravellingSpiritVisitCard
-                    key={
-                      visit.id
-                    }
-                    visit={
-                      visit
-                    }
-                    isLatest={
-                      !search &&
-                      globalIndex ===
-                        0
-                    }
-                  />
-                )
-              }
-            )}
-          </section>
-
-          <Pagination
-            currentPage={
-              safeCurrentPage
-            }
-            totalPages={
-              totalPages
-            }
-            onPageChange={
-              handlePageChange
-            }
-          />
-        </>
-      ) : (
-        <section
-          className="
-            rounded-3xl
-
-            border
-            border-dashed
-            border-white/10
-
-            bg-white/[0.025]
-
-            px-5
-            py-16
-
-            text-center
-          "
-        >
-          <MagnifyingGlassIcon
-            aria-hidden="true"
-            className="
-              mx-auto
-
-              h-8
-              w-8
-
-              text-white/20
-            "
-          />
-
-          <h2
-            className="
-              mt-3
-
-              font-black
-              text-white
-            "
-          >
-            No visits found
-          </h2>
-
           <p
             className="
-              mt-1
-
-              text-sm
+              text-xs
+              font-bold
+              uppercase
+              tracking-[0.12em]
               text-white/40
             "
           >
-            Try another spirit,
-            season, date or visit
-            number.
+            {
+              filteredVisits.length
+            }{' '}
+            {filteredVisits.length ===
+            1
+              ? 'visit'
+              : 'visits'}
           </p>
-        </section>
-      )}
-    </main>
+
+          <div
+            className="
+              flex
+              flex-wrap
+              items-center
+              justify-end
+              gap-3
+
+              text-xs
+              text-white/35
+            "
+          >
+            {filteredVisits.length >
+              0 && (
+              <span>
+                {startIndex + 1}–
+                {Math.min(
+                  endIndex,
+                  filteredVisits.length
+                )}{' '}
+                of{' '}
+                {
+                  filteredVisits.length
+                }
+              </span>
+            )}
+
+            <span>
+              Latest → Oldest
+            </span>
+          </div>
+        </div>
+
+
+        {/* History */}
+        {filteredVisits.length >
+        0 ? (
+          <>
+            <section
+              className="
+                space-y-3
+
+                sm:space-y-4
+              "
+            >
+              {paginatedVisits.map(
+                (
+                  visit,
+                  index
+                ) => {
+                  const globalIndex =
+                    startIndex +
+                    index
+
+                  return (
+                    <TravellingSpiritVisitCard
+                      key={
+                        visit.id
+                      }
+                      visit={
+                        visit
+                      }
+                      isLatest={
+                        !search &&
+                        globalIndex ===
+                          0
+                      }
+                    />
+                  )
+                }
+              )}
+            </section>
+
+            <Pagination
+              currentPage={
+                safeCurrentPage
+              }
+              totalPages={
+                totalPages
+              }
+              onPageChange={
+                handlePageChange
+              }
+            />
+          </>
+        ) : (
+          <section
+            className="
+              rounded-3xl
+
+              border
+              border-dashed
+              border-white/10
+
+              bg-white/[0.025]
+
+              px-5
+              py-16
+
+              text-center
+            "
+          >
+            <MagnifyingGlassIcon
+              aria-hidden="true"
+              className="
+                mx-auto
+
+                h-8
+                w-8
+
+                text-white/20
+              "
+            />
+
+            <h2
+              className="
+                mt-3
+
+                font-black
+                text-white
+              "
+            >
+              No visits found
+            </h2>
+
+            <p
+              className="
+                mt-1
+
+                text-sm
+                text-white/40
+              "
+            >
+              Try another spirit,
+              season, date or visit
+              number.
+            </p>
+          </section>
+        )}
+        
+      </main>
+      </div>
   )
 }

@@ -233,6 +233,19 @@ const SideBar = ({ closeDrawer }) => {
               </div>
             </Link>
           </ListItem>
+           <ListItem>
+            <Link to={'/travelling-spirits'} onClick={handleSearchClick}>
+              <div className="flex flex-wrap">
+                <ListItemPrefix>
+                  <InboxIcon className="h-5 w-5" />
+                </ListItemPrefix>
+                Travelling Spirits
+                <ListItemSuffix>
+                  <ArrowRightStartOnRectangleIcon className="h-5 w-5" />
+                </ListItemSuffix>
+              </div>
+            </Link>
+          </ListItem>
 
           <ListItem>
             <Link to={'/veterans'} onClick={handleSearchClick}>
