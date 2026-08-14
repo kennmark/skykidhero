@@ -79,6 +79,15 @@ model Map {
   imagePublicId String?
   imageAlt      String?
 
+  mapGif         String?
+  mapGifPublicId String?
+
+  mapConstellationIcon         String?
+  mapConstellationIconPublicId String?
+
+  mapConstellationImage         String?
+  mapConstellationImagePublicId String?
+
   published Boolean @default(true)
 
   createdAt DateTime  @default(now())

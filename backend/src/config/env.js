@@ -137,6 +137,12 @@ const env = Object.freeze({
     readValue(
       "CLOUDINARY_NEWS_FOLDER"
     ) || "skykidhero/news",
+  
+  CLOUDINARY_MAPS_FOLDER:
+  readValue(
+    "CLOUDINARY_MAPS_FOLDER"
+  ) || "skykidhero/maps",
+  
 });
 
 export default env;

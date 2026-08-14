@@ -2,6 +2,7 @@ import {
   lazy,
   Suspense,
   useEffect,
+  useState,
 } from "react";
 
 import {
@@ -13,6 +14,10 @@ import {
   Spinner,
   Typography,
 } from "@material-tailwind/react";
+
+import {
+  getPublishedMap,
+} from "../services/map.service.js";
 
 /*
  * Keep lazy component definitions outside
@@ -57,9 +62,9 @@ const MAP_COMPONENTS = {
 
 function MapLoadingState() {
   return (
-    <div className="flex min-h-[50vh] flex-col items-center justify-center gap-3">
+    <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4 px-4 text-center">
       <Spinner
-        className="h-16 w-16"
+        className="h-12 w-12"
         color="amber"
       />
 
@@ -73,6 +78,7 @@ function MapLoadingState() {
 function MapNotFound({
   mapId,
   mapName,
+  message = "",
 }) {
   const requestedRoute =
     `/maps/${mapId || "unknown"}/${mapName || "unknown"}`;
@@ -81,12 +87,12 @@ function MapNotFound({
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
       <Typography
         variant="h3"
-        className="mb-2 uppercase text-[#fe7f2d]"
+        className="mb-3 uppercase text-[#fe7f2d]"
       >
-        Map Area Not Found
+        You reached an Out-of-Bounds area!
       </Typography>
 
-      <Typography className="mb-6 max-w-md text-gray-400">
+      <Typography className="mb-3 max-w-md text-gray-400">
         The Map route{" "}
         <span className="font-semibold text-gray-200">
           {requestedRoute}
@@ -94,6 +100,12 @@ function MapNotFound({
         does not exist or no longer matches
         the current SkyKidHero Map directory.
       </Typography>
+
+      {message && (
+        <Typography className="mb-6 max-w-md text-sm text-gray-500">
+          {message}
+        </Typography>
+      )}
 
       <Link
         to="/"
@@ -117,13 +129,105 @@ export default function MapContainer() {
   const TargetMap =
     MAP_COMPONENTS[routeKey];
 
+  const [
+    requestState,
+    setRequestState,
+  ] = useState({
+    routeKey: null,
+    map: null,
+    error: "",
+  });
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "instant",
-    });
+    window.scrollTo(
+      0,
+      0
+    );
   }, [routeKey]);
 
+  /*
+   * Load the Map metadata from the backend.
+   *
+   * We do not synchronously call setState
+   * at the beginning of this effect.
+   * routeKey is used to determine the
+   * loading state instead.
+   */
+  useEffect(() => {
+    if (!TargetMap) {
+      return undefined;
+    }
+
+    let cancelled = false;
+
+    getPublishedMap(
+      mapId,
+      mapName
+    )
+      .then((map) => {
+        if (cancelled) {
+          return;
+        }
+
+        if (!map) {
+          setRequestState({
+            routeKey,
+            map: null,
+            error:
+              "The requested Map could not be found.",
+          });
+
+          return;
+        }
+
+        setRequestState({
+          routeKey,
+          map,
+          error: "",
+        });
+      })
+      .catch((error) => {
+        if (cancelled) {
+          return;
+        }
+
+        const status =
+          error.response?.status;
+
+        let message =
+          "Unable to load this Map right now.";
+
+        if (status === 404) {
+          message =
+            "This Map is unavailable or is not currently published.";
+        } else if (
+          error.response?.data?.message
+        ) {
+          message =
+            error.response.data.message;
+        }
+
+        setRequestState({
+          routeKey,
+          map: null,
+          error: message,
+        });
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    mapId,
+    mapName,
+    routeKey,
+    TargetMap,
+  ]);
+
+  /*
+   * Reject invalid frontend routes before
+   * making any backend request.
+   */
   if (!TargetMap) {
     return (
       <MapNotFound
@@ -133,11 +237,49 @@ export default function MapContainer() {
     );
   }
 
+  /*
+   * When the route changes, the previous
+   * Map data may still be in requestState.
+   *
+   * Comparing routeKey prevents stale Map
+   * information from briefly rendering.
+   */
+  const isLoading =
+    requestState.routeKey !==
+    routeKey;
+
+  if (isLoading) {
+    return (
+      <MapLoadingState />
+    );
+  }
+
+  if (
+    requestState.error ||
+    !requestState.map
+  ) {
+    return (
+      <MapNotFound
+        mapId={mapId}
+        mapName={mapName}
+        message={
+          requestState.error
+        }
+      />
+    );
+  }
+
   return (
     <Suspense
-      fallback={<MapLoadingState />}
+      fallback={
+        <MapLoadingState />
+      }
     >
-      <TargetMap />
+      <TargetMap
+        mapData={
+          requestState.map
+        }
+      />
     </Suspense>
   );
 }

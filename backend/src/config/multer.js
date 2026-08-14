@@ -9,8 +9,16 @@ const allowedMimeTypes = [
   "image/gif",
 ];
 
-const fileFilter = (req, file, callback) => {
-  if (!allowedMimeTypes.includes(file.mimetype)) {
+function fileFilter(
+  req,
+  file,
+  callback
+) {
+  if (
+    !allowedMimeTypes.includes(
+      file.mimetype
+    )
+  ) {
     return callback(
       new Error(
         "Only JPEG, PNG, WebP, and GIF images are allowed."
@@ -19,12 +27,24 @@ const fileFilter = (req, file, callback) => {
   }
 
   return callback(null, true);
-};
+}
 
-export const uploadNewsImage = multer({
-  storage,
-  fileFilter,
-  limits: {
-    fileSize: 5 * 1024 * 1024,
-  },
-});
+function createImageUploader() {
+  return multer({
+    storage,
+    fileFilter,
+
+    limits: {
+      fileSize:
+        5 * 1024 * 1024,
+
+      files: 1,
+    },
+  });
+}
+
+export const uploadNewsImage =
+  createImageUploader();
+
+export const uploadMapMedia =
+  createImageUploader();

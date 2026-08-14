@@ -110,12 +110,12 @@ export default function LoginPage() {
       {/* Background decoration */}
       <div
         aria-hidden="true"
-        className="absolute left-[-120px] top-[-120px] h-80 w-80 rounded-full bg-sky-500/20 blur-3xl"
+        className="absolute -left-30 -top-30 h-80 w-80 rounded-full bg-sky-500/20 blur-3xl"
       />
 
       <div
         aria-hidden="true"
-        className="absolute bottom-[-140px] right-[-100px] h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl"
+        className="absolute -bottom-35 -right-25 h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl"
       />
 
       <section className="relative z-10 w-full max-w-md">
@@ -240,7 +240,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 px-4 text-sm font-semibold text-white shadow-lg shadow-sky-950/30 transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-sky-400/20 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
+              className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-sky-500 to-indigo-500 px-4 text-sm font-semibold text-white shadow-lg shadow-sky-950/30 transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-sky-400/20 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
             >
               {isSubmitting && (
                 <span

@@ -21,6 +21,8 @@ import NewsListPage
   from "./pages/News/NewsListPage";
 import NewsCreatePage from "./pages/News/NewsCreatePage";
 import NewsEditPage from "./pages/News/NewsEditPage.jsx";
+import MapListPage from "./pages/Maps/MapListPage.jsx";
+import MapEditPage from "./pages/Maps/MapEditPage.jsx";
 
 export default function App() {
   return (
@@ -53,6 +55,22 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <NewsCreatePage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/maps"
+            element={
+              <ProtectedRoute>
+                <MapListPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/maps/:id/edit"
+            element={
+              <ProtectedRoute>
+                <MapEditPage />
               </ProtectedRoute>
             }
           />

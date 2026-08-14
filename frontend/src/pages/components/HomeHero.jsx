@@ -11,7 +11,6 @@ import AnnouncementCarousel from './AnnouncementCarousel'
 import {
   WL_COUNT_DATE_UPDATED,
   TOTAL_WL_COUNT,
-  PLAYSTATION_MAX_WL,
   STEAM_MAX_WL,
 } from '../../exports/constants'
 

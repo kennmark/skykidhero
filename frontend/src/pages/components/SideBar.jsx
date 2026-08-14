@@ -13,8 +13,9 @@ import {
 import {
   GlobeAsiaAustraliaIcon,
   UserGroupIcon,
-  InboxIcon,
+  MapIcon,
   CheckBadgeIcon,
+  PaperAirplaneIcon,
 } from '@heroicons/react/24/solid'
 import {
   ChevronDownIcon,
@@ -224,7 +225,7 @@ const SideBar = ({ closeDrawer }) => {
             <Link to={'/map-shrines'} onClick={handleSearchClick}>
               <div className="flex flex-wrap">
                 <ListItemPrefix>
-                  <InboxIcon className="h-5 w-5" />
+                  <MapIcon className="h-5 w-5" />
                 </ListItemPrefix>
                 Map Shrines
                 <ListItemSuffix>
@@ -237,7 +238,7 @@ const SideBar = ({ closeDrawer }) => {
             <Link to={'/travelling-spirits'} onClick={handleSearchClick}>
               <div className="flex flex-wrap">
                 <ListItemPrefix>
-                  <InboxIcon className="h-5 w-5" />
+                  <PaperAirplaneIcon className="h-5 w-5" />
                 </ListItemPrefix>
                 Travelling Spirits
                 <ListItemSuffix>

@@ -47,17 +47,15 @@ const CardContainer = ({
     )
 
   return (
-    <>
+    <div className="h-full min-w-0 w-full">
       <Card
         className="
           theme-card-bg
-          mb-5
-          mt-6
           flex
-          w-80
+          h-full
+          min-w-0
+          w-full
           justify-between
-
-          lg:w-72
         "
       >
         <CardHeader
@@ -153,7 +151,7 @@ const CardContainer = ({
         open={openTextModal}
         label={label}
       />
-    </>
+    </div>
   )
 }
 

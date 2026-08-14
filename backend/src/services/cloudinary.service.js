@@ -1,8 +1,9 @@
 import cloudinary from "../config/cloudinary.js";
 import env from "../config/env.js";
 
-export function uploadNewsImageToCloudinary(
-  fileBuffer
+function uploadImageToCloudinary(
+  fileBuffer,
+  folder
 ) {
   if (!fileBuffer) {
     throw new Error(
@@ -16,9 +17,7 @@ export function uploadNewsImageToCloudinary(
         cloudinary.uploader.upload_stream(
           {
             resource_type: "image",
-
-            folder:
-              env.CLOUDINARY_NEWS_FOLDER,
+            folder,
 
             use_filename: true,
             unique_filename: true,
@@ -39,22 +38,89 @@ export function uploadNewsImageToCloudinary(
             }
 
             return resolve({
-              publicId: result.public_id,
-              url: result.secure_url,
-              width: result.width,
-              height: result.height,
-              format: result.format,
-              bytes: result.bytes,
+              publicId:
+                result.public_id,
+
+              url:
+                result.secure_url,
+
+              width:
+                result.width,
+
+              height:
+                result.height,
+
+              format:
+                result.format,
+
+              bytes:
+                result.bytes,
             });
           }
         );
 
-      uploadStream.end(fileBuffer);
+      uploadStream.end(
+        fileBuffer
+      );
     }
   );
 }
 
-export async function deleteNewsImageFromCloudinary(
+function normalizeFolderPart(
+  value
+) {
+  return String(value)
+    .trim()
+    .toLowerCase()
+    .replace(
+      /[^a-z0-9-]+/g,
+      "-"
+    )
+    .replace(
+      /^-+|-+$/g,
+      ""
+    );
+}
+
+export function uploadNewsImageToCloudinary(
+  fileBuffer
+) {
+  return uploadImageToCloudinary(
+    fileBuffer,
+    env.CLOUDINARY_NEWS_FOLDER
+  );
+}
+
+export function uploadMapMediaToCloudinary(
+  fileBuffer,
+  {
+    mapSlug,
+    slot,
+  }
+) {
+  const safeSlug =
+    normalizeFolderPart(
+      mapSlug
+    );
+
+  const safeSlot =
+    normalizeFolderPart(
+      slot
+    );
+
+  const folder = [
+    env.CLOUDINARY_MAPS_FOLDER,
+    safeSlug,
+    safeSlot,
+  ].join("/");
+
+  return uploadImageToCloudinary(
+    fileBuffer,
+    folder
+  );
+}
+
+export async function deleteImageFromCloudinary(
   publicId
 ) {
   if (!publicId) {
@@ -69,3 +135,10 @@ export async function deleteNewsImageFromCloudinary(
     }
   );
 }
+
+/*
+ * Preserve compatibility with
+ * existing News module imports.
+ */
+export const deleteNewsImageFromCloudinary =
+  deleteImageFromCloudinary;
