@@ -20,6 +20,11 @@ export const MAP_LIST_PROJECTION = {
   imageAlt: true,
 
   /*
+   * HomeSpace Map cards use the
+   * CMS-managed Map GIF.
+   */
+  mapGif: true,
+  /*
    * Useful for compact Map cards and
    * constellation navigation.
    */

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { maps } from '../data/maps'
 import { Typography, Chip, Tooltip, Button } from '@material-tailwind/react'
 import { Link } from 'react-router-dom'
 import MapCardContainer from './components/MapCardContainer'
@@ -39,11 +38,64 @@ import HomeHero from './components/HomeHero'
 import WingedLightSection from './components/WingedLightSection'
 import ShardEvent from './components/ShardEvent'
 import SpiritProgressOverview from './components/SpiritProgressOverview'
+import {
+  getPublishedMaps,
+} from '../services/map.service'
+
+import {
+  createHomeMapCards,
+  createMapCards,
+  getStaticMapCards,
+} from '../utils/mapCardAdapter'
 
 const HomeSpace = () => {
   const screenSize = useScreenSize()
 
-  // console.log(getAllInLocalStorage)
+  const [
+  apiMapCards,
+  setApiMapCards,
+] = useState(null)
+
+useEffect(() => {
+  let cancelled = false
+
+  getPublishedMaps()
+    .then((apiMaps) => {
+      if (cancelled) {
+        return
+      }
+
+      setApiMapCards(
+        createMapCards(
+          apiMaps
+        )
+      )
+    })
+    .catch((error) => {
+      /*
+       * Do not break the Homepage when
+       * the backend is temporarily
+       * unavailable.
+       *
+       * Static Map cards remain as the
+       * fallback.
+       */
+      console.error(
+        'Unable to load public Maps:',
+        error
+      )
+    })
+
+  return () => {
+    cancelled = true
+  }
+}, [])
+
+const mapCards =
+  createHomeMapCards(
+    apiMapCards ??
+      getStaticMapCards()
+  )
 
   return (
     <div className="">
@@ -69,9 +121,13 @@ const HomeSpace = () => {
       </div>
       <div className="flex flex-wrap justify-center my-5 md:my-10">
         {screenSize < 1440 ? (
-          maps.map((map) => {
-            return <MapCardContainer {...map} />
-          })
+           mapCards.map((map) => (
+            <MapCardContainer
+              {...map}
+              key={map.pageRoute}
+            />
+           )
+          )
         ) : (
           <Swiper
             spaceBetween={10}
@@ -85,13 +141,16 @@ const HomeSpace = () => {
             effect="coverflow"
             className="py-5"
           >
-            {maps.map((map, index) => {
-              return (
-                <SwiperSlide zoom={true} key={index}>
-                  <MapCardContainer {...map} />
-                </SwiperSlide>
-              )
-            })}
+            {mapCards.map((map) => (
+              <SwiperSlide
+                zoom={true}
+                key={map.pageRoute}
+              >
+                <MapCardContainer
+                  {...map}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         )}
       </div>
