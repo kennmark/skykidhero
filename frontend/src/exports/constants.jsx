@@ -2,7 +2,7 @@ import rc from '../assets/images/icons/candle.webp'
 import heart from '../assets/images/icons/heart.webp'
 import ac from '../assets/images/icons/AC.webp'
 import sc from '../assets/images/season-candles/30-season-of-dear-van-gogh/DearVanGogh-Candle.webp'
-import tsHintImage from '../assets/images/ts-hints/TS-hint-081326-081726.png'
+import tsHintImage from '../assets/images/ts-hints/TSHint.jpg'
 
 export const RC = rc
 export const HEART = heart
@@ -96,19 +96,19 @@ export const STEAM_MAX_WL = 257
 
 export const dtsValue = false //Adjust During Daylight Time Saving Every March and November
 
-export const groupTs = false //Group TS arrived
-export const travelingSpirit = true //Ongoing Traveling Spirit
+export const groupTs = true //Group TS arrived
+export const travelingSpirit = false //Ongoing Traveling Spirit
 export const travelingSpiritHint = true //Hint Traveling Spirit
 export const travelingSpiritHintImage = tsHintImage //Hint Image Traveling Spirit
-export const travelingSpiritDate = 'August 13 - 17, 2026' //Ongoing Traveling Spirit
-export const travellingSpiritSeasonId = 8
-export const travellingSpiritId = 2
-export const travelingSpiritHintUrl = 'https://www.facebook.com/share/r/1DMUP95kxi/'
+export const travelingSpiritDate = 'August 28 - September 10, 2026' //Ongoing Traveling Spirit
+export const travellingSpiritSeasonId = 20
+export const travellingSpiritId = 1
+export const travelingSpiritHintUrl = 'https://www.facebook.com/photo?fbid=1462805395892158&set=a.606494871523219'
 export const travelingSpiritStartDate =
-  '2026-08-13'
+  '2026-08-28'
 
 export const travelingSpiritEndDate =
-  '2026-08-17'
+  '2026-09-10'
 
 // export const travelingSpiritDate =
 //   'August 6–10, 2026'

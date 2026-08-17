@@ -129,15 +129,17 @@ const mapCards =
            )
           )
         ) : (
-          <Swiper
-            spaceBetween={10}
+          <>
+            {mapCards.length > 0 && (
+             <Swiper
+            spaceBetween={20}
             slidesPerView={3}
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
-            navigation
+            navigation={true}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            // slideshadows
-            loop={true}
+            loop={false}
+            rewind={true}
             effect="coverflow"
             className="py-5"
           >
@@ -151,8 +153,11 @@ const mapCards =
                 />
               </SwiperSlide>
             ))}
-          </Swiper>
-        )}
+          </Swiper> 
+          )}
+          </>
+        )
+      }
       </div>
       {/* Map Cards */}
 
