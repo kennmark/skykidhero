@@ -125,7 +125,7 @@ const mapCards =
           )
         ) : (
           <>
-            {mapCards.length > 0 && (
+            {/* {mapCards.length > 0 && ( */}
               <Swiper
                 spaceBetween={20}
                 slidesPerView={3}
@@ -181,7 +181,7 @@ const mapCards =
                   </SwiperSlide>
                 ))}
               </Swiper>
-            )}
+            {/* )} */}
           </>
         )
       }
