@@ -121,22 +121,29 @@ const MapCardContainer = ({
             {caption}
           </Typography>
         </CardBody>
-        <CardFooter className="p-0">
-          <Link to={`/${pageRoute}`}>
-            <Button
-              size="lg"
-              color="gray"
-              className="theme-button hover:shadow-xl"
-              ripple={true}
-              fullWidth={true}
-            >
-              <div className="flex justify-center items-center">
-                <ArrowRightOnRectangleIcon className="h-6 w-6" />
-                &nbsp;Enter
-              </div>
-            </Button>
-          </Link>
-        </CardFooter>
+       <CardFooter className="p-0 swiper-no-swiping">
+        <Button
+          as={Link}
+          to={`/${pageRoute}`}
+          size="lg"
+          color="gray"
+          className="
+            theme-button
+            w-full
+            hover:shadow-xl
+          "
+          ripple={true}
+          fullWidth={true}
+          onClick={(event) => {
+            event.stopPropagation()
+          }}
+        >
+          <div className="flex items-center justify-center">
+            <ArrowRightOnRectangleIcon className="h-6 w-6" />
+            &nbsp;Enter
+          </div>
+        </Button>
+      </CardFooter>
       </Card>
     </div>
   )

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Typography, Chip, Tooltip, Button } from '@material-tailwind/react'
 import { Link } from 'react-router-dom'
 import MapCardContainer from './components/MapCardContainer'
-// import ErrorBoundary from './components/ErrorBoundary'
 import AnnouncementModal from './AnnouncementModal'
 import FaQ from './FaQ'
 import SkyClock from './SkyClock'
@@ -32,7 +31,6 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import DyeLocations from './components/DyeLocations'
-import TestFile from './components/TestFile'
 import VeteranFeatured from './components/VeteranFeatured'
 import HomeHero from './components/HomeHero'
 import WingedLightSection from './components/WingedLightSection'
@@ -109,9 +107,6 @@ const mapCards =
       <div className="flex flex-wrap justify-center my-5 md:my-20">
         <SkyClock />
       </div>
-      {/* Test */}
-      {/* <TestFile /> */}
-      {/* Test */}
 
       {/* Map Cards */}
       <div className="flex flex-cols justify-center">
@@ -131,30 +126,62 @@ const mapCards =
         ) : (
           <>
             {mapCards.length > 0 && (
-             <Swiper
-            spaceBetween={20}
-            slidesPerView={3}
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
-            navigation={true}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            loop={false}
-            rewind={true}
-            effect="coverflow"
-            className="py-5"
-          >
-            {mapCards.map((map) => (
-              <SwiperSlide
-                zoom={true}
-                key={map.pageRoute}
+              <Swiper
+                spaceBetween={20}
+                slidesPerView={3}
+
+                modules={[
+                  Navigation,
+                  Pagination,
+                  Scrollbar,
+                  A11y,
+                  EffectCoverflow,
+                ]}
+
+                navigation={true}
+
+                pagination={{
+                  clickable: true,
+                }}
+
+                scrollbar={{
+                  draggable: true,
+                }}
+
+                loop={false}
+                rewind={true}
+                watchOverflow={true}
+
+                effect="coverflow"
+                centeredSlides={true}
+
+                coverflowEffect={{
+                  rotate: 20,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false,
+                }}
+
+                noSwiping={true}
+                noSwipingClass="swiper-no-swiping"
+
+                preventClicks={false}
+                preventClicksPropagation={false}
+
+                className="map-swiper py-5"
               >
-                <MapCardContainer
-                  {...map}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper> 
-          )}
+                {mapCards.map((map) => (
+                  <SwiperSlide
+                    key={map.pageRoute}
+                  >
+                    <MapCardContainer
+                      {...map}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
           </>
         )
       }
