@@ -52,47 +52,85 @@ const HomeSpace = () => {
   const [
   apiMapCards,
   setApiMapCards,
-] = useState(null)
+  ] = useState(null)
 
-useEffect(() => {
-  let cancelled = false
+  const [
+  mapLoadFailed,
+  setMapLoadFailed,
+  ] = useState(false)
 
-  getPublishedMaps()
-    .then((apiMaps) => {
-      if (cancelled) {
-        return
-      }
+  useEffect(() => {
+    let cancelled = false
 
-      setApiMapCards(
-        createMapCards(
-          apiMaps
+    getPublishedMaps()
+      .then((apiMaps) => {
+        if (cancelled) {
+          return
+        }
+
+        setApiMapCards(
+          createMapCards(apiMaps)
         )
-      )
-    })
-    .catch((error) => {
-      /*
-       * Do not break the Homepage when
-       * the backend is temporarily
-       * unavailable.
-       *
-       * Static Map cards remain as the
-       * fallback.
-       */
-      console.error(
-        'Unable to load public Maps:',
-        error
-      )
-    })
 
-  return () => {
-    cancelled = true
-  }
-}, [])
+        setMapLoadFailed(false)
+      })
+      .catch((error) => {
+        if (cancelled) {
+          return
+        }
 
-const mapCards =
-  createHomeMapCards(
-    apiMapCards ??
-      getStaticMapCards()
+        console.error(
+          'Unable to load public Maps:',
+          error
+        )
+
+        setMapLoadFailed(true)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  const mapsReady =
+    apiMapCards !== null ||
+    mapLoadFailed
+
+  const mapCardSource =
+    mapLoadFailed
+      ? getStaticMapCards()
+      : apiMapCards ?? []
+
+  const mapCards =
+    mapsReady
+      ? createHomeMapCards(
+          mapCardSource
+        )
+      : []
+  
+  const useMapSwiper =
+    screenSize >= 1440 &&
+    mapCards.length >= 4
+
+  const swiperSlidesPerView = 3
+
+  const canLoop =
+    mapCards.length >
+    swiperSlidesPerView
+
+  console.log(
+    'Map carousel debug:',
+    {
+      screenSize,
+      innerWidth:
+        window.innerWidth,
+      apiMapCards:
+        apiMapCards?.length,
+      mapCards:
+        mapCards.length,
+      mapsReady,
+      useMapSwiper,
+    }
   )
 
   return (
@@ -115,37 +153,68 @@ const mapCards =
           </Typography>
       </div>
       <div className="flex flex-wrap justify-center my-5 md:my-10">
-        {screenSize < 1440 ? (
-           mapCards.map((map) => (
+        {!mapsReady ? (
+          <Typography className="py-10 text-white/50">
+            Loading Maps...
+          </Typography>
+        ) : useMapSwiper ? (
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={
+              swiperSlidesPerView
+            }
+
+            modules={[
+              Navigation,
+              Pagination,
+              Scrollbar,
+              A11y,
+              EffectCoverflow,
+            ]}
+
+            navigation
+
+            pagination={{
+              clickable: true,
+            }}
+
+            scrollbar={{
+              draggable: true,
+            }}
+
+            loop={canLoop}
+
+            effect="coverflow"
+            centeredSlides={true}
+
+            className="py-5"
+
+            coverflowEffect={{
+              rotate: 20,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+          >
+            {mapCards.map((map) => (
+              <SwiperSlide
+                key={map.pageRoute}
+              >
+                <MapCardContainer
+                  {...map}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ) : (
+          mapCards.map((map) => (
             <MapCardContainer
               {...map}
               key={map.pageRoute}
             />
-           )
-          )
-        ) : (
-          <Swiper
-            spaceBetween={10}
-            slidesPerView={3}
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            // slideshadows
-            loop={true}
-            effect="coverflow"
-            className="py-5"
-          >
-            {mapCards.map((map, index) => {
-              return (
-                <SwiperSlide zoom={true} key={index}>
-                  <MapCardContainer {...map} />
-                </SwiperSlide>
-              )
-            })}
-          </Swiper>
-        )
-      }
+          ))
+        )}
       </div>
       {/* Map Cards */}
 
