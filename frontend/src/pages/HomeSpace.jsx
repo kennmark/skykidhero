@@ -148,7 +148,7 @@ const mapCards =
                   draggable: true,
                 }}
 
-                loop={false}
+                loop={true}
                 rewind={true}
                 watchOverflow={true}
 
