@@ -124,65 +124,26 @@ const mapCards =
            )
           )
         ) : (
-          <>
-            {/* {mapCards.length > 0 && ( */}
-              <Swiper
-                spaceBetween={20}
-                slidesPerView={3}
-
-                modules={[
-                  Navigation,
-                  Pagination,
-                  Scrollbar,
-                  A11y,
-                  EffectCoverflow,
-                ]}
-
-                navigation={true}
-
-                pagination={{
-                  clickable: true,
-                }}
-
-                scrollbar={{
-                  draggable: true,
-                }}
-
-                loop={true}
-                rewind={true}
-                watchOverflow={true}
-
-                effect="coverflow"
-                centeredSlides={true}
-
-                coverflowEffect={{
-                  rotate: 20,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 1,
-                  slideShadows: false,
-                }}
-
-                noSwiping={true}
-                noSwipingClass="swiper-no-swiping"
-
-                preventClicks={false}
-                preventClicksPropagation={false}
-
-                className="map-swiper py-5"
-              >
-                {mapCards.map((map) => (
-                  <SwiperSlide
-                    key={map.pageRoute}
-                  >
-                    <MapCardContainer
-                      {...map}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            {/* )} */}
-          </>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={3}
+            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            // slideshadows
+            loop={true}
+            effect="coverflow"
+            className="py-5"
+          >
+            {mapCards.map((map, index) => {
+              return (
+                <SwiperSlide zoom={true} key={index}>
+                  <MapCardContainer {...map} />
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
         )
       }
       </div>
