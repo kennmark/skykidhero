@@ -114,24 +114,12 @@ const HomeSpace = () => {
 
   const swiperSlidesPerView = 3
 
-  const canLoop =
-    mapCards.length >
-    swiperSlidesPerView
+  const minimumSlidesForLoop =
+    swiperSlidesPerView + 2
 
-  console.log(
-    'Map carousel debug:',
-    {
-      screenSize,
-      innerWidth:
-        window.innerWidth,
-      apiMapCards:
-        apiMapCards?.length,
-      mapCards:
-        mapCards.length,
-      mapsReady,
-      useMapSwiper,
-    }
-  )
+  const canLoop =
+    mapCards.length >=
+    minimumSlidesForLoop
 
   return (
     <div className="">
@@ -152,7 +140,7 @@ const HomeSpace = () => {
             Maps
           </Typography>
       </div>
-      <div className="flex flex-wrap justify-center my-5 md:my-10">
+      <div className="my-5 w-full min-w-0 md:my-10">
         {!mapsReady ? (
           <Typography className="py-10 text-white/50">
             Loading Maps...
@@ -187,7 +175,7 @@ const HomeSpace = () => {
             effect="coverflow"
             centeredSlides={true}
 
-            className="py-5"
+            className="py-5 min-w-0 w-full"
 
             coverflowEffect={{
               rotate: 20,
@@ -208,12 +196,14 @@ const HomeSpace = () => {
             ))}
           </Swiper>
         ) : (
-          mapCards.map((map) => (
-            <MapCardContainer
-              {...map}
-              key={map.pageRoute}
-            />
-          ))
+          <div className="flex flex-wrap justify-center">
+            {mapCards.map((map) => (
+              <MapCardContainer
+                {...map}
+                key={map.pageRoute}
+              />
+            ))}
+          </div>
         )}
       </div>
       {/* Map Cards */}
