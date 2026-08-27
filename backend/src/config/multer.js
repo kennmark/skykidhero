@@ -29,10 +29,43 @@ function fileFilter(
   return callback(null, true);
 }
 
-function createImageUploader() {
-  return multer({
+function createImageUploader({
+  allowOctetStream = false,
+} = {}) {
+   return multer({
     storage,
-    fileFilter,
+
+    fileFilter(
+      req,
+      file,
+      callback
+    ) {
+      const isAllowedImage =
+        allowedMimeTypes.includes(
+          file.mimetype
+        );
+
+      const isGenericBinary =
+        allowOctetStream &&
+        file.mimetype ===
+          "application/octet-stream";
+
+      if (
+        !isAllowedImage &&
+        !isGenericBinary
+      ) {
+        return callback(
+          new Error(
+            "Only JPEG, PNG, WebP, and GIF images are allowed."
+          )
+        );
+      }
+
+      return callback(
+        null,
+        true
+      );
+    },
 
     limits: {
       fileSize:
@@ -48,3 +81,8 @@ export const uploadNewsImage =
 
 export const uploadMapMedia =
   createImageUploader();
+
+export const uploadSpiritMedia =
+  createImageUploader({
+    allowOctetStream: true,
+  });

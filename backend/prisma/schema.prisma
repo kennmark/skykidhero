@@ -95,6 +95,7 @@ model Map {
   deletedAt DateTime?
 
   sections MapSection[]
+  spirits  Spirit[]
 
   @@index([published, deletedAt])
 }
@@ -116,4 +117,143 @@ model MapSection {
 
   @@unique([mapId, type])
   @@index([mapId, published])
+}
+
+enum SpiritType {
+  REGULAR
+  SEASONAL
+}
+
+enum SpiritCategory {
+  EMOTE
+  STANCE
+  CALL
+  SOUND_CALL
+  FRIENDSHIP_ACTION
+  ITEM
+  NON_ENTITY
+  SPIRIT
+}
+
+enum SpiritReliveType {
+  FOLLOW_MEMORY
+  CARRY_MEMORY
+  COLLECT_MEMORY
+  QUEST_MEMORY
+  TASK
+  NONE
+}
+
+enum SpiritCollectibleCurrency {
+  CANDLES
+  HEARTS
+  SEASON_CANDLES
+  FREE
+}
+
+model Spirit {
+  id Int @id @default(autoincrement())
+
+  /**
+   * Preserves the existing frontend
+   * spirit_id values:
+   * isle1
+   * prairie3
+   * forest5
+   * etc.
+   * We keep this stable because it is
+   * already used by progress tracking.
+   */
+  code String @unique
+
+  mapId Int
+
+  type SpiritType
+  name String
+
+  category   SpiritCategory
+  reliveType SpiritReliveType
+
+  difficultyLevel Int   @default(0)
+  difficultyTypes Int[] @default([])
+
+  /**
+   * Existing spirit_img_url
+   */
+  iconImage         String?
+  iconImagePublicId String?
+
+  /**
+   * Existing spirit_image
+   */
+  detailImage         String?
+  detailImagePublicId String?
+
+  guideVideoUrl String?
+
+  /**
+   * Existing spirit_direction array.
+   * PostgreSQL supports Prisma scalar
+   * arrays, so the guide can remain in
+   * the same format expected by the
+   * frontend.
+   */
+  directions String[] @default([])
+
+  displayOrder Int
+  published    Boolean @default(true)
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  map Map @relation(fields: [mapId], references: [id], onDelete: Cascade)
+
+  collectibles SpiritCollectible[]
+  treeCosts    SpiritTreeCost[]
+
+  @@unique([mapId, type, displayOrder])
+  @@index([mapId, type, published, deletedAt])
+}
+
+model SpiritCollectible {
+  id       Int @id @default(autoincrement())
+  spiritId Int
+
+  label String
+
+  image         String?
+  imagePublicId String?
+
+  currency SpiritCollectibleCurrency
+  price    Int                       @default(0)
+
+  displayOrder Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  spirit Spirit @relation(fields: [spiritId], references: [id], onDelete: Cascade)
+
+  @@unique([spiritId, displayOrder])
+  @@index([spiritId])
+}
+
+model SpiritTreeCost {
+  id       Int @id @default(autoincrement())
+  spiritId Int
+
+  candles         Int @default(0)
+  hearts          Int @default(0)
+  ascendedCandles Int @default(0)
+
+  displayOrder Int @default(1)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  spirit Spirit @relation(fields: [spiritId], references: [id], onDelete: Cascade)
+
+  @@unique([spiritId, displayOrder])
+  @@index([spiritId])
 }

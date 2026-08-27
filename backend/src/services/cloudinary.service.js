@@ -120,6 +120,39 @@ export function uploadMapMediaToCloudinary(
   );
 }
 
+export function uploadSpiritMediaToCloudinary(
+  fileBuffer,
+  {
+    spiritCode,
+    slot,
+  }
+) {
+  const safeCode =
+    normalizeFolderPart(
+      spiritCode
+    );
+
+  const safeSlot =
+    normalizeFolderPart(
+      slot
+    );
+
+  const baseFolder =
+    env.CLOUDINARY_SPIRITS_FOLDER ||
+    "skykidhero/spirits";
+
+  const folder = [
+    baseFolder,
+    safeCode,
+    safeSlot,
+  ].join("/");
+
+  return uploadImageToCloudinary(
+    fileBuffer,
+    folder
+  );
+}
+
 export async function deleteImageFromCloudinary(
   publicId
 ) {
@@ -142,3 +175,37 @@ export async function deleteImageFromCloudinary(
  */
 export const deleteNewsImageFromCloudinary =
   deleteImageFromCloudinary;
+
+export function uploadSpiritCollectibleImageToCloudinary(
+  fileBuffer,
+  {
+    spiritCode,
+    collectibleId,
+  }
+) {
+  const safeCode =
+    normalizeFolderPart(
+      spiritCode
+    );
+
+  const safeCollectibleId =
+    normalizeFolderPart(
+      collectibleId
+    );
+
+  const baseFolder =
+    env.CLOUDINARY_SPIRITS_FOLDER ||
+    "skykidhero/spirits";
+
+  const folder = [
+    baseFolder,
+    safeCode,
+    "collectibles",
+    safeCollectibleId,
+  ].join("/");
+
+  return uploadImageToCloudinary(
+    fileBuffer,
+    folder
+  );
+}
