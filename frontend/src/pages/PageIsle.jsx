@@ -7,8 +7,8 @@ import SpiritCardContainer from './components/SpiritCardContainer'
 import CardContainer from './components/CardContainer'
 import { GIF_ISLE, ISLE_ALT } from '../exports/mapGIFs'
 import DifficultyCriteria from './components/DifficultyCriteria'
-import MapPageLayout
-  from "./components/MapPageLayout";
+import MapPageLayout from "./components/MapPageLayout";
+import useRegularSpirits from "../hooks/useRegularSpirits";
 
 const PageIsle = ({ mapData, }) => {
   const fallbackMap =
@@ -29,7 +29,7 @@ const PageIsle = ({ mapData, }) => {
     const initialValue = JSON.parse(saved) || {} // Default to empty object if no saved data
     return initialValue
   })
-  
+
   useEffect(() => {
     localStorage.setItem('checkedSpirits', JSON.stringify(checkedSpirits))
   }, [checkedSpirits])
@@ -38,6 +38,22 @@ const PageIsle = ({ mapData, }) => {
     const { name, checked } = event.target
     setCheckedSpirits((prevState) => ({ ...prevState, [name]: checked }))
   }
+
+const {
+  loading:
+    regularSpiritsLoading,
+
+  error:
+    regularSpiritsError,
+
+  pageData:
+    islePageData,
+} = useRegularSpirits({
+  mapId: 1,
+  mapData,
+  pageData:
+    isleOfDawn,
+});
 
 return (
   <MapPageLayout
@@ -70,7 +86,7 @@ return (
             bg-[#233d4d]
           "
         >
-          {isleOfDawn.map(
+          {islePageData.map(
             (
               headerTab,
               index
@@ -89,7 +105,7 @@ return (
           )}
         </TabsHeader>
 
-        {isleOfDawn.map(
+        {islePageData.map(
           (body, index) => (
             <TabsBody
               animate={{
@@ -117,83 +133,107 @@ return (
                   "
                 >
                   {body.desc}
+
                 </div>
-
-                <div
-                  className="
-                    grid
-                    w-full
-                    grid-cols-1
-                    justify-items-center
-                    gap-x-3
-                    gap-y-4
-
-                    md:grid-cols-2
-                    xl:grid-cols-3
-                  "
-                >
-                  {body.spirits?.map(
-                    (spirit) => (
-                      <SpiritCardContainer
-                        {...spirit}
-                        key={
-                          spirit.spirit_id
-                        }
-                        checkedSpirits={
-                          checkedSpirits
-                        }
-                        handleCheckboxChange={
-                          handleCheckboxChange
-                        }
-                      />
-                    )
+                {body.value ===
+                  "regular_spirits" &&
+                  regularSpiritsLoading && (
+                    <div className="mb-4 text-center text-sm text-gray-300">
+                      Loading Regular Spirits...
+                    </div>
                   )}
 
-                  {body.winged_lights?.map(
-                    (
-                      wingedLight
-                    ) => (
-                      <CardContainer
-                        wingedLight={
-                          wingedLight
-                        }
-                        label={
-                          wingedLight.wl_label
-                        }
-                        location={
-                          wingedLight.wl_location
-                        }
-                        url={
-                          wingedLight.wl_url
-                        }
-                        key={
-                          wingedLight.wl_label
-                        }
-                      />
-                    )
+                {body.value ===
+                  "regular_spirits" &&
+                  !regularSpiritsLoading &&
+                  regularSpiritsError && (
+                    <div className="mb-4 rounded-xl border border-amber-400/30 bg-amber-900/20 px-4 py-3 text-center text-sm text-amber-100">
+                      {
+                        regularSpiritsError
+                      }
+                    </div>
                   )}
+                {!(
+                  body.value ===
+                    "regular_spirits" &&
+                  regularSpiritsLoading
+                ) && (
+                  <div
+                    className="
+                      grid
+                      w-full
+                      grid-cols-1
+                      justify-items-center
+                      gap-x-3
+                      gap-y-4
 
-                  {body.map_shrines?.map(
-                    (
-                      mapShrine
-                    ) => (
-                      <CardContainer
-                        label={
-                          mapShrine.shrine_label
-                        }
-                        location={
-                          mapShrine.shrine_location
-                        }
-                        url={
-                          mapShrine.shrine_url
-                        }
-                        key={
-                          mapShrine.shrine_label
-                        }
-                      />
-                    )
-                  )}
-                </div>
+                      md:grid-cols-2
+                      xl:grid-cols-3
+                    "
+                  >
+                    {body.spirits?.map(
+                      (spirit) => (
+                        <SpiritCardContainer
+                          {...spirit}
+                          key={
+                            spirit.spirit_id
+                          }
+                          checkedSpirits={
+                            checkedSpirits
+                          }
+                          handleCheckboxChange={
+                            handleCheckboxChange
+                          }
+                        />
+                      )
+                    )}
+
+                    {body.winged_lights?.map(
+                      (
+                        wingedLight
+                      ) => (
+                        <CardContainer
+                          wingedLight={
+                            wingedLight
+                          }
+                          label={
+                            wingedLight.wl_label
+                          }
+                          location={
+                            wingedLight.wl_location
+                          }
+                          url={
+                            wingedLight.wl_url
+                          }
+                          key={
+                            wingedLight.wl_label
+                          }
+                        />
+                      )
+                    )}
+
+                    {body.map_shrines?.map(
+                      (
+                        mapShrine
+                      ) => (
+                        <CardContainer
+                          label={
+                            mapShrine.shrine_label
+                          }
+                          location={
+                            mapShrine.shrine_location
+                          }
+                          url={
+                            mapShrine.shrine_url
+                          }
+                          key={
+                            mapShrine.shrine_label
+                          }
+                        />
+                      )
+                    )}
+                  </div>
+                )}
               </TabPanel>
             </TabsBody>
           )
