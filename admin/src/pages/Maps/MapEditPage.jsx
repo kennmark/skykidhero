@@ -30,8 +30,8 @@ import {
   uploadAdminMapMedia,
 } from "../../services/adminMap.service.js";
 
-import MapMediaManager
-  from "../../components/maps/MapMediaManager.jsx";
+import MapMediaManager from "../../components/maps/MapMediaManager.jsx";
+import MapRegularSpirits from "../../components/spirits/MapRegularSpirits.jsx";
 
 const publicSiteUrl = (
   import.meta.env
@@ -377,6 +377,10 @@ async function handleMediaRemove(
           }
         />
 
+        <MapRegularSpirits
+          mapId={map.id}
+        />
+        
         <section className="space-y-5">
           <div>
             <h2 className="text-xl font-bold text-gray-900">

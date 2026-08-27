@@ -14,43 +14,22 @@ const MAX_FILE_SIZE =
 
 const MEDIA_SLOTS = [
   {
-    slot: "main",
-    field: "image",
-    title: "Main Map Image",
+    slot: "icon",
+    field: "iconImage",
+    title: "Spirit Icon",
     description:
-      "Primary image used for the Map header and cards.",
+      "Small Spirit icon used on cards and Spirit previews.",
     accept:
       "image/jpeg,image/png,image/webp,image/gif",
-    objectFit: "object-cover",
-  },
-  {
-    slot: "gif",
-    field: "mapGif",
-    title: "Map GIF",
-    description:
-      "Animated preview or Map background.",
-    accept:
-      "image/gif,image/webp",
-    objectFit: "object-cover",
-  },
-  {
-    slot: "constellation-icon",
-    field:
-      "mapConstellationIcon",
-    title: "Constellation Icon",
-    description:
-      "Compact icon representing the Map constellation.",
-    accept:
-      "image/jpeg,image/png,image/webp",
     objectFit: "object-contain",
   },
+
   {
-    slot: "constellation-image",
-    field:
-      "mapConstellationImage",
-    title: "Constellation Image",
+    slot: "detail",
+    field: "detailImage",
+    title: "Spirit Detail Image",
     description:
-      "Full constellation image displayed in Map content.",
+      "Main Spirit image used when showing the Spirit details.",
     accept:
       "image/jpeg,image/png,image/webp,image/gif",
     objectFit: "object-contain",
@@ -61,39 +40,50 @@ function getErrorMessage(error) {
   return (
     error.response?.data?.message ||
     error.message ||
-    "Unable to update the Map media."
+    "Unable to update Spirit media."
   );
 }
 
-function MapMediaCard({
+function SpiritMediaCard({
   config,
-  map,
+  spirit,
   onUpload,
   onRemove,
 }) {
   const inputRef =
     useRef(null);
 
-  const [selectedFile, setSelectedFile] =
-    useState(null);
+  const [
+    selectedFile,
+    setSelectedFile,
+  ] = useState(null);
 
-  const [uploading, setUploading] =
-    useState(false);
+  const [
+    uploading,
+    setUploading,
+  ] = useState(false);
 
-  const [removing, setRemoving] =
-    useState(false);
+  const [
+    removing,
+    setRemoving,
+  ] = useState(false);
 
-  const [message, setMessage] =
-    useState("");
+  const [
+    message,
+    setMessage,
+  ] = useState("");
 
-  const [error, setError] =
-    useState("");
+  const [
+    error,
+    setError,
+  ] = useState("");
 
   const mediaUrl =
-    map[config.field];
+    spirit?.[config.field];
 
   const busy =
-    uploading || removing;
+    uploading ||
+    removing;
 
   function clearInput() {
     setSelectedFile(null);
@@ -104,7 +94,9 @@ function MapMediaCard({
     }
   }
 
-  function handleFileChange(event) {
+  function handleFileChange(
+    event
+  ) {
     const file =
       event.target.files?.[0];
 
@@ -132,7 +124,21 @@ function MapMediaCard({
     const acceptedTypes =
       config.accept.split(",");
 
+    /*
+     * Some clients may report a
+     * legitimate image as
+     * application/octet-stream.
+     *
+     * The backend verifies the actual
+     * file bytes using file-type.
+     */
+    const hasUsableMimeType =
+      file.type &&
+      file.type !==
+        "application/octet-stream";
+
     if (
+      hasUsableMimeType &&
       !acceptedTypes.includes(
         file.type
       )
@@ -140,9 +146,7 @@ function MapMediaCard({
       clearInput();
 
       setError(
-        config.slot === "gif"
-          ? "Map GIF must be a GIF or WebP image."
-          : "The selected image type is not supported."
+        "The selected image type is not supported."
       );
 
       return;
@@ -156,6 +160,7 @@ function MapMediaCard({
       setError(
         "Please select an image."
       );
+
       return;
     }
 
@@ -221,13 +226,13 @@ function MapMediaCard({
   }
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white">
+    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
       <div className="border-b border-gray-200 bg-gray-50 px-3 py-2.5">
-        <h3 className="font-bold text-gray-900">
+        <h3 className="text-sm font-bold text-gray-900">
           {config.title}
         </h3>
 
-        <p className="mt-1 text-xs text-gray-500">
+        <p className="mt-0.5 text-xs text-gray-500">
           {config.description}
         </p>
       </div>
@@ -242,7 +247,7 @@ function MapMediaCard({
             />
           ) : (
             <div className="text-center text-gray-400">
-              <PhotoIcon className="mx-auto h-7 w-7" />
+              <PhotoIcon className="mx-auto h-10 w-10" />
 
               <p className="mt-2 text-xs font-medium">
                 No media uploaded
@@ -324,34 +329,38 @@ function MapMediaCard({
   );
 }
 
-export default function MapMediaManager({
-  map,
+export default function SpiritMediaManager({
+  spirit,
   onUpload,
   onRemove,
 }) {
   return (
-    <section className="space-y-3">
+    <section className="space-y-4">
       <div>
         <h2 className="text-xl font-bold text-gray-900">
-          Map Media
+          Spirit Media
         </h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Manage the main image, animated
-          preview, and constellation
-          graphics.
+          Manage the Spirit icon and
+          detail image stored in
+          Cloudinary.
         </p>
       </div>
 
-      <div className="grid items-stretch gap-3 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid items-stretch gap-3 md:grid-cols-2">
         {MEDIA_SLOTS.map(
           (config) => (
-            <MapMediaCard
+            <SpiritMediaCard
               key={config.slot}
               config={config}
-              map={map}
-              onUpload={onUpload}
-              onRemove={onRemove}
+              spirit={spirit}
+              onUpload={
+                onUpload
+              }
+              onRemove={
+                onRemove
+              }
             />
           )
         )}

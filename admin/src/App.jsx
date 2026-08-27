@@ -23,6 +23,7 @@ import NewsCreatePage from "./pages/News/NewsCreatePage";
 import NewsEditPage from "./pages/News/NewsEditPage.jsx";
 import MapListPage from "./pages/Maps/MapListPage.jsx";
 import MapEditPage from "./pages/Maps/MapEditPage.jsx";
+import SpiritEditPage from "./pages/Spirits/SpiritEditPage.jsx";
 
 export default function App() {
   return (
@@ -71,6 +72,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <MapEditPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/spirits/:id/edit"
+            element={
+              <ProtectedRoute>
+                <SpiritEditPage />
               </ProtectedRoute>
             }
           />
