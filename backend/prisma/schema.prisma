@@ -94,8 +94,9 @@ model Map {
   updatedAt DateTime  @updatedAt
   deletedAt DateTime?
 
-  sections MapSection[]
-  spirits  Spirit[]
+  sections     MapSection[]
+  spirits      Spirit[]
+  wingedLights WingedLight[]
 
   @@index([published, deletedAt])
 }
@@ -256,4 +257,36 @@ model SpiritTreeCost {
 
   @@unique([spiritId, displayOrder])
   @@index([spiritId])
+}
+
+model WingedLight {
+  id Int @id @default(autoincrement())
+
+  mapId Int
+
+  code String @unique
+
+  label String
+
+  groupKey String?
+
+  seasonGroupKey String?
+
+  image         String?
+  imagePublicId String?
+
+  directions String[] @default([])
+
+  displayOrder Int
+
+  published Boolean @default(true)
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  map Map @relation(fields: [mapId], references: [id], onDelete: Cascade)
+
+  @@unique([mapId, displayOrder])
+  @@index([mapId, published, deletedAt])
 }

@@ -11,6 +11,7 @@
     "seed:admin": "node prisma/seed-admin.js",
     "prisma:seed:maps": "node prisma/seed-maps.js",
     "prisma:seed:regular-spirits": "node prisma/seed-regular-spirits.js",
+    "prisma:seed:winged-lights": "node prisma/seed-winged-lights.js",
     "postinstall": "prisma generate"
   },
   "version": "1.0.0",
