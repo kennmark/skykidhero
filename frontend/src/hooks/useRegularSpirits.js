@@ -32,29 +32,6 @@ export default function useRegularSpirits({
     setError,
   ] = useState("");
 
-  /*
-   * Find the existing static
-   * Regular Spirit section.
-   *
-   * We currently keep this only
-   * as a temporary media fallback
-   * during the CMS migration.
-   */
-  const staticRegularSpirits =
-    useMemo(() => {
-      const section =
-        pageData?.find(
-          (item) =>
-            item.value ===
-            "regular_spirits"
-        );
-
-      return (
-        section?.spirits ??
-        []
-      );
-    }, [pageData]);
-
   useEffect(() => {
     let cancelled = false;
 
@@ -76,9 +53,6 @@ export default function useRegularSpirits({
           adaptRegularSpirits(
             apiSpirits,
             {
-              legacySpirits:
-                staticRegularSpirits,
-
               mapData,
             }
           );
@@ -96,24 +70,16 @@ export default function useRegularSpirits({
           requestError
         );
 
+        setRegularSpirits(
+          []
+        );
+
         setError(
           requestError
             .response
             ?.data
             ?.message ||
             "Unable to load Regular Spirits."
-        );
-
-        /*
-         * Temporary migration
-         * fallback.
-         *
-         * Keep the public Map usable
-         * even if the API request
-         * fails.
-         */
-        setRegularSpirits(
-          staticRegularSpirits
         );
       } finally {
         if (!cancelled) {
@@ -139,17 +105,8 @@ export default function useRegularSpirits({
   }, [
     mapId,
     mapData,
-    staticRegularSpirits,
   ]);
 
-  /*
-   * Replace only the static
-   * Regular Spirit array.
-   *
-   * Seasonal Spirits,
-   * Winged Lights and Map Shrines
-   * remain untouched.
-   */
   const resolvedPageData =
     useMemo(
       () =>

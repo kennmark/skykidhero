@@ -1,32 +1,17 @@
-function enumToLegacy(
-  value
-) {
-  return String(
-    value ?? ""
-  )
+function enumToLegacy(value) {
+  return String(value ?? "")
     .trim()
     .toLowerCase()
-    .replaceAll(
-      "_",
-      "-"
-    );
+    .replaceAll("_", "-");
 }
 
-function currencyToLegacy(
-  value
-) {
+function currencyToLegacy(value) {
   const currencyMap = {
-    CANDLES:
-      "Candles",
-
-    HEARTS:
-      "Hearts",
-
+    CANDLES: "Candles",
+    HEARTS: "Hearts",
     SEASON_CANDLES:
       "Season Candles",
-
-    FREE:
-      "Free",
+    FREE: "Free",
   };
 
   return (
@@ -37,8 +22,7 @@ function currencyToLegacy(
 }
 
 function adaptCollectibles(
-  collectibles,
-  legacyCollectibles = []
+  collectibles
 ) {
   if (
     !Array.isArray(
@@ -49,42 +33,27 @@ function adaptCollectibles(
   }
 
   return collectibles.map(
-    (
-      collectible,
-      index
-    ) => {
-      const legacy =
-        legacyCollectibles[
-          index
-        ];
+    (collectible) => ({
+      label:
+        collectible.label,
 
-      return {
-        label:
-          collectible.label,
+      /*
+       * Collectible media now comes
+       * entirely from the CMS.
+       */
+      img:
+        collectible.image ??
+        "",
 
-        /*
-         * DB image wins once
-         * collectible media is
-         * uploaded through CMS.
-         *
-         * Until then preserve the
-         * existing frontend asset.
-         */
-        img:
-          collectible.image ||
-          legacy?.img ||
-          "",
+      currency:
+        currencyToLegacy(
+          collectible.currency
+        ),
 
-        currency:
-          currencyToLegacy(
-            collectible.currency
-          ),
-
-        price:
-          collectible.price ??
-          0,
-      };
-    }
+      price:
+        collectible.price ??
+        0,
+    })
   );
 }
 
@@ -120,7 +89,6 @@ function adaptTreeCosts(
 export function adaptRegularSpirit(
   apiSpirit,
   {
-    legacySpirit = null,
     mapData = null,
   } = {}
 ) {
@@ -135,9 +103,11 @@ export function adaptRegularSpirit(
 
   return {
     /*
-     * Preserve code such as isle1.
-     * Spirit progress/localStorage
-     * depends on this stable value.
+     * Keep the stable code:
+     * isle1, prairie1, etc.
+     *
+     * Existing Spirit progress
+     * tracking depends on it.
      */
     spirit_id:
       apiSpirit.code,
@@ -175,26 +145,18 @@ export function adaptRegularSpirit(
         : [],
 
     /*
-     * CMS media is authoritative.
-     *
-     * Static asset remains only as
-     * transitional fallback while
-     * icons/details are uploaded.
+     * No static fallback anymore.
      */
     spirit_img_url:
-      apiSpirit.iconImage ||
-      legacySpirit
-        ?.spirit_img_url ||
+      apiSpirit.iconImage ??
       "",
 
     spirit_image:
-      apiSpirit.detailImage ||
-      legacySpirit
-        ?.spirit_image ||
+      apiSpirit.detailImage ??
       "",
 
     spirit_guide_video_url:
-      apiSpirit.guideVideoUrl ||
+      apiSpirit.guideVideoUrl ??
       "",
 
     spirit_direction:
@@ -206,9 +168,7 @@ export function adaptRegularSpirit(
 
     spirit_collectibles:
       adaptCollectibles(
-        apiSpirit.collectibles,
-        legacySpirit
-          ?.spirit_collectibles
+        apiSpirit.collectibles
       ),
 
     spirit_tree_cost:
@@ -217,10 +177,9 @@ export function adaptRegularSpirit(
       ),
 
     /*
-     * Regular Spirit "visits" were
-     * never actual Traveling Spirit
-     * visits. Derive the realm display
-     * instead of storing it.
+     * Regular Spirits don't have
+     * Traveling Spirit visits.
+     * Keep the realm display derived.
      */
     number_of_visits:
       mapName
@@ -228,9 +187,7 @@ export function adaptRegularSpirit(
             {
               visit_date:
                 mapName,
-
-              visitNo:
-                "",
+              visitNo: "",
             },
           ]
         : [],
@@ -240,8 +197,6 @@ export function adaptRegularSpirit(
         ?.mapConstellationIcon ||
       apiSpirit.map
         ?.mapConstellationIcon ||
-      legacySpirit
-        ?.constellation_icon_route ||
       "",
   };
 }
@@ -249,7 +204,6 @@ export function adaptRegularSpirit(
 export function adaptRegularSpirits(
   apiSpirits,
   {
-    legacySpirits = [],
     mapData = null,
   } = {}
 ) {
@@ -261,26 +215,11 @@ export function adaptRegularSpirits(
     return [];
   }
 
-  const legacyByCode =
-    new Map(
-      legacySpirits.map(
-        (spirit) => [
-          spirit.spirit_id,
-          spirit,
-        ]
-      )
-    );
-
   return apiSpirits
     .map((apiSpirit) =>
       adaptRegularSpirit(
         apiSpirit,
         {
-          legacySpirit:
-            legacyByCode.get(
-              apiSpirit.code
-            ) ?? null,
-
           mapData,
         }
       )
