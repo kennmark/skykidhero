@@ -24,6 +24,7 @@ import NewsEditPage from "./pages/News/NewsEditPage.jsx";
 import MapListPage from "./pages/Maps/MapListPage.jsx";
 import MapEditPage from "./pages/Maps/MapEditPage.jsx";
 import SpiritEditPage from "./pages/Spirits/SpiritEditPage.jsx";
+import WingedLightEditPage from "./pages/WingedLights/WingedLightEditPage.jsx";
 
 export default function App() {
   return (
@@ -80,6 +81,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <SpiritEditPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/winged-lights/:id/edit"
+            element={
+              <ProtectedRoute>
+                <WingedLightEditPage />
               </ProtectedRoute>
             }
           />

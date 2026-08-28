@@ -1,5 +1,5 @@
 export const wingedLightsSeedData = [
-  {
+{
     mapId: 1,
     code: "isle-wl-1",
     label: "WL1-Mural Cave(Roof)",
@@ -12,7 +12,6 @@ export const wingedLightsSeedData = [
     displayOrder: 1,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-2",
@@ -26,7 +25,6 @@ export const wingedLightsSeedData = [
     displayOrder: 2,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-3",
@@ -41,7 +39,6 @@ export const wingedLightsSeedData = [
     displayOrder: 3,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-4",
@@ -55,7 +52,6 @@ export const wingedLightsSeedData = [
     displayOrder: 4,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-5",
@@ -70,7 +66,6 @@ export const wingedLightsSeedData = [
     displayOrder: 5,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-6",
@@ -86,7 +81,6 @@ export const wingedLightsSeedData = [
     displayOrder: 6,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-7",
@@ -101,7 +95,6 @@ export const wingedLightsSeedData = [
     displayOrder: 7,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-8",
@@ -116,7 +109,6 @@ export const wingedLightsSeedData = [
     displayOrder: 8,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-9",
@@ -131,7 +123,6 @@ export const wingedLightsSeedData = [
     displayOrder: 9,
     published: true,
   },
-
   {
     mapId: 1,
     code: "isle-wl-10",
@@ -144,6 +135,1683 @@ export const wingedLightsSeedData = [
       "Enter the Fire Trial in the Cave of Prophecy. The Winged Light is at the end of the trial.",
     ],
     displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-1",
+    label: 'WL1-Social Area',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, and remain in the Social Space.`,
+    `Head to the Stone Ark in the area.`,
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-2",
+    label: 'WL2-Butterfly Field (Cave)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, enter the small cave on the left.`,
+    ],
+    displayOrder: 2,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-3",
+    label: 'WL3-Butterfly Field (Dome Top)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, the Winged Light is on top of the small hill.`,
+    ],
+    displayOrder: 3,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-4",
+    label: 'WL4-Prairie Cave (Hole Left)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, go left and enter the passage.`,
+    `Fly toward Prairie Caves, head upward, and look for an opening on the left.`,
+    ],
+    displayOrder: 4,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-5",
+    label: 'WL5-Prairie Cave (Passage Hole)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, go left and enter the passage.`,
+    `Fly into Prairie Caves and continue toward the center. High on the wall to the right, you will find another passage.`,
+    ],
+    displayOrder: 5,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-6",
+    label: 'WL6-Prairie Village (Center Islet)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly toward the temple.`,
+    `When you enter the Village Islands, you will immediately see the Winged Light on the first island in front of you.`,
+    ],
+    displayOrder: 6,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-7",
+    label: 'WL7-Prairie Village (2-Player Door)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly toward the temple.`,
+    `When you enter the Village Islands, fly to the island on your left. The Winged Light is behind the large door.`,
+    ],
+    displayOrder: 7,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-8",
+    label: 'WL8-Prairie Village (Behind 2nd Bell Islet)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly toward the temple.`,
+    `When you enter the Village Islands, the Winged Light is behind the central Village Temple.`,
+    ],
+    displayOrder: 8,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-9",
+    label: 'WL9-Prairie Temple (Lower Roof)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly toward the temple.`,
+    `After leaving the Village Islands, continue toward the temple. The Winged Light is on the upper-left side of the temple.`,
+    ],
+    displayOrder: 9,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-10",
+    label: 'WL10-Prairie Temple (Upper Roof)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly toward the temple.`,
+    `After leaving the Village Islands, continue toward the temple. The second Winged Light here is at the very top of the temple.`,
+    ],
+    displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-11",
+    label: 'WL11-8 Player Puzzle Area(Cave)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly toward the temple.`,
+    `In the Village Islands, go to the island on the right. Enter through the door and climb upward.`,
+    `Look for an opening near the top of the mountain. Enter it to find the Winged Light.`,
+    ],
+    displayOrder: 11,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-12",
+    label: 'WL12-Birds Nest(Lower Islet)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `When you reach Bird's Nest, the Winged Light is on the island to the left.`,
+    ],
+    displayOrder: 12,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-13",
+    label: 'WL13-Birds Nest(Upper Islet)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-0',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, the Winged Light is on the island behind the central island with the ruined tower.`,
+    ],
+    displayOrder: 13,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-14",
+    label: 'WL14-Prairie Peaks (Hollow Bird Cave)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-18',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly left and enter the passage.`,
+    `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+    `After arriving, fly left and enter the small passage below. In the center of the cave, fly upward and look along the middle wall.`,
+    ],
+    displayOrder: 14,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-15",
+    label: 'WL15-Prairie Peaks (Crystal Cave)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-18',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly left and enter the passage.`,
+    `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+    `After arriving, continue inward and fly toward the large waterfall. Swim underneath it.`,
+    `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
+    ],
+    displayOrder: 15,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-16",
+    label: 'WL16-Prairie Peaks (Mountain Peak)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-18',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly left and enter the passage.`,
+    `After exiting, fly to the right, enter the small opening, and sit in the boat.`,
+    `After arriving, continue inward and fly to the tallest mountain. The Winged Light is at its summit.`,
+    `Enter the opening, swim through, surface, and fly inside. The Winged Light is beside the orb.`,
+    ],
+    displayOrder: 16,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-17",
+    label: 'WL17-Sanctuary Islands (Big floating Island)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `When you arrive at Sanctuary Islands, you will immediately see the Winged Light on the large floating island.`,
+    ],
+    displayOrder: 17,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-18",
+    label: 'WL18-Sanctuary Islands (Hole at Mountain Top)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `When you arrive at Sanctuary Islands, look for the small passage at the top of the largest island.`,
+    ],
+    displayOrder: 18,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-19",
+    label: 'WL19-Sanctuary Islands (3rd Floating Islet)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `When you arrive at Sanctuary Islands, look to the right for three small floating islands. The Winged Light is on the rightmost island.`,
+    ],
+    displayOrder: 19,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-20",
+    label: 'WL20-Sanctuary Islands (Edge of Cliff)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `At the back of Sanctuary Islands, look for the bells. This Winged Light is positioned below them.`,
+    ],
+    displayOrder: 20,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-21",
+    label: 'WL21-Sanctuary Islands (Jellyfish Cave)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `At Sanctuary Islands, look behind the largest island for the jellyfish cave.`,
+    ],
+    displayOrder: 21,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-22",
+    label: 'WL22-Sanctuary Islands (Bottom of Waterfall)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `At Sanctuary Islands, fly down and look for the large cave entrance behind the waterfall.`,
+    ],
+    displayOrder: 22,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-23",
+    label: 'WL23-Sanctuary Islands (High Above 2nd Ladder)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the left.`,
+    `Fly upward to find the Winged Light.`,
+    ],
+    displayOrder: 23,
+    published: true,
+  },
+
+  {
+    mapId: 2,
+    code: "prairie-wl-24",
+    label: 'WL24-Sanctuary Islands (Crab Cave)',
+    groupKey: 'wl-prairie',
+    seasonGroupKey: 'wl-prairie-6',
+    directions: [
+    `Enter Map 2, Daylight Prairie, then fly through the clouds.`,
+    `After landing in Butterfly Fields, fly right and enter the passage.`,
+    `In Bird's Nest, fly downward until you reach the cloud passage.`,
+    `At Sanctuary Islands, fly down and enter the large cave. Take the passage on the right.`,
+    `Enter the crab area, fly upward, and go through the next passage to find the Winged Light.`,
+    ],
+    displayOrder: 24,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-1",
+    label: 'WL1-Forest Entrance(Branch)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Before landing, look to the right for this Winged Light on a tree branch.`,
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-2",
+    label: 'WL2-Forest Entrance (3rd Gate)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first and second gates. You will find the Winged Light when you reach the third gate.`,
+    ],
+    displayOrder: 2,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-3",
+    label: 'WL3-Forest Brook (2nd Left Gazebo)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `Walk forward a little, then look up to the right to find a stone gazebo.`,
+    `Fly up to the gazebo to find the Winged Light.`,
+    ],
+    displayOrder: 3,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-4",
+    label: 'WL4-Forest Brook (Left Cave)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `Pass the stone shelter where a spirit is located, then look for an opening along the side of the wall.`,
+    ],
+    displayOrder: 4,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-5",
+    label: 'WL5-Forest Brook (1st Right Gazebo)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, fly toward the stone bridge ahead.`,
+    `Before reaching the bridge, fly upward to the stone gazebo on your left. The Winged Light is inside it.`,
+    ],
+    displayOrder: 5,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-6",
+    label: 'WL6-Forest Brook (End of Brook)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, head toward the bridge. You will find the Winged Light at the end of the tunnel.`,
+    ],
+    displayOrder: 6,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-7",
+    label: 'WL7-Sunny Forest (Behind Big Tree)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+    `When you enter Sunny Forest, continue toward the large trees. The Winged Light is on an elevated rock near the far end.`,
+    ],
+    displayOrder: 7,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-8",
+    label: 'WL8-Sunny Forest (Near the Bridge)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+    `When you enter Sunny Forest, fly toward the large trees on the right. The Winged Light is behind one of them.`,
+    ],
+    displayOrder: 8,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-9",
+    label: 'WL9-Underground Cavern (Bottom Gated Area)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+    `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+    `After descending, fly to the far end and then fly upward. Enter the tunnel and look for a gate in the lower-right area. The Winged Light is there.`,
+    ],
+    displayOrder: 9,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-10",
+    label: 'WL10-Underground Cavern (Birds Stream Cave)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+    `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+    `After descending, fly to the far end and then fly upward. Enter the tunnel, take the first passage on the left, and fly upward to find the Winged Light.`,
+    ],
+    displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-11",
+    label: 'WL11-Underground Cavern (Butterfly Cave)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-3',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first three gates. At Forest Brook, enter the tunnel in the wall on your right.`,
+    `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+    `After descending, fly to the far end and then fly upward. Enter the tunnel, go to the second cave on the left, use a Deep Call, and fly upward to find the Winged Light.`,
+    ],
+    displayOrder: 11,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-12",
+    label: 'WL12-Underground Cavern (Exit Gate)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-3',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, walk forward a little and enter the tunnel in the wall on your right.`,
+    `In Sunny Forest, head toward the broken bridge. Enter the tunnel beneath the tree on the left and perform the Pouty Porter expression.`,
+    `After descending, fly to the far end and then fly upward. Go to the Underground Cavern exit gate; the Winged Light is on its left side.`,
+    ],
+    displayOrder: 12,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-13",
+    label: 'WL13-Tree Tunnels (Big Tree)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-3',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, fly toward the tunnel at the far end.`,
+    `When you reach Boneyard, fly toward the tunnels. On the right, the Winged Light is inside an opening in the large tree.`,
+    ],
+    displayOrder: 13,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-14",
+    label: 'WL14-Boneyard (Top Tower)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-3',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, fly toward the tunnel at the far end.`,
+    `When you reach Boneyard, look for the tower on the left. The Winged Light is at the top of it.`,
+    ],
+    displayOrder: 14,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-15",
+    label: 'WL15-Boneyard (Last Gazebo)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, fly toward the tunnel at the far end.`,
+    `When you reach Boneyard, continue to the end of the broken bridges to find the Winged Light.`,
+    ],
+    displayOrder: 15,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-16",
+    label: 'WL16-Forest End (Tree Stump)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-0',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Pass through the first, second, and third gates. When you reach Forest Brook, fly to the left.`,
+    `At Forest Brook, fly toward the tunnel at the far end.`,
+    `When you reach Boneyard, fly toward the temple.`,
+    `Outside the temple, you will find the Winged Light on the left.`,
+    ],
+    displayOrder: 16,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-17",
+    label: 'WL17-TreeHouse (Hole in the Tree)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-9',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Before reaching the entrance gate, enter the tunnel on the right.`,
+    `After leaving the cave, look for a hammock on the right. The Winged Light is hidden higher up inside the tree.`,
+    ],
+    displayOrder: 17,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-18",
+    label: 'WL18-TreeHouse (Inside Treehouse)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-9',
+    directions: [
+    `Enter Map 3 | Hidden Forest and fly down through the clouds.`,
+    `Before reaching the entrance gate, enter the tunnel on the right.`,
+    `After leaving the cave, you will see a large treehouse. Enter it.`,
+    `Inside the treehouse is a passage leading downward, where you will find this spirit.`,
+    ],
+    displayOrder: 18,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-19",
+    label: 'WL19-Wind Paths (Wind Tunnel)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-19',
+    directions: [
+    `Enter Map 3 | Hidden Forest, fly to the right, and enter the tunnel.`,
+    `When you enter the Wind Paths, you will see a large island in the center.`,
+    `Fly down along the right side of the island and enter the tunnel marked by the red circle. You will exit through the tunnel marked by the yellow circle.`,
+    ],
+    displayOrder: 19,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-20",
+    label: 'WL20-Elevated Clearing(Bridge)',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-20',
+    directions: [
+    `Enter Map 3 | Hidden Forest and head to Forest Brook after passing through the third gate.`,
+    `At Forest Brook, enter the passage on the right that leads to the Elevated Clearing.`,
+    `Go near the bridge and look to the right for the branch that leads to the Seasonal Area.`,
+    ],
+    displayOrder: 20,
+    published: true,
+  },
+
+  {
+    mapId: 3,
+    code: "forest-wl-21",
+    label: 'WL21-Wind Paths Main Island',
+    groupKey: 'wl-forest',
+    seasonGroupKey: 'wl-forest-21',
+    directions: [
+    `Enter Map 3 | Hidden Forest, fly to the right, and enter the tunnel.`,
+    `When you enter the Wind Paths, you will see a large island in the center.`,
+    `Fly toward the right side of the central island. The Winged Light is along the edge near the top.`,
+    ],
+    displayOrder: 21,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-1",
+    label: 'WL1-Slope Entrance',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill. Steer your Sky kid to the left so that you pass through the Winged Light. You do not need to tap it, but you must pass through its center.`,
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-2",
+    label: 'WL2-Ice Rink (Underground)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter the passage beneath the Ice Rink. The Winged Light is near the broken boat.`,
+    ],
+    displayOrder: 2,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-3",
+    label: 'WL3-Ice Rink (Center Elevated)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `This Winged Light is on the elevated platform at the center of the Ice Rink.`,
+    ],
+    displayOrder: 3,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-4",
+    label: 'WL4-Citadel (Top Gazebo)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter the passage on the left toward the Citadel. The Winged Light is on the left of the two highest towers when you are facing the Flying Race entrance.`,
+    ],
+    displayOrder: 4,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-5",
+    label: 'WL5-Citadel (Hollowed Wall)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter the passage on the left toward the Citadel. Go to the lower section of the left tower while facing away from the Flying Race entrance. Pass through the Winged Light to collect it.`,
+    ],
+    displayOrder: 5,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-6",
+    label: 'WL6-Flying Race (Ruin Hall)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter the passage on the left toward the Citadel and begin the Flying Race. Make sure to pass through the center of the Winged Light because you cannot fly back after passing it.`,
+    `It is on the right side of the race. Pass through it to collect it.`,
+    ],
+    displayOrder: 6,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-7",
+    label: 'WL7-Flying Race (Floating Gazebo)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter the passage on the left toward the Citadel and begin the Flying Race. Make sure to pass through the center of the Winged Light because you cannot fly back after passing it.`,
+    `Look for the ruined tower among the floating rocks.`,
+    `Steer your Sky kid to the right and pass through the Winged Light to collect it.`,
+    ],
+    displayOrder: 7,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-8",
+    label: 'WL8-Skating Race (Elevated Platform)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter the middle passage and begin the Skating Race.`,
+    `The Winged Light is on a rock. Pass through it to collect it.`,
+    ],
+    displayOrder: 8,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-9",
+    label: 'WL9-Joined Race (End of Race)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter either the middle or left passage and complete one of the races.`,
+    `This Winged Light is at the end of both races, just before entering the Coliseum.`,
+    ],
+    displayOrder: 9,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-10",
+    label: 'WL10-Coliseum (Left Statue)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter either the middle or left passage and complete one of the races.`,
+    `When you reach the Coliseum, the Winged Light is on the left shoulder of the large left statue when facing the temple, or on your left when facing away from the temple.`,
+    ],
+    displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-11",
+    label: 'WL11-Temple (Temple Maze)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-0',
+    directions: [
+    `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
+    `Enter either the middle or left passage and complete one of the races.`,
+    `When you reach the Coliseum, enter the temple and turn left. There is a passage near the top of the wall.`,
+    `Follow the passage to find this Winged Light.`,
+    ],
+    displayOrder: 11,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-12",
+    label: 'WL12-Village of Dreams (Hollowed Mountain)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-8',
+    directions: [
+    `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+    `Skate downhill. One of the hills on the left has an opening containing the Winged Light.`,
+    ],
+    displayOrder: 12,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-13",
+    label: 'WL13-Village of Dreams (Hollowed Mountain)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-8',
+    directions: [
+    `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+    `Skate downhill. One of the hills on the right has an opening containing the Winged Light.`,
+    ],
+    displayOrder: 13,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-14",
+    label: 'WL14-Village Theater (Backstage)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-13',
+    directions: [
+    `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+    `When you reach the plaza, enter the passage on your right toward the Village Theater.`,
+    `Enter the Theater Hall. Behind the stage is a guitar beside a passage; enter that passage and follow it to the Winged Light at the end.`,
+    ],
+    displayOrder: 14,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-15",
+    label: 'WL15-Village of Dreams (Terminal 2 Tower)',
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-8',
+    directions: [
+    `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+    `From the plaza, climb toward the next boat terminal.`,
+    `The Winged Light is at the top of the tower in the center.`,
+    ],
+    displayOrder: 15,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-16",
+    label: `WL16-Hermit's Valley (Outside Hollow)`,
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-8',
+    directions: [
+    `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+    `From the plaza, climb toward the next boat terminal.`,
+    `Ride the ferry boat to Hermit's Valley. Behind you, on the right side of the mountain, is a cave containing the Winged Light.`,
+    ],
+    displayOrder: 16,
+    published: true,
+  },
+
+  {
+    mapId: 4,
+    code: "valley-wl-17",
+    label: `WL17-Hermit's Valley (Hollowed Wall)`,
+    groupKey: 'wl-valley',
+    seasonGroupKey: 'wl-valley-8',
+    directions: [
+    `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
+    `From the plaza, climb toward the next boat terminal.`,
+    `Ride the ferry boat to Hermit's Valley. You will find this Winged Light behind the mountain.`,
+    ],
+    displayOrder: 17,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-1",
+    label: 'WL1-Broken Temple (Pillar)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, find the tall pillar and fly to its top to reach the Winged Light.`,
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-2",
+    label: 'WL2-Broken Temple (Entrance)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, you will immediately see the Winged Light ahead.`,
+    ],
+    displayOrder: 2,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-3",
+    label: 'WL3-Graveyard Entrance (1 Krill Area)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, the Winged Light is on top of the broken tower on the right.`,
+    ],
+    displayOrder: 3,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-4",
+    label: 'WL4-Graveyard Entrance (Pillar)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side. The Winged Light is inside the pillar on the right.`,
+    ],
+    displayOrder: 4,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-5",
+    label: 'WL5-Graveyard (Near Catapult)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly to the right. The Winged Light is on the large, flat rock.`,
+    ],
+    displayOrder: 5,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-6",
+    label: 'WL6-Graveyard (Biggest Bone)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly toward the large rocks. The Winged Light is on the side of one of the rocks.`,
+    ],
+    displayOrder: 6,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-7",
+    label: 'WL7-Graveyard (Pipe)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly toward the large rocks. There is a tunnel on their left side.`,
+    `The Winged Light is inside the tunnel.`,
+    ],
+    displayOrder: 7,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-8",
+    label: 'WL8-Graveyard (Exit to Battlefield)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly to the right toward the stairs.`,
+    ],
+    displayOrder: 8,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-9",
+    label: 'WL9-Shipwreck (Hidden Wall)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side, then fly right and enter the tunnel.`,
+    `After entering the Shipwreck area, fly to the right. The Winged Light is inside a high opening in the wall.`,
+    ],
+    displayOrder: 9,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-10",
+    label: 'WL10-Shipwreck (Jars)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side, then fly right and enter the tunnel.`,
+    `After entering the Shipwreck area, fly inside the Shipwreck. The Winged Light is among the jars at the far end.`,
+    ],
+    displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-11",
+    label: 'WL11-Shipwreck (Pipes)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side, then fly right and enter the tunnel.`,
+    `After entering the Shipwreck area, fly to the left. You will find the Winged Light ahead near the stair-like tunnels.`,
+    ],
+    displayOrder: 11,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-12",
+    label: 'WL12-Battlefield (Broken Building)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly to the right toward the stairs.`,
+    `After exiting, the Winged Light is in the upper-right section of the ruined temple.`,
+    ],
+    displayOrder: 12,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-13",
+    label: 'WL13-Battlefield (Pillar)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly to the right toward the stairs.`,
+    `Fly toward the ruined temple. Before the gate at the far end, the Winged Light is behind the pillar on the left.`,
+    ],
+    displayOrder: 13,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-14",
+    label: 'WL14-Temple',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly toward the Broken Temple and enter the passage.`,
+    `When you reach the one-Krill area, fly toward the passage on the opposite side and continue skating downward.`,
+    `At the end, fly to the right toward the stairs.`,
+    `Fly toward the ruined temple, light the gate lock at the far end, and enter. The Winged Light is inside.`,
+    ],
+    displayOrder: 14,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-15",
+    label: 'WL15-Forgotten Ark (Ark Tip)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly to the right toward the boat and sit down.`,
+    `When you reach the Forgotten Ark, fly until you see the Ark. The Winged Light is at its front tip.`,
+    ],
+    displayOrder: 15,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-16",
+    label: 'WL16-Forgotten Ark (Polluted Pond)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland and fly downward through the clouds.`,
+    `After landing, fly to the right toward the boat and sit down.`,
+    `Fly toward the open field at the far end. Enter the small passage on the left; the Winged Light is inside.`,
+    ],
+    displayOrder: 16,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-17",
+    label: 'WL17-Treasure Reef (Broken Tower)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+    `When you reach the Treasure Reef, fly upward.`,
+    `There is a tall tower on the right. The Winged Light is at its top.`,
+    ],
+    displayOrder: 17,
+    published: true,
+  },
+
+  {
+    mapId: 5,
+    code: "wasteland-wl-18",
+    label: 'WL18-Treasure Reef (Deep Waters)',
+    groupKey: 'wl-wasteland',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 4 | Golden Wasteland, fly to the right, and sit in the boat.`,
+    `When you reach the Treasure Reef, fly upward.`,
+    `Across from the tall tower on the right, enter the rock opening in the sea and swim downward until you reach the bottom.`,
+    `Open the door on the left. The Winged Light is inside.`,
+    ],
+    displayOrder: 18,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-1",
+    label: 'WL1-Social Space (Ladder)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly to the left toward the staircase. The Winged Light is at the top of the stairs.`,
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-2",
+    label: 'WL2-Third Level (Roof of Gazeboo)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly toward the elevating platform and ascend to the third floor.`,
+    `The Winged Light is on the roof of the gazebo.`,
+    ],
+    displayOrder: 2,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-3",
+    label: 'WL3-Fourth Level (Inside of Gazeboo)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly toward the elevating platform and ascend to the fourth floor.`,
+    `Fly toward the Daylight Prairie constellation and look for the floating islet with a spiral staircase.`,
+    `The Winged Light is inside it.`,
+    ],
+    displayOrder: 3,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-4",
+    label: 'WL4-Fourth Level (Floating Land)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly toward the elevating platform and ascend to the fourth floor.`,
+    `Fly toward the Isle of Dawn constellation.`,
+    `The Winged Light is on the highest floating islet.`,
+    ],
+    displayOrder: 4,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-5",
+    label: 'WL5-Fifth Level (Bone)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly toward the elevating platform and ascend to the fifth floor.`,
+    `Fly toward the large bone. The Winged Light is resting on top of it.`,
+    ],
+    displayOrder: 5,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-6",
+    label: 'WL6-Summit',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly toward the elevating platform and continue ascending to the Summit.`,
+    `The Winged Light is at the foot of the temple shrine.`,
+    ],
+    displayOrder: 6,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-7",
+    label: 'WL7-The Archives (3rd Level)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly upward and open the two-player door on the right. Once it opens, enter the passage.`,
+    `Fly upward after entering, then go through the opening on the left.`,
+    `On the third descent, enter the room on the left with several jars. The Winged Light is behind them.`,
+    ],
+    displayOrder: 7,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-8",
+    label: 'WL8-The Archives (3rd Level)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly upward and open the two-player door on the right. Once it opens, enter the passage.`,
+    `Fly upward after entering, then go through the opening on the left.`,
+    `On the third descent, head toward the staircase and enter the opening above it to find the Winged Light.`,
+    ],
+    displayOrder: 8,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-9",
+    label: 'WL9-Dessert Starlight (Big Jar)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly upward and enter the passage on the left.`,
+    `After entering, fly upward and go through the opening on the left.`,
+    `Upon reaching Starlight Desert, fly toward the large jar on your right.`,
+    `The Winged Light is on top of it.`,
+    ],
+    displayOrder: 9,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-10",
+    label: 'WL10-Dessert Starlight (Watchtower Roof)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly upward and enter the passage on the left.`,
+    `After entering, fly upward and go through the opening on the left.`,
+    `Upon reaching Starlight Desert, fly toward the tall tower on your left.`,
+    `The Winged Light is on top of the tower.`,
+    ],
+    displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-11",
+    label: 'WL11-Dessert Starlight (Beckoning Ruler Island)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly upward and enter the passage on the left.`,
+    `After entering, fly upward and go through the opening on the left.`,
+    `Upon reaching Starlight Desert, fly toward the moon.`,
+    `The first floating island has a cross-shaped opening underneath it. The Winged Light is inside.`,
+    ],
+    displayOrder: 11,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-12",
+    label: 'WL12-Repository of Refuge (Broken Bars)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge.`,
+    `Fly toward the elevating platform.`,
+    `At the center, enter the passage on your left.`,
+    `Inside, enter the opening on your left and continue until you exit into the Repository of Refuge.`,
+    `Fly outside toward the right until you see a small light on your right. The Winged Light is outside, behind the bars.`,
+    ],
+    displayOrder: 12,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-13",
+    label: 'WL13-Crescent Oasis (Pool of Water)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+    `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+    `Head toward the Hunter Spirit. The Winged Light is behind and below that location.`,
+    ],
+    displayOrder: 13,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-14",
+    label: 'WL14-Crescent Oasis (Feudal Lord Building)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+    `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+    `Upon arrival, head toward the palace tower. The Winged Light is outside, behind the tower.`,
+    ],
+    displayOrder: 14,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-15",
+    label: 'WL15-Crescent Oasis (Hidden Glade Tree)',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+    `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+    `At Crescent Oasis, head toward the waterfalls and enter the cloud passage. Note: You must complete the final Nine-Colored Deer quest first.`,
+    `The Winged Light is beneath the tree.`,
+    ],
+    displayOrder: 15,
+    published: true,
+  },
+
+  {
+    mapId: 6,
+    code: "vault-wl-16",
+    label: 'WL16',
+    groupKey: 'wl-vault',
+    seasonGroupKey: null,
+    directions: [
+    `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
+    `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
+    ],
+    displayOrder: 16,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-1",
+    label: "Eden-WL1",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden",
+      "Open the big gate.",
+      "climp up unto the next level.",
+      "Winged light will be found inside the room.",
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-2",
+    label: "Eden-WL2",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Left side among the rocks a winged light.",
+    ],
+    displayOrder: 2,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-3",
+    label: "Eden-WL3",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "A winged light is just by the door.",
+    ],
+    displayOrder: 3,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-4",
+    label: "Eden-WL4",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 4,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-5",
+    label: "Eden-WL5",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 5,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-6",
+    label: "Eden-WL6",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 6,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-7",
+    label: "Eden-WL7",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 7,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-8",
+    label: "Eden-WL8",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 8,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-9",
+    label: "Eden-WL9",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 9,
+    published: true,
+  },
+
+  {
+    mapId: 7,
+    code: "eden-wl-10",
+    label: "Eden-WL10",
+    groupKey: "wl-eden",
+    seasonGroupKey: null,
+    directions: [
+      "Enter Map 7 | Eye of Eden, Open the big gate.",
+      "Climb up unto the 2nd and 3rd Level.",
+      "On the last level, before entering the doorway.",
+      "Winged lights are just along the pathway.",
+    ],
+    displayOrder: 10,
+    published: true,
+  },
+
+  {
+    mapId: 8,
+    code: "aviary-wl-1",
+    label: "WL1 - 2nd Ship Bowsprit",
+    groupKey: "wl-aviary",
+    seasonGroupKey: "wl-aviary-1",
+    directions: [
+      "In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.",
+      "After arriving, fly to the second ship. The Winged Light is on its bowsprit.",
+    ],
+    displayOrder: 1,
+    published: true,
+  },
+
+  {
+    mapId: 8,
+    code: "aviary-wl-2",
+    label: "WL2 - Wandering Carnival Boat Main Deck",
+    groupKey: "wl-aviary",
+    seasonGroupKey: "wl-aviary-2",
+    directions: [
+      "In Aviary Village, head toward the portals. On their right is a boat that will take you to the Wandering Carnival.",
+      "After arriving, board the ship, enter the passage on the right, and descend.",
+      "At the bottom, turn left and continue through the passages until you reach the Puzzle Director.",
+      "Behind the Puzzle Director are several rooms. Enter one and light the lamp inside.",
+      "The cabinet will move, revealing a secret passage on the right that leads to another room. The Winged Light is there.",
+    ],
+    displayOrder: 2,
     published: true,
   },
 ];

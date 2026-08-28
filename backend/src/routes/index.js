@@ -8,6 +8,8 @@ import mapRoutes from "../modules/maps/map.routes.js";
 import mapAdminRoutes from "../modules/maps/map.admin.routes.js";
 import spiritRoutes from "../modules/spirits/spirit.routes.js";
 import spiritAdminRoutes from "../modules/spirits/spirit.admin.routes.js";
+import wingedLightRoutes from "../modules/wingedLights/wingedLight.routes.js";
+import wingedLightAdminRoutes from "../modules/wingedLights/wingedLight.admin.routes.js";
 
 const router = Router();
 
@@ -29,9 +31,13 @@ router.use("/admin/news", newsAdminRoutes)
 
 router.use("/", spiritRoutes);
 
-router.use("/admin", spiritAdminRoutes);
+router.use("/", wingedLightRoutes);
 
 router.use("/maps", mapRoutes);
+
+router.use("/admin", spiritAdminRoutes);
+
+router.use("/admin", wingedLightAdminRoutes);
 
 router.use("/admin/maps", mapAdminRoutes);
 

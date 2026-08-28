@@ -209,3 +209,29 @@ export function uploadSpiritCollectibleImageToCloudinary(
     folder
   );
 }
+
+export function uploadWingedLightImageToCloudinary(
+  fileBuffer,
+  {
+    wingedLightCode,
+  }
+) {
+  const safeCode =
+    normalizeFolderPart(
+      wingedLightCode
+    );
+
+  const baseFolder =
+    env.CLOUDINARY_WINGED_LIGHTS_FOLDER ||
+    "skykidhero/winged-lights";
+
+  const folder = [
+    baseFolder,
+    safeCode,
+  ].join("/");
+
+  return uploadImageToCloudinary(
+    fileBuffer,
+    folder
+  );
+}

@@ -86,3 +86,8 @@ export const uploadSpiritMedia =
   createImageUploader({
     allowOctetStream: true,
   });
+
+export const uploadWingedLightImage =
+  createImageUploader({
+    allowOctetStream: true,
+  });
