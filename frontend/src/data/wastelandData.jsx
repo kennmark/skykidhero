@@ -751,6 +751,10 @@ export const wasteland = [
             visit_date: 'Jul 3, 2023',
             visitNo: 'GV#3',
           },
+          {
+            visit_date: 'Nov 6, 2025',
+            visitNo: 152,
+          },
         ],
         icon_route: SEASON4,
         spirit_guide_video_url: youtube_embed + 'dSfferJMUHM',
@@ -827,6 +831,10 @@ export const wasteland = [
             visit_date: 'Aug 7, 2023',
             visitNo: 'GV#4',
           },
+          {
+            visit_date: 'Dec 18, 2025',
+            visitNo: 155,
+          },
         ],
         icon_route: SEASON2,
         spirit_guide_video_url: youtube_embed + 'okCFgF0LnXw',
@@ -887,6 +895,10 @@ export const wasteland = [
           {
             visit_date: 'Apr 27, 2023',
             visitNo: 86,
+          },
+          {
+            visit_date: 'Feb 26, 2026',
+            visitNo: 160,
           },
         ],
         icon_route: SEASON5,
@@ -1010,7 +1022,7 @@ export const wasteland = [
           },
           {
             visit_date: 'Mar 16, 2023',
-            visitNo: 84,
+            visitNo: 83,
           },
           {
             visit_date: 'Jan 16, 2025',
@@ -1080,12 +1092,16 @@ export const wasteland = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Oct 12, 2021',
+            visit_date: 'Oct 28, 2021',
             visitNo: 47,
           },
           {
-            visit_date: 'Oct 1, 2023',
+            visit_date: 'Oct 12, 2023',
             visitNo: 98,
+          },
+          {
+            visit_date: 'Jun 18, 2026',
+            visitNo: 168,
           },
         ],
         icon_route: SEASON5,
@@ -1275,6 +1291,10 @@ export const wasteland = [
           {
             visit_date: 'Mar 4, 2024',
             visitNo: 'GV#5',
+          },
+          {
+            visit_date: 'Mar 26, 2026',
+            visitNo: 162,
           },
         ],
         icon_route: SEASON12,
@@ -1469,6 +1489,10 @@ export const wasteland = [
           {
             visit_date: 'Aug 7, 2023',
             visitNo: 'GV#4',
+          },
+          {
+            visit_date: 'Nov 20, 2025',
+            visitNo: 153,
           },
         ],
         icon_route: SEASON12,

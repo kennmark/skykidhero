@@ -843,6 +843,10 @@ export const isleOfDawn = [
             visit_date: 'May 15, 2023',
             visitNo: 'GV#2',
           },
+          {
+            visit_date: 'Sep 25, 2025',
+            visitNo: 149,
+          },
         ],
         icon_route: SEASON7,
         spirit_guide_video_url: youtube_embed + 'uGk2xSqdobk',
@@ -920,6 +924,10 @@ export const isleOfDawn = [
           {
             visit_date: 'Aug 3, 2023',
             visitNo: 93,
+          },
+          {
+            visit_date: 'Dec 4, 2025',
+            visitNo: 154,
           },
         ],
         icon_route: SEASON7,

@@ -594,7 +594,7 @@ export const vault = [
             visitNo: 35,
           },
           {
-            visit_date: 'Jul 8, 2022',
+            visit_date: 'Aug 4, 2022',
             visitNo: 67,
           },
           {
@@ -667,6 +667,10 @@ export const vault = [
           {
             visit_date: 'Jul 3, 2023',
             visitNo: 'GV#3',
+          },
+          {
+            visit_date: 'Jul 2, 2026',
+            visitNo: 169,
           },
         ],
         icon_route: SEASON1,
@@ -1080,8 +1084,12 @@ export const vault = [
             visitNo: 71,
           },
           {
-            visit_date: 'Jul 4, 2025',
+            visit_date: 'Jul 4, 2024',
             visitNo: 117,
+          },
+          {
+            visit_date: 'Apr 7, 2025',
+            visitNo: 'GV#8',
           },
         ],
         icon_route: SEASON10,

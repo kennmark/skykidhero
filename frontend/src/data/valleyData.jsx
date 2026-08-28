@@ -638,7 +638,7 @@ export const valley = [
           },
           {
             visit_date: 'Mar 18, 2021',
-            visitNo: 19,
+            visitNo: 31,
           },
           {
             visit_date: 'Jul 3, 2023',
@@ -647,6 +647,10 @@ export const valley = [
           {
             visit_date: 'Jun 6, 2024',
             visitNo: 115,
+          },
+          {
+            visit_date: 'Aug 27, 2026',
+            visitNo: 173,
           },
         ],
         icon_route: SEASON1,
@@ -716,6 +720,10 @@ export const valley = [
           {
             visit_date: 'Feb 1, 2024',
             visitNo: 106,
+          },
+          {
+            visit_date: 'Jun 4, 2026',
+            visitNo: 167,
           },
         ],
         spirit_guide_video_url: youtube_embed + 'gJMN_Wuq2lM',
@@ -787,6 +795,10 @@ export const valley = [
           {
             visit_date: 'Jun 22, 2023',
             visitNo: 90,
+          },
+          {
+            visit_date: 'Jan 15, 2026',
+            visitNo: 157,
           },
         ],
         icon_route: SEASON3,

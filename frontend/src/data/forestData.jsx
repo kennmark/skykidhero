@@ -744,6 +744,10 @@ export const hiddenForest = [
             visit_date: 'Mar 30, 2023',
             visitNo: 84,
           },
+          {
+            visit_date: 'Sep 11, 2025',
+            visitNo: 148,
+          },
         ],
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'ykP_DP2CuBQ',
@@ -814,6 +818,10 @@ export const hiddenForest = [
           {
             visit_date: 'Oct 13, 2022',
             visitNo: 72,
+          },
+          {
+            visit_date: 'Jun 5, 2025',
+            visitNo: 141,
           },
         ],
         spirit_guide_video_url: youtube_embed + '7LTOXtTzXc0',
@@ -941,6 +949,10 @@ export const hiddenForest = [
           {
             visit_date: 'Jun 8, 2023',
             visitNo: 89,
+          },
+          {
+            visit_date: 'Oct 9, 2025',
+            visitNo: 150,
           },
         ],
         icon_route: SEASON4,
@@ -1204,6 +1216,14 @@ export const hiddenForest = [
             visit_date: 'Mar 6, 2023',
             visitNo: 'GV#1',
           },
+          {
+            visit_date: 'Aug 28, 2025',
+            visitNo: 147,
+          },
+          {
+            visit_date: 'Feb 27, 2026',
+            visitNo: 'GV#12',
+          },
         ],
         icon_route: SEASON9,
         spirit_guide_video_url: youtube_embed + 'o_xH5KOe_nc',
@@ -1405,7 +1425,7 @@ export const hiddenForest = [
             visitNo: 87,
           },
           {
-            visit_date: 'Aug 14, 2023',
+            visit_date: 'Aug 14, 2025',
             visitNo: 146,
           },
         ],
@@ -1537,6 +1557,10 @@ export const hiddenForest = [
           {
             visit_date: 'Aug 17, 2023',
             visitNo: 94,
+          },
+          {
+            visit_date: 'May 8, 2025',
+            visitNo: 139,
           },
         ],
         icon_route: SEASON11,

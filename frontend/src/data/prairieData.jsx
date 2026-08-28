@@ -664,6 +664,10 @@ export const prairie = [
             visit_date: 'Mar 17, 2022',
             visitNo: 57,
           },
+          {
+            visit_date: 'Apr 10, 2025',
+            visitNo: 137,
+          },
         ],
         icon_route: SEASON1,
         spirit_guide_video_url: youtube_embed + 'HCmwZWxOkFM',
@@ -924,12 +928,12 @@ export const prairie = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Nov 25, 2021',
-            visitNo: 49,
+            visit_date: 'Jun 10, 2021',
+            visitNo: 37,
           },
           {
-            visit_date: 'Aug 31, 2023',
-            visitNo: 95,
+            visit_date: 'Jul 7, 2022',
+            visitNo: 65,
           },
           {
             visit_date: 'May 9, 2024',
@@ -1004,8 +1008,12 @@ export const prairie = [
             visitNo: 42,
           },
           {
-            visit_date: 'Jan 4, 2021',
+            visit_date: 'Jan 4, 2024',
             visitNo: 104,
+          },
+          {
+            visit_date: 'May 7, 2026',
+            visitNo: 165,
           },
         ],
         icon_route: SEASON6,
@@ -1137,6 +1145,10 @@ export const prairie = [
             visit_date: 'May 25, 2023',
             visitNo: 88,
           },
+          {
+            visit_date: 'Feb 12, 2026',
+            visitNo: 159,
+          },
         ],
         icon_route: SEASON6,
         spirit_guide_video_url: youtube_embed + '3qBtSHuGHtQ',
@@ -1202,12 +1214,16 @@ export const prairie = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Sep 21, 2021',
-            visitNo: 45,
+            visit_date: 'Feb 17, 2022',
+            visitNo: 55,
           },
           {
-            visit_date: 'May 25, 2023',
-            visitNo: 88,
+            visit_date: 'Aug 7, 2023',
+            visitNo: 'GV#4',
+          },
+          {
+            visit_date: 'Mar 12, 2026',
+            visitNo: 161,
           },
         ],
         icon_route: SEASON6,
@@ -1274,6 +1290,10 @@ export const prairie = [
           {
             visit_date: 'Aug 31, 2023',
             visitNo: 95,
+          },
+          {
+            visit_date: 'Apr 9, 2026',
+            visitNo: 163,
           },
         ],
         icon_route: SEASON6,
