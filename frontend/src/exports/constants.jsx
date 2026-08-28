@@ -70,14 +70,14 @@ export const WL_COUNT =
 
 export const WB_REGULAR_SPIRITS = 12 + ISLE_NUM_REG_SPIRIT + PRAIRIE_NUM_REG_SPIRIT + FOREST_NUM_REG_SPIRIT + VALLEY_NUM_REG_SPIRIT + WASTELAND_NUM_REG_SPIRIT + VAULT_NUM_REG_SPIRIT
 //!!!UPDATE THIS Wing Buff Count every new TS that hasnt arrived yet!!!
-export const WB_TRAVELING_SPIRITS = 92 // updated June 19, 2026 Group TS From Season of Revival
+export const WB_TRAVELING_SPIRITS = 96 // updated August 28, 2026 Group TS Season of 9 Colored Deer
 
 export const MS_HOME = 1
 
 export const TOTAL_WL_COUNT =
   WL_COUNT + WB_REGULAR_SPIRITS + WB_TRAVELING_SPIRITS + SHARDS_WL + ORBIT_WL
 
-export const TOTAL_MS_COUNT = // June 19, 2026 Group TS From Season of Revival
+export const TOTAL_MS_COUNT = // August 28, 2026 Group TS Season of 9 Colored Deer
   ISLE_NUM_MAP_SHRINES +
   PRAIRIE_NUM_MAP_SHRINES +
   FOREST_NUM_MAP_SHRINES +
@@ -88,10 +88,10 @@ export const TOTAL_MS_COUNT = // June 19, 2026 Group TS From Season of Revival
   AVIARY_NUM_MAP_SHRINES +
   MS_HOME
 
-export const WL_COUNT_DATE_UPDATED = 'June 19, 2026' // June 19, 2026 TS Group TS From Season of Revival
+export const WL_COUNT_DATE_UPDATED = 'August 28, 2026' // August 28, 2026 TS Group TS From Season of 9 Colored Deer
 export const MS_COUNT_DATE_UPDATED = 'July 21, 2025' // April 17, 2026 Season of Carnival
 
-export const PLAYSTATION_MAX_WL = 266
+export const PLAYSTATION_MAX_WL = 270
 export const STEAM_MAX_WL = 257
 
 export const dtsValue = false //Adjust During Daylight Time Saving Every March and November

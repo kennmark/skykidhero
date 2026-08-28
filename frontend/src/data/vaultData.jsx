@@ -1419,35 +1419,40 @@ export const vault = [
             label: 'Hair',
             img: HUNTER_ITEM_1,
             currency: 'Candles',
-            price: 0,
+            price: 53,
           },
           {
             label: 'Outfit',
             img: HUNTER_ITEM_2,
             currency: 'Candles',
-            price: 0,
+            price: 67,
           },
           {
             label: 'Cape',
             img: HUNTER_ITEM_3,
             currency: 'Candles',
-            price: 0,
+            price: 73,
           },
           {
             label: 'Emote',
             img: HUNTER,
             currency: 'Hearts',
-            price: 0,
+            price: 13,
           },
         ],
         spirit_tree_cost: [
           {
-            candles: 0,
-            hearts: 0,
+            candles: 206,
+            hearts: 13,
             ascended_candles: 2,
           },
         ],
-        number_of_visits: [],
+        number_of_visits: [
+          {
+            visit_date: 'Aug 28, 2026',
+            visitNo: 'GV#11',
+          },
+        ],
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + '2yjliDfvtdM',
         spirit_direction: [
@@ -1475,35 +1480,40 @@ export const vault = [
             label: 'Hair',
             img: GATHERER_ITEM_1,
             currency: 'Candles',
-            price: 0,
+            price: 46,
           },
           {
             label: 'Outfit',
             img: GATHERER_ITEM_2,
             currency: 'Candles',
-            price: 0,
+            price: 64,
           },
           {
             label: 'Prop',
             img: GATHERER_ITEM_3,
             currency: 'Candles',
-            price: 0,
+            price: 34,
           },
           {
             label: 'Emote',
             img: HERB_GATHERER,
             currency: 'Hearts',
-            price: 0,
+            price: 13,
           },
         ],
         spirit_tree_cost: [
           {
-            candles: 0,
-            hearts: 0,
+            candles: 162,
+            hearts: 13,
             ascended_candles: 2,
           },
         ],
-        number_of_visits: [],
+        number_of_visits: [
+          {
+            visit_date: 'Aug 28, 2026',
+            visitNo: 'GV#11',
+          },
+        ],
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + 'h0uDIdauBNM',
         spirit_direction: [
@@ -1531,19 +1541,19 @@ export const vault = [
             label: 'Hair Accessory',
             img: LORD_ITEM_1,
             currency: 'Candles',
-            price: 0,
+            price: 46,
           },
           {
             label: 'Mask',
             img: LORD_ITEM_2,
             currency: 'Candles',
-            price: 0,
+            price: 42,
           },
           {
             label: 'Cape',
             img: LORD_ITEM_3,
             currency: 'Candles',
-            price: 0,
+            price: 78,
           },
           {
             label: 'Friendship Action',
@@ -1554,12 +1564,17 @@ export const vault = [
         ],
         spirit_tree_cost: [
           {
-            candles: 0,
+            candles: 189,
             hearts: 0,
             ascended_candles: 2,
           },
         ],
-        number_of_visits: [],
+        number_of_visits: [
+          {
+            visit_date: 'Aug 28, 2026',
+            visitNo: 'GV#11',
+          },
+        ],
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + '83LkIYB5HEs',
         spirit_direction: [
@@ -1587,41 +1602,46 @@ export const vault = [
             label: 'Hair',
             img: PRINCESS_ITEM_1,
             currency: 'Candles',
-            price: 0,
+            price: 62,
           },
           {
             label: 'Mask',
             img: PRINCESS_ITEM_2,
             currency: 'Candles',
-            price: 0,
+            price: 46,
           },
           {
             label: 'Outfit',
             img: PRINCESS_ITEM_3,
             currency: 'Candles',
-            price: 0,
+            price: 71,
           },
           {
             label: 'Cape',
             img: PRINCESS_ITEM_4,
             currency: 'Candles',
-            price: 0,
+            price: 71,
           },
           {
             label: 'Emote',
             img: PRINCESS,
             currency: 'Hearts',
-            price: 0,
+            price: 13,
           },
         ],
         spirit_tree_cost: [
           {
-            candles: 0,
-            hearts: 0,
+            candles: 263,
+            hearts: 13,
             ascended_candles: 2,
           },
         ],
-        number_of_visits: [],
+        number_of_visits: [
+          {
+            visit_date: 'Aug 28, 2026',
+            visitNo: 'GV#11',
+          },
+        ],
         icon_route: SEASON20,
         spirit_guide_video_url: youtube_embed + 'XB_wHSO3nKA',
         spirit_direction: [
