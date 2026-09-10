@@ -804,6 +804,10 @@ export const vault = [
             visit_date: 'Nov 9, 2023',
             visitNo: 100,
           },
+          {
+            visit_date: 'Sep 10, 2026',
+            visitNo: 174,
+          },
         ],
         icon_route: SEASON3,
         spirit_guide_video_url: youtube_embed + 'brZdwktwP4E',
