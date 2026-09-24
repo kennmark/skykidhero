@@ -100,15 +100,15 @@ export const groupTs = false //Group TS arrived
 export const travelingSpirit = true //Ongoing Traveling Spirit
 export const travelingSpiritHint = true //Hint Traveling Spirit
 export const travelingSpiritHintImage = tsHintImage //Hint Image Traveling Spirit
-export const travelingSpiritDate = 'September 10 - 13, 2026' //Ongoing Traveling Spirit
-export const travellingSpiritSeasonId = 3
-export const travellingSpiritId = 5
+export const travelingSpiritDate = 'September 24 - 28, 2026' //Ongoing Traveling Spirit
+export const travellingSpiritSeasonId = 5
+export const travellingSpiritId = 1
 export const travelingSpiritHintUrl = 'https://www.facebook.com/photo?fbid=1484650910374273&set=a.606494871523219'
 export const travelingSpiritStartDate =
-  '2026-09-10'
+  '2026-09-24'
 
 export const travelingSpiritEndDate =
-  '2026-09-13'
+  '2026-09-28'
 
 // export const travelingSpiritDate =
 //   'August 6–10, 2026'

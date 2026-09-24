@@ -964,6 +964,11 @@ export const wasteland = [
             visit_date: 'Mar 4, 2024',
             visitNo: 'GV#5',
           },
+          {
+            visit_date: 'Sep 24, 2026',
+            visitNo: 175,
+          },
+          
         ],
         icon_route: SEASON5,
         spirit_guide_video_url: youtube_embed + 'ATyUO04_4FY',
