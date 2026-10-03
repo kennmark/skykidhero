@@ -25,6 +25,11 @@ import MapListPage from "./pages/Maps/MapListPage.jsx";
 import MapEditPage from "./pages/Maps/MapEditPage.jsx";
 import SpiritEditPage from "./pages/Spirits/SpiritEditPage.jsx";
 import WingedLightEditPage from "./pages/WingedLights/WingedLightEditPage.jsx";
+import SeasonsPage
+  from "./pages/Seasons/SeasonsPage.jsx";
+
+import SeasonEditPage
+  from "./pages/Seasons/SeasonEditPage.jsx";
 
 export default function App() {
   return (
@@ -97,6 +102,32 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <NewsEditPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/seasons"
+            element={
+              <ProtectedRoute>
+                <SeasonsPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/seasons/new"
+            element={
+              <ProtectedRoute>
+                <SeasonEditPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/seasons/:id/edit"
+            element={
+              <ProtectedRoute>
+                <SeasonEditPage />
               </ProtectedRoute>
             }
           />

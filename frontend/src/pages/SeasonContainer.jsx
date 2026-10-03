@@ -34,6 +34,7 @@ const seasonComponents = {
   's28-light-mending': lazy(() => import('./SeasonsPages/S28LightMendingPage')),
   's29-carnival': lazy(() => import('./SeasonsPages/S29CarnivalPage')),
   's30-dear-van-gogh': lazy(() => import('./SeasonsPages/S30VanGoghPage')),
+  's31-pearl': lazy(() => import('./SeasonsPages/S31PearlPage')),
 }
 
 const SeasonContainer = () => {

@@ -15,6 +15,7 @@ import { GIF_PRAIRIE, PRAIRIE_ALT } from '../exports/mapGIFs'
 import DifficultyCriteria from './components/DifficultyCriteria'
 import MapPageLayout from "./components/MapPageLayout";
 import useRegularSpirits from "../hooks/useRegularSpirits";
+import useMapWingedLights from "../hooks/useMapWingedLights";
 
 const PagePrairie = ({ mapData, }) => {
   const fallbackMap =
@@ -35,6 +36,14 @@ const PagePrairie = ({ mapData, }) => {
     const initialValue = JSON.parse(saved) || {} // Default to empty object if no saved data
     return initialValue
   })
+
+  const {
+    wingedLights,
+    count: wingedLightCount,
+    loading: wingedLightsLoading,
+    error: wingedLightsError,
+    retry: retryWingedLights,
+  } = useMapWingedLights(2);
 
   useEffect(() => {
     localStorage.setItem('checkedSpirits', JSON.stringify(checkedSpirits))
@@ -194,28 +203,56 @@ const PagePrairie = ({ mapData, }) => {
                       )
                     )}
 
-                    {body.winged_lights?.map(
-                      (
-                        wingedLight
-                      ) => (
-                        <CardContainer
-                          wingedLight={
-                            wingedLight
-                          }
-                          label={
-                            wingedLight.wl_label
-                          }
-                          location={
-                            wingedLight.wl_location
-                          }
-                          url={
-                            wingedLight.wl_url
-                          }
-                          key={
-                            wingedLight.wl_label
-                          }
-                        />
-                      )
+                    {activeTab === 'winged_lights' && (
+                      <>
+                        {wingedLightsLoading ? (
+                          <div className="w-full py-10 text-center text-sm text-gray-300">
+                            Loading Winged Lights...
+                          </div>
+                        ) : wingedLightsError ? (
+                          <div className="w-full py-8 text-center">
+                            <p className="text-sm text-red-300">
+                              {wingedLightsError}
+                            </p>
+
+                            <button
+                              type="button"
+                              onClick={retryWingedLights}
+                              className="mt-4 rounded-lg bg-[#fe7f2d] px-4 py-2 text-sm font-semibold text-[#233d4d]"
+                            >
+                              Try Again
+                            </button>
+                          </div>
+                        ) : wingedLights.length > 0 ? (
+                          wingedLights.map(
+                            (wingedLight) => (
+                              <CardContainer
+                                key={
+                                  wingedLight.code ||
+                                  wingedLight.wl_id
+                                }
+                                label={
+                                  wingedLight.wl_label
+                                }
+                                location={
+                                  wingedLight.wl_location
+                                }
+                                url={
+                                  wingedLight.wl_url
+                                }
+                                wingedLight={
+                                  wingedLight
+                                }
+                                realmName="Daylight Prairie"
+                              />
+                            )
+                          )
+                        ) : (
+                          <div className="w-full py-10 text-center text-sm text-gray-300">
+                            No Winged Lights are currently available.
+                          </div>
+                        )}
+                      </>
                     )}
 
                     {body.map_shrines?.map(

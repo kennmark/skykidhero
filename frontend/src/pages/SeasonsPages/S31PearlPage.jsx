@@ -6,20 +6,22 @@ import {
   TabsBody,
   TabPanel,
   Typography,
+  Spinner,
 } from '@material-tailwind/react'
 import SpiritCardContainer from '../components/SpiritCardContainer'
 import CardContainer from '../components/CardContainer'
 import PageHeaderContainer from '../components/PageHeaderContainer'
 import { SideBarContainer } from '../components/SidebarContainer'
 import DifficultyCriteria from '../components/DifficultyCriteria'
-import { SeasonTabHeader2 } from '../../data/seasonTabHeader'
-import { seasons2022 } from '../../data/seasons'
+import { SeasonTabHeader } from '../../data/seasonTabHeader'
+import { allSeasons, seasons2026 } from '../../data/seasons'
 import ScrollToTop from 'react-scroll-to-top'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import Banner from '../../assets/images/home-carousel/Season31-of-Pearl.webp'
 import SeasonQuestGiver from '../components/SeasonQuestGiver'
 import { SeasonGuidesData } from '../../data/seasonGuidesData'
-import ShardEvent from './../components/ShardEvent';
 
-const S14ShatteringPage = () => {
+const S31PearlPage = () => {
   const [activeTab, setActiveTab] = useState('info')
   const {
     id,
@@ -33,7 +35,13 @@ const S14ShatteringPage = () => {
     season_spirits,
     winged_lights,
     map_shrines,
-  } = seasons2022[2]
+    season_type,
+  } = seasons2026[3]
+
+  const currentSeasonId = seasons2026.length - 1
+  const isCurrentSeason =
+    allSeasons.length === seasons2026[currentSeasonId].id ? true : false
+  const dateToday = new Date()
 
   const [checkedSpirits, setCheckedSpirits] = useState(() => {
     const saved = localStorage.getItem('checkedSpirits')
@@ -64,13 +72,11 @@ const S14ShatteringPage = () => {
           height={25}
           width={75}
           title={name}
-          mapIntro={
-            'The ground shakes and the sky darkens... Unite, Sky kids, and bring your light to Season of Shattering!'
-          }
+          mapIntro={quick_info}
         />
         <Tabs id="custom-animation" value={activeTab}>
           <TabsHeader className="bg-[#233d4d] flex items-center">
-            {SeasonTabHeader2.map((headerTab, index) => {
+            {SeasonTabHeader.map((headerTab, index) => {
               return (
                 <MapTabHeaderContainer
                   {...headerTab}
@@ -92,42 +98,41 @@ const S14ShatteringPage = () => {
             <TabPanel key={activeTab} value={activeTab}>
               {activeTab === 'info' && (
                 <div className="text-gray-100 pb-5">
-                  <Typography className="mb-3">
-                    {quick_info} Nagsimula ito noong {time_duration}. May{' '}
-                    {spirit_num} na spirits sa season na ito at{' '}
-                    {wl_num ? 'May ' + wl_num : '(0) o walang winged light '}
-                    &nbsp; winged light(s). Sa season na ito ay
-                    {ms_num
-                      ? ' may ' + ms_num
-                      : ' (0) o walang map shrine'}{' '}
-                    &nbsp;map shrine(s).
-                  </Typography>{' '}
-                  <Typography className="mb-3">
-                    Ang Shard Schedules ay hindi sunod-sunod. Upang makapasok sa
-                    void memories, Red Shards Eruption ang tanging paraan para
-                    makapasok. Mayroong Jellyfish Void bilang 1st void, Crabs &
-                    Flying Darkness Plants void 2nd void, Mantas Void naman
-                    bilang 3rd void, Krill Void bilang 4th void, Whale void
-                    bilang 5th void, at Elders Void bilang 6th void.
-                  </Typography>
+                  <LazyLoadImage
+                    src={Banner}
+                    alt={name}
+                    title={name}
+                    placeholderSrc={
+                      <Spinner className="h-10 w-10 text-gray-900/50" />
+                    }
+                    effect="blur"
+                    className="rounded-xl"
+                  />
                   <Typography>
-                    Kung ito ay unang beses mo palang gagawin ang Red Shards
-                    Eruption, ay maari mong ulit-ulitin habang ginagawa mo ang
-                    quest sa Shattering Void Spaces. Tandaan na bago ka lumabas
-                    sa void space ay pindutin ang susunod na quest ng Shard
-                    Quest Giver, upang ma-unlock mo at macomplete mo ang quest
-                    at balik ka nanaman sa location ng Shard Eruption that day.
-                  </Typography>
-                  <SeasonQuestGiver 
-                    {...SeasonGuidesData[11]}
+                    {quick_info}{' '}
+                    {time_duration === dateToday
+                      ? 'Nagsimula ito noong '
+                      : 'Magsisimula ito ngayong '}
+                    {time_duration}.{' '}
+                    {spirit_num > 0
+                      ? `May ${spirit_num} na spirits sa season na
+                    ito. `
+                      : `Walang spirit sa season na ito. `}{' '}
+                    At {wl_num ? 'May ' + wl_num : '(0) o walang'}
+                    &nbsp; winged light(s). Sa season na ito ay
+                    {ms_num ? ' may ' + ms_num : ' (0) o walang'} &nbsp;map
+                    shrine(s).
+                  </Typography>{' '}
+                   <SeasonQuestGiver 
+                    {...SeasonGuidesData[28]}
                     icon_route={icon_route}
                   />
-                  <ShardEvent />
+                  <br />
                 </div>
               )}
 
               <div className="flex flex-wrap justify-center gap-3">
-                {activeTab === 'collectibles' &&
+                {activeTab === 'season_spirits' &&
                   season_spirits?.map((spirit) => {
                     return (
                       <SpiritCardContainer
@@ -135,6 +140,7 @@ const S14ShatteringPage = () => {
                         icon_route={icon_route}
                         key={spirit.spirit_id}
                         season={name}
+                        isCurrentSeason={isCurrentSeason}
                         checkedSpirits={checkedSpirits}
                         handleCheckboxChange={handleCheckboxChange}
                       />
@@ -144,23 +150,10 @@ const S14ShatteringPage = () => {
                   winged_lights?.map((wingedLight) => {
                     return (
                       <CardContainer
-                        label={
-                          wingedLight.wl_label
-                        }
-                        location={
-                          wingedLight.wl_location
-                        }
-                        url={
-                          wingedLight.wl_url
-                        }
-                        wingedLight={
-                          wingedLight
-                        }
-                        realmName="Shattering Void"
-                        key={
-                          wingedLight.id ||
-                          wingedLight.wl_label
-                        }
+                        label={wingedLight.wl_label}
+                        location={wingedLight.wl_location}
+                        url={wingedLight.wl_url}
+                        key={wingedLight.wl_label}
                       />
                     )
                   })}
@@ -188,4 +181,4 @@ const S14ShatteringPage = () => {
   )
 }
 
-export default S14ShatteringPage
+export default S31PearlPage

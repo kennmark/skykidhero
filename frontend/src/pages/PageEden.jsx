@@ -14,7 +14,7 @@ import CardContainer from './components/CardContainer'
 import { GIF_EDEN, EDEN_ALT } from '../exports/mapGIFs'
 import MapPageLayout from "./components/MapPageLayout"
 import DifficultyCriteria from './components/DifficultyCriteria'
-
+import useMapWingedLights from "../hooks/useMapWingedLights";
 
 const PageEden = ({ mapData, }) => {
   const [activeTab, setActiveTab] = useState('winged_lights')
@@ -28,6 +28,14 @@ const PageEden = ({ mapData, }) => {
 
   const mapIntro =
   fallbackMap?.map_intro || ""
+
+  const {
+    wingedLights,
+    count: wingedLightCount,
+    loading: wingedLightsLoading,
+    error: wingedLightsError,
+    retry: retryWingedLights,
+  } = useMapWingedLights(7);
 
   return (
     <MapPageLayout
@@ -139,28 +147,56 @@ const PageEden = ({ mapData, }) => {
                       )
                     )}
 
-                    {body.winged_lights?.map(
-                      (
-                        wingedLight
-                      ) => (
-                        <CardContainer
-                          wingedLight={
-                            wingedLight
-                          }
-                          label={
-                            wingedLight.wl_label
-                          }
-                          location={
-                            wingedLight.wl_location
-                          }
-                          url={
-                            wingedLight.wl_url
-                          }
-                          key={
-                            wingedLight.wl_label
-                          }
-                        />
-                      )
+                    {activeTab === 'winged_lights' && (
+                      <>
+                        {wingedLightsLoading ? (
+                          <div className="w-full py-10 text-center text-sm text-gray-300">
+                            Loading Winged Lights...
+                          </div>
+                        ) : wingedLightsError ? (
+                          <div className="w-full py-8 text-center">
+                            <p className="text-sm text-red-300">
+                              {wingedLightsError}
+                            </p>
+
+                            <button
+                              type="button"
+                              onClick={retryWingedLights}
+                              className="mt-4 rounded-lg bg-[#fe7f2d] px-4 py-2 text-sm font-semibold text-[#233d4d]"
+                            >
+                              Try Again
+                            </button>
+                          </div>
+                        ) : wingedLights.length > 0 ? (
+                          wingedLights.map(
+                            (wingedLight) => (
+                              <CardContainer
+                                key={
+                                  wingedLight.code ||
+                                  wingedLight.wl_id
+                                }
+                                label={
+                                  wingedLight.wl_label
+                                }
+                                location={
+                                  wingedLight.wl_location
+                                }
+                                url={
+                                  wingedLight.wl_url
+                                }
+                                wingedLight={
+                                  wingedLight
+                                }
+                                realmName="Eye of Eden"
+                              />
+                            )
+                          )
+                        ) : (
+                          <div className="w-full py-10 text-center text-sm text-gray-300">
+                            No Winged Lights are currently available.
+                          </div>
+                        )}
+                      </>
                     )}
 
                     {body.map_shrines?.map(

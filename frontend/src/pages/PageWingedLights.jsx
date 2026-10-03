@@ -37,120 +37,113 @@ import { SideBarContainer } from './components/SidebarContainer'
 import WingedLightCheckbox from './components/WingedLightCheckbox'
 import { WINGED_LIGHT } from '../exports/defaultImages'
 
-import { isleOfDawn } from '../data/isleOfDawnData'
-import { prairie } from '../data/prairieData'
-import { hiddenForest } from '../data/forestData'
-import { valley } from '../data/valleyData'
-import { wasteland } from '../data/wastelandData'
-import { vault } from '../data/vaultData'
-import { eden } from '../data/edenData'
-import { aviaryData } from '../data/aviarydata'
 import { seasons2022 } from '../data/seasons'
 import useWingedLightProgress from '../hooks/useWingedLightProgress'
+import useAllMapWingedLights from '../hooks/useAllMapWingedLights'
 
 import {
-  AVIARY_NUM_WL,
-  EDEN_NUM_WL,
-  FOREST_NUM_WL,
-  ISLE_NUM_WL,
   ORBIT_WL,
   PLAYSTATION_MAX_WL,
-  PRAIRIE_NUM_WL,
   SHARDS_WL,
   STEAM_MAX_WL,
   TOTAL_WL_COUNT,
-  VALLEY_NUM_WL,
-  VAULT_NUM_WL,
-  WASTELAND_NUM_WL,
   WB_REGULAR_SPIRITS,
   WB_TRAVELING_SPIRITS,
   WL_COUNT,
   WL_COUNT_DATE_UPDATED,
 } from '../exports/constants'
 
-const REALMS = [
+const MAP_REALMS = [
   {
     id: 'isle',
+    mapId: 1,
     name: 'Isle of Dawn',
     shortName: 'Isle',
-    count: ISLE_NUM_WL,
     Icon: SunIcon,
-    accent: 'from-amber-400/20 via-orange-400/5 to-transparent',
-    items: isleOfDawn?.[2]?.winged_lights ?? [],
+    accent:
+      'from-amber-400/20 via-orange-400/5 to-transparent',
   },
   {
     id: 'prairie',
+    mapId: 2,
     name: 'Daylight Prairie',
     shortName: 'Prairie',
-    count: PRAIRIE_NUM_WL,
     Icon: CloudIcon,
-    accent: 'from-emerald-400/20 via-cyan-400/5 to-transparent',
-    items: prairie?.[2]?.winged_lights ?? [],
+    accent:
+      'from-emerald-400/20 via-cyan-400/5 to-transparent',
   },
   {
     id: 'forest',
+    mapId: 3,
     name: 'Hidden Forest',
     shortName: 'Forest',
-    count: FOREST_NUM_WL,
     Icon: BoltIcon,
-    accent: 'from-cyan-400/20 via-blue-400/5 to-transparent',
-    items: hiddenForest?.[2]?.winged_lights ?? [],
+    accent:
+      'from-cyan-400/20 via-blue-400/5 to-transparent',
   },
   {
     id: 'valley',
+    mapId: 4,
     name: 'Valley of Triumph',
     shortName: 'Valley',
-    count: VALLEY_NUM_WL,
     Icon: TrophyIcon,
-    accent: 'from-sky-400/20 via-indigo-400/5 to-transparent',
-    items: valley?.[2]?.winged_lights ?? [],
+    accent:
+      'from-sky-400/20 via-indigo-400/5 to-transparent',
   },
   {
     id: 'wasteland',
+    mapId: 5,
     name: 'Golden Wasteland',
     shortName: 'Wasteland',
-    count: WASTELAND_NUM_WL,
     Icon: FireIcon,
-    accent: 'from-lime-400/15 via-yellow-400/5 to-transparent',
-    items: wasteland?.[2]?.winged_lights ?? [],
+    accent:
+      'from-lime-400/15 via-yellow-400/5 to-transparent',
   },
   {
     id: 'vault',
+    mapId: 6,
     name: 'Vault of Knowledge',
     shortName: 'Vault',
-    count: VAULT_NUM_WL,
     Icon: BuildingLibraryIcon,
-    accent: 'from-violet-400/20 via-fuchsia-400/5 to-transparent',
-    items: vault?.[2]?.winged_lights ?? [],
+    accent:
+      'from-violet-400/20 via-fuchsia-400/5 to-transparent',
   },
   {
     id: 'eden',
+    mapId: 7,
     name: 'Eye of Eden',
     shortName: 'Eden',
-    count: EDEN_NUM_WL,
     Icon: EyeIcon,
-    accent: 'from-red-400/20 via-orange-400/5 to-transparent',
-    items: eden?.[2]?.winged_lights ?? [],
-  },
-  {
-    id: 'shattering',
-    name: 'Shattering Void Space',
-    shortName: 'Shattering',
-    count: SHARDS_WL,
-    Icon: SparklesIcon,
-    accent: 'from-purple-400/20 via-pink-400/5 to-transparent',
-    items: seasons2022?.[2]?.winged_lights ?? [],
+    accent:
+      'from-red-400/20 via-orange-400/5 to-transparent',
   },
   {
     id: 'aviary',
+    mapId: 8,
     name: 'Aviary Village',
     shortName: 'Aviary',
-    count: AVIARY_NUM_WL,
     Icon: HomeModernIcon,
-    accent: 'from-orange-400/20 via-amber-400/5 to-transparent',
-    items: aviaryData?.[2]?.winged_lights ?? [],
+    accent:
+      'from-orange-400/20 via-amber-400/5 to-transparent',
   },
 ]
+
+const SHATTERING_REALM = {
+  id: 'shattering',
+  name:
+    'Shattering Void Space',
+  shortName:
+    'Shattering',
+  count: SHARDS_WL,
+  Icon: SparklesIcon,
+  accent:
+    'from-purple-400/20 via-pink-400/5 to-transparent',
+
+  items:
+    seasons2022?.[2]
+      ?.winged_lights ??
+    [],
+}
 
 const SOURCE_BREAKDOWN = [
   {
@@ -773,10 +766,51 @@ export default function PageWingedLights() {
   const [selectedGuide, setSelectedGuide] =
     useState(null)
 
+  const {
+  wingedLightsByMap,
+  totalCount:
+    mapWingedLightCount,
+  loading:
+    wingedLightsLoading,
+  error:
+    wingedLightsError,
+  retry:
+    retryWingedLights,
+} = useAllMapWingedLights()
+
+  const realms = useMemo(
+    () => {
+      const mapRealms =
+        MAP_REALMS.map(
+          (realm) => {
+            const items =
+              wingedLightsByMap[
+                realm.mapId
+              ] ?? []
+
+            return {
+              ...realm,
+
+              count:
+                items.length,
+
+              items,
+            }
+          }
+        )
+
+      return [
+        ...mapRealms,
+        SHATTERING_REALM,
+      ]
+    },
+    [wingedLightsByMap]
+  )
+
   const filteredRealms = useMemo(() => {
     const query = normalize(search)
 
-    return REALMS.map((realm) => {
+    return realms.map((realm) => {
       const realmMatches =
         normalize(realm.name).includes(query) ||
         normalize(realm.shortName).includes(query)
@@ -795,7 +829,7 @@ export default function PageWingedLights() {
         filteredItems,
       }
     }).filter((realm) => !query || realm.filteredItems.length > 0)
-  }, [search])
+  }, [realms, search])
 
   useEffect(() => {
     if (!search.trim()) return
@@ -1048,13 +1082,17 @@ export default function PageWingedLights() {
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-              {REALMS.map((realm) => (
-                <RealmNavigator
-                  key={realm.id}
-                  realm={realm}
-                  onSelect={handleRealmSelect}
-                />
-              ))}
+              {realms.map(
+                (realm) => (
+                  <RealmNavigator
+                    key={realm.id}
+                    realm={realm}
+                    onSelect={
+                      handleRealmSelect
+                    }
+                  />
+                )
+              )}
             </div>
           </section>
 
@@ -1106,50 +1144,101 @@ export default function PageWingedLights() {
                 </div>
               </div>
             </div>
+            <strong className="mt-3 block text-3xl font-black text-white">
+              {wingedLightsLoading ? (
+                <div className="mt-4 rounded-[1.75rem] border border-white/10 bg-[#102a37]/60 px-5 py-12 text-center">
+                  <SparklesIcon
+                    aria-hidden="true"
+                    className="mx-auto h-9 w-9 animate-pulse text-[#fe7f2d]"
+                  />
 
-            {filteredRealms.length > 0 ? (
-              <div className="mt-4 space-y-3">
-                {filteredRealms.map((realm) => (
-                  <div
-                    key={realm.id}
-                    id={`winged-light-${realm.id}`}
-                    className="scroll-mt-24"
+                  <p className="mt-4 text-sm font-bold text-white/60">
+                    Loading Map Winged
+                    Lights...
+                  </p>
+                </div>
+                ) : wingedLightsError ? (
+                <div className="mt-4 rounded-[1.75rem] border border-red-400/20 bg-red-500/10 px-5 py-10 text-center">
+                  <p className="text-sm font-bold text-red-200">
+                    {
+                      wingedLightsError
+                    }
+                  </p>
+
+                  <button
+                    type="button"
+                    onClick={
+                      retryWingedLights
+                    }
+                    className="mt-5 rounded-full bg-[#fe7f2d] px-5 py-2.5 text-sm font-black text-[#233d4d]"
                   >
-                    <RealmAccordion
-                      realm={realm}
-                      isOpen={openRealm === realm.id}
-                      onToggle={() =>
-                        setOpenRealm(openRealm === realm.id ? '' : realm.id)
-                      }
-                      onOpenGuide={setSelectedGuide}
-                    />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="mt-4 rounded-[1.75rem] border border-dashed border-white/10 bg-[#102a37]/60 px-5 py-16 text-center">
-                <MagnifyingGlassIcon
-                  aria-hidden="true"
-                  className="mx-auto h-10 w-10 text-white/20"
-                />
+                    Try again
+                  </button>
+                </div>
+                ) : filteredRealms.length >
+                0 ? (
+                <div className="mt-4 space-y-3">
+                  {filteredRealms.map(
+                    (realm) => (
+                      <div
+                        key={realm.id}
+                        id={`winged-light-${realm.id}`}
+                        className="scroll-mt-24"
+                      >
+                        <RealmAccordion
+                          realm={
+                            realm
+                          }
+                          isOpen={
+                            openRealm ===
+                            realm.id
+                          }
+                          onToggle={() =>
+                            setOpenRealm(
+                              openRealm ===
+                                realm.id
+                                ? ''
+                                : realm.id
+                            )
+                          }
+                          onOpenGuide={
+                            setSelectedGuide
+                          }
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+                ) : (
+                <div className="mt-4 rounded-[1.75rem] border border-dashed border-white/10 bg-[#102a37]/60 px-5 py-16 text-center">
+                  <MagnifyingGlassIcon
+                    aria-hidden="true"
+                    className="mx-auto h-10 w-10 text-white/20"
+                  />
 
-                <h3 className="mt-4 text-lg font-black text-white/70">
-                  No Winged Light locations found
-                </h3>
+                  <h3 className="mt-4 text-lg font-black text-white/70">
+                    No Winged Light
+                    locations found
+                  </h3>
 
-                <p className="mt-2 text-sm text-white/35">
-                  Try another realm, landmark, or location.
-                </p>
+                  <p className="mt-2 text-sm text-white/35">
+                    Try another realm,
+                    landmark, or
+                    location.
+                  </p>
 
-                <button
-                  type="button"
-                  onClick={() => setSearch('')}
-                  className="mt-5 rounded-full bg-[#fe7f2d] px-5 py-2.5 text-sm font-black text-[#233d4d]"
-                >
-                  Clear search
-                </button>
-              </div>
-            )}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setSearch('')
+                    }
+                    className="mt-5 rounded-full bg-[#fe7f2d] px-5 py-2.5 text-sm font-black text-[#233d4d]"
+                  >
+                    Clear search
+                  </button>
+                </div>
+              )}
+            </strong>
           </section>
 
           <section className="mt-8 rounded-[1.75rem] border border-[#fe7f2d]/20 bg-[#fe7f2d]/10 p-5 sm:mt-10 sm:p-7">

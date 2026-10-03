@@ -1,3 +1,28 @@
+export const MAP_WINGED_LIGHT_COUNT_PROJECTION = {
+  _count: {
+    select: {
+      wingedLights: {
+        where: {
+          published: true,
+          deletedAt: null,
+        },
+      },
+    },
+  },
+};
+
+export const MAP_ADMIN_WINGED_LIGHT_COUNT_PROJECTION = {
+  _count: {
+    select: {
+      wingedLights: {
+        where: {
+          deletedAt: null,
+        },
+      },
+    },
+  },
+};
+
 export const MAP_SECTION_PUBLIC_PROJECTION = {
   id: true,
   type: true,
@@ -29,10 +54,17 @@ export const MAP_LIST_PROJECTION = {
    * constellation navigation.
    */
   mapConstellationIcon: true,
+  /*
+   * Derived count of published,
+   * non-deleted Winged Lights
+   * belonging to this Map.
+   */
+  ...MAP_WINGED_LIGHT_COUNT_PROJECTION,
 };
 
 export const MAP_DETAIL_PROJECTION = {
   ...MAP_LIST_PROJECTION,
+  ...MAP_ADMIN_WINGED_LIGHT_COUNT_PROJECTION,
 
   mapGif: true,
   mapConstellationImage: true,
@@ -65,7 +97,8 @@ export const MAP_ADMIN_LIST_PROJECTION = {
 
 export const MAP_ADMIN_DETAIL_PROJECTION = {
   ...MAP_ADMIN_LIST_PROJECTION,
-
+  ...MAP_ADMIN_WINGED_LIGHT_COUNT_PROJECTION,
+  
   imagePublicId: true,
 
   mapGifPublicId: true,

@@ -1767,4 +1767,87 @@ export const SeasonGuidesData = [
             // },
         ]
     },
+        {
+        seasonNo: 31,
+        seasonName: 'Pearl',
+        seasonGuideName: `Pearl Guide`,
+        seasonGuideImg: S30GUIDE,
+        guideDescription: 'Season Quest is available for all players to complete and relive. Guide is at Story Space - Starry Gallery.',
+        ultiGifts: [
+            {
+                ultGiftName: 'Hair',
+                ultGiftImg: S30ULTIGIFT1,
+                ultGiftPrice: 1,
+                ultGiftHeartIco: S30HEART
+            },
+            {
+                ultGiftName: 'Cape',
+                ultGiftImg: S30ULTIGIFT2,
+                ultGiftPrice: 2,
+                ultGiftHeartIco: S30HEART
+            },
+            {
+                ultGiftName: 'Prop',
+                ultGiftImg: S30ULTIGIFT3,
+                ultGiftPrice: 1,
+                ultGiftHeartIco: S30HEART
+            },
+        ],
+        propObtainable: true,
+        seasonGuideGifts: [
+            {
+                propGiftName: 'Prop',
+                propGiftImg: S30PROP1,
+                propGiftPrice: 0,
+                propGiftCandleIco: whiteCandle
+            },
+            {
+                propGiftName: 'Prop',
+                propGiftImg: S30PROP2,
+                propGiftPrice: 0,
+                propGiftCandleIco: whiteCandle
+            },
+            {
+                propGiftName: 'Prop',
+                propGiftImg: S30PROP3,
+                propGiftPrice: 0,
+                propGiftCandleIco: whiteCandle
+            },
+            {
+                propGiftName: 'Prop',
+                propGiftImg: S30PROP4,
+                propGiftPrice: 0,
+                propGiftCandleIco: whiteCandle
+            },
+            {
+                propGiftName: 'Prop',
+                propGiftImg: S30PROP5,
+                propGiftPrice: 0,
+                propGiftCandleIco: whiteCandle
+            },
+            {
+                propGiftName: 'Prop',
+                propGiftImg: S30PROP6,
+                propGiftPrice: 0,
+                propGiftCandleIco: whiteCandle
+            },
+        ],
+        isAvailable: false,
+        iapItems: [
+            // {
+            //     iapName: `Moominmamma's Masterpiece Cape`,
+            //     iapImg: S29LIMITEDITEM1,
+            //     iapPrice: 1499,
+            // },
+        ],
+        isLimitedItems: false,
+        limitedItems: [
+            // {
+            //     limitedItemName: 'Mask',
+            //     limitedItemImg: S29LIMITEDITEM1,
+            //     limitedItemPrice: 'X',
+            //     limitedItemCandleIco: whiteCandle
+            // },
+        ]
+    },
 ]

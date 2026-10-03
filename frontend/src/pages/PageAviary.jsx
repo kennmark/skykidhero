@@ -20,6 +20,7 @@ import {
   hasAscendedCandleCost,
 } from '../utils/wingedLightProgress'
 import MapPageLayout from "./components/MapPageLayout"
+import useMapWingedLights from "../hooks/useMapWingedLights";
 
 function normalizeAviaryCollectible(
   spirit
@@ -373,6 +374,14 @@ const PageAviary = ({ mapData, }) => {
     return initialValue
   })
 
+  const {
+    wingedLights,
+    count: wingedLightCount,
+    loading: wingedLightsLoading,
+    error: wingedLightsError,
+    retry: retryWingedLights,
+  } = useMapWingedLights(8);
+
   useEffect(() => {
     localStorage.setItem('checkedSpirits', JSON.stringify(checkedSpirits))
   }, [checkedSpirits])
@@ -509,30 +518,56 @@ const PageAviary = ({ mapData, }) => {
                   }
                 )}
 
-                {body.winged_lights?.map(
-                  (wingedLight) => (
-                    <CardContainer
-                      wingedLight={
-                        wingedLight
-                      }
+                {activeTab === 'winged_lights' && (
+                  <>
+                    {wingedLightsLoading ? (
+                      <div className="w-full py-10 text-center text-sm text-gray-300">
+                        Loading Winged Lights...
+                      </div>
+                    ) : wingedLightsError ? (
+                      <div className="w-full py-8 text-center">
+                        <p className="text-sm text-red-300">
+                          {wingedLightsError}
+                        </p>
 
-                      label={
-                        wingedLight.wl_label
-                      }
-
-                      location={
-                        wingedLight.wl_location
-                      }
-
-                      url={
-                        wingedLight.wl_url
-                      }
-
-                      key={
-                        wingedLight.wl_label
-                      }
-                    />
-                  )
+                        <button
+                          type="button"
+                          onClick={retryWingedLights}
+                          className="mt-4 rounded-lg bg-[#fe7f2d] px-4 py-2 text-sm font-semibold text-[#233d4d]"
+                        >
+                          Try Again
+                        </button>
+                      </div>
+                    ) : wingedLights.length > 0 ? (
+                      wingedLights.map(
+                        (wingedLight) => (
+                          <CardContainer
+                            key={
+                              wingedLight.code ||
+                              wingedLight.wl_id
+                            }
+                            label={
+                              wingedLight.wl_label
+                            }
+                            location={
+                              wingedLight.wl_location
+                            }
+                            url={
+                              wingedLight.wl_url
+                            }
+                            wingedLight={
+                              wingedLight
+                            }
+                            realmName="Aviary Village"
+                          />
+                        )
+                      )
+                    ) : (
+                      <div className="w-full py-10 text-center text-sm text-gray-300">
+                        No Winged Lights are currently available.
+                      </div>
+                    )}
+                  </>
                 )}
 
                 {body.map_shrines?.map(

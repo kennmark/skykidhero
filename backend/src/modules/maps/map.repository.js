@@ -8,21 +8,43 @@ import {
   MAP_LIST_PROJECTION,
 } from "./map.projection.js";
 
+function normalizeMapWingedLightCount(
+  map
+) {
+  if (!map) {
+    return map;
+  }
+
+  return {
+    ...map,
+
+    wingedLightCount:
+      map._count?.wingedLights ?? 0,
+
+    _count: undefined,
+  };
+}
+
 export async function findAllPublishedMaps(
   select = MAP_LIST_PROJECTION
 ) {
-  return prisma.map.findMany({
-    where: {
-      published: true,
-      deletedAt: null,
-    },
+    const maps =
+    await prisma.map.findMany({
+      where: {
+        published: true,
+        deletedAt: null,
+      },
 
-    orderBy: {
-      displayOrder: "asc",
-    },
+      orderBy: {
+        displayOrder: "asc",
+      },
 
-    select,
-  });
+      select,
+    });
+
+  return maps.map(
+    normalizeMapWingedLightCount
+  );
 }
 
 export async function findPublishedMapByRoute(
@@ -30,41 +52,60 @@ export async function findPublishedMapByRoute(
   slug,
   select = MAP_DETAIL_PROJECTION
 ) {
-  return prisma.map.findFirst({
-    where: {
-      id,
-      slug,
-      published: true,
-      deletedAt: null,
-    },
+  const map =
+    await prisma.map.findFirst({
+      where: {
+        id,
+        slug,
+        published: true,
+        deletedAt: null,
+      },
 
-    select,
-  });
+      select,
+    });
+
+  return normalizeMapWingedLightCount(
+    map
+  );
 }
 
 export async function findAllAdminMaps(
   select = MAP_ADMIN_LIST_PROJECTION
-) {
-  return prisma.map.findMany({
-    orderBy: {
-      displayOrder: "asc",
-    },
+  ) {
+  const maps =
+    await prisma.map.findMany({
+      where: {
+        deletedAt: null,
+      },
 
-    select,
-  });
+      orderBy: {
+        displayOrder: "asc",
+      },
+
+      select,
+    });
+
+  return maps.map(
+    normalizeMapWingedLightCount
+  );
 }
 
 export async function findAdminMapById(
   id,
   select = MAP_ADMIN_DETAIL_PROJECTION
 ) {
-  return prisma.map.findUnique({
-    where: {
-      id,
-    },
+  const map =
+    await prisma.map.findUnique({
+      where: {
+        id,
+      },
 
-    select,
-  });
+      select,
+    });
+
+  return normalizeMapWingedLightCount(
+    map
+  );
 }
 
 export async function findMapSection(

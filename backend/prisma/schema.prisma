@@ -152,6 +152,45 @@ enum SpiritCollectibleCurrency {
   FREE
 }
 
+enum TravelingSpiritVisitType {
+  SINGLE
+  GROUP
+}
+
+model Season {
+  id Int @id @default(autoincrement())
+
+  number Int    @unique
+  year   Int
+  code   String @unique
+  name   String
+  slug   String @unique
+
+  intro       String?
+  description String?
+
+  startDate DateTime?
+  endDate   DateTime?
+
+  iconImage         String?
+  iconImagePublicId String?
+  iconImageAlt      String?
+
+  image         String?
+  imagePublicId String?
+  imageAlt      String?
+
+  published Boolean @default(true)
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  spirits Spirit[]
+
+  @@index([published, deletedAt])
+}
+
 model Spirit {
   id Int @id @default(autoincrement())
 
@@ -167,7 +206,9 @@ model Spirit {
    */
   code String @unique
 
-  mapId Int
+  mapId Int?
+
+  seasonId Int?
 
   type SpiritType
   name String
@@ -208,13 +249,17 @@ model Spirit {
   updatedAt DateTime  @updatedAt
   deletedAt DateTime?
 
-  map Map @relation(fields: [mapId], references: [id], onDelete: Cascade)
+  map Map? @relation(fields: [mapId], references: [id], onDelete: SetNull)
 
-  collectibles SpiritCollectible[]
-  treeCosts    SpiritTreeCost[]
+  season Season? @relation(fields: [seasonId], references: [id], onDelete: SetNull)
+
+  collectibles          SpiritCollectible[]
+  treeCosts             SpiritTreeCost[]
+  travelingSpiritVisits TravelingSpiritVisitSpirit[]
 
   @@unique([mapId, type, displayOrder])
   @@index([mapId, type, published, deletedAt])
+  @@index([seasonId, type, published, deletedAt])
 }
 
 model SpiritCollectible {
@@ -289,4 +334,62 @@ model WingedLight {
 
   @@unique([mapId, displayOrder])
   @@index([mapId, published, deletedAt])
+}
+
+model TravelingSpiritVisit {
+  id Int @id @default(autoincrement())
+
+  type TravelingSpiritVisitType
+
+  startDate DateTime
+  endDate   DateTime
+
+  /**
+   * Optional hint shown to users.
+   */
+  hintEnabled Boolean @default(false)
+
+  hintImage         String?
+  hintImagePublicId String?
+
+  hintUrl String?
+
+  /**
+   * Optional manual Winged Light /
+   * Wing Buff count associated with
+   * the current Traveling Spirit visit.
+   * Leave null when the value should
+   * be calculated automatically later.
+   */
+  wingBuffCount Int?
+
+  published Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  deletedAt DateTime?
+
+  spirits TravelingSpiritVisitSpirit[]
+
+  @@index([startDate, endDate])
+  @@index([published, deletedAt])
+}
+
+model TravelingSpiritVisitSpirit {
+  id Int @id @default(autoincrement())
+
+  travelingSpiritVisitId Int
+  spiritId               Int
+
+  displayOrder Int @default(1)
+
+  travelingSpiritVisit TravelingSpiritVisit @relation(fields: [travelingSpiritVisitId], references: [id], onDelete: Cascade)
+
+  spirit Spirit @relation(fields: [spiritId], references: [id], onDelete: Cascade)
+
+  @@unique([travelingSpiritVisitId, spiritId])
+  @@unique([travelingSpiritVisitId, displayOrder])
+  @@index([travelingSpiritVisitId])
+  @@index([spiritId])
 }

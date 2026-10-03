@@ -49,7 +49,7 @@ limitedItems
                 </Typography>
 
                 <Typography>
-                    These Ultimate Gift(s) is/(are) not obtainable.
+                    These Ultimate Gift(s) is/(are) not obtainable after the season ends.
                 </Typography>
                 {Object.entries(ultiGifts)?.map(([key, value])=>(
                     <div key={key} className='flex sm:flex-row flex-col items-center justify-center'>

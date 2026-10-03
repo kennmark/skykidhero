@@ -10,6 +10,8 @@ import spiritRoutes from "../modules/spirits/spirit.routes.js";
 import spiritAdminRoutes from "../modules/spirits/spirit.admin.routes.js";
 import wingedLightRoutes from "../modules/wingedLights/wingedLight.routes.js";
 import wingedLightAdminRoutes from "../modules/wingedLights/wingedLight.admin.routes.js";
+import seasonRoutes from "../modules/seasons/season.routes.js";
+import seasonAdminRoutes from "../modules/seasons/season.admin.routes.js";
 
 const router = Router();
 
@@ -43,4 +45,7 @@ router.use("/admin/maps", mapAdminRoutes);
 
 router.use("/admin/dashboard", dashboardRoutes)
 
+router.use("/seasons", seasonRoutes);
+
+router.use("/admin/seasons", seasonAdminRoutes);
 export default router;

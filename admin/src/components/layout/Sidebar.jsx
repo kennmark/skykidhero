@@ -5,6 +5,7 @@ import {
   ArrowUpTrayIcon,
   ChartBarIcon,
   MapIcon,
+  SparklesIcon,
 } from "@heroicons/react/24/outline";
 import CmsLogo from "../brand/CmsLogo.jsx";
 
@@ -23,6 +24,11 @@ const links = [
     to: "/maps",
     label: "Maps",
     icon: MapIcon,
+  },
+  {
+    to: "/seasons",
+    label: "Seasons",
+    icon: SparklesIcon,
   },
   {
     to: "/uploads",

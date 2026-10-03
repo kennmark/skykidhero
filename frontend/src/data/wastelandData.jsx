@@ -70,6 +70,7 @@ import {
   SEASON5,
   SEASON12,
   SEASON26,
+  SEASON31,
 } from '../exports/seasonIcons'
 import {
   WASTELAND_SPIRIT_1,
@@ -1763,6 +1764,258 @@ export const wasteland = [
         spirit_direction: [
           // `Enter the fifth map, Golden Wasteland, fly to the right, and board the boat.`,
           // `When you reach the Treasure Reef, fly upward toward the farthest island. The spirit is behind it.`,
+        ],
+      },
+      //DUTCH_MEMORY
+      {
+        id: 19,
+        spirit_id: 'wasteland19',
+        season_id: 31,
+        spirit_type: 'seasonal',
+        season: 'Season 31 - Season of Pearl',
+        spirit_category: 'emote',
+        spirit_relive_type: 'quest-memory',
+        difficulty_level: 0,
+        difficulty_types: [14],
+        spirit_name: 'Cuddly Rolling Child',
+        // spirit_img_url: DUTCH_MEMORY,
+        // spirit_image: AVIARY_SPIRIT_8,
+        icon_route: SEASON31,
+        spirit_collectibles: [
+          // {
+          //   label: 'Hair',
+          //   img: DM_ITEM_1,
+          //   currency: 'Season Candles',
+          //   price: 0,
+          // },
+          // {
+          //   label: 'Pants',
+          //   img: DM_ITEM_2,
+          //   currency: 'Season Candles',
+          //   price: 0,
+          // },
+          // {
+          //   label: 'Cape',
+          //   img: DM_ITEM_3,
+          //   currency: 'Season Candles',
+          //   price: 26,
+          // },
+          // {
+          //   label: 'Emote',
+          //   img: DUTCH_MEMORY,
+          //   currency: 'Season Candles',
+          //   price: 22,
+          // },
+        ],
+        spirit_tree_cost: [
+          // {
+          //   candles: 89,
+          //   hearts: 0,
+          //   ascended_candles: 2,
+          // },
+        ],
+        number_of_visits: [
+          // {
+          //   visit_date: 'Mar 12, 2020',
+          //   visitNo: 4,
+          // },
+        ],
+        spirit_guide_video_url: youtube_embed + '',
+        spirit_direction: [
+          'At Aviary Village, infront of the 6 portals is a cave to Story Space.',
+          'As you enter, find the portal to Season of Dear Van Gogh at the right side of the room.',
+        ],
+      },
+      //RUSTIC_MEMORY
+      {
+        id: 20,
+        spirit_id: 'wasteland20',
+        season_id: 31,
+        spirit_type: 'seasonal',
+        season: 'Season 31 - Season of Pearl',
+        spirit_category: 'emote',
+        spirit_relive_type: 'quest-memory',
+        difficulty_level: 0,
+        difficulty_types: [14],
+        spirit_name: 'Showy Merchant',
+        // spirit_img_url: RUSTIC_MEMORY,
+        // spirit_image: AVIARY_SPIRIT_9,
+        icon_route: SEASON31,
+        spirit_collectibles: [
+          // {
+          //   label: 'Hat',
+          //   img: RM_ITEM_1,
+          //   currency: 'Season Candles',
+          //   price: 26,
+          // },
+          // {
+          //   label: 'Cape',
+          //   img: RM_ITEM_2,
+          //   currency: 'Season Candles',
+          //   price: 0,
+          // },
+          // {
+          //   label: 'Shoes',
+          //   img: RM_ITEM_3,
+          //   currency: 'Season Candles',
+          //   price: 0,
+          // },
+          // {
+          //   label: 'Props',
+          //   img: RM_ITEM_4,
+          //   currency: 'Season Candles',
+          //   price: 18,
+          // },
+          // {
+          //   label: 'Emote',
+          //   img: RUSTIC_MEMORY,
+          //   currency: 'Season Candles',
+          //   price: 22,
+          // },
+        ],
+        spirit_tree_cost: [
+          {
+            candles: 89,
+            hearts: 0,
+            ascended_candles: 2,
+          },
+        ],
+        number_of_visits: [
+          // {
+          //   visit_date: 'Mar 12, 2020',
+          //   visitNo: 4,
+          // },
+        ],
+        spirit_guide_video_url: youtube_embed + '',
+        spirit_direction: [
+          'At Aviary Village, infront of the 6 portals is a cave to Story Space.',
+          'As you enter, find the portal to Season of Dear Van Gogh at the right side of the room.',
+        ],
+      },
+      //ARTISTIC_MEMORY
+      {
+        id: 21,
+        spirit_id: 'wasteland21',
+        season_id: 31,
+        spirit_type: 'seasonal',
+        season: 'Season 31 - Season of Pearl',
+        spirit_category: 'emote',
+        spirit_relive_type: 'quest-memory',
+        difficulty_level: 0,
+        difficulty_types: [14],
+        spirit_name: 'Wrestling Sailor',
+        // spirit_img_url: ARTISTIC_MEMORY,
+        // spirit_image: AVIARY_SPIRIT_10,
+        icon_route: SEASON31,
+        spirit_collectibles: [
+          // {
+          //   label: 'Hat',
+          //   img: AM_ITEM_1,
+          //   currency: 'Season Candles',
+          //   price: 18,
+          // },
+          // {
+          //   label: 'Cape',
+          //   img: AM_ITEM_2,
+          //   currency: 'Season Candles',
+          //   price: 0,
+          // },
+          // {
+          //   label: 'Props',
+          //   img: AM_ITEM_3,
+          //   currency: 'Season Candles',
+          //   price: 12,
+          // },
+          // {
+          //   label: 'Props',
+          //   img: AM_ITEM_4,
+          //   currency: 'Season Candles',
+          //   price: 10,
+          // },
+          // {
+          //   label: 'Emote',
+          //   img: ARTISTIC_MEMORY,
+          //   currency: 'Season Candles',
+          //   price: 22,
+          // },
+        ],
+        spirit_tree_cost: [
+          {
+            candles: 91,
+            hearts: 0,
+            ascended_candles: 2,
+          },
+        ],
+        number_of_visits: [
+          // {
+          //   visit_date: 'Mar 12, 2020',
+          //   visitNo: 4,
+          // },
+        ],
+        spirit_guide_video_url: youtube_embed + '',
+        spirit_direction: [
+          'At Aviary Village, infront of the 6 portals is a cave to Story Space.',
+          'As you enter, find the portal to Season of Dear Van Gogh at the right side of the room.',
+        ],
+      },
+      //JOYFUL_MEMORY
+      {
+        id: 22,
+        spirit_id: 'wasteland22',
+        season_id: 31,
+        spirit_type: 'seasonal',
+        season: 'Season 31 - Season of Pearl',
+        spirit_category: 'emote',
+        spirit_relive_type: 'quest-memory',
+        difficulty_level: 0,
+        difficulty_types: [14],
+        spirit_name: 'Hesitant Angler',
+        // spirit_img_url: JOYFUL_MEMORY,
+        // spirit_image: AVIARY_SPIRIT_11,
+        icon_route: SEASON31,
+        spirit_collectibles: [
+          // {
+          //   label: 'Hat',
+          //   img: JM_ITEM_1,
+          //   currency: 'Season Candles',
+          //   price: 0,
+          // },
+          // {
+          //   label: 'Hair',
+          //   img: JM_ITEM_2,
+          //   currency: 'Season Candles',
+          //   price: 22,
+          // },
+          // {
+          //   label: 'Cape',
+          //   img: JM_ITEM_3,
+          //   currency: 'Season Candles',
+          //   price: 26,
+          // },
+          // {
+          //   label: 'Emote',
+          //   img: JOYFUL_MEMORY,
+          //   currency: 'Season Candles',
+          //   price: 22,
+          // },
+        ],
+        spirit_tree_cost: [
+          {
+            candles: 111,
+            hearts: 0,
+            ascended_candles: 2,
+          },
+        ],
+        number_of_visits: [
+          // {
+          //   visit_date: 'Mar 12, 2020',
+          //   visitNo: 4,
+          // },
+        ],
+        spirit_guide_video_url: youtube_embed + '',
+        spirit_direction: [
+          'At Aviary Village, infront of the 6 portals is a cave to Story Space.',
+          'As you enter, find the portal to Season of Dear Van Gogh at the right side of the room.',
         ],
       },
     ],
