@@ -1622,6 +1622,10 @@ export const hiddenForest = [
             visit_date: 'Nov 23, 2023',
             visitNo: 101,
           },
+          {
+            visit_date: 'Oct 8, 2026',
+            visitNo: 176,
+          },
         ],
         icon_route: SEASON11,
         spirit_guide_video_url: youtube_embed + 'bzCvgOT3t0g',
