@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom'
 const PageSeasonMap = () => {
   // OPTIMIZATION: Combine historical datasets into a single timeline array object
   const timelineData = [
-    { year: "2026", label: "Seasons - [Lightmending, Carnival, Dear Van Gogh]", data: seasons2026, color: "bg-amber-800" },
+    { year: "2026", label: "Seasons - [Lightmending, Carnival, Dear Van Gogh, Pearl]", data: seasons2026, color: "bg-amber-800" },
     { year: "2025", label: "Seasons - [Radiance, Blue Bird, Two Embers One, Migration]", data: seasons2025, color: "bg-yellow-700" },
     { year: "2024", label: "Seasons - [The Nine Colored Deer, Nesting, Duet, Moomin]", data: seasons2024, color: "bg-amber-600" },
     { year: "2023", label: "Seasons - [Remembrance, Passage, Moments, Revival]", data: seasons2023, color: "bg-orange-700" },
