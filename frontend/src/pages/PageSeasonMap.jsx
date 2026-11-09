@@ -1,9 +1,9 @@
 import { Carousel, Typography, Button, Card } from '@material-tailwind/react'
 import { SideBarContainer } from './components/SidebarContainer'
 import ScrollToTop from 'react-scroll-to-top'
-import carousel1 from '../assets/images/seasonal-banners/DVG1.webp'
-import carousel2 from '../assets/images/seasonal-banners/DVG2.webp'
-import carousel3 from '../assets/images/seasonal-banners/DVG3.webp'
+import carousel1 from '../assets/images/home-carousel/S31-Pearl.png'
+import carousel2 from '../assets/images/home-carousel/S31-Pearl.png'
+import carousel3 from '../assets/images/home-carousel/S31-Pearl.png'
 import SeasonDisplayContainer from './components/SeasonDisplayContainer'
 import {
   seasons2019,
@@ -59,7 +59,7 @@ const PageSeasonMap = () => {
                     color="white"
                     className="mb-4 md:text-3xl text-xl"
                   >
-                    Season 30 | Season of Dear Van Gogh
+                    Season 31 | Season of Pearl
                   </Typography>
                   <Typography
                     variant="lead"
@@ -76,7 +76,7 @@ const PageSeasonMap = () => {
                       </Button>
                     </Link>
 
-                    <a href="https://www.thatskygame.com/news/-dear-van-gogh-a-new-interactive-experience-in-sky" target="_blank" rel="noreferrer">
+                    <a href="https://skykidhero.onrender.com/seasons/2026/season-31/season-of-pearl" target="_blank" rel="noreferrer">
                       <Button size="sm" className="theme-button">
                         Visit Site
                       </Button>
@@ -95,7 +95,7 @@ const PageSeasonMap = () => {
                     A New Interactive Experience in Sky
                   </Typography>
                   <Typography variant="lead" color="white" className="mb-12 opacity-80 md:text-xl text-sm">
-                    Dear Van Gogh brings you into the life of Vincent van Gogh through an interactive journey shaped by his paintings, his struggles, and the people closest to him.
+                    Season of Pearl
                   </Typography>
                 </div>
               </div>
@@ -107,10 +107,10 @@ const PageSeasonMap = () => {
               <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
                 <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
                   <Typography variant="h5" color="white" className="mb-4 md:text-3xl text-xl">
-                    Blending exploration and emotional storytelling
+                    Discover and Voyage
                   </Typography>
                   <Typography variant="lead" color="white" className="mb-12 opacity-80 md:text-xl text-sm">
-                    Dear Van Gogh invites players to feel the weight and warmth of that family bond, to discover that art, at its most basic, rarely endures alone. 
+                    Season of Pearl 
                   </Typography>
                 </div>
               </div>

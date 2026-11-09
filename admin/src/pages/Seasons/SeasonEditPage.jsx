@@ -1,7 +1,17 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import {
+  useEffect,
+  useState,
+} from "react";
 
-import SeasonCoreForm from "../../components/seasons/SeasonCoreForm.jsx";
+import {
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
+
+import SeasonCoreForm
+  from "../../components/seasons/SeasonCoreForm.jsx";
+
 import SeasonMediaManager
   from "../../components/seasons/SeasonMediaManager.jsx";
 
@@ -11,19 +21,83 @@ import {
   updateAdminSeason,
 } from "../../services/adminSeason.service.js";
 
-export default function SeasonEditPage() {
+function getErrorMessage(error) {
+  return (
+    error?.response?.data?.message ||
+    error?.message ||
+    "Unable to save the Season."
+  );
+}
+
+function isValidSeasonId(value) {
+  if (!value) {
+    return false;
+  }
+
+  const numericId =
+    Number(value);
+
+  return (
+    Number.isInteger(numericId) &&
+    numericId > 0
+  );
+}
+
+function SeasonEditPageContent() {
   const { id } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
 
-  const isCreate = id === "new";
+  /*
+   * Create mode is determined by the
+   * actual route, not by converting the
+   * route parameter to a number.
+   *
+   * /seasons/new
+   *      -> create mode
+   *
+   * /seasons/12/edit
+   *      -> edit mode
+   */
+  const isCreate =
+    location.pathname.endsWith(
+      "/seasons/new"
+    ) || id === "new";
 
-  const [season, setSeason] = useState(null);
-  const [loading, setLoading] = useState(!isCreate);
-  const [saving, setSaving] = useState(false);
-  const [error, setError] = useState("");
+  const seasonId =
+    isCreate
+      ? null
+      : Number(id);
+
+  const [season, setSeason] =
+    useState(null);
+
+  const [loading, setLoading] =
+    useState(!isCreate);
+
+  const [saving, setSaving] =
+    useState(false);
+
+  const [error, setError] =
+    useState("");
 
   useEffect(() => {
-    if (isCreate) return;
+    if (isCreate) {
+      setSeason(null);
+      setLoading(false);
+      return;
+    }
+
+    if (!isValidSeasonId(id)) {
+      setSeason(null);
+      setLoading(false);
+      setError(
+        "Invalid Season ID."
+      );
+      return;
+    }
+
+    let cancelled = false;
 
     async function loadSeason() {
       try {
@@ -31,50 +105,119 @@ export default function SeasonEditPage() {
         setError("");
 
         const response =
-          await getAdminSeason(id);
+          await getAdminSeason(
+            seasonId
+          );
 
-        setSeason(response.data);
-      } catch (err) {
+        if (cancelled) {
+          return;
+        }
+
+        setSeason(
+          response?.data ?? null
+        );
+      } catch (requestError) {
+        if (cancelled) {
+          return;
+        }
+
+        setSeason(null);
+
         setError(
-          err?.response?.data?.message ||
-            "Failed to load Season.",
+          getErrorMessage(
+            requestError
+          )
         );
       } finally {
-        setLoading(false);
+        if (!cancelled) {
+          setLoading(false);
+        }
       }
     }
 
     loadSeason();
-  }, [id, isCreate]);
 
-  async function handleSubmit(data) {
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    id,
+    seasonId,
+    isCreate,
+  ]);
+
+  async function handleSubmit(
+    data
+  ) {
     try {
       setSaving(true);
       setError("");
 
+      /*
+       * CREATE
+       *
+       * Never send the route parameter
+       * to the update endpoint.
+       */
       if (isCreate) {
         const response =
-          await createAdminSeason(data);
+          await createAdminSeason(
+            data
+          );
+
+        const createdSeason =
+          response?.data;
+
+        if (
+          !createdSeason?.id
+        ) {
+          throw new Error(
+            "Season was created, but no Season ID was returned."
+          );
+        }
+
+        setSeason(
+          createdSeason
+        );
 
         navigate(
-          `/seasons/${response.data.id}/edit`,
-          { replace: true },
+          `/seasons/${createdSeason.id}/edit`,
+          {
+            replace: true,
+          }
         );
 
         return;
       }
 
+      /*
+       * EDIT
+       *
+       * Validate before constructing
+       * the PUT request.
+       */
+      if (
+        !isValidSeasonId(id)
+      ) {
+        throw new Error(
+          "Invalid Season ID."
+        );
+      }
+
       const response =
         await updateAdminSeason(
-          Number(id),
-          data,
+          seasonId,
+          data
         );
 
-      setSeason(response.data);
-    } catch (err) {
+      setSeason(
+        response?.data ?? null
+      );
+    } catch (requestError) {
       setError(
-        err?.response?.data?.message ||
-          "Failed to save Season.",
+        getErrorMessage(
+          requestError
+        )
       );
     } finally {
       setSaving(false);
@@ -110,7 +253,7 @@ export default function SeasonEditPage() {
       </div>
 
       {error && (
-        <div className="rounded-lg border p-4">
+        <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
           {error}
         </div>
       )}
@@ -122,7 +265,7 @@ export default function SeasonEditPage() {
           saving={saving}
         />
       </div>
-      
+
       {!isCreate && season && (
         <div className="grid gap-6 lg:grid-cols-2">
           <SeasonMediaManager
@@ -143,5 +286,19 @@ export default function SeasonEditPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function SeasonEditPage() {
+  const { id } = useParams();
+
+  /*
+   * Remount when switching between
+   * Season IDs/routes.
+   */
+  return (
+    <SeasonEditPageContent
+      key={id ?? "new"}
+    />
   );
 }
