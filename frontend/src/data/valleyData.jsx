@@ -1,10 +1,10 @@
-import { Typography, Spinner } from '@material-tailwind/react'
+import { Typography, Spinner } from "@material-tailwind/react";
 import {
   VALLEY_NUM_REG_SPIRIT,
   VALLEY_NUM_SEASON_SPIRIT,
   VALLEY_NUM_WL,
   VALLEY_NUM_MAP_SHRINES,
-} from '../exports/constants'
+} from "../exports/constants";
 import {
   BACKFLIPPING_CHAMPION,
   BOWING_MEDALIST,
@@ -29,8 +29,8 @@ import {
   RUNNING_WAYFARER,
   SEED_OF_HOPE,
   WARRIOR_OF_LOVE,
-} from '../exports/spiritIcons'
-import { MAP_SHRINE, WINGED_LIGHT } from '../exports/defaultImages'
+} from "../exports/spiritIcons";
+import { MAP_SHRINE, WINGED_LIGHT } from "../exports/defaultImages";
 import {
   VT_WL1,
   VT_WL2,
@@ -49,7 +49,7 @@ import {
   VT_WL15,
   VT_WL16,
   VT_WL17,
-} from '../exports/valleyWLImgUrl'
+} from "../exports/valleyWLImgUrl";
 import {
   VT_MS1,
   VT_MS2,
@@ -62,7 +62,7 @@ import {
   VT_MS9,
   VT_MS10,
   VT_MS11,
-} from '../exports/valleyMSImgUrl'
+} from "../exports/valleyMSImgUrl";
 import {
   MAP4,
   SEASON1,
@@ -72,7 +72,7 @@ import {
   SEASON8,
   SEASON13,
   SEASON15,
-} from '../exports/seasonIcons'
+} from "../exports/seasonIcons";
 import {
   VALLEY_SPIRIT_1,
   VALLEY_SPIRIT_2,
@@ -97,7 +97,7 @@ import {
   VALLEY_SEASON_SPIRIT_14,
   VALLEY_SEASON_SPIRIT_15,
   VALLEY_SEASON_SPIRIT_16,
-} from '../exports/spiritValleyImages'
+} from "../exports/spiritValleyImages";
 import {
   CONFIDENT_ITEM_1,
   CONFIDENT_ITEM_2,
@@ -165,19 +165,25 @@ import {
   HOPE_ITEM_1,
   HOPE_ITEM_2,
   HOPE_ITEM_3,
-} from '../exports/spiritValleyCollectibles'
-import ValleyConstellation from '../assets/images/maps-constellations/Valley_Constellation.png'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-import DyeAlertMessage from '../pages/components/DyeAlertMessage'
-import ValleyDyes from '../pages/components/MapDyeLocations/ValleyDyes'
-import { MapPinIcon, SparklesIcon, SwatchIcon, UserGroupIcon, UserIcon } from '@heroicons/react/24/solid'
+} from "../exports/spiritValleyCollectibles";
+import ValleyConstellation from "../assets/images/maps-constellations/Valley_Constellation.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import DyeAlertMessage from "../pages/components/DyeAlertMessage";
+import ValleyDyes from "../pages/components/MapDyeLocations/ValleyDyes";
+import {
+  MapPinIcon,
+  SparklesIcon,
+  SwatchIcon,
+  UserGroupIcon,
+  UserIcon,
+} from "@heroicons/react/24/solid";
 
-const youtube_embed = 'https://www.youtube.com/embed/'
+const youtube_embed = "https://www.youtube.com/embed/";
 
 export const valley = [
   {
-    label: 'Regular Spirits',
-    value: 'regular_spirits',
+    label: "Regular Spirits",
+    value: "regular_spirits",
     icon: UserIcon,
     desc: (
       <>
@@ -190,10 +196,10 @@ export const valley = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          There are{' '}
+          There are{" "}
           <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
             {VALLEY_NUM_REG_SPIRIT}
-          </span>{' '}
+          </span>{" "}
           regular spirits that you can find here.
         </Typography>
       </>
@@ -202,33 +208,33 @@ export const valley = [
       // CONFIDENT_SIGHTSEER
       {
         id: 1,
-        spirit_id: 'valley1',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'stance',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley1",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "stance",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 35,
         difficulty_types: [0, 2, 6],
-        spirit_name: 'Confident Sightseer',
+        spirit_name: "Confident Sightseer",
         spirit_img_url: CONFIDENT_SIGHTSEER,
         spirit_image: VALLEY_SPIRIT_1,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: CONFIDENT_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 2,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: CONFIDENT_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: CONFIDENT_SIGHTSEER,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -241,12 +247,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'ukkYW0UiuKE',
+        spirit_guide_video_url: youtube_embed + "ukkYW0UiuKE",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Fly upward beside the passage on the right, where you will find this spirit.`,
@@ -255,33 +261,33 @@ export const valley = [
       // BACKFLIPPING_CHAMPION
       {
         id: 2,
-        spirit_id: 'valley2',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley2",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 50,
         difficulty_types: [0, 2, 5, 6],
-        spirit_name: 'Backflipping Champion',
+        spirit_name: "Backflipping Champion",
         spirit_img_url: BACKFLIPPING_CHAMPION,
         spirit_image: VALLEY_SPIRIT_2,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: CHAMPION_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: CHAMPION_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: BACKFLIPPING_CHAMPION,
-            currency: 'Candles',
+            currency: "Candles",
             price: 11,
           },
         ],
@@ -294,12 +300,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'GUqYcLjeYA8',
+        spirit_guide_video_url: youtube_embed + "GUqYcLjeYA8",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage on the left that leads to the Citadel.`,
@@ -310,33 +316,33 @@ export const valley = [
       // HANDSTANDING_THRILLSEEKER
       {
         id: 3,
-        spirit_id: 'valley3',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley3",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 50,
         difficulty_types: [0, 2, 5, 6],
-        spirit_name: 'Handstanding Thrillseeker',
+        spirit_name: "Handstanding Thrillseeker",
         spirit_img_url: HANDSTANDING_THRILLSEEKER,
         spirit_image: VALLEY_SPIRIT_3,
         spirit_collectibles: [
           {
-            label: 'Cape Lvl 1',
+            label: "Cape Lvl 1",
             img: HANDSTAND_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 40,
           },
           {
-            label: 'Cape Lvl 2',
+            label: "Cape Lvl 2",
             img: HANDSTAND_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 120,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: HANDSTANDING_THRILLSEEKER,
-            currency: 'Candles',
+            currency: "Candles",
             price: 11,
           },
         ],
@@ -349,12 +355,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'AwpBBSZcfeE',
+        spirit_guide_video_url: youtube_embed + "AwpBBSZcfeE",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage on the left that leads to the Citadel.`,
@@ -365,21 +371,21 @@ export const valley = [
       // MANTA_WHISPERER
       {
         id: 4,
-        spirit_id: 'valley4',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'call',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley4",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "call",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 65,
         difficulty_types: [0, 2, 5, 6, 12],
-        spirit_name: 'Manta Whisperer',
+        spirit_name: "Manta Whisperer",
         spirit_img_url: MANTA_WHISPERER,
         spirit_image: VALLEY_SPIRIT_4,
         spirit_collectibles: [
           {
-            label: 'Sound-Call',
+            label: "Sound-Call",
             img: MANTA_WHISPERER,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -392,12 +398,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'Tq3HWYajMzY',
+        spirit_guide_video_url: youtube_embed + "Tq3HWYajMzY",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage on the left that leads to the Citadel.`,
@@ -408,39 +414,39 @@ export const valley = [
       // PROUD_VICTOR
       {
         id: 5,
-        spirit_id: 'valley5',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'stance',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley5",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "stance",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 6],
-        spirit_name: 'Proud Victor',
+        spirit_name: "Proud Victor",
         spirit_img_url: PROUD_VICTOR,
         spirit_image: VALLEY_SPIRIT_5,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: PROUD_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 30,
           },
           {
-            label: 'Cape Lvl 1',
+            label: "Cape Lvl 1",
             img: PROUD_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 10,
           },
           {
-            label: 'Cape Lvl 2',
+            label: "Cape Lvl 2",
             img: PROUD_ITEM_3,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 30,
           },
           {
-            label: 'Stance',
+            label: "Stance",
             img: PROUD_VICTOR,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -453,12 +459,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'HgL7qC1uJvs',
+        spirit_guide_video_url: youtube_embed + "HgL7qC1uJvs",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage directly ahead to begin the Skating Race.`,
@@ -468,33 +474,33 @@ export const valley = [
       // BOWING_MEDALIST
       {
         id: 6,
-        spirit_id: 'valley6',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley6",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 6],
-        spirit_name: 'Bowing Medalist',
+        spirit_name: "Bowing Medalist",
         spirit_img_url: BOWING_MEDALIST,
         spirit_image: VALLEY_SPIRIT_6,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: MEDALIST_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: MEDALIST_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: BOWING_MEDALIST,
-            currency: 'Candles',
+            currency: "Candles",
             price: 11,
           },
         ],
@@ -507,12 +513,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'wwpu2V_6nKI',
+        spirit_guide_video_url: youtube_embed + "wwpu2V_6nKI",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage directly ahead to begin the Skating Race.`,
@@ -522,33 +528,33 @@ export const valley = [
       // CHEERFUL_SPECTATOR
       {
         id: 7,
-        spirit_id: 'valley7',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "valley7",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 6],
-        spirit_name: 'Cheerful Spectator',
+        spirit_name: "Cheerful Spectator",
         spirit_img_url: CHEERFUL_SPECTATOR,
         spirit_image: VALLEY_SPIRIT_7,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: CHEERFUL_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: CHEERFUL_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 10,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: CHEERFUL_SPECTATOR,
-            currency: 'Candles',
+            currency: "Candles",
             price: 11,
           },
         ],
@@ -561,12 +567,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Valley of Triumph',
-            visitNo: '',
+            visit_date: "Valley of Triumph",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP4,
-        spirit_guide_video_url: youtube_embed + 'kkRnJ8a5p3U',
+        spirit_guide_video_url: youtube_embed + "kkRnJ8a5p3U",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage directly ahead to begin the Skating Race.`,
@@ -576,16 +582,16 @@ export const valley = [
     ],
   },
   {
-    label: 'Seasonal Spirits',
-    value: 'seasonal_spirits',
+    label: "Seasonal Spirits",
+    value: "seasonal_spirits",
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
         These spirits appeared during previous Seasonal Events and can be found
-        whenever you enter the Valley of Triumph. There are{' '}
+        whenever you enter the Valley of Triumph. There are{" "}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {VALLEY_NUM_SEASON_SPIRIT}
-        </span>{' '}
+        </span>{" "}
         seasonal spirits that you can find and relive here.
       </Typography>
     ),
@@ -593,34 +599,34 @@ export const valley = [
       // LEAPING_DANCER
       {
         id: 8,
-        spirit_id: 'valley8',
+        spirit_id: "valley8",
         season_id: 1,
-        spirit_type: 'seasonal',
-        season: 'Season 1 - Season of Gratitude',
-        spirit_category: 'emote',
-        spirit_relive_type: 'collect-memory',
+        spirit_type: "seasonal",
+        season: "Season 1 - Season of Gratitude",
+        spirit_category: "emote",
+        spirit_relive_type: "collect-memory",
         difficulty_level: 40,
         difficulty_types: [2, 3, 7],
-        spirit_name: 'Leaping Dancer',
+        spirit_name: "Leaping Dancer",
         spirit_img_url: LEAPING_DANCER,
         spirit_image: VALLEY_SEASON_SPIRIT_1,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: DANCER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 54,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: DANCER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: LEAPING_DANCER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -633,28 +639,28 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jun 24, 2020',
+            visit_date: "Jun 24, 2020",
             visitNo: 12,
           },
           {
-            visit_date: 'Mar 18, 2021',
+            visit_date: "Mar 18, 2021",
             visitNo: 31,
           },
           {
-            visit_date: 'Jul 3, 2023',
-            visitNo: 'GV#3',
+            visit_date: "Jul 3, 2023",
+            visitNo: "GV#3",
           },
           {
-            visit_date: 'Jun 6, 2024',
+            visit_date: "Jun 6, 2024",
             visitNo: 115,
           },
           {
-            visit_date: 'Aug 27, 2026',
+            visit_date: "Aug 27, 2026",
             visitNo: 173,
           },
         ],
         icon_route: SEASON1,
-        spirit_guide_video_url: youtube_embed + 'qM46Yfsl4Oc',
+        spirit_guide_video_url: youtube_embed + "qM46Yfsl4Oc",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `On the lower-right side is a two-player door. The spirit is inside.`,
@@ -663,41 +669,41 @@ export const valley = [
       // TWIRLING_CHAMPION
       {
         id: 9,
-        spirit_id: 'valley9',
+        spirit_id: "valley9",
         season_id: 2,
-        spirit_type: 'seasonal',
-        season: 'Season 2 - Season of Lightseeker',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 2 - Season of Lightseeker",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 2],
-        spirit_name: 'Twirling Champion',
+        spirit_name: "Twirling Champion",
         spirit_img_url: TWIRLING_CHAMPION,
         icon_route: SEASON2,
         spirit_image: VALLEY_SEASON_SPIRIT_2,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: TWIRLING_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 34,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: TWIRLING_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 24,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: TWIRLING_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 60,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: TWIRLING_CHAMPION,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -710,23 +716,23 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Sep 17, 2020',
+            visit_date: "Sep 17, 2020",
             visitNo: 18,
           },
           {
-            visit_date: 'Jan 6, 2022',
+            visit_date: "Jan 6, 2022",
             visitNo: 52,
           },
           {
-            visit_date: 'Feb 1, 2024',
+            visit_date: "Feb 1, 2024",
             visitNo: 106,
           },
           {
-            visit_date: 'Jun 4, 2026',
+            visit_date: "Jun 4, 2026",
             visitNo: 167,
           },
         ],
-        spirit_guide_video_url: youtube_embed + 'gJMN_Wuq2lM',
+        spirit_guide_video_url: youtube_embed + "gJMN_Wuq2lM",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `You will find this spirit on the left side of the Ice Rink.`,
@@ -735,40 +741,40 @@ export const valley = [
       // SPARKLE_PARENT
       {
         id: 10,
-        spirit_id: 'valley10',
+        spirit_id: "valley10",
         season_id: 3,
-        spirit_type: 'seasonal',
-        season: 'Season 3 - Season of Belonging',
-        spirit_category: 'emote',
-        spirit_relive_type: 'carry-memory',
+        spirit_type: "seasonal",
+        season: "Season 3 - Season of Belonging",
+        spirit_category: "emote",
+        spirit_relive_type: "carry-memory",
         difficulty_level: 65,
         difficulty_types: [1, 2, 4, 5, 6],
-        spirit_name: 'Sparkler Parent',
+        spirit_name: "Sparkler Parent",
         spirit_img_url: SPARKLE_PARENT,
         spirit_image: VALLEY_SEASON_SPIRIT_3,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: PARENT_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 34,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: PARENT_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 36,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: PARENT_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 33,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: SPARKLE_PARENT,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -781,28 +787,28 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'May 14, 2020',
+            visit_date: "May 14, 2020",
             visitNo: 9,
           },
           {
-            visit_date: 'Apr 1, 2021',
+            visit_date: "Apr 1, 2021",
             visitNo: 32,
           },
           {
-            visit_date: 'Dec 23, 2021',
+            visit_date: "Dec 23, 2021",
             visitNo: 51,
           },
           {
-            visit_date: 'Jun 22, 2023',
+            visit_date: "Jun 22, 2023",
             visitNo: 90,
           },
           {
-            visit_date: 'Jan 15, 2026',
+            visit_date: "Jan 15, 2026",
             visitNo: 157,
           },
         ],
         icon_route: SEASON3,
-        spirit_guide_video_url: youtube_embed + '1U65HqbrWeM',
+        spirit_guide_video_url: youtube_embed + "1U65HqbrWeM",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the passage directly ahead to begin the Skating Race.`,
@@ -812,46 +818,46 @@ export const valley = [
       // TROUPE_JUGGLER
       {
         id: 11,
-        spirit_id: 'valley11',
+        spirit_id: "valley11",
         season_id: 4,
-        spirit_type: 'seasonal',
-        season: 'Season 4 - Season of Rythm',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 4 - Season of Rythm",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Troupe Juggler',
+        spirit_name: "Troupe Juggler",
         spirit_img_url: TROUPE_JUGGLER,
         spirit_image: VALLEY_SEASON_SPIRIT_4,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: JUGGLER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: JUGGLER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: JUGGLER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: JUGGLER_ITEM_4,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 14,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: TROUPE_JUGGLER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -864,20 +870,20 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Sep 16, 2021',
+            visit_date: "Sep 16, 2021",
             visitNo: 44,
           },
           {
-            visit_date: 'Oct 26, 2023',
+            visit_date: "Oct 26, 2023",
             visitNo: 99,
           },
           {
-            visit_date: 'Jan 13, 2025',
-            visitNo: 'GV#7',
+            visit_date: "Jan 13, 2025",
+            visitNo: "GV#7",
           },
         ],
         icon_route: SEASON4,
-        spirit_guide_video_url: youtube_embed + 'Fa5csPKdgCo',
+        spirit_guide_video_url: youtube_embed + "Fa5csPKdgCo",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph, and slide down until you reach the Ice Rink plaza.`,
           `Enter the tunnel on the left side of the Ice Rink. You will find this spirit inside.`,
@@ -886,46 +892,46 @@ export const valley = [
       // DANCING_PERFORMER
       {
         id: 12,
-        spirit_id: 'valley12',
+        spirit_id: "valley12",
         season_id: 8,
-        spirit_type: 'seasonal',
-        season: 'Season 8 - Season of Dreams',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 8 - Season of Dreams",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Dancing Performer',
+        spirit_name: "Dancing Performer",
         spirit_img_url: DANCING_PERFORMER,
         spirit_image: VALLEY_SEASON_SPIRIT_5,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: PERFORMER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 45,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: PERFORMER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 50,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: PERFORMER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: PERFORMER_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: DANCING_PERFORMER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -938,12 +944,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Apr 25, 2024',
+            visit_date: "Apr 25, 2024",
             visitNo: 112,
           },
         ],
         icon_route: SEASON8,
-        spirit_guide_video_url: youtube_embed + 'CUcyXXvawO8',
+        spirit_guide_video_url: youtube_embed + "CUcyXXvawO8",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate downhill. You will find this spirit among the houses on the left.`,
@@ -952,46 +958,46 @@ export const valley = [
       // PEEKING_POSTMAN
       {
         id: 13,
-        spirit_id: 'valley13',
+        spirit_id: "valley13",
         season_id: 8,
-        spirit_type: 'seasonal',
-        season: 'Season 8 - Season of Dreams',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 8 - Season of Dreams",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Peeking Postman',
+        spirit_name: "Peeking Postman",
         spirit_img_url: PEEKING_POSTMAN,
         spirit_image: VALLEY_SEASON_SPIRIT_6,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: PEEKING_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 54,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: PEEKING_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: PEEKING_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 65,
           },
           {
-            label: 'Shoes',
+            label: "Shoes",
             img: PEEKING_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: PEEKING_POSTMAN,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1004,12 +1010,16 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jun 23, 2022',
+            visit_date: "Jun 23, 2022",
             visitNo: 64,
+          },
+          {
+            visit_date: "November 13, 2026",
+            visitNo: "GV #12",
           },
         ],
         icon_route: SEASON8,
-        spirit_guide_video_url: youtube_embed + 'uCfBPcR9X4k',
+        spirit_guide_video_url: youtube_embed + "uCfBPcR9X4k",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate down to the Village of Dreams plaza. This spirit is hidden behind the Quest Giver's house.`,
@@ -1018,40 +1028,40 @@ export const valley = [
       // SPINNING_MENTOR
       {
         id: 14,
-        spirit_id: 'valley14',
+        spirit_id: "valley14",
         season_id: 8,
-        spirit_type: 'seasonal',
-        season: 'Season 8 - Season of Dreams',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 8 - Season of Dreams",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Spinning Mentor',
+        spirit_name: "Spinning Mentor",
         spirit_img_url: SPINNING_MENTOR,
         spirit_image: VALLEY_SEASON_SPIRIT_7,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: MENTOR_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 44,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: MENTOR_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: MENTOR_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: SPINNING_MENTOR,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1064,24 +1074,24 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Apr 14, 2022',
+            visit_date: "Apr 14, 2022",
             visitNo: 59,
           },
           {
-            visit_date: 'Jul 6, 2023',
+            visit_date: "Jul 6, 2023",
             visitNo: 91,
           },
           {
-            visit_date: 'Aug 15, 2024',
+            visit_date: "Aug 15, 2024",
             visitNo: 120,
           },
           {
-            visit_date: 'Aug 13, 2026',
+            visit_date: "Aug 13, 2026",
             visitNo: 172,
           },
         ],
         icon_route: SEASON8,
-        spirit_guide_video_url: youtube_embed + 'QOFfrU-J-Yw',
+        spirit_guide_video_url: youtube_embed + "QOFfrU-J-Yw",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate down to the Village of Dreams plaza. Just ahead of the Quest Giver, on the right, this spirit is beside a house.`,
@@ -1090,40 +1100,40 @@ export const valley = [
       // BEARHUG_HERMIT
       {
         id: 15,
-        spirit_id: 'valley15',
+        spirit_id: "valley15",
         season_id: 8,
-        spirit_type: 'seasonal',
-        season: 'Season 8 - Season of Dreams',
-        spirit_category: 'frienship action',
-        spirit_relive_type: 'carry-memory',
+        spirit_type: "seasonal",
+        season: "Season 8 - Season of Dreams",
+        spirit_category: "frienship action",
+        spirit_relive_type: "carry-memory",
         difficulty_level: 55,
         difficulty_types: [1, 4, 5, 6],
-        spirit_name: 'Bearhug Hermit',
+        spirit_name: "Bearhug Hermit",
         spirit_img_url: BEARHUG_HERMIT,
         spirit_image: VALLEY_SEASON_SPIRIT_8,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: HERMIT_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 50,
           },
           {
-            label: 'Hair Accessory',
+            label: "Hair Accessory",
             img: HERMIT_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: HERMIT_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Friendship Action',
+            label: "Friendship Action",
             img: BEARHUG_HERMIT,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 8,
           },
         ],
@@ -1136,16 +1146,20 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Nov 24, 2022',
+            visit_date: "Nov 24, 2022",
             visitNo: 75,
           },
           {
-            visit_date: 'Feb 15, 2024',
+            visit_date: "Feb 15, 2024",
             visitNo: 107,
+          },
+          {
+            visit_date: "November 13, 2026",
+            visitNo: "GV #12",
           },
         ],
         icon_route: SEASON8,
-        spirit_guide_video_url: youtube_embed + 's_0_jm6c8SY',
+        spirit_guide_video_url: youtube_embed + "s_0_jm6c8SY",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate down to the Village of Dreams plaza. This spirit is behind one of the houses on the left.`,
@@ -1154,40 +1168,40 @@ export const valley = [
       // FRANTIC_STAGEHEAD
       {
         id: 16,
-        spirit_id: 'valley16',
+        spirit_id: "valley16",
         season_id: 13,
-        spirit_type: 'seasonal',
-        season: 'Season 13 - Season of Performance',
-        spirit_category: 'friendship action',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 13 - Season of Performance",
+        spirit_category: "friendship action",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Frantic Stagehand',
+        spirit_name: "Frantic Stagehand",
         spirit_img_url: FRANTIC_STAGEHEAD,
         spirit_image: VALLEY_SEASON_SPIRIT_9,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: FRANTIC_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 48,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: FRANTIC_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 34,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: FRANTIC_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Friendship Action',
+            label: "Friendship Action",
             img: FRANTIC_STAGEHEAD,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 8,
           },
         ],
@@ -1200,12 +1214,16 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Mar 4, 2024',
-            visitNo: 'GV#5',
+            visit_date: "Mar 4, 2024",
+            visitNo: "GV#5",
+          },
+          {
+            visit_date: "November 13, 2026",
+            visitNo: "GV #12",
           },
         ],
         icon_route: SEASON13,
-        spirit_guide_video_url: youtube_embed + 'iRsevRYePBI',
+        spirit_guide_video_url: youtube_embed + "iRsevRYePBI",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate downhill and enter the Village Theater on your right.`,
@@ -1215,46 +1233,46 @@ export const valley = [
       // FORGETFUL_STORYTELLER
       {
         id: 17,
-        spirit_id: 'valley17',
+        spirit_id: "valley17",
         season_id: 13,
-        spirit_type: 'seasonal',
-        season: 'Season 13 - Season of Performance',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 13 - Season of Performance",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Forgetful Storyteller',
+        spirit_name: "Forgetful Storyteller",
         spirit_img_url: FORGETFUL_STORYTELLER,
         spirit_image: VALLEY_SEASON_SPIRIT_10,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: FORGETFUL_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 44,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: FORGETFUL_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 34,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: FORGETFUL_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: FORGETFUL_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: FORGETFUL_STORYTELLER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1267,12 +1285,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jan 30, 2025',
+            visit_date: "Jan 30, 2025",
             visitNo: 132,
           },
         ],
         icon_route: SEASON13,
-        spirit_guide_video_url: youtube_embed + '6fCttoMbOB0',
+        spirit_guide_video_url: youtube_embed + "6fCttoMbOB0",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate downhill and enter the Village Theater on your right.`,
@@ -1282,46 +1300,46 @@ export const valley = [
       // MELLOW_MUSICIAN
       {
         id: 18,
-        spirit_id: 'valley18',
+        spirit_id: "valley18",
         season_id: 13,
-        spirit_type: 'seasonal',
-        season: 'Season 13 - Season of Performance',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 13 - Season of Performance",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Mellow Musician',
+        spirit_name: "Mellow Musician",
         spirit_img_url: MELLOW_MUSICIAN,
         spirit_image: VALLEY_SEASON_SPIRIT_11,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: MELLOW_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: MELLOW_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 32,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: MELLOW_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Instrument',
+            label: "Instrument",
             img: MELLOW_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 80,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: MELLOW_MUSICIAN,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1334,12 +1352,16 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 1, 2024',
+            visit_date: "Aug 1, 2024",
             visitNo: 119,
+          },
+          {
+            visit_date: "November 13, 2026",
+            visitNo: "GV #12",
           },
         ],
         icon_route: SEASON13,
-        spirit_guide_video_url: youtube_embed + '-K0-u2qIJsM',
+        spirit_guide_video_url: youtube_embed + "-K0-u2qIJsM",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate downhill and enter the Village Theater on your right.`,
@@ -1349,40 +1371,40 @@ export const valley = [
       // MODEST_DANCER
       {
         id: 19,
-        spirit_id: 'valley19',
+        spirit_id: "valley19",
         season_id: 13,
-        spirit_type: 'seasonal',
-        season: 'Season 13 - Season of Performance',
-        spirit_category: 'friendship action',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 13 - Season of Performance",
+        spirit_category: "friendship action",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Modest Dancer',
+        spirit_name: "Modest Dancer",
         spirit_img_url: MODEST_DANCER,
         spirit_image: VALLEY_SEASON_SPIRIT_12,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: MODEST_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: MODEST_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 30,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: MODEST_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Friendship Action',
+            label: "Friendship Action",
             img: MODEST_DANCER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1395,12 +1417,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jan 13, 2025',
-            visitNo: 'GV#7',
+            visit_date: "Jan 13, 2025",
+            visitNo: "GV#7",
           },
         ],
         icon_route: SEASON13,
-        spirit_guide_video_url: youtube_embed + 'g3MSGbE9XZA',
+        spirit_guide_video_url: youtube_embed + "g3MSGbE9XZA",
         spirit_direction: [
           `Enter the fourth realm, Valley of Triumph. Enter the passage on your right.`,
           `Skate downhill and enter the Village Theater on your right.`,
@@ -1410,40 +1432,40 @@ export const valley = [
       // RUNNING_WAYFARER
       {
         id: 20,
-        spirit_id: 'valley20',
+        spirit_id: "valley20",
         season_id: 15,
-        spirit_type: 'seasonal',
-        season: 'Season 15 - Season of AURORA',
-        spirit_category: 'emote',
-        spirit_relive_type: 'task',
+        spirit_type: "seasonal",
+        season: "Season 15 - Season of AURORA",
+        spirit_category: "emote",
+        spirit_relive_type: "task",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Running Wayfarer',
+        spirit_name: "Running Wayfarer",
         spirit_img_url: RUNNING_WAYFARER,
         spirit_image: VALLEY_SEASON_SPIRIT_13,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: WAYFARER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: WAYFARER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 35,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: WAYFARER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: RUNNING_WAYFARER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1456,12 +1478,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jun 9, 2025',
-            visitNo: 'GV #9',
+            visit_date: "Jun 9, 2025",
+            visitNo: "GV #9",
           },
         ],
         icon_route: SEASON15,
-        spirit_guide_video_url: youtube_embed + '0nc59JDjgoA',
+        spirit_guide_video_url: youtube_embed + "0nc59JDjgoA",
         spirit_direction: [
           `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
           `Find the AURORA Spirit beside the tent on the right and begin the first quest.`,
@@ -1471,46 +1493,46 @@ export const valley = [
       // MINDFUL_MINER
       {
         id: 21,
-        spirit_id: 'valley21',
+        spirit_id: "valley21",
         season_id: 15,
-        spirit_type: 'seasonal',
-        season: 'Season 15 - Season of AURORA',
-        spirit_category: 'emote',
-        spirit_relive_type: 'task',
+        spirit_type: "seasonal",
+        season: "Season 15 - Season of AURORA",
+        spirit_category: "emote",
+        spirit_relive_type: "task",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Mindful Miner',
+        spirit_name: "Mindful Miner",
         spirit_img_url: MINDFUL_MINER,
         spirit_image: VALLEY_SEASON_SPIRIT_14,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: MINER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: MINER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 35,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: MINER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 55,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: MINER_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: MINDFUL_MINER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1523,16 +1545,16 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Feb 27, 2025',
+            visit_date: "Feb 27, 2025",
             visitNo: 134,
           },
           {
-            visit_date: 'Jun 9, 2025',
-            visitNo: 'GV #9',
+            visit_date: "Jun 9, 2025",
+            visitNo: "GV #9",
           },
         ],
         icon_route: SEASON15,
-        spirit_guide_video_url: youtube_embed + '09XhkJcsL90',
+        spirit_guide_video_url: youtube_embed + "09XhkJcsL90",
         spirit_direction: [
           `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
           `Find the AURORA Spirit beside the tent on the right and begin the second quest.`,
@@ -1542,40 +1564,40 @@ export const valley = [
       // WARRIOR_OF_LOVE
       {
         id: 22,
-        spirit_id: 'valley22',
+        spirit_id: "valley22",
         season_id: 15,
-        spirit_type: 'seasonal',
-        season: 'Season 15 - Season of AURORA',
-        spirit_category: 'emote',
-        spirit_relive_type: 'task',
+        spirit_type: "seasonal",
+        season: "Season 15 - Season of AURORA",
+        spirit_category: "emote",
+        spirit_relive_type: "task",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Warrior of Love',
+        spirit_name: "Warrior of Love",
         spirit_img_url: WARRIOR_OF_LOVE,
         spirit_image: VALLEY_SEASON_SPIRIT_15,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: WARRIOR_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: WARRIOR_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 35,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: WARRIOR_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: WARRIOR_OF_LOVE,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1588,16 +1610,16 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Nov 7, 2024',
+            visit_date: "Nov 7, 2024",
             visitNo: 126,
           },
           {
-            visit_date: 'Jun 9, 2025',
-            visitNo: 'GV #9',
+            visit_date: "Jun 9, 2025",
+            visitNo: "GV #9",
           },
         ],
         icon_route: SEASON15,
-        spirit_guide_video_url: youtube_embed + 'Lb3DAYkWxoM',
+        spirit_guide_video_url: youtube_embed + "Lb3DAYkWxoM",
         spirit_direction: [
           `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
           `Find the AURORA Spirit beside the tent on the right and begin the third quest.`,
@@ -1607,40 +1629,40 @@ export const valley = [
       // SEED_OF_HOPE
       {
         id: 23,
-        spirit_id: 'valley23',
+        spirit_id: "valley23",
         season_id: 15,
-        spirit_type: 'seasonal',
-        season: 'Season 15 - Season of AURORA',
-        spirit_category: 'emote',
-        spirit_relive_type: 'task',
+        spirit_type: "seasonal",
+        season: "Season 15 - Season of AURORA",
+        spirit_category: "emote",
+        spirit_relive_type: "task",
         difficulty_level: 15,
         difficulty_types: [0, 1],
-        spirit_name: 'Seed of Hope',
+        spirit_name: "Seed of Hope",
         spirit_img_url: SEED_OF_HOPE,
         spirit_image: VALLEY_SEASON_SPIRIT_16,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: HOPE_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: HOPE_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 35,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: HOPE_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: SEED_OF_HOPE,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1653,12 +1675,12 @@ export const valley = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jun 9, 2025',
-            visitNo: 'GV #9',
+            visit_date: "Jun 9, 2025",
+            visitNo: "GV #9",
           },
         ],
         icon_route: SEASON15,
-        spirit_guide_video_url: youtube_embed + 'xLymA7CvM04',
+        spirit_guide_video_url: youtube_embed + "xLymA7CvM04",
         spirit_direction: [
           `Enter the fifth map, Valley of Triumph, and proceed to the Coliseum.`,
           `Find the AURORA Spirit beside the tent on the right and begin the fourth quest.`,
@@ -1669,25 +1691,25 @@ export const valley = [
   },
 
   {
-    label: 'Winged Lights',
-    value: 'winged_lights',
+    label: "Winged Lights",
+    value: "winged_lights",
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
         You can also find Winged Lights throughout this realm. Collecting them
-        increases your Wing Level, allowing you to fly higher. There are{' '}
+        increases your Wing Level, allowing you to fly higher. There are{" "}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {VALLEY_NUM_WL}
-        </span>{' '}
+        </span>{" "}
         Winged Lights that you can collect here.
       </Typography>
     ),
     winged_lights: [
       {
         id: 1,
-        wl_label: 'WL1-Slope Entrance',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL1-Slope Entrance",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL1 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill. Steer your Sky kid to the left so that you pass through the Winged Light. You do not need to tap it, but you must pass through its center.`,
@@ -1695,9 +1717,9 @@ export const valley = [
       },
       {
         id: 2,
-        wl_label: 'WL2-Ice Rink (Underground)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL2-Ice Rink (Underground)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL2 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1706,9 +1728,9 @@ export const valley = [
       },
       {
         id: 3,
-        wl_label: 'WL3-Ice Rink (Center Elevated)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL3-Ice Rink (Center Elevated)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL3 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1717,9 +1739,9 @@ export const valley = [
       },
       {
         id: 4,
-        wl_label: 'WL4-Citadel (Top Gazebo)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL4-Citadel (Top Gazebo)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL4 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1728,9 +1750,9 @@ export const valley = [
       },
       {
         id: 5,
-        wl_label: 'WL5-Citadel (Hollowed Wall)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL5-Citadel (Hollowed Wall)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL5 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1739,9 +1761,9 @@ export const valley = [
       },
       {
         id: 6,
-        wl_label: 'WL6-Flying Race (Ruin Hall)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL6-Flying Race (Ruin Hall)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL6 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1751,9 +1773,9 @@ export const valley = [
       },
       {
         id: 7,
-        wl_label: 'WL7-Flying Race (Floating Gazebo)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL7-Flying Race (Floating Gazebo)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL7 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1764,9 +1786,9 @@ export const valley = [
       },
       {
         id: 8,
-        wl_label: 'WL8-Skating Race (Elevated Platform)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL8-Skating Race (Elevated Platform)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL8 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1776,9 +1798,9 @@ export const valley = [
       },
       {
         id: 9,
-        wl_label: 'WL9-Joined Race (End of Race)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL9-Joined Race (End of Race)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL9 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1788,9 +1810,9 @@ export const valley = [
       },
       {
         id: 10,
-        wl_label: 'WL10-Coliseum (Left Statue)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL10-Coliseum (Left Statue)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL10 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1800,9 +1822,9 @@ export const valley = [
       },
       {
         id: 11,
-        wl_label: 'WL11-Temple (Temple Maze)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-0',
+        wl_label: "WL11-Temple (Temple Maze)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-0",
         wl_url: VT_WL11 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1813,9 +1835,9 @@ export const valley = [
       },
       {
         id: 12,
-        wl_label: 'WL12-Village of Dreams (Hollowed Mountain)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-8',
+        wl_label: "WL12-Village of Dreams (Hollowed Mountain)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-8",
         wl_url: VT_WL12 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
@@ -1824,9 +1846,9 @@ export const valley = [
       },
       {
         id: 13,
-        wl_label: 'WL13-Village of Dreams (Hollowed Mountain)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-8',
+        wl_label: "WL13-Village of Dreams (Hollowed Mountain)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-8",
         wl_url: VT_WL13 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
@@ -1835,9 +1857,9 @@ export const valley = [
       },
       {
         id: 14,
-        wl_label: 'WL14-Village Theater (Backstage)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-13',
+        wl_label: "WL14-Village Theater (Backstage)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-13",
         wl_url: VT_WL14 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
@@ -1847,9 +1869,9 @@ export const valley = [
       },
       {
         id: 15,
-        wl_label: 'WL15-Village of Dreams (Terminal 2 Tower)',
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-8',
+        wl_label: "WL15-Village of Dreams (Terminal 2 Tower)",
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-8",
         wl_url: VT_WL15 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
@@ -1860,8 +1882,8 @@ export const valley = [
       {
         id: 16,
         wl_label: `WL16-Hermit's Valley (Outside Hollow)`,
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-8',
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-8",
         wl_url: VT_WL16 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
@@ -1872,8 +1894,8 @@ export const valley = [
       {
         id: 17,
         wl_label: `WL17-Hermit's Valley (Hollowed Wall)`,
-        wl_group: 'wl-valley',
-        wl_season_group: 'wl-valley-8',
+        wl_group: "wl-valley",
+        wl_season_group: "wl-valley-8",
         wl_url: VT_WL17 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 4, Valley of Triumph. A passage on your right leads to the Village of Dreams; enter it.`,
@@ -1885,24 +1907,24 @@ export const valley = [
   },
 
   {
-    label: 'Map Shrines',
-    value: 'map_shrines',
+    label: "Map Shrines",
+    value: "map_shrines",
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
         Map Shrines help you determine how many Winged Lights you still need to
-        collect and where they are located within the realm. There are{' '}
+        collect and where they are located within the realm. There are{" "}
         <span className="font-sans font-bold text-lg text-black bg-[#fe7f2d] rounded-3xl px-2">
           {VALLEY_NUM_MAP_SHRINES}
-        </span>{' '}
+        </span>{" "}
         Map Shrines that you can activate throughout the Valley of Triumph.
       </Typography>
     ),
     map_shrines: [
       {
         id: 1,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 1',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 1",
         shrine_url: VT_MS1 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph. There is a ruined gazebo structure on your right.`,
@@ -1911,8 +1933,8 @@ export const valley = [
       },
       {
         id: 2,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 2',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 2",
         shrine_url: VT_MS2 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1921,8 +1943,8 @@ export const valley = [
       },
       {
         id: 3,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 3',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 3",
         shrine_url: VT_MS3 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1932,8 +1954,8 @@ export const valley = [
       },
       {
         id: 4,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 4',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 4",
         shrine_url: VT_MS4 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1943,8 +1965,8 @@ export const valley = [
       },
       {
         id: 5,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 5',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 5",
         shrine_url: VT_MS5 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1955,8 +1977,8 @@ export const valley = [
       },
       {
         id: 6,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 6',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 6",
         shrine_url: VT_MS6 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph, and skate downhill until you reach the Ice Rink.`,
@@ -1966,8 +1988,8 @@ export const valley = [
       },
       {
         id: 7,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 7',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 7",
         shrine_url: VT_MS7 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
@@ -1976,8 +1998,8 @@ export const valley = [
       },
       {
         id: 8,
-        shrine_group: 'shrine-season-13',
-        shrine_label: 'Map Shrine 8',
+        shrine_group: "shrine-season-13",
+        shrine_label: "Map Shrine 8",
         shrine_url: VT_MS8 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
@@ -1987,8 +2009,8 @@ export const valley = [
       },
       {
         id: 9,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 9',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 9",
         shrine_url: VT_MS9 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
@@ -1997,8 +2019,8 @@ export const valley = [
       },
       {
         id: 10,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 10',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 10",
         shrine_url: VT_MS10 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph. A passage on the right leads to the Village of Dreams.`,
@@ -2009,8 +2031,8 @@ export const valley = [
       },
       {
         id: 11,
-        shrine_group: 'shrine-season-0',
-        shrine_label: 'Map Shrine 11',
+        shrine_group: "shrine-season-0",
+        shrine_label: "Map Shrine 11",
         shrine_url: VT_MS11 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 4, Valley of Triumph, skate downhill to the Ice Rink, and complete either race.`,
@@ -2020,8 +2042,8 @@ export const valley = [
     ],
   },
   {
-    label: 'Dye Ratio',
-    value: 'dye_locations',
+    label: "Dye Ratio",
+    value: "dye_locations",
     icon: SwatchIcon,
     desc: (
       <div className="flex flex-col justify-center items-center">
@@ -2030,4 +2052,4 @@ export const valley = [
       </div>
     ),
   },
-]
+];

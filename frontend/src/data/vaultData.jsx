@@ -1,10 +1,10 @@
-import { Typography, Spinner } from '@material-tailwind/react'
+import { Typography, Spinner } from "@material-tailwind/react";
 import {
   VAULT_NUM_REG_SPIRIT,
   VAULT_NUM_SEASON_SPIRIT,
   VAULT_NUM_WL,
   VAULT_NUM_MAP_SHRINES,
-} from '../exports/constants'
+} from "../exports/constants";
 import {
   PRAYING_ACOLYTE,
   LEVITATING_ADEPT,
@@ -33,8 +33,8 @@ import {
   LIGHTMENDING_PIONEER,
   LIGHTMENDING_LIGHT_SCHOLAR,
   LIGHTMENDING_LIGHT_CATCHER,
-} from '../exports/spiritIcons'
-import { MAP_SHRINE, WINGED_LIGHT, NON_SPIRIT } from '../exports/defaultImages'
+} from "../exports/spiritIcons";
+import { MAP_SHRINE, WINGED_LIGHT, NON_SPIRIT } from "../exports/defaultImages";
 import {
   VK_WL1,
   VK_WL2,
@@ -52,7 +52,7 @@ import {
   VK_WL14,
   VK_WL15,
   VK_WL16,
-} from '../exports/vaultWLImgUrl'
+} from "../exports/vaultWLImgUrl";
 import {
   VK_MS1,
   VK_MS2,
@@ -66,7 +66,7 @@ import {
   VK_MS10,
   VK_MS11,
   VK_MS12,
-} from '../exports/vaultMSImgUrl'
+} from "../exports/vaultMSImgUrl";
 import {
   MAP6,
   SEASON1,
@@ -78,7 +78,7 @@ import {
   SEASON20,
   SEASON23,
   SEASON28,
-} from '../exports/seasonIcons'
+} from "../exports/seasonIcons";
 import {
   VAULT_SPIRIT_1,
   VAULT_SPIRIT_2,
@@ -107,7 +107,7 @@ import {
   VAULT_SEASON_SPIRIT_20,
   VAULT_SEASON_SPIRIT_21,
   VAULT_SEASON_SPIRIT_22,
-} from '../exports/spiritVaultImages'
+} from "../exports/spiritVaultImages";
 import {
   ADEPT_ITEM_1,
   ADEPT_ITEM_2,
@@ -204,19 +204,25 @@ import {
   LP_ITEM_1,
   LP_ITEM_2,
   LP_ITEM_3,
-} from '../exports/spiritVaultCollectibles'
-import VaultConstellation from '../assets/images/maps-constellations/Vault_Constellation.png'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-import DyeAlertMessage from '../pages/components/DyeAlertMessage'
-import VaultDyes from '../pages/components/MapDyeLocations/VaultDyes'
-import { MapPinIcon, SparklesIcon, SwatchIcon, UserGroupIcon, UserIcon } from '@heroicons/react/24/solid'
+} from "../exports/spiritVaultCollectibles";
+import VaultConstellation from "../assets/images/maps-constellations/Vault_Constellation.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import DyeAlertMessage from "../pages/components/DyeAlertMessage";
+import VaultDyes from "../pages/components/MapDyeLocations/VaultDyes";
+import {
+  MapPinIcon,
+  SparklesIcon,
+  SwatchIcon,
+  UserGroupIcon,
+  UserIcon,
+} from "@heroicons/react/24/solid";
 
-const youtube_embed = 'https://www.youtube.com/embed/'
+const youtube_embed = "https://www.youtube.com/embed/";
 
 export const vault = [
   {
-    label: 'Regular Spirits',
-    value: 'regular_spirits',
+    label: "Regular Spirits",
+    value: "regular_spirits",
     icon: UserIcon,
     desc: (
       <>
@@ -229,10 +235,10 @@ export const vault = [
           className="rounded-xl"
         />
         <Typography className="antialiased font-sans pt-4">
-          There are{' '}
+          There are{" "}
           <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
             {VAULT_NUM_REG_SPIRIT}
-          </span>{' '}
+          </span>{" "}
           regular spirits that you can find here.
         </Typography>
       </>
@@ -241,33 +247,33 @@ export const vault = [
       // LEVITATING_ADEPT
       {
         id: 1,
-        spirit_id: 'vault1',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "vault1",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 3],
-        spirit_name: 'Levitating Adept',
+        spirit_name: "Levitating Adept",
         spirit_img_url: LEVITATING_ADEPT,
         spirit_image: VAULT_SPIRIT_1,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: ADEPT_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: ADEPT_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 10,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: LEVITATING_ADEPT,
-            currency: 'Candles',
+            currency: "Candles",
             price: 17,
           },
         ],
@@ -280,12 +286,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Vault of Knowledge',
-            visitNo: '',
+            visit_date: "Vault of Knowledge",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP6,
-        spirit_guide_video_url: youtube_embed + 'l4zapmZhb7w',
+        spirit_guide_video_url: youtube_embed + "l4zapmZhb7w",
         spirit_direction: [
           `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
           `Once you reach the center, light the pillars and memory lamps. Sit on the platform to ascend to the second floor.`,
@@ -296,33 +302,33 @@ export const vault = [
       // POLITE_SCHOLAR
       {
         id: 2,
-        spirit_id: 'vault2',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'stance',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "vault2",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "stance",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 2],
-        spirit_name: 'Polite Scholar',
+        spirit_name: "Polite Scholar",
         spirit_img_url: POLITE_SCHOLAR,
         spirit_image: VAULT_SPIRIT_2,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: SCHOLAR_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 15,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: SCHOLAR_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 2,
           },
           {
-            label: 'Stance',
+            label: "Stance",
             img: POLITE_SCHOLAR,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -335,12 +341,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Vault of Knowledge',
-            visitNo: '',
+            visit_date: "Vault of Knowledge",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP6,
-        spirit_guide_video_url: youtube_embed + '2kOiFD5YQ_s',
+        spirit_guide_video_url: youtube_embed + "2kOiFD5YQ_s",
         spirit_direction: [
           `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
           `Once you reach the center, light the pillars and memory lamps. Sit on the platform to ascend to the second floor.`,
@@ -351,39 +357,39 @@ export const vault = [
       // MEMORY_WHISPERER
       {
         id: 3,
-        spirit_id: 'vault3',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'call',
-        spirit_relive_type: 'task',
+        spirit_id: "vault3",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "call",
+        spirit_relive_type: "task",
         difficulty_level: 25,
         difficulty_types: [0, 2],
-        spirit_name: 'Memory Whisperer',
+        spirit_name: "Memory Whisperer",
         spirit_img_url: MEMORY_WHISPERER,
         spirit_image: VAULT_SPIRIT_3,
         spirit_collectibles: [
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: MEMORY_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 3,
           },
           {
-            label: 'Cape Lvl 1',
+            label: "Cape Lvl 1",
             img: MEMORY_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 50,
           },
           {
-            label: 'Cape Lvl 2',
+            label: "Cape Lvl 2",
             img: MEMORY_ITEM_3,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 150,
           },
           {
-            label: 'Call',
+            label: "Call",
             img: MEMORY_WHISPERER,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -396,12 +402,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Vault of Knowledge',
-            visitNo: '',
+            visit_date: "Vault of Knowledge",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP6,
-        spirit_guide_video_url: youtube_embed + 'VFEsHNyXmm8',
+        spirit_guide_video_url: youtube_embed + "VFEsHNyXmm8",
         spirit_direction: [
           `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform. Note: You must first relive the Manta Whisperer in the Valley of Triumph.`,
           `Once you reach the center, light the pillars and memory lamps. Continue ascending until you reach the fourth floor.`,
@@ -412,39 +418,39 @@ export const vault = [
       // PRAYING_ACOLYTE
       {
         id: 4,
-        spirit_id: 'vault4',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "vault4",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 2, 3],
-        spirit_name: 'Praying Acolyte',
+        spirit_name: "Praying Acolyte",
         spirit_img_url: PRAYING_ACOLYTE,
         spirit_image: VAULT_SPIRIT_4,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: ACOLYTE_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 5,
           },
           {
-            label: 'Cape Lvl 1',
+            label: "Cape Lvl 1",
             img: ACOLYTE_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 25,
           },
           {
-            label: 'Cape Lvl 2',
+            label: "Cape Lvl 2",
             img: ACOLYTE_ITEM_3,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 75,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: PRAYING_ACOLYTE,
-            currency: 'Candles',
+            currency: "Candles",
             price: 15,
           },
         ],
@@ -457,12 +463,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Vault of Knowledge',
-            visitNo: '',
+            visit_date: "Vault of Knowledge",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP6,
-        spirit_guide_video_url: youtube_embed + 'LGFyXjnMtE0',
+        spirit_guide_video_url: youtube_embed + "LGFyXjnMtE0",
         spirit_direction: [
           `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
           `At the platform, you will find a four-player door on the right. Wait for other players and make sure you have the Levitating Emote.`,
@@ -472,33 +478,33 @@ export const vault = [
       // MEDITATING_MONASTIC
       {
         id: 5,
-        spirit_id: 'vault5',
-        season_id: 'season-0',
-        spirit_type: 'regular',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_id: "vault5",
+        season_id: "season-0",
+        spirit_type: "regular",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 35,
         difficulty_types: [0, 2, 6],
-        spirit_name: 'Meditating Monastic',
+        spirit_name: "Meditating Monastic",
         spirit_img_url: MEDITATING_MONASTIC,
         spirit_image: VAULT_SPIRIT_5,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: MONASTIC_ITEM_1,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 10,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: MONASTIC_ITEM_2,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 30,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: MEDITATING_MONASTIC,
-            currency: 'Candles',
+            currency: "Candles",
             price: 27,
           },
         ],
@@ -511,12 +517,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Vault of Knowledge',
-            visitNo: '',
+            visit_date: "Vault of Knowledge",
+            visitNo: "",
           },
         ],
         constellation_icon_route: MAP6,
-        spirit_guide_video_url: youtube_embed + '0-1qb2iU_a8',
+        spirit_guide_video_url: youtube_embed + "0-1qb2iU_a8",
         spirit_direction: [
           `Enter the sixth realm, Vault of Knowledge, and fly toward the elevating platform.`,
           `Use the platform to ascend to the fourth floor.`,
@@ -527,16 +533,16 @@ export const vault = [
     ],
   },
   {
-    label: 'Seasonal Spirits',
-    value: 'seasonal_spirits',
+    label: "Seasonal Spirits",
+    value: "seasonal_spirits",
     icon: UserGroupIcon,
     desc: (
       <Typography className="antialiased font-sans">
         These spirits appeared during previous Seasonal Events and can be found
-        whenever you enter the Vault of Knowledge. There are{' '}
+        whenever you enter the Vault of Knowledge. There are{" "}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {VAULT_NUM_SEASON_SPIRIT}
-        </span>{' '}
+        </span>{" "}
         seasonal spirits that you can find and relive here.
       </Typography>
     ),
@@ -544,40 +550,40 @@ export const vault = [
       // THOUGHTFUL_DIRECTOR
       {
         id: 7,
-        spirit_id: 'vault7',
+        spirit_id: "vault7",
         season_id: 4,
-        spirit_type: 'seasonal',
-        season: 'Season 4 - Season of Rhythm',
-        spirit_category: 'emote',
-        spirit_relive_type: 'carry-memory',
+        spirit_type: "seasonal",
+        season: "Season 4 - Season of Rhythm",
+        spirit_category: "emote",
+        spirit_relive_type: "carry-memory",
         difficulty_level: 45,
         difficulty_types: [1, 5, 6],
-        spirit_name: 'Thoughtful Director',
+        spirit_name: "Thoughtful Director",
         spirit_img_url: THOUGHTFUL_DIRECTOR,
         spirit_image: VAULT_SEASON_SPIRIT_1,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: DIRECTOR_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: DIRECTOR_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: DIRECTOR_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 65,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: THOUGHTFUL_DIRECTOR,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -590,24 +596,28 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'May 13, 2021',
+            visit_date: "May 13, 2021",
             visitNo: 35,
           },
           {
-            visit_date: 'Aug 4, 2022',
+            visit_date: "Aug 4, 2022",
             visitNo: 67,
           },
           {
-            visit_date: 'Jul 3, 2023',
-            visitNo: 'GV#3',
+            visit_date: "Jul 3, 2023",
+            visitNo: "GV#3",
           },
           {
-            visit_date: 'Jun 20, 2024',
+            visit_date: "Jun 20, 2024",
             visitNo: 116,
+          },
+          {
+            visit_date: "Nov 19, 2026",
+            visitNo: 179,
           },
         ],
         icon_route: SEASON4,
-        spirit_guide_video_url: youtube_embed + 'vs3rSSsbULA',
+        spirit_guide_video_url: youtube_embed + "vs3rSSsbULA",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `There is a four-player door on the right. Use the Meditating Emote to open it.`,
@@ -617,34 +627,34 @@ export const vault = [
       // GREETING_SHAMAN
       {
         id: 8,
-        spirit_id: 'vault8',
+        spirit_id: "vault8",
         season_id: 1,
-        spirit_type: 'seasonal',
-        season: 'Season 1 - Season of Gratitude',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 1 - Season of Gratitude",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 30,
         difficulty_types: [0, 2, 5],
-        spirit_name: 'Greeting Shaman',
+        spirit_name: "Greeting Shaman",
         spirit_img_url: GREETING_SHAMAN,
         spirit_image: VAULT_SEASON_SPIRIT_2,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: SHAMAN_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 54,
           },
           {
-            label: 'Instrument',
+            label: "Instrument",
             img: SHAMAN_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 45,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: GREETING_SHAMAN,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -657,24 +667,24 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jul 23, 2020',
+            visit_date: "Jul 23, 2020",
             visitNo: 14,
           },
           {
-            visit_date: 'May 26, 2022',
+            visit_date: "May 26, 2022",
             visitNo: 62,
           },
           {
-            visit_date: 'Jul 3, 2023',
-            visitNo: 'GV#3',
+            visit_date: "Jul 3, 2023",
+            visitNo: "GV#3",
           },
           {
-            visit_date: 'Jul 2, 2026',
+            visit_date: "Jul 2, 2026",
             visitNo: 169,
           },
         ],
         icon_route: SEASON1,
-        spirit_guide_video_url: youtube_embed + 'SSeg3jdBfIM',
+        spirit_guide_video_url: youtube_embed + "SSeg3jdBfIM",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `Ascend to the fourth floor. Once there, fly toward the Hidden Forest constellation.`,
@@ -684,34 +694,34 @@ export const vault = [
       // SHUSHING_LIGHTSCHOLAR
       {
         id: 9,
-        spirit_id: 'vault9',
+        spirit_id: "vault9",
         season_id: 2,
-        spirit_type: 'seasonal',
-        season: 'Season 2 - Season of Lightseekers',
-        spirit_category: 'emote',
-        spirit_relive_type: 'carry-memory',
+        spirit_type: "seasonal",
+        season: "Season 2 - Season of Lightseekers",
+        spirit_category: "emote",
+        spirit_relive_type: "carry-memory",
         difficulty_level: 55,
         difficulty_types: [1, 4, 5, 6],
-        spirit_name: 'Shushing Light Scholar',
+        spirit_name: "Shushing Light Scholar",
         spirit_img_url: SHUSHING_LIGHTSCHOLAR,
         spirit_image: VAULT_SEASON_SPIRIT_3,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: SHUSHING_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 30,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: SHUSHING_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 65,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: SHUSHING_LIGHTSCHOLAR,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -724,20 +734,20 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 20, 2020',
+            visit_date: "Aug 20, 2020",
             visitNo: 16,
           },
           {
-            visit_date: 'Sep 15, 2022',
+            visit_date: "Sep 15, 2022",
             visitNo: 70,
           },
           {
-            visit_date: 'Sep 12, 2024',
+            visit_date: "Sep 12, 2024",
             visitNo: 122,
           },
         ],
         icon_route: SEASON2,
-        spirit_guide_video_url: youtube_embed + 'YqX3lKP3sCA',
+        spirit_guide_video_url: youtube_embed + "YqX3lKP3sCA",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `Ascend to the fourth floor. Once there, fly toward the spiral platform near the Isle of Dawn constellation.`,
@@ -747,40 +757,40 @@ export const vault = [
       // WISE_GRANDPARENT
       {
         id: 10,
-        spirit_id: 'vault10',
+        spirit_id: "vault10",
         season_id: 3,
-        spirit_type: 'seasonal',
-        season: 'Season 3 - Season of Belonging',
-        spirit_category: 'stance',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 3 - Season of Belonging",
+        spirit_category: "stance",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 60,
         difficulty_types: [0, 2, 3, 5, 6],
-        spirit_name: 'Wise Grandparent',
+        spirit_name: "Wise Grandparent",
         spirit_img_url: WISE_GRANDPARENT,
         spirit_image: VAULT_SEASON_SPIRIT_4,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: GRANDPARENT_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 48,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: GRANDPARENT_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: GRANDPARENT_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 10,
           },
           {
-            label: 'Stance',
+            label: "Stance",
             img: WISE_GRANDPARENT,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 0,
           },
         ],
@@ -793,24 +803,24 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 6, 2020',
+            visit_date: "Aug 6, 2020",
             visitNo: 15,
           },
           {
-            visit_date: 'Nov 11, 2021',
+            visit_date: "Nov 11, 2021",
             visitNo: 48,
           },
           {
-            visit_date: 'Nov 9, 2023',
+            visit_date: "Nov 9, 2023",
             visitNo: 100,
           },
           {
-            visit_date: 'Sep 10, 2026',
+            visit_date: "Sep 10, 2026",
             visitNo: 174,
           },
         ],
         icon_route: SEASON3,
-        spirit_guide_video_url: youtube_embed + 'brZdwktwP4E',
+        spirit_guide_video_url: youtube_embed + "brZdwktwP4E",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly to the two-player door on the right.`,
           `Enter the Archives. The spirit is in the middle of the platform.`,
@@ -819,34 +829,34 @@ export const vault = [
       // SLOUCHING_SOLDIER
       {
         id: 11,
-        spirit_id: 'vault11',
+        spirit_id: "vault11",
         season_id: 10,
-        spirit_type: 'seasonal',
-        season: 'Season 10 - Season of The Little Prince',
-        spirit_category: 'emote',
-        spirit_relive_type: 'carry-memory',
+        spirit_type: "seasonal",
+        season: "Season 10 - Season of The Little Prince",
+        spirit_category: "emote",
+        spirit_relive_type: "carry-memory",
         difficulty_level: 30,
         difficulty_types: [1, 2, 4],
-        spirit_name: 'Slouching Soldier',
+        spirit_name: "Slouching Soldier",
         spirit_img_url: SLOUCHING_SOLDIER,
         spirit_image: VAULT_SEASON_SPIRIT_5,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: SOLDIER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: SOLDIER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: SLOUCHING_SOLDIER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -859,12 +869,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Feb 16, 2023',
+            visit_date: "Feb 16, 2023",
             visitNo: 81,
           },
         ],
         icon_route: SEASON10,
-        spirit_guide_video_url: youtube_embed + '4gi3bw88THM',
+        spirit_guide_video_url: youtube_embed + "4gi3bw88THM",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
           `Walk out of the passage, then fly to the right toward the large jar.`,
@@ -874,34 +884,34 @@ export const vault = [
       // GLOATING_NARCISSIST
       {
         id: 12,
-        spirit_id: 'vault12',
+        spirit_id: "vault12",
         season_id: 10,
-        spirit_type: 'seasonal',
-        season: 'Season 10 - Season of The Little Prince',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 10 - Season of The Little Prince",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Gloating Narcissist',
+        spirit_name: "Gloating Narcissist",
         spirit_img_url: GLOATING_NARCISSIST,
         spirit_image: VAULT_SEASON_SPIRIT_6,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: NARCISSIST_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 46,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: NARCISSIST_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 65,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: GLOATING_NARCISSIST,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -914,12 +924,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jul 20, 2023',
+            visit_date: "Jul 20, 2023",
             visitNo: 92,
           },
         ],
         icon_route: SEASON10,
-        spirit_guide_video_url: youtube_embed + 'T6eFDkfCbb4',
+        spirit_guide_video_url: youtube_embed + "T6eFDkfCbb4",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
           `Walk out of the passage, then fly to the left toward the small coliseum with fireworks.`,
@@ -929,34 +939,34 @@ export const vault = [
       // STRETCHING_LAMPLIGHTER
       {
         id: 13,
-        spirit_id: 'vault13',
+        spirit_id: "vault13",
         season_id: 10,
-        spirit_type: 'seasonal',
-        season: 'Season 10 - Season of The Little Prince',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 10 - Season of The Little Prince",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Stretching Lamplighter',
+        spirit_name: "Stretching Lamplighter",
         spirit_img_url: STRETCHING_LAMPLIGHTER,
         spirit_image: VAULT_SEASON_SPIRIT_7,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: LAMPLIGHTER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 44,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: LAMPLIGHTER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: STRETCHING_LAMPLIGHTER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -969,12 +979,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Dec 7, 2023',
+            visit_date: "Dec 7, 2023",
             visitNo: 102,
           },
         ],
         icon_route: SEASON10,
-        spirit_guide_video_url: youtube_embed + '33IDYonEa5c',
+        spirit_guide_video_url: youtube_embed + "33IDYonEa5c",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
           `Walk out of the passage, then fly to the left toward the tall tower. The spirit is inside.`,
@@ -983,40 +993,40 @@ export const vault = [
       // STAR_COLLECTOR
       {
         id: 14,
-        spirit_id: 'vault14',
+        spirit_id: "vault14",
         season_id: 10,
-        spirit_type: 'seasonal',
-        season: 'Season 10 - Season of The Little Prince',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 10 - Season of The Little Prince",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 45,
         difficulty_types: [2, 5, 7],
-        spirit_name: 'Star Collector',
+        spirit_name: "Star Collector",
         spirit_img_url: STAR_COLLECTOR,
         spirit_image: VAULT_SEASON_SPIRIT_8,
         spirit_collectibles: [
           {
-            label: 'Neck Accessory',
+            label: "Neck Accessory",
             img: COLLECTOR_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: COLLECTOR_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 75,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: COLLECTOR_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: STAR_COLLECTOR,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1029,12 +1039,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Sep 14, 2023',
+            visit_date: "Sep 14, 2023",
             visitNo: 96,
           },
         ],
         icon_route: SEASON10,
-        spirit_guide_video_url: youtube_embed + 'D_eLgCvFtbo',
+        spirit_guide_video_url: youtube_embed + "D_eLgCvFtbo",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
           `Walk out of the passage, then fly to the left toward the clouds and enter the passage there.`,
@@ -1044,34 +1054,34 @@ export const vault = [
       // BECKONING_RULER
       {
         id: 15,
-        spirit_id: 'vault15',
+        spirit_id: "vault15",
         season_id: 10,
-        spirit_type: 'seasonal',
-        season: 'Season 10 - Season of The Little Prince',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 10 - Season of The Little Prince",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Beckoning Ruler',
+        spirit_name: "Beckoning Ruler",
         spirit_img_url: BECKONING_RULER,
         spirit_image: VAULT_SEASON_SPIRIT_9,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: RULER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 48,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: RULER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: BECKONING_RULER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1084,20 +1094,20 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Sep 29, 2022',
+            visit_date: "Sep 29, 2022",
             visitNo: 71,
           },
           {
-            visit_date: 'Jul 4, 2024',
+            visit_date: "Jul 4, 2024",
             visitNo: 117,
           },
           {
-            visit_date: 'Apr 7, 2025',
-            visitNo: 'GV#8',
+            visit_date: "Apr 7, 2025",
+            visitNo: "GV#8",
           },
         ],
         icon_route: SEASON10,
-        spirit_guide_video_url: youtube_embed + 't6nUg257N5M',
+        spirit_guide_video_url: youtube_embed + "t6nUg257N5M",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
           `Walk out of the passage, fly toward the moon, and land on the first floating island.`,
@@ -1107,34 +1117,34 @@ export const vault = [
       // SNEEZING_GEOGRAPHER
       {
         id: 16,
-        spirit_id: 'vault16',
+        spirit_id: "vault16",
         season_id: 10,
-        spirit_type: 'seasonal',
-        season: 'Season 10 - Season of The Little Prince',
-        spirit_category: 'emote',
-        spirit_relive_type: 'carry-memory',
+        spirit_type: "seasonal",
+        season: "Season 10 - Season of The Little Prince",
+        spirit_category: "emote",
+        spirit_relive_type: "carry-memory",
         difficulty_level: 30,
         difficulty_types: [1, 2, 4],
-        spirit_name: 'Sneezing Geographer',
+        spirit_name: "Sneezing Geographer",
         spirit_img_url: SNEEZING_GEOGRAPHER,
         spirit_image: VAULT_SEASON_SPIRIT_10,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: GEOGRAPHER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: GEOGRAPHER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 70,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: SNEEZING_GEOGRAPHER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1147,12 +1157,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Apr 13, 2023',
+            visit_date: "Apr 13, 2023",
             visitNo: 85,
           },
         ],
         icon_route: SEASON10,
-        spirit_guide_video_url: youtube_embed + 'JjhpahvgdZo',
+        spirit_guide_video_url: youtube_embed + "JjhpahvgdZo",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, then fly to the left and enter the passage.`,
           `Walk out of the passage, fly toward the moon, and land on the second floating island.`,
@@ -1162,40 +1172,40 @@ export const vault = [
       // BEREFT_VETERAN
       {
         id: 17,
-        spirit_id: 'vault17',
+        spirit_id: "vault17",
         season_id: 16,
-        spirit_type: 'seasonal',
-        season: 'Season 16 - Season of Remembrance',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 16 - Season of Remembrance",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Bereft Veteran',
+        spirit_name: "Bereft Veteran",
         spirit_img_url: BEREFT_VETERAN,
         spirit_image: VAULT_SEASON_SPIRIT_11,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: VETERAN_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 60,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: VETERAN_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 35,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: VETERAN_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 80,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: BEREFT_VETERAN,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 0,
           },
         ],
@@ -1208,12 +1218,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'May 22, 2025',
+            visit_date: "May 22, 2025",
             visitNo: 140,
           },
         ],
         icon_route: SEASON16,
-        spirit_guide_video_url: youtube_embed + 'feXvYTOGEi4',
+        spirit_guide_video_url: youtube_embed + "feXvYTOGEi4",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `Once you reach the center, turn left and look for a passage leading downward.`,
@@ -1223,40 +1233,40 @@ export const vault = [
       // WOUNDED_SOLDIER
       {
         id: 18,
-        spirit_id: 'vault18',
+        spirit_id: "vault18",
         season_id: 16,
-        spirit_type: 'seasonal',
-        season: 'Season 16 - Season of Remembrance',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 16 - Season of Remembrance",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Wounded Warrior',
+        spirit_name: "Wounded Warrior",
         spirit_img_url: WOUNDED_SOLDIER,
         spirit_image: VAULT_SEASON_SPIRIT_12,
         spirit_collectibles: [
           {
-            label: 'Mask',
+            label: "Mask",
             img: WARRIOR_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 45,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: WARRIOR_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 60,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: WARRIOR_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 80,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: WOUNDED_SOLDIER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 0,
           },
         ],
@@ -1269,12 +1279,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 18, 2025',
-            visitNo: 'GV#10',
+            visit_date: "Aug 18, 2025",
+            visitNo: "GV#10",
           },
         ],
         icon_route: SEASON16,
-        spirit_guide_video_url: youtube_embed + '-Oc-2ftk0OM',
+        spirit_guide_video_url: youtube_embed + "-Oc-2ftk0OM",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `Once you reach the center, turn left and look for a passage leading downward.`,
@@ -1285,40 +1295,40 @@ export const vault = [
       // TIPTOEING_TEABREWER
       {
         id: 19,
-        spirit_id: 'vault19',
+        spirit_id: "vault19",
         season_id: 16,
-        spirit_type: 'seasonal',
-        season: 'Season 16 - Season of Remembrance',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 16 - Season of Remembrance",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Tiptoeing Tea-Brewer',
+        spirit_name: "Tiptoeing Tea-Brewer",
         spirit_img_url: TIPTOEING_TEABREWER,
         spirit_image: VAULT_SEASON_SPIRIT_13,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: BREWER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: BREWER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 55,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: BREWER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 65,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: TIPTOEING_TEABREWER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 10,
           },
         ],
@@ -1331,12 +1341,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 18, 2025',
-            visitNo: 'GV#10',
+            visit_date: "Aug 18, 2025",
+            visitNo: "GV#10",
           },
         ],
         icon_route: SEASON16,
-        spirit_guide_video_url: youtube_embed + 'mwLn70j2Sjs',
+        spirit_guide_video_url: youtube_embed + "mwLn70j2Sjs",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `Once you reach the center, turn left and look for a passage leading downward.`,
@@ -1347,46 +1357,46 @@ export const vault = [
       // PLEADING_CHILD
       {
         id: 20,
-        spirit_id: 'vault20',
+        spirit_id: "vault20",
         season_id: 16,
-        spirit_type: 'seasonal',
-        season: 'Season 16 - Season of Remembrance',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 16 - Season of Remembrance",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Pleading Child',
+        spirit_name: "Pleading Child",
         spirit_img_url: PLEADING_CHILD,
         spirit_image: VAULT_SEASON_SPIRIT_14,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: CHILD_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 60,
           },
           {
-            label: 'Neck Accessory',
+            label: "Neck Accessory",
             img: CHILD_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 50,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: CHILD_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 40,
           },
           {
-            label: 'Shoes',
+            label: "Shoes",
             img: CHILD_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 30,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: PLEADING_CHILD,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1399,12 +1409,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Jan 13, 2025',
-            visitNo: 'GV#7',
+            visit_date: "Jan 13, 2025",
+            visitNo: "GV#7",
           },
         ],
         icon_route: SEASON16,
-        spirit_guide_video_url: youtube_embed + 'PcKmzQOjKFU',
+        spirit_guide_video_url: youtube_embed + "PcKmzQOjKFU",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge, and fly toward the elevating platform.`,
           `Once you reach the center, turn left and look for a passage leading downward.`,
@@ -1415,40 +1425,40 @@ export const vault = [
       // HUNTER
       {
         id: 21,
-        spirit_id: 'vault21',
+        spirit_id: "vault21",
         season_id: 20,
-        spirit_type: 'seasonal',
-        season: 'Season 20 - Season of The Nine-Colored Deer',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 20 - Season of The Nine-Colored Deer",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Hunter',
+        spirit_name: "Hunter",
         spirit_img_url: HUNTER,
         spirit_image: VAULT_SEASON_SPIRIT_15,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: HUNTER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 53,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: HUNTER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 67,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: HUNTER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 73,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: HUNTER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1461,12 +1471,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 28, 2026',
-            visitNo: 'GV#11',
+            visit_date: "Aug 28, 2026",
+            visitNo: "GV#11",
           },
         ],
         icon_route: SEASON20,
-        spirit_guide_video_url: youtube_embed + '2yjliDfvtdM',
+        spirit_guide_video_url: youtube_embed + "2yjliDfvtdM",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
@@ -1476,40 +1486,40 @@ export const vault = [
       // HERB_GATHERER
       {
         id: 22,
-        spirit_id: 'vault22',
+        spirit_id: "vault22",
         season_id: 20,
-        spirit_type: 'seasonal',
-        season: 'Season 20 - Season of The Nine-Colored Deer',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 20 - Season of The Nine-Colored Deer",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Herb Gatherer',
+        spirit_name: "Herb Gatherer",
         spirit_img_url: HERB_GATHERER,
         spirit_image: VAULT_SEASON_SPIRIT_16,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: GATHERER_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 46,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: GATHERER_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 64,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: GATHERER_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 34,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: HERB_GATHERER,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1522,12 +1532,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 28, 2026',
-            visitNo: 'GV#11',
+            visit_date: "Aug 28, 2026",
+            visitNo: "GV#11",
           },
         ],
         icon_route: SEASON20,
-        spirit_guide_video_url: youtube_embed + 'h0uDIdauBNM',
+        spirit_guide_video_url: youtube_embed + "h0uDIdauBNM",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
@@ -1537,40 +1547,40 @@ export const vault = [
       // FEUDAL_LORD
       {
         id: 23,
-        spirit_id: 'vault23',
+        spirit_id: "vault23",
         season_id: 20,
-        spirit_type: 'seasonal',
-        season: 'Season 20 - Season of The Nine-Colored Deer',
-        spirit_category: 'friendship action',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 20 - Season of The Nine-Colored Deer",
+        spirit_category: "friendship action",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Feudal Lord',
+        spirit_name: "Feudal Lord",
         spirit_img_url: FEUDAL_LORD,
         spirit_image: VAULT_SEASON_SPIRIT_17,
         spirit_collectibles: [
           {
-            label: 'Hair Accessory',
+            label: "Hair Accessory",
             img: LORD_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 46,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: LORD_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 42,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: LORD_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 78,
           },
           {
-            label: 'Friendship Action',
+            label: "Friendship Action",
             img: FEUDAL_LORD,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 0,
           },
         ],
@@ -1583,12 +1593,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 28, 2026',
-            visitNo: 'GV#11',
+            visit_date: "Aug 28, 2026",
+            visitNo: "GV#11",
           },
         ],
         icon_route: SEASON20,
-        spirit_guide_video_url: youtube_embed + '83LkIYB5HEs',
+        spirit_guide_video_url: youtube_embed + "83LkIYB5HEs",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
@@ -1598,46 +1608,46 @@ export const vault = [
       // PRINCESS
       {
         id: 24,
-        spirit_id: 'vault24',
+        spirit_id: "vault24",
         season_id: 20,
-        spirit_type: 'seasonal',
-        season: 'Season 20 - Season of The Nine-Colored Deer',
-        spirit_category: 'emote',
-        spirit_relive_type: 'follow-memory',
+        spirit_type: "seasonal",
+        season: "Season 20 - Season of The Nine-Colored Deer",
+        spirit_category: "emote",
+        spirit_relive_type: "follow-memory",
         difficulty_level: 25,
         difficulty_types: [0, 1, 2],
-        spirit_name: 'Princess',
+        spirit_name: "Princess",
         spirit_img_url: PRINCESS,
         spirit_image: VAULT_SEASON_SPIRIT_18,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: PRINCESS_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 62,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: PRINCESS_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 46,
           },
           {
-            label: 'Outfit',
+            label: "Outfit",
             img: PRINCESS_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 71,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: PRINCESS_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 71,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: PRINCESS,
-            currency: 'Hearts',
+            currency: "Hearts",
             price: 13,
           },
         ],
@@ -1650,12 +1660,12 @@ export const vault = [
         ],
         number_of_visits: [
           {
-            visit_date: 'Aug 28, 2026',
-            visitNo: 'GV#11',
+            visit_date: "Aug 28, 2026",
+            visitNo: "GV#11",
           },
         ],
         icon_route: SEASON20,
-        spirit_guide_video_url: youtube_embed + 'XB_wHSO3nKA',
+        spirit_guide_video_url: youtube_embed + "XB_wHSO3nKA",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit on the deer icon to travel to Crescent Oasis.`,
@@ -1665,40 +1675,40 @@ export const vault = [
       // Comfort of Kindness
       {
         id: 25,
-        spirit_id: 'vault25',
+        spirit_id: "vault25",
         season_id: 23,
-        spirit_type: 'seasonal',
-        season: 'Season 23 - Season of Moomin',
-        spirit_category: 'non-entity',
-        spirit_relive_type: 'none',
+        spirit_type: "seasonal",
+        season: "Season 23 - Season of Moomin",
+        spirit_category: "non-entity",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
-        spirit_name: 'Comfort of Kindness',
+        spirit_name: "Comfort of Kindness",
         spirit_img_url: COF_ITEM_3,
         spirit_image: COF_ITEM_1,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: COF_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: COF_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: COF_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: COF_ITEM_5,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -1711,7 +1721,7 @@ export const vault = [
         ],
         number_of_visits: [],
         icon_route: SEASON23,
-        spirit_guide_video_url: youtube_embed + '',
+        spirit_guide_video_url: youtube_embed + "",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
@@ -1721,34 +1731,34 @@ export const vault = [
       // Sense of Self
       {
         id: 26,
-        spirit_id: 'vault26',
+        spirit_id: "vault26",
         season_id: 23,
-        spirit_type: 'seasonal',
-        season: 'Season 23 - Season of Moomin',
-        spirit_category: 'non-entity',
-        spirit_relive_type: 'none',
+        spirit_type: "seasonal",
+        season: "Season 23 - Season of Moomin",
+        spirit_category: "non-entity",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
-        spirit_name: 'Sense of Self',
+        spirit_name: "Sense of Self",
         spirit_img_url: SOS_ITEM_3,
         spirit_image: SOS_ITEM_1,
         spirit_collectibles: [
           {
-            label: 'Hair Accessory',
+            label: "Hair Accessory",
             img: SOS_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Neck Accessory',
+            label: "Neck Accessory",
             img: SOS_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Shoes',
+            label: "Shoes",
             img: SOS_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -1761,7 +1771,7 @@ export const vault = [
         ],
         number_of_visits: [],
         icon_route: SEASON23,
-        spirit_guide_video_url: youtube_embed + '',
+        spirit_guide_video_url: youtube_embed + "",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
@@ -1771,40 +1781,40 @@ export const vault = [
       // Spirit of Adventure
       {
         id: 27,
-        spirit_id: 'vault27',
+        spirit_id: "vault27",
         season_id: 23,
-        spirit_type: 'seasonal',
-        season: 'Season 23 - Season of Moomin',
-        spirit_category: 'non-entity',
-        spirit_relive_type: 'none',
+        spirit_type: "seasonal",
+        season: "Season 23 - Season of Moomin",
+        spirit_category: "non-entity",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
-        spirit_name: 'Spirit of Adventure',
+        spirit_name: "Spirit of Adventure",
         spirit_img_url: SOA_ITEM_3,
         spirit_image: SOA_ITEM_1,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: SOA_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: SOA_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Instrument',
+            label: "Instrument",
             img: SOA_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: SOA_ITEM_5,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -1817,7 +1827,7 @@ export const vault = [
         ],
         number_of_visits: [],
         icon_route: SEASON23,
-        spirit_guide_video_url: youtube_embed + '',
+        spirit_guide_video_url: youtube_embed + "",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
@@ -1827,46 +1837,46 @@ export const vault = [
       // Inspiration of Inclusion
       {
         id: 28,
-        spirit_id: 'vault28',
+        spirit_id: "vault28",
         season_id: 23,
-        spirit_type: 'seasonal',
-        season: 'Season 23 - Season of Moomin',
-        spirit_category: 'non-entity',
-        spirit_relive_type: 'none',
+        spirit_type: "seasonal",
+        season: "Season 23 - Season of Moomin",
+        spirit_category: "non-entity",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
-        spirit_name: 'Inspiration of Inclusion',
+        spirit_name: "Inspiration of Inclusion",
         spirit_img_url: IOI_ITEM_3,
         spirit_image: IOI_ITEM_1,
         spirit_collectibles: [
           {
-            label: 'Hair Accessory',
+            label: "Hair Accessory",
             img: IOI_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Neck Accessory',
+            label: "Neck Accessory",
             img: IOI_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Suitpants',
+            label: "Suitpants",
             img: IOI_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: IOI_ITEM_5,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Prop',
+            label: "Prop",
             img: IOI_ITEM_6,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
         ],
@@ -1879,7 +1889,7 @@ export const vault = [
         ],
         number_of_visits: [],
         icon_route: SEASON23,
-        spirit_guide_video_url: youtube_embed + '',
+        spirit_guide_video_url: youtube_embed + "",
         spirit_direction: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
           `Enter the passage. In the collaboration room, sit at the Moomin Mural to travel to Moominvalley Glade.`,
@@ -1888,38 +1898,38 @@ export const vault = [
       },
       //Lightmending Champion
       {
-        spirit_id: 'lightmending-1',
+        spirit_id: "lightmending-1",
         spirit_name: `Lightmending Champion`,
         spirit_img_url: LIGHTMENDING_CHAMPION,
-        spirit_category: 'emote',
-        spirit_relive_type: 'none',
+        spirit_category: "emote",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
         spirit_image: VAULT_SEASON_SPIRIT_19,
         icon_route: SEASON28,
         spirit_collectibles: [
           {
-            label: 'Hair Accessory',
+            label: "Hair Accessory",
             img: LC_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: LC_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 25,
           },
           {
-            label: 'Suitpants',
+            label: "Suitpants",
             img: LC_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: LIGHTMENDING_CHAMPION,
-            currency: 'Candles',
+            currency: "Candles",
             price: 28,
           },
         ],
@@ -1934,38 +1944,38 @@ export const vault = [
       },
       //Lightmending Pioneer
       {
-        spirit_id: 'lightmending-2',
+        spirit_id: "lightmending-2",
         spirit_name: `Lightmending Pioneer`,
         spirit_img_url: LIGHTMENDING_PIONEER,
-        spirit_category: 'emote',
-        spirit_relive_type: 'none',
+        spirit_category: "emote",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
         spirit_image: VAULT_SEASON_SPIRIT_20,
         icon_route: SEASON28,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: LP_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: LP_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 19,
           },
           {
-            label: 'Suitpants',
+            label: "Suitpants",
             img: LP_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: LIGHTMENDING_PIONEER,
-            currency: 'Candles',
+            currency: "Candles",
             price: 28,
           },
         ],
@@ -1980,44 +1990,44 @@ export const vault = [
       },
       //Lightmending Light Scholar
       {
-        spirit_id: 'lightmending-3',
+        spirit_id: "lightmending-3",
         spirit_name: `Lightmending Light Scholar`,
         spirit_img_url: LIGHTMENDING_LIGHT_SCHOLAR,
-        spirit_category: 'emote',
-        spirit_relive_type: 'none',
+        spirit_category: "emote",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
         spirit_image: VAULT_SEASON_SPIRIT_21,
         icon_route: SEASON28,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: LS_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 25,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: LS_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 23,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: LS_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 30,
           },
           {
-            label: 'Suitpants',
+            label: "Suitpants",
             img: LS_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: LIGHTMENDING_LIGHT_SCHOLAR,
-            currency: 'Candles',
+            currency: "Candles",
             price: 28,
           },
         ],
@@ -2032,44 +2042,44 @@ export const vault = [
       },
       //Lightmending Light Catcher
       {
-        spirit_id: 'lightmending-4',
+        spirit_id: "lightmending-4",
         spirit_name: `Lightmending Light Catcher`,
         spirit_img_url: LIGHTMENDING_LIGHT_CATCHER,
-        spirit_category: 'emote',
-        spirit_relive_type: 'none',
+        spirit_category: "emote",
+        spirit_relive_type: "none",
         difficulty_level: 0,
         difficulty_types: [14],
         spirit_image: VAULT_SEASON_SPIRIT_22,
         icon_route: SEASON28,
         spirit_collectibles: [
           {
-            label: 'Hair',
+            label: "Hair",
             img: LLC_ITEM_2,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Mask',
+            label: "Mask",
             img: LLC_ITEM_1,
-            currency: 'Candles',
+            currency: "Candles",
             price: 19,
           },
           {
-            label: 'Cape',
+            label: "Cape",
             img: LLC_ITEM_3,
-            currency: 'Candles',
+            currency: "Candles",
             price: 38,
           },
           {
-            label: 'Instrument',
+            label: "Instrument",
             img: LLC_ITEM_4,
-            currency: 'Candles',
+            currency: "Candles",
             price: 0,
           },
           {
-            label: 'Emote',
+            label: "Emote",
             img: LIGHTMENDING_LIGHT_CATCHER,
-            currency: 'Candles',
+            currency: "Candles",
             price: 28,
           },
         ],
@@ -2085,24 +2095,24 @@ export const vault = [
     ],
   },
   {
-    label: 'Winged Lights',
-    value: 'winged_lights',
+    label: "Winged Lights",
+    value: "winged_lights",
     icon: SparklesIcon,
     desc: (
       <Typography className="antialiased font-sans">
-        This map also contains collectibles known as Winged Lights. They increase
-        your Wing Level, allowing you to fly higher. There are{' '}
+        This map also contains collectibles known as Winged Lights. They
+        increase your Wing Level, allowing you to fly higher. There are{" "}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {VAULT_NUM_WL}
-        </span>{' '}
+        </span>{" "}
         Winged Lights that you can collect here in the Vault of Knowledge.
       </Typography>
     ),
     winged_lights: [
       {
         id: 1,
-        wl_label: 'WL1-Social Space (Ladder)',
-        wl_group: 'wl-vault',
+        wl_label: "WL1-Social Space (Ladder)",
+        wl_group: "wl-vault",
         wl_url: VK_WL1 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2111,8 +2121,8 @@ export const vault = [
       },
       {
         id: 2,
-        wl_label: 'WL2-Third Level (Roof of Gazeboo)',
-        wl_group: 'wl-vault',
+        wl_label: "WL2-Third Level (Roof of Gazeboo)",
+        wl_group: "wl-vault",
         wl_url: VK_WL2 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2122,8 +2132,8 @@ export const vault = [
       },
       {
         id: 3,
-        wl_label: 'WL3-Fourth Level (Inside of Gazeboo)',
-        wl_group: 'wl-vault',
+        wl_label: "WL3-Fourth Level (Inside of Gazeboo)",
+        wl_group: "wl-vault",
         wl_url: VK_WL3 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2134,8 +2144,8 @@ export const vault = [
       },
       {
         id: 4,
-        wl_label: 'WL4-Fourth Level (Floating Land)',
-        wl_group: 'wl-vault',
+        wl_label: "WL4-Fourth Level (Floating Land)",
+        wl_group: "wl-vault",
         wl_url: VK_WL4 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2146,8 +2156,8 @@ export const vault = [
       },
       {
         id: 5,
-        wl_label: 'WL5-Fifth Level (Bone)',
-        wl_group: 'wl-vault',
+        wl_label: "WL5-Fifth Level (Bone)",
+        wl_group: "wl-vault",
         wl_url: VK_WL5 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2157,8 +2167,8 @@ export const vault = [
       },
       {
         id: 6,
-        wl_label: 'WL6-Summit',
-        wl_group: 'wl-vault',
+        wl_label: "WL6-Summit",
+        wl_group: "wl-vault",
         wl_url: VK_WL6 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2168,8 +2178,8 @@ export const vault = [
       },
       {
         id: 7,
-        wl_label: 'WL7-The Archives (3rd Level)',
-        wl_group: 'wl-vault',
+        wl_label: "WL7-The Archives (3rd Level)",
+        wl_group: "wl-vault",
         wl_url: VK_WL7 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2180,8 +2190,8 @@ export const vault = [
       },
       {
         id: 8,
-        wl_label: 'WL8-The Archives (3rd Level)',
-        wl_group: 'wl-vault',
+        wl_label: "WL8-The Archives (3rd Level)",
+        wl_group: "wl-vault",
         wl_url: VK_WL8 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2192,8 +2202,8 @@ export const vault = [
       },
       {
         id: 9,
-        wl_label: 'WL9-Dessert Starlight (Big Jar)',
-        wl_group: 'wl-vault',
+        wl_label: "WL9-Dessert Starlight (Big Jar)",
+        wl_group: "wl-vault",
         wl_url: VK_WL9 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2205,8 +2215,8 @@ export const vault = [
       },
       {
         id: 10,
-        wl_label: 'WL10-Dessert Starlight (Watchtower Roof)',
-        wl_group: 'wl-vault',
+        wl_label: "WL10-Dessert Starlight (Watchtower Roof)",
+        wl_group: "wl-vault",
         wl_url: VK_WL10 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2218,8 +2228,8 @@ export const vault = [
       },
       {
         id: 11,
-        wl_label: 'WL11-Dessert Starlight (Beckoning Ruler Island)',
-        wl_group: 'wl-vault',
+        wl_label: "WL11-Dessert Starlight (Beckoning Ruler Island)",
+        wl_group: "wl-vault",
         wl_url: VK_WL11 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2231,8 +2241,8 @@ export const vault = [
       },
       {
         id: 12,
-        wl_label: 'WL12-Repository of Refuge (Broken Bars)',
-        wl_group: 'wl-vault',
+        wl_label: "WL12-Repository of Refuge (Broken Bars)",
+        wl_group: "wl-vault",
         wl_url: VK_WL12 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2244,8 +2254,8 @@ export const vault = [
       },
       {
         id: 13,
-        wl_label: 'WL13-Crescent Oasis (Pool of Water)',
-        wl_group: 'wl-vault',
+        wl_label: "WL13-Crescent Oasis (Pool of Water)",
+        wl_group: "wl-vault",
         wl_url: VK_WL13 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
@@ -2255,8 +2265,8 @@ export const vault = [
       },
       {
         id: 14,
-        wl_label: 'WL14-Crescent Oasis (Feudal Lord Building)',
-        wl_group: 'wl-vault',
+        wl_label: "WL14-Crescent Oasis (Feudal Lord Building)",
+        wl_group: "wl-vault",
         wl_url: VK_WL14 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
@@ -2266,8 +2276,8 @@ export const vault = [
       },
       {
         id: 15,
-        wl_label: 'WL15-Crescent Oasis (Hidden Glade Tree)',
-        wl_group: 'wl-vault',
+        wl_label: "WL15-Crescent Oasis (Hidden Glade Tree)",
+        wl_group: "wl-vault",
         wl_url: VK_WL15 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
@@ -2278,8 +2288,8 @@ export const vault = [
       },
       {
         id: 16,
-        wl_label: 'WL16',
-        wl_group: 'wl-vault',
+        wl_label: "WL16",
+        wl_group: "wl-vault",
         wl_url: VK_WL16 ?? WINGED_LIGHT,
         wl_location: [
           `Enter Map 6, the Vault of Knowledge. Fly upward and look for a passage on the left.`,
@@ -2289,23 +2299,23 @@ export const vault = [
     ],
   },
   {
-    label: 'Map Shrines',
-    value: 'map_shrines',
+    label: "Map Shrines",
+    value: "map_shrines",
     icon: MapPinIcon,
     desc: (
       <Typography className="antialiased font-sans">
         Map Shrines serve as guides that show how many Winged Lights you still
-        need to collect and where they are located within the map. There are{' '}
+        need to collect and where they are located within the map. There are{" "}
         <span className="font-sans font-bold text-lg text-black bg-amber-700 rounded-3xl px-2">
           {VAULT_NUM_MAP_SHRINES}
-        </span>{' '}
+        </span>{" "}
         Map Shrines that you can activate in the Vault of Knowledge.
       </Typography>
     ),
     map_shrines: [
       {
         id: 1,
-        shrine_label: 'Map Shrine 1',
+        shrine_label: "Map Shrine 1",
         shrine_url: VK_MS1 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2315,7 +2325,7 @@ export const vault = [
       },
       {
         id: 2,
-        shrine_label: 'Map Shrine 2',
+        shrine_label: "Map Shrine 2",
         shrine_url: VK_MS2 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2326,7 +2336,7 @@ export const vault = [
       },
       {
         id: 3,
-        shrine_label: 'Map Shrine 3',
+        shrine_label: "Map Shrine 3",
         shrine_url: VK_MS3 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2336,7 +2346,7 @@ export const vault = [
       },
       {
         id: 4,
-        shrine_label: 'Map Shrine 4',
+        shrine_label: "Map Shrine 4",
         shrine_url: VK_MS4 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2347,7 +2357,7 @@ export const vault = [
       },
       {
         id: 5,
-        shrine_label: 'Map Shrine 5',
+        shrine_label: "Map Shrine 5",
         shrine_url: VK_MS5 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2359,7 +2369,7 @@ export const vault = [
       },
       {
         id: 6,
-        shrine_label: 'Map Shrine 6',
+        shrine_label: "Map Shrine 6",
         shrine_url: VK_MS6 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2370,7 +2380,7 @@ export const vault = [
       },
       {
         id: 7,
-        shrine_label: 'Map Shrine 7',
+        shrine_label: "Map Shrine 7",
         shrine_url: VK_MS7 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2381,7 +2391,7 @@ export const vault = [
       },
       {
         id: 8,
-        shrine_label: 'Map Shrine 8',
+        shrine_label: "Map Shrine 8",
         shrine_url: VK_MS8 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2392,7 +2402,7 @@ export const vault = [
       },
       {
         id: 9,
-        shrine_label: 'Map Shrine 9',
+        shrine_label: "Map Shrine 9",
         shrine_url: VK_MS9 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2402,7 +2412,7 @@ export const vault = [
       },
       {
         id: 10,
-        shrine_label: 'Map Shrine 10',
+        shrine_label: "Map Shrine 10",
         shrine_url: VK_MS10 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2413,7 +2423,7 @@ export const vault = [
       },
       {
         id: 11,
-        shrine_label: 'Map Shrine 11',
+        shrine_label: "Map Shrine 11",
         shrine_url: VK_MS11 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2424,7 +2434,7 @@ export const vault = [
       },
       {
         id: 12,
-        shrine_label: 'Map Shrine 12',
+        shrine_label: "Map Shrine 12",
         shrine_url: VK_MS12 ?? MAP_SHRINE,
         shrine_location: [
           `Enter Map 6, the Vault of Knowledge.`,
@@ -2436,8 +2446,8 @@ export const vault = [
     ],
   },
   {
-    label: 'Dye Ratio',
-    value: 'dye_locations',
+    label: "Dye Ratio",
+    value: "dye_locations",
     icon: SwatchIcon,
     desc: (
       <div className="flex flex-col justify-center items-center">
@@ -2446,4 +2456,4 @@ export const vault = [
       </div>
     ),
   },
-]
+];
