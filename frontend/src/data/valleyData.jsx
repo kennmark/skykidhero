@@ -947,6 +947,10 @@ export const valley = [
             visit_date: "Apr 25, 2024",
             visitNo: 112,
           },
+          {
+            visit_date: "Nov 26, 2026",
+            visitNo: 180,
+          },
         ],
         icon_route: SEASON8,
         spirit_guide_video_url: youtube_embed + "CUcyXXvawO8",
