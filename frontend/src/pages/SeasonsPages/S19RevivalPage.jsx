@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useSeasonalSpirits } from '../../contexts/SeasonalSpiritsContext'
 import MapTabHeaderContainer from '../components/MapTabHeaderContainer'
 import {
   Tabs,
@@ -33,6 +34,12 @@ const S19RevivalPage = () => {
     winged_lights,
     map_shrines,
   } = seasons2023[3]
+
+  const { seasonSpirits: resolvedSeasonSpirits } = useSeasonalSpirits()
+  const displaySeasonSpirits =
+    resolvedSeasonSpirits.length > 0
+      ? resolvedSeasonSpirits
+      : season_spirits
 
   const [checkedSpirits, setCheckedSpirits] = useState(() => {
     const saved = localStorage.getItem('checkedSpirits')
@@ -114,7 +121,7 @@ const S19RevivalPage = () => {
 
               <div className="flex flex-wrap justify-center gap-3">
                 {activeTab === 'collectibles' &&
-                  season_spirits?.map((spirit) => {
+                  displaySeasonSpirits?.map((spirit) => {
                     return (
                       <SpiritCardContainer
                         {...spirit}

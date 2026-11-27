@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useSeasonalSpirits } from '../../contexts/SeasonalSpiritsContext'
 import MapTabHeaderContainer from '../components/MapTabHeaderContainer'
 import {
   Tabs,
@@ -37,6 +38,12 @@ const S22DuetPage = () => {
     map_shrines,
     season_type,
   } = seasons2024[2]
+
+  const { seasonSpirits: resolvedSeasonSpirits } = useSeasonalSpirits()
+  const displaySeasonSpirits =
+    resolvedSeasonSpirits.length > 0
+      ? resolvedSeasonSpirits
+      : season_spirits
 
   const dateToday = new Date()
 
@@ -126,7 +133,7 @@ const S22DuetPage = () => {
 
               <div className="flex flex-wrap justify-center gap-3">
                 {activeTab === 'collectibles' &&
-                  season_spirits?.map((spirit) => {
+                  displaySeasonSpirits?.map((spirit) => {
                     return (
                       <SpiritCardContainer
                         {...spirit}

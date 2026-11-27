@@ -1,46 +1,32 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import {
-  AuthProvider,
-} from "./context/AuthContext";
+import { AuthProvider } from "./context/AuthContext";
 
-import ProtectedRoute
-  from "./routes/ProtectedRoute";
+import ProtectedRoute from "./routes/ProtectedRoute";
 
-import LoginPage
-  from "./pages/Login/LoginPage";
+import LoginPage from "./pages/Login/LoginPage";
 
-import DashboardPage
-  from "./pages/Dashboard/DashboardPage";
+import DashboardPage from "./pages/Dashboard/DashboardPage";
 
-import NewsListPage 
-  from "./pages/News/NewsListPage";
+import NewsListPage from "./pages/News/NewsListPage";
 import NewsCreatePage from "./pages/News/NewsCreatePage";
 import NewsEditPage from "./pages/News/NewsEditPage.jsx";
 import MapListPage from "./pages/Maps/MapListPage.jsx";
 import MapEditPage from "./pages/Maps/MapEditPage.jsx";
 import SpiritEditPage from "./pages/Spirits/SpiritEditPage.jsx";
 import WingedLightEditPage from "./pages/WingedLights/WingedLightEditPage.jsx";
-import SeasonsPage
-  from "./pages/Seasons/SeasonsPage.jsx";
+import SeasonsPage from "./pages/Seasons/SeasonsPage.jsx";
 
-import SeasonEditPage
-  from "./pages/Seasons/SeasonEditPage.jsx";
+import SeasonEditPage from "./pages/Seasons/SeasonEditPage.jsx";
+import SeasonalSpiritsPage from "./pages/Seasons/SeasonalSpiritsPage.jsx";
+import SeasonalSpiritEditPage from "./pages/Seasons/SeasonalSpiritEditPage.jsx";
 
 export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-
-          <Route
-            path="/login"
-            element={<LoginPage />}
-          />
+          <Route path="/login" element={<LoginPage />} />
           <Route
             path="/"
             element={
@@ -128,6 +114,33 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <SeasonEditPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/seasonal-spirits"
+            element={
+              <ProtectedRoute>
+                <SeasonalSpiritsPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/seasons/:seasonId/spirits/new"
+            element={
+              <ProtectedRoute>
+                <SeasonalSpiritEditPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/seasonal-spirits/:id/edit"
+            element={
+              <ProtectedRoute>
+                <SeasonalSpiritEditPage />
               </ProtectedRoute>
             }
           />

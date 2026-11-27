@@ -8,6 +8,8 @@ import mapRoutes from "../modules/maps/map.routes.js";
 import mapAdminRoutes from "../modules/maps/map.admin.routes.js";
 import spiritRoutes from "../modules/spirits/spirit.routes.js";
 import spiritAdminRoutes from "../modules/spirits/spirit.admin.routes.js";
+import seasonalSpiritRoutes from "../modules/spirits/seasonalSpirit.routes.js";
+import seasonalSpiritAdminRoutes from "../modules/spirits/seasonalSpirit.admin.routes.js";
 import wingedLightRoutes from "../modules/wingedLights/wingedLight.routes.js";
 import wingedLightAdminRoutes from "../modules/wingedLights/wingedLight.admin.routes.js";
 import seasonRoutes from "../modules/seasons/season.routes.js";
@@ -33,11 +35,15 @@ router.use("/admin/news", newsAdminRoutes)
 
 router.use("/", spiritRoutes);
 
+router.use("/", seasonalSpiritRoutes);
+
 router.use("/", wingedLightRoutes);
 
 router.use("/maps", mapRoutes);
 
 router.use("/admin", spiritAdminRoutes);
+
+router.use("/admin", seasonalSpiritAdminRoutes);
 
 router.use("/admin", wingedLightAdminRoutes);
 

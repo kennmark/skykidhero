@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useSeasonalSpirits } from '../../contexts/SeasonalSpiritsContext'
 import MapTabHeaderContainer from '../components/MapTabHeaderContainer'
 import {
   Tabs,
@@ -37,6 +38,12 @@ const S26TwoEmbersOnePage = () => {
     map_shrines,
     season_type,
   } = seasons2025[2]
+
+  const { seasonSpirits: resolvedSeasonSpirits } = useSeasonalSpirits()
+  const displaySeasonSpirits =
+    resolvedSeasonSpirits.length > 0
+      ? resolvedSeasonSpirits
+      : season_spirits
 
   const currentSeasonId = seasons2025.length - 1
   const isCurrentSeason =
@@ -133,7 +140,7 @@ const S26TwoEmbersOnePage = () => {
 
               <div className="flex flex-wrap justify-center gap-3">
                 {activeTab === 'season_spirits' &&
-                  season_spirits?.map((spirit) => {
+                  displaySeasonSpirits?.map((spirit) => {
                     return (
                       <SpiritCardContainer
                         {...spirit}

@@ -6,6 +6,7 @@ import {
   ChartBarIcon,
   MapIcon,
   SparklesIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import CmsLogo from "../brand/CmsLogo.jsx";
 
@@ -31,6 +32,11 @@ const links = [
     icon: SparklesIcon,
   },
   {
+    to: "/seasonal-spirits",
+    label: "Seasonal Spirits",
+    icon: UserGroupIcon,
+  },
+  {
     to: "/uploads",
     label: "Uploads",
     icon: ArrowUpTrayIcon,
@@ -45,13 +51,11 @@ const links = [
 export default function Sidebar() {
   return (
     <aside className="flex h-auto w-64 flex-col border-r bg-white">
-
       <div className="border-b border-gray-200 px-5 py-5">
         <CmsLogo compact />
       </div>
 
       <nav className="flex-1 p-3">
-
         {links.map((link) => {
           const Icon = link.icon;
 
@@ -74,9 +78,7 @@ export default function Sidebar() {
             </NavLink>
           );
         })}
-
       </nav>
-
     </aside>
   );
 }
