@@ -195,3 +195,21 @@ export async function updateAdminSeasonalSpiritTreeCosts(
 
   return response.data;
 }
+
+/*
+ * -------------------------------------------------------
+ * Delete Seasonal Spirit (soft delete)
+ * -------------------------------------------------------
+ */
+
+export async function deleteAdminSeasonalSpirit(spiritId) {
+  if (!Number.isInteger(Number(spiritId)) || Number(spiritId) <= 0) {
+    throw new Error("A valid Seasonal Spirit ID is required.");
+  }
+
+  const response = await client.delete(
+    `/admin/seasonal-spirits/${spiritId}`
+  );
+
+  return response.data;
+}

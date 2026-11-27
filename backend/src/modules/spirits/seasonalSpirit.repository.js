@@ -557,3 +557,64 @@ export function updateSeasonalSpiritCollectibleImage(
     data: { image, imagePublicId },
   });
 }
+
+export async function findSeasonByNumberForSeasonalSpirit(
+  seasonNumber,
+) {
+  return prisma.season.findFirst({
+    where: {
+      number: seasonNumber,
+      deletedAt: null,
+    },
+    select: {
+      id: true,
+      number: true,
+      year: true,
+      code: true,
+      name: true,
+      slug: true,
+      published: true,
+      deletedAt: true,
+    },
+  });
+}
+
+/**
+ * Public list variant that includes the same safe nested data
+ * returned by the existing public detail endpoint. This lets the
+ * frontend load a Season's published spirits with one request.
+ */
+export async function findPublishedSeasonalSpiritsWithDetailsBySeason(
+  seasonId,
+) {
+  return prisma.spirit.findMany({
+    where: {
+      seasonId,
+      type: "SEASONAL",
+      published: true,
+      deletedAt: null,
+      season: {
+        deletedAt: null,
+        published: true,
+      },
+    },
+    select: SEASONAL_SPIRIT_DETAIL_PROJECTION,
+    orderBy: {
+      displayOrder: "asc",
+    },
+  });
+}
+
+export async function softDeleteSeasonalSpirit(id) {
+  return prisma.spirit.updateMany({
+    where: {
+      id,
+      type: "SEASONAL",
+      deletedAt: null,
+    },
+    data: {
+      published: false,
+      deletedAt: new Date(),
+    },
+  });
+}

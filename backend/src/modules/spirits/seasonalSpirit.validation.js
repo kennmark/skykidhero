@@ -242,3 +242,10 @@ export const updateSeasonalSpiritSchema =
       collectibleId: z.coerce.number().int().positive(),
     });
   
+export const seasonalSpiritSeasonNumberParamSchema =
+  z.object({
+    seasonNumber: z.coerce
+      .number()
+      .int()
+      .positive(),
+  });

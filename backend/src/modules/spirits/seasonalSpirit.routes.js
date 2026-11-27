@@ -4,10 +4,12 @@ import { validate } from "../../middleware/validate.middleware.js";
 import {
   getPublishedSeasonalSpiritController,
   getPublishedSeasonalSpiritsController,
+  getPublishedSeasonalSpiritsBySeasonNumberController
 } from "./seasonalSpirit.controller.js";
 import {
   seasonalSpiritCodeParamSchema,
   seasonalSpiritSeasonIdParamSchema,
+  seasonalSpiritSeasonNumberParamSchema
 } from "./seasonalSpirit.validation.js";
 
 const router = Router();
@@ -22,6 +24,15 @@ router.get(
   "/seasonal-spirits/:code",
   validate(seasonalSpiritCodeParamSchema, "params"),
   getPublishedSeasonalSpiritController,
+);
+
+router.get(
+  "/seasons/by-number/:seasonNumber/spirits",
+  validate(
+    seasonalSpiritSeasonNumberParamSchema,
+    "params",
+  ),
+  getPublishedSeasonalSpiritsBySeasonNumberController,
 );
 
 export default router;

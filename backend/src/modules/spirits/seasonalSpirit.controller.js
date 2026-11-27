@@ -9,6 +9,8 @@ import {
   updateSeasonalSpiritTreeCostsService,
   replaceSeasonalSpiritCollectibleImageService,
   removeSeasonalSpiritCollectibleImageService,
+  getPublishedSeasonalSpiritsBySeasonNumberService,
+  deleteSeasonalSpiritService,
 } from "./seasonalSpirit.service.js";
 
 import {
@@ -205,6 +207,43 @@ export async function removeSeasonalSpiritCollectibleImageController(req, res, n
     const spirit = await removeSeasonalSpiritCollectibleImageService(id, collectibleId);
 
     return success(res, spirit, "Seasonal Spirit collectible image removed successfully.");
+  } catch (error) {
+    return next(error);
+  }
+}
+
+export async function getPublishedSeasonalSpiritsBySeasonNumberController(
+  req,
+  res,
+  next,
+) {
+  try {
+    const { seasonNumber } = req.validatedParams;
+    const spirits =
+      await getPublishedSeasonalSpiritsBySeasonNumberService(
+        seasonNumber,
+      );
+
+    return success(
+      res,
+      spirits,
+      "Seasonal Spirits retrieved successfully.",
+    );
+  } catch (error) {
+    return next(error);
+  }
+}
+
+export async function deleteAdminSeasonalSpiritController(req, res, next) {
+  try {
+    const { id } = req.validatedParams;
+    const spirit = await deleteSeasonalSpiritService(id);
+
+    return success(
+      res,
+      spirit,
+      "Seasonal Spirit deleted successfully.",
+    );
   } catch (error) {
     return next(error);
   }

@@ -8,62 +8,42 @@ const api = axios.create({
 });
 
 /**
- * Retrieve the published Seasonal Spirit list for a season, then hydrate
- * each item through the public detail endpoint. The list endpoint is kept
- * lightweight and does not include collectibles or Spirit Tree costs.
+ * Retrieve a Season's published Seasonal Spirits by its stable
+ * Season.number value, not the database primary key. The Step 7
+ * backend endpoint returns each spirit's public detail projection,
+ * including collectibles and Spirit Tree costs, in one request.
  */
 export async function getPublishedSeasonalSpirits(
-  seasonId,
+  seasonNumber,
   { signal } = {},
 ) {
   if (
-    seasonId === null ||
-    seasonId === undefined ||
-    seasonId === ""
+    seasonNumber === null ||
+    seasonNumber === undefined ||
+    seasonNumber === ""
   ) {
     return [];
   }
 
-  const listResponse = await api.get(
-    `/seasons/${encodeURIComponent(seasonId)}/spirits`,
+  const normalizedSeasonNumber = Number(seasonNumber);
+
+  if (
+    !Number.isInteger(normalizedSeasonNumber) ||
+    normalizedSeasonNumber <= 0
+  ) {
+    throw new Error("A valid Season number is required.");
+  }
+
+  const response = await api.get(
+    `/seasons/by-number/${encodeURIComponent(normalizedSeasonNumber)}/spirits`,
     { signal },
   );
 
-  const spirits = Array.isArray(listResponse.data?.data)
-    ? listResponse.data.data
+  const spirits = Array.isArray(response.data?.data)
+    ? response.data.data
     : [];
 
-  const detailedSpirits = await Promise.all(
-    spirits.map(async (spirit) => {
-      if (!spirit?.code) {
-        return spirit;
-      }
-
-      try {
-        const detailResponse = await api.get(
-          `/seasonal-spirits/${encodeURIComponent(spirit.code)}`,
-          { signal },
-        );
-
-        return detailResponse.data?.data ?? spirit;
-      } catch (error) {
-        // A navigation cancellation should stop the whole request chain.
-        if (signal?.aborted) {
-          throw error;
-        }
-
-        // Keep the list record usable when one detail request fails.
-        console.warn(
-          `Unable to load details for Seasonal Spirit ${spirit.code}:`,
-          error,
-        );
-
-        return spirit;
-      }
-    }),
-  );
-
-  return detailedSpirits.sort((left, right) => {
+  return spirits.sort((left, right) => {
     const leftOrder = Number(left?.displayOrder ?? 0);
     const rightOrder = Number(right?.displayOrder ?? 0);
 
@@ -71,6 +51,10 @@ export async function getPublishedSeasonalSpirits(
   });
 }
 
+/**
+ * Fetch one published Seasonal Spirit by its globally unique code.
+ * Kept for any public UI that needs a single detail record.
+ */
 export async function getPublishedSeasonalSpirit(
   code,
   { signal } = {},

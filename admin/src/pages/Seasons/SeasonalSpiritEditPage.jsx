@@ -7,6 +7,7 @@ import {
   updateAdminSeasonalSpirit,
   uploadAdminSeasonalSpiritMedia,
   removeAdminSeasonalSpiritMedia,
+  deleteAdminSeasonalSpirit,
 } from "../../services/adminSeasonalSpirit.service.js";
 import SpiritMediaManager from "../../components/spirits/SpiritMediaManager.jsx";
 import SeasonalSpiritProgressionManager from "../../components/spirits/SeasonalSpiritProgressionManager.jsx";
@@ -405,6 +406,7 @@ export default function SeasonalSpiritEditPage() {
   const [mediaSpirit, setMediaSpirit] = useState(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [deleting, setDeleting] = useState(false);
   const [error, setError] = useState("");
 
   const backPath = useMemo(() => {
@@ -498,6 +500,27 @@ export default function SeasonalSpiritEditPage() {
 
     setMediaSpirit(updatedSpirit);
     return updatedSpirit;
+  }
+
+  async function handleDelete() {
+    if (!spirit?.id || deleting) return;
+
+    const confirmed = window.confirm(
+      `Delete "${spirit.name}"? It will be unpublished and removed from active admin and public lists. Its collectible records, Spirit Tree costs, and Cloudinary images will be retained for possible recovery.`,
+    );
+
+    if (!confirmed) return;
+
+    try {
+      setDeleting(true);
+      setError("");
+      await deleteAdminSeasonalSpirit(spirit.id);
+      navigate(backPath, { replace: true });
+    } catch (requestError) {
+      setError(getErrorMessage(requestError));
+    } finally {
+      setDeleting(false);
+    }
   }
 
   async function handleSubmit(payload) {
@@ -609,6 +632,28 @@ export default function SeasonalSpiritEditPage() {
             />
 
             <SeasonalSpiritProgressionManager key={spirit.id} spirit={spirit} />
+
+            <section className="rounded-xl border border-red-200 bg-white p-6 shadow-sm">
+              <h2 className="text-lg font-bold text-red-800">
+                Delete Seasonal Spirit
+              </h2>
+              <p className="mt-1 max-w-2xl text-sm text-gray-600">
+                This removes the spirit from active admin and public lists. Its
+                collectibles, Spirit Tree costs, and stored image assets are
+                retained for possible recovery. The spirit code remains
+                reserved.
+              </p>
+              <div className="mt-4 flex justify-end">
+                <button
+                  type="button"
+                  onClick={handleDelete}
+                  disabled={deleting || saving}
+                  className="rounded-lg border border-red-300 bg-red-50 px-4 py-2.5 text-sm font-semibold text-red-700 hover:bg-red-100 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {deleting ? "Deleting..." : "Delete Seasonal Spirit"}
+                </button>
+              </div>
+            </section>
           </>
         )}
       </div>

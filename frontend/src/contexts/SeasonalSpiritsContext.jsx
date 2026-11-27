@@ -1,18 +1,8 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-import {
-  getPublishedSeasonalSpirits,
-} from "../services/seasonalSpirit.service";
+import { getPublishedSeasonalSpirits } from "../services/seasonalSpirit.service";
 
-import {
-  mergeSeasonalSpirits,
-} from "../utils/seasonalSpiritAdapter";
+import { mergeSeasonalSpirits } from "../utils/seasonalSpiritAdapter";
 
 const SeasonalSpiritsContext = createContext({
   seasonSpirits: [],
@@ -20,18 +10,16 @@ const SeasonalSpiritsContext = createContext({
   error: "",
 });
 
-export function SeasonalSpiritsProvider({
-  season,
-  children,
-}) {
+export function SeasonalSpiritsProvider({ season, children }) {
   const [publishedSpirits, setPublishedSpirits] = useState([]);
-  const [loading, setLoading] = useState(Boolean(season?.id));
+  const [loading, setLoading] = useState(Boolean(season?.number ?? season?.id));
   const [error, setError] = useState("");
 
-  const seasonId = season?.id ?? null;
+  // Static archive IDs 1–31 represent Season numbers, not database IDs.
+  const seasonNumber = season?.number ?? season?.id ?? null;
 
   useEffect(() => {
-    if (!seasonId) {
+    if (!seasonNumber) {
       setPublishedSpirits([]);
       setLoading(false);
       setError("");
@@ -46,10 +34,9 @@ export function SeasonalSpiritsProvider({
         setLoading(true);
         setError("");
 
-        const result = await getPublishedSeasonalSpirits(
-          seasonId,
-          { signal: controller.signal },
-        );
+        const result = await getPublishedSeasonalSpirits(seasonNumber, {
+          signal: controller.signal,
+        });
 
         if (!controller.signal.aborted) {
           setPublishedSpirits(result);
@@ -60,14 +47,14 @@ export function SeasonalSpiritsProvider({
         }
 
         console.error(
-          `Unable to load published Seasonal Spirits for season ${seasonId}:`,
+          `Unable to load published Seasonal Spirits for Season number ${seasonNumber}:`,
           requestError,
         );
 
         setPublishedSpirits([]);
         setError(
           requestError.response?.data?.message ||
-          "Unable to load published Seasonal Spirits.",
+            "Unable to load published Seasonal Spirits.",
         );
       } finally {
         if (!controller.signal.aborted) {
@@ -79,15 +66,11 @@ export function SeasonalSpiritsProvider({
     loadSeasonalSpirits();
 
     return () => controller.abort();
-  }, [seasonId]);
+  }, [seasonNumber]);
 
   const seasonSpirits = useMemo(
     () =>
-      mergeSeasonalSpirits(
-        season?.season_spirits,
-        publishedSpirits,
-        season,
-      ),
+      mergeSeasonalSpirits(season?.season_spirits, publishedSpirits, season),
     [season, publishedSpirits],
   );
 

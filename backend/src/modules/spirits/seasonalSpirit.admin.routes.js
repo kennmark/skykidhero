@@ -14,6 +14,7 @@ import {
   updateAdminSeasonalSpiritTreeCostsController,
   uploadSeasonalSpiritCollectibleImageController,
   removeSeasonalSpiritCollectibleImageController,
+  deleteAdminSeasonalSpiritController,
 } from "./seasonalSpirit.controller.js";
 import {
   createSeasonalSpiritSchema,
@@ -61,7 +62,11 @@ router.put(
   updateAdminSeasonalSpiritController,
 );
 
-export default router;
+router.delete(
+  "/seasonal-spirits/:id",
+  validate(seasonalSpiritIdParamSchema, "params"),
+  deleteAdminSeasonalSpiritController,
+);
 
 /*
  * Upload / Replace Seasonal Spirit Media
@@ -121,3 +126,5 @@ router.delete(
   validate(seasonalSpiritCollectibleParamsSchema, "params"),
   removeSeasonalSpiritCollectibleImageController,
 );
+
+export default router;

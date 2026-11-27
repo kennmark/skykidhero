@@ -32,28 +32,31 @@ export default function SeasonalSpiritsPage() {
         const spiritResults = await Promise.all(
           seasonList.map(async (season) => {
             try {
-              const response =
-                await getAdminSeasonalSpiritsBySeason(season.id);
+              const response = await getAdminSeasonalSpiritsBySeason(season.id);
 
-              return [season.id, {
-                spirits: response?.data ?? [],
-                error: "",
-              }];
+              return [
+                season.id,
+                {
+                  spirits: response?.data ?? [],
+                  error: "",
+                },
+              ];
             } catch (requestError) {
-              return [season.id, {
-                spirits: [],
-                error: getErrorMessage(requestError),
-              }];
+              return [
+                season.id,
+                {
+                  spirits: [],
+                  error: getErrorMessage(requestError),
+                },
+              ];
             }
-          })
+          }),
         );
 
         if (cancelled) return;
 
         setSeasons(seasonList);
-        setSpiritsBySeason(
-          Object.fromEntries(spiritResults)
-        );
+        setSpiritsBySeason(Object.fromEntries(spiritResults));
       } catch (requestError) {
         if (!cancelled) {
           setError(getErrorMessage(requestError));
@@ -84,9 +87,7 @@ export default function SeasonalSpiritsPage() {
     <AdminLayout>
       <div className="space-y-6">
         <header>
-          <h1 className="text-2xl font-bold text-gray-900">
-            Seasonal Spirits
-          </h1>
+          <h1 className="text-2xl font-bold text-gray-900">Seasonal Spirits</h1>
           <p className="mt-1 text-sm text-gray-600">
             Manage the spirits associated with each Sky season.
           </p>
@@ -141,9 +142,7 @@ export default function SeasonalSpiritsPage() {
 
                   <div className="p-5">
                     {result.error ? (
-                      <p className="text-sm text-red-600">
-                        {result.error}
-                      </p>
+                      <p className="text-sm text-red-600">{result.error}</p>
                     ) : result.spirits.length === 0 ? (
                       <p className="text-sm text-gray-500">
                         No Seasonal Spirits have been added to this Season yet.
@@ -195,11 +194,13 @@ export default function SeasonalSpiritsPage() {
                                   {spirit.category}
                                 </td>
                                 <td className="px-3 py-3">
-                                  <span className={
-                                    spirit.published
-                                      ? "rounded-full bg-green-50 px-2.5 py-1 text-xs font-semibold text-green-700"
-                                      : "rounded-full bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-600"
-                                  }>
+                                  <span
+                                    className={
+                                      spirit.published
+                                        ? "rounded-full bg-green-50 px-2.5 py-1 text-xs font-semibold text-green-700"
+                                        : "rounded-full bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-600"
+                                    }
+                                  >
                                     {spirit.published ? "Published" : "Draft"}
                                   </span>
                                 </td>

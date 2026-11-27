@@ -16,6 +16,9 @@ import {
   syncSeasonalSpiritTreeCosts,
   findSeasonalSpiritCollectible,
   updateSeasonalSpiritCollectibleImage,
+  findSeasonByNumberForSeasonalSpirit,
+  findPublishedSeasonalSpiritsWithDetailsBySeason,
+  softDeleteSeasonalSpirit,
 } from "./seasonalSpirit.repository.js";
 
 import {
@@ -722,4 +725,43 @@ export async function removeSeasonalSpiritCollectibleImageService(
   await safelyDeleteSeasonalSpiritCloudinaryImage(oldPublicId);
 
   return findAdminSeasonalSpiritById(spiritId);
+}
+
+export async function getPublishedSeasonalSpiritsBySeasonNumberService(
+  seasonNumber,
+) {
+  const season = await findSeasonByNumberForSeasonalSpirit(
+    seasonNumber,
+  );
+
+  if (!season || !season.published) {
+    throw new AppError("Season not found.", 404);
+  }
+
+  return findPublishedSeasonalSpiritsWithDetailsBySeason(
+    season.id,
+  );
+}
+
+export async function deleteSeasonalSpiritService(id) {
+  const existing = await findAdminSeasonalSpiritById(id);
+
+  if (!existing) {
+    throw new AppError("Seasonal Spirit not found.", 404);
+  }
+
+  const result = await softDeleteSeasonalSpirit(id);
+
+  // A second delete or a concurrent delete should not be reported as success.
+  if (!result?.count) {
+    throw new AppError("Seasonal Spirit not found.", 404);
+  }
+
+  return {
+    id: existing.id,
+    code: existing.code,
+    name: existing.name,
+    seasonId: existing.seasonId,
+    deleted: true,
+  };
 }
